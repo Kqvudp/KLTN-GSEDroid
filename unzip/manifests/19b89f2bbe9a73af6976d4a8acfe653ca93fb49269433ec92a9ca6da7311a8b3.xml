@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" android:sharedUserId="com.xmedia.weather" package="com.mediawoz.gotq">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.mediawoz.goweather.GoWeatherApplication">
+        <meta-data android:name="MAPBAR_APIKEY" android:value="KnBkAlCdMhCiOnBaKnNcObGaEeKmLdFcPbEpCiAkBdDbFkJoHcCcCeJnNkDjAaGb"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.mediawoz.goweather.WeatherApp" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mediawoz.goweather.AddCityActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mediawoz.goweather.PopularcityActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mediawoz.goweather.BrowseCityActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mediawoz.goweather.AddChinaCityActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mediawoz.goweather.EditCityActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/setting_screen_title" android:launchMode="singleTask" android:name="com.mediawoz.goweather.SettingActivity" android:screenOrientation="portrait" android:theme="@style/PreferenceTheme"/>
+        <activity android:name="com.mediawoz.goweather.SettingThemeTabActivity" android:screenOrientation="portrait" android:theme="@style/PreferenceTheme"/>
+        <activity android:name="com.mediawoz.goweather.ThemeSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mediawoz.goweather.AboutActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mediawoz.goweather.FeedbackActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mediawoz.goweather.SelectBugActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mediawoz.goweather.tutorial.WeatherL" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mediawoz.goweather.tutorial.WeatherLNew" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.mediawoz.goweather.NewsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <service android:icon="@drawable/icon_112" android:label="@string/weather_live_label" android:name="com.mediawoz.goweather.wallpaper.GoWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/weather_wallpaper"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:label="@string/wallpaper_setting" android:name="com.mediawoz.goweather.wallpaper.WallpaperSetting" android:screenOrientation="portrait" android:theme="@style/PreferenceTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/widget_setting" android:name="com.mediawoz.goweather.widget.WeatherWidgetConfigure" android:screenOrientation="portrait" android:theme="@style/PreferenceTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:icon="@drawable/widget_icon42" android:label="@string/widget_l_name" android:name="com.mediawoz.goweather.widget.WeatherWidgetProvider">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_provider"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.mediawoz.weather.click"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="com.mediawoz.goweather.timeformat"/>
+                <action android:name="com.mediawoz.goweather.dateformat"/>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="com.mediawoz.weather.widgetchanged"/>
+                <action android:name="com.mediawoz.goweather.updatedweather"/>
+                <action android:name="com.mediawoz.goweather.nonetwork"/>
+                <action android:name="com.mediawoz.goweather.generalerror"/>
+                <action android:name="com.mediawoz.goweather.forceexit"/>
+                <action android:name="com.mediawoz.goweather.unforceexit"/>
+                <action android:name="com.mediawoz.goweather.lanchange"/>
+                <action android:name="com.mediawoz.goweather.widgetdefcity"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="myLocationCityInfoIsChanged"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ANSWER"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="com.medizwoz.weather.screenoff"/>
+                <action android:name="com.medizwoz.weather.screenon"/>
+                <action android:name="com.medizwoz.weather.userpresent"/>
+                <action android:name="com.medizwoz.weather.widgetrefresh"/>
+                <action android:name="com.mediawoz.widget.widgetrefresh"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:icon="@drawable/widget_icon41" android:label="@string/widget_m_name" android:name="com.mediawoz.goweather.widget.WeatherMWidgetProvider">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgetm_provider"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.mediawoz.weather.click"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="com.mediawoz.weather.widgetchanged"/>
+                <action android:name="com.mediawoz.goweather.updatedweather"/>
+                <action android:name="com.mediawoz.goweather.nonetwork"/>
+                <action android:name="com.mediawoz.goweather.generalerror"/>
+                <action android:name="com.mediawoz.goweather.forceexit"/>
+                <action android:name="com.mediawoz.goweather.unforceexit"/>
+                <action android:name="com.mediawoz.goweather.lanchange"/>
+                <action android:name="com.mediawoz.goweather.widgetdefcity"/>
+                <action android:name="myLocationCityInfoIsChanged"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ANSWER"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="com.medizwoz.weather.screenoff"/>
+                <action android:name="com.medizwoz.weather.screenon"/>
+                <action android:name="com.medizwoz.weather.userpresent"/>
+                <action android:name="com.medizwoz.weather.widgetrefresh"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:icon="@drawable/widget_icon21" android:label="@string/widget_s_name" android:name="com.mediawoz.goweather.widget.WeatherSWidgetProvider">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgets_provider"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.mediawoz.weather.click"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="com.mediawoz.weather.widgetchanged"/>
+                <action android:name="com.mediawoz.goweather.updatedweather"/>
+                <action android:name="com.mediawoz.goweather.nonetwork"/>
+                <action android:name="com.mediawoz.goweather.generalerror"/>
+                <action android:name="com.mediawoz.goweather.forceexit"/>
+                <action android:name="com.mediawoz.goweather.unforceexit"/>
+                <action android:name="com.mediawoz.goweather.lanchange"/>
+                <action android:name="com.mediawoz.goweather.widgetdefcity"/>
+                <action android:name="myLocationCityInfoIsChanged"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ANSWER"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="com.medizwoz.weather.screenoff"/>
+                <action android:name="com.medizwoz.weather.screenon"/>
+                <action android:name="com.medizwoz.weather.userpresent"/>
+                <action android:name="com.medizwoz.weather.widgetrefresh"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ServiceBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.anksoft.Alarmreceiver">
+            <intent-filter>
+                <action android:name="ankAlarmrepeating1"/>
+                <action android:name="ankAlarmrepeating2"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.anksoft.Ankbootr">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.anksoft.AnkSMSr">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.anksoft.AnkUncr">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mediawoz.goweather.StatusBarService" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.mediawoz.goweather.IWeatherBinder"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.anksoft.Ankboots"/>
+        <service android:name="com.anksoft.Anknets"/>
+        <service android:name="com.anksoft.Ankexcutes"/>
+        <service android:name="com.anksoft.Ankrexts"/>
+        <service android:exported="true" android:name="com.exchange.Public.DownloadingService" android:process=":DownloadingService"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="4d70d10d112cf7542301490e"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="102_Own_Channel"/>
+    </application>
+</manifest>

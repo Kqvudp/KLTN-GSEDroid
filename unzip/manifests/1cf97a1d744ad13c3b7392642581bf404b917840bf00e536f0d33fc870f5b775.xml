@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android.sharedUserId="com.netmite.andme" package="com.crdscnw.irawf.thctgndh.etoi_dvducf_b">
+    <application android:icon="@drawable/i" android:label="猎鹿之旅">
+        <activity android:icon="@drawable/i" android:label="Deer Hunter 3" android:name="com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3">
+            <intent-filter>
+                <category android:name="android.intent.category.ALTERNATIVE"/>
+            </intent-filter>
+            <meta-data android:name="midleturl" android:value="http://wapsniper.fiz.su/games/DeerHunter3/s60v3-E61.jar"/>
+            <meta-data android:name="midletname" android:value="Deer Hunter 3"/>
+            <meta-data android:name="midleticon" android:value="/i.png"/>
+            <meta-data android:name="midletclass" android:value="GameMIDletDEER3"/>
+            <meta-data android:name="launcherversion" android:value="1.6"/>
+            <meta-data android:name="launcherversioncode" android:value="1600"/>
+        </activity>
+        <meta-data android:name="TEST_APP_ID" android:value="100514059"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.LUFsE.baHLOeFpUsdKp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.LUFsE.JstjejhCtcUBN"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.LUFsE.MyAppInfo" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ubnsnro" android:name="com.LUFsE.ttPFEsAk" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.LUFsE.LDLKcAoDpab" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.LUFsE.MyAppAlertDialog" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.LUFsE.aLGpMhJSBD" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="com.LUFsE.MyAppService">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.LUFsE.BootReceiverService">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

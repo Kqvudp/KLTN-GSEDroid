@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.ozitech.zoofree">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.dlauncher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.motorola.dlauncher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.lge.launcher.permission.INSTALL_SHORTCUT"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".KidsZooSoundsandPictures" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".bird" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".quiz1" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".quiz1v" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".quiz2" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".quiz2v" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".quiz3" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".quiz3v" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".choosequiz" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".animal" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".insect" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.mobclix.APPLICATION_ID" android:value="8F03E279-2D6E-4570-9AED-06260C82E0AD"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds"/>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"/>
+        <receiver android:name="com.airpush.android.MessageReceiver"/>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"/>
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart24831"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.flurry.android.CatalogActivity" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="myapp.zoofree.lite"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.Leadbolt.AdNotification"/>
+        <service android:enabled="true" android:name="com.apperhand.device.android.AndroidSDKProvider"/>
+    </application>
+</manifest>

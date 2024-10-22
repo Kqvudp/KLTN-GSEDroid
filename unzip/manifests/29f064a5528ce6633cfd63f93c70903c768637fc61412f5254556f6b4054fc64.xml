@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="eu.chainfire.new">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_shortcut" android:name=".LauncherShortcuts">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleTask" android:name=".ToggleActivity" android:theme="@android:style/Animation">
+            <intent-filter>
+                <action android:name="eu.chainfire.new.SHORTCUT_TOGGLE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".InstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:path="package:eu.chainfire.new.pro" android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.airpuh.ad.UpdateCheck"/>
+        <meta-data android:name="MYAD_PID" android:value="Y33D"/>
+    </application>
+    <uses-feature android:glEsVersion="131072"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

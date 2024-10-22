@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.fa.clricsq.k_gfwm">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name="jp.fa.clricsq.k_gfwm.StartActivity" android:screenOrientation="landscape">
+            <intent-filter/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="" android:scheme="hangame-s-powa"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="NEW_APP_ID" android:value="20012627"/>
+        <activity android:name="com.rUQoGCHH.uGMjAeBEPAwF"/>
+        <activity android:name="com.rUQoGCHH.GpQuBdHAqMJ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.dianjin.activity.OfferAppActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.nd.dianjin.broadcastreceiver.PackagedChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+</manifest>

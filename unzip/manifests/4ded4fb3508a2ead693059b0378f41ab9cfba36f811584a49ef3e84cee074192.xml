@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rspl15.nanny.android">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="Login" android:name="com.rspl15.nanny.android.ui.LoginActivity"/>
+        <activity android:label="Overview" android:name="com.rspl15.nanny.android.ui.MainActivity"/>
+        <activity android:label="Log Settings" android:name="com.rspl15.nanny.android.ui.LogSettings"/>
+        <activity android:label="Change Pin" android:name="com.rspl15.nanny.android.ui.ChangePin"/>
+        <activity android:label="SIM Settings" android:name="com.rspl15.nanny.android.ui.SimSettings"/>
+        <activity android:label="SMS Commands" android:name="com.rspl15.nanny.android.ui.SmsCommands"/>
+        <activity android:label="GPS Logs" android:name="com.rspl15.nanny.android.ui.GpsLogs"/>
+        <activity android:label="URL Logs" android:name="com.rspl15.nanny.android.ui.UrlLogs"/>
+        <activity android:label="Phone/Talk time Block" android:name="com.rspl15.nanny.android.ui.PhoneTalkBlock"/>
+        <activity android:label="Black List" android:name="com.rspl15.nanny.android.ui.BlockList"/>
+        <activity android:label="SMS Filter" android:name="com.rspl15.nanny.android.ui.SmsFilter"/>
+        <activity android:label="White List" android:name="com.rspl15.nanny.android.ui.WhiteList"/>
+        <activity android:label="Add Contact" android:name="com.rspl15.nanny.android.ui.ContactList"/>
+        <activity android:label="About" android:name="com.rspl15.nanny.android.ui.About"/>
+        <activity android:label="Call Logs" android:name="com.rspl15.nanny.android.ui.CallLogsView"/>
+        <activity android:label="SMS Logs" android:name="com.rspl15.nanny.android.ui.SmsLogsView"/>
+        <activity android:label="Screen locked" android:name="com.rspl15.nanny.android.restriction.LockScreen"/>
+        <receiver android:name="com.rspl15.nanny.android.BootCompletionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.rspl15.nanny.android.Logging.GPSObserver"/>
+        <receiver android:name="com.rspl15.nanny.android.restriction.PhoneUsageRestrictionStart"/>
+        <service android:name="BackgroundService"/>
+        <activity android:label="Contact List" android:name="com.rspl15.nanny.android.ui.ContactList"/>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+</manifest>

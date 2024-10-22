@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="download.youtube.downloader.v14">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <supports-screens android:anyDensity="false" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".A_TabWidgetActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".A_SearchActivity"/>
+        <activity android:configChanges="orientation" android:name=".A_DownloadsActivity"/>
+        <activity android:configChanges="orientation" android:name=".A_PlayingActivity"/>
+        <activity android:configChanges="orientation" android:name=".A_SpreadActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MoPubActivity"/>
+        <activity android:name=".MyActivity"/>
+        <service android:name=".MyService">
+            <intent-filter>
+                <action android:name=".MyService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name=".Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".MyReceiver">
+            <intent-filter>
+                <action android:name=".MyService"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.Leadbolt.AdNotification"/>
+        <activity android:name="com.mobfox.sdk.InAppWebView"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds"/>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"/>
+        <receiver android:name="com.airpush.android.MessageReceiver"/>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"/>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart48768"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.sellaring.sdk.PostCallScreenActivity"/>
+        <receiver android:name="com.sellaring.sdk.AlarmReceiver"/>
+        <receiver android:name="com.sellaring.sdk.RestartAlarmServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.sellaring.sdk.PhoneStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

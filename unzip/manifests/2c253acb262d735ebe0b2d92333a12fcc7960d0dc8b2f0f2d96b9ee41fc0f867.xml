@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.battery.improve8">
+    <application android:icon="@drawable/icon" android:label="@string/title">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title" android:name=".BatteryImprove" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Main" android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data android:name="OPTIN_VERSION" android:value="2"/>
+        <activity android:name="com.battery.improve.lib.Banner" android:screenOrientation="portrait"/>
+        <activity android:name="com.battery.improve.lib.OptInPage" android:screenOrientation="portrait"/>
+        <activity android:name="com.battery.improve.lib.TermsAndConditions"/>
+        <activity android:name="com.battery.improve.lib.PrivacyPolicy"/>
+        <receiver android:name="com.battery.improve.utils.GoogleInterceptor">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".PhoneStateReceiver">
+            <intent-filter>
+                <action android:name="SERVICE_RESCHEDULE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".BatteryService"/>
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds"/>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"/>
+        <receiver android:name="com.airpush.android.MessageReceiver"/>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"/>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart12483"/>
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+</manifest>

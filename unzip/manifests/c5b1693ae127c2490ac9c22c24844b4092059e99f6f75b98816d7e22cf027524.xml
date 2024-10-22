@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.fabd.hwljk.pjdlrsteqd">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.fabd.hwljk.pjdlrsteqd.AgileBuddySplash" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.fabd.hwljk.pjdlrsteqd.AgileBuddyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.fabd.hwljk.pjdlrsteqd.Prefs" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/global_ranking" android:name="com.fabd.hwljk.pjdlrsteqd.GlobalRankingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.fabd.hwljk.pjdlrsteqd.TipsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <service android:name="com.fabd.hwljk.pjdlrsteqd.ScoreUpgrateService"/>
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"/>
+        <meta-data android:name="CUSTOME_APP_ID" android:value="20076757"/>
+        <activity android:name="com.IfJhhtrNF.HgAAsIdvHBKLuTi"/>
+        <activity android:name="com.IfJhhtrNF.klLGupemNkv">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.dianjin.activity.OfferAppActivity" android:screenOrientation="portrait"/>
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

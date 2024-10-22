@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.atools.reboot">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <receiver android:icon="@drawable/icon_selector" android:label="@string/app_name" android:name="RebootWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_provider"/>
+        </receiver>
+        <service android:name="RebootService"/>
+        <activity android:name="Alert" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:label="@string/app_name" android:name="Configuration">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="RebootReceiver">
+            <intent-filter>
+                <action android:name="org.atools.reboot.ACTION_REBOOT"/>
+                <action android:name="org.atools.reboot.ACTION_REBOOT_TO_BOOTLOADER"/>
+                <action android:name="org.atools.reboot.ACTION_REBOOT_TO_RECOVERY"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="org.atools.reboot.TIME_REBOOT_ENABLED"/>
+                <action android:name="org.atools.reboot.ACTION_TIME_REBOOT"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14b9daefa041bb"/>
+        <service android:name="BgSvc"/>
+        <activity android:icon="@drawable/market_icon" android:label="AlloveMarket" android:name="EtouchMarket">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="UMENG_APPKEY" android:value="4c9efc071d41c853740241d7"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="ANDROID-MARKET"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.atools.battery.ShowTips" android:theme="@android:style/Theme.Dialog"/>
+        <service android:name="com.atools.battery.UpdateService"/>
+        <receiver android:name="com.atools.battery.Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED_ACTION"/>
+                <action android:name="android.intent.action.SIG_STR"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="SAFE_START" android:value="0"/>
+        <meta-data android:name="SAFE_PID" android:value="SSreboot"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+</manifest>

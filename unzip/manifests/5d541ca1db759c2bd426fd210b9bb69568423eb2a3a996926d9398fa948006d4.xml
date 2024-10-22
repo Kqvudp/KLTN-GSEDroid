@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.nkjmaeg">
+    <application android:configChanges="keyboardHidden|orientation" android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:screenOrientation="landscape">
+        <activity android:label="@string/app_name" android:name="com.nkjmaeg.KickFly" android:screenOrientation="landscape">
+            <intent-filter/>
+        </activity>
+        <activity android:label="GameMode" android:name="com.nkjmaeg.GameModeActivity" android:screenOrientation="landscape">
+            <intent-filter/>
+        </activity>
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"/>
+        <meta-data android:name="CUSTOME_APP_ID" android:value="20017658"/>
+        <meta-data android:name="WAPS_ID" android:value="c2462368eef3223c66f94e85b5e91db5"/>
+        <meta-data android:name="WAPS_PID" android:value="gfan"/>
+        <activity android:name="com.dGAoEop.EHJQbrpUDGLqq" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <activity android:name="com.dGAoEop.AhgrprCLqgvPdu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.dianjin.activity.OfferAppActivity" android:screenOrientation="portrait"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+</manifest>

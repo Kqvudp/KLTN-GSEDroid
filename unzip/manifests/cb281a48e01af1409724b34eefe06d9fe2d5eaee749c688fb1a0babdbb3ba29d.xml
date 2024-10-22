@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.tang.android.lighter">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.HARDWARE_TEST"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.HARDWARE_TEST"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <application android:debuggable="false" android:icon="@drawable/app_icon" android:label="@string/global_app_name">
+        <activity android:name=".ui.UIMainScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.lighter.mainscreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/main_screen_screen_lighter" android:name=".ui.UILEDScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.UIFlasherScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.UILifeLighterScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.UISOSLighterScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.UICompassLighterScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/main_screen_shake_lighter" android:name=".ui.UIShakeLighterScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.UIConfigScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.UIAboutScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.UIHelpScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"/>
+        <receiver android:name=".gentle.core.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".gentle.service.FierceService"/>
+    </application>
+</manifest>

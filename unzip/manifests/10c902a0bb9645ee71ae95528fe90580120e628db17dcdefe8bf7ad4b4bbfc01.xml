@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:debuggable="true" android:installLocation="auto" package="com.souapp">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.souapp.MyApp" android:theme="@style/BasicButtonTheme">
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.tencent.mobwin.MobinWINBrowserActivity"/>
+        <meta-data android:name="Wooboo_PID" android:value="6dbe56c9f85a4f8397b5093a9f892889"/>
+        <meta-data android:name="Market_ID" android:value="1"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wooboo.adlib_android.AdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.wooboo.adlib_android.FullActivity"/>
+        <meta-data android:name="cn.casee.adsdk.cid" android:value="casee"/>
+        <meta-data android:name="cn.casee.adsdk.istesting" android:value="false"/>
+        <meta-data android:name="APP_ID" android:value="DCD2468166CA5C0075D874C2E49AB148"/>
+        <meta-data android:name="APP_INTERVAL" android:value="30"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="4e41f3d9431fe373030003ff"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="umeng"/>
+        <service android:exported="true" android:name="com.umeng.common.net.DownloadingService" android:process=":DownloadingService"/>
+        <service android:name=".snapscreen.ScreenshotService">
+            <intent-filter>
+                <action android:name="com.souapp.snapscreen.ScreenshotService.BIND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".appdaren.receiver.UpdateUiService" android:process=":appdarenUpdateUI">
+            <intent-filter>
+                <action android:name="com.souapp.appdaren.receiver.UpdateUiService"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.souapp.admanager.umeng.ContainerExample"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.souapp.market.exchange.MarketMain"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.souapp.market.MarketActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.souapp.appdaren.wallpager.PicUI"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.hd.explorer.HDExplorerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.hd.explorer.HDPreferenceActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="安卓渠道汇" android:name=".market.MarketChannelActivity"/>
+        <activity android:label="@string/app_name" android:name=".appdaren.MainActivity"/>
+        <activity android:name=".jingpin.JingpinActivity"/>
+        <activity android:name=".jingpin.AppIndexActivity"/>
+        <activity android:name=".jingpin.CategoryActivity"/>
+        <activity android:name=".qudaohui.QudaohuiActivity"/>
+        <activity android:name=".qudaohui.QudaoIndexActivity"/>
+        <activity android:name=".appdaren.taskManager.TaskManager" android:screenOrientation="portrait"/>
+        <activity android:name=".appdaren.errorLogManager.ui.ErrorLogActivity"/>
+        <activity android:name=".appdaren.backupExport.BackupExportUI"/>
+        <activity android:name=".downloadmanager.DownLoadManagerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".appdaren.apps.ApkInstallUI" android:screenOrientation="portrait"/>
+        <activity android:name=".appdaren.fileManager.FileManager" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".appstore.gui.AppStoreActivtiy"/>
+        <activity android:name="com.googlecode.droidwall.MainActivity"/>
+        <activity android:name=".appdaren.apps.AppList"/>
+        <activity android:name=".appdaren.category.CategoryList"/>
+        <activity android:name=".appdaren.souapp.SouappBrowser" android:screenOrientation="portrait"/>
+        <activity android:name=".appdaren.search.SearchAppUI" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".appdaren.window.StartUI" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".share.weibo.WeiboTools">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="TimeLineActivity" android:scheme="weiboandroidsdk"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.weibo.net.ShareActivity" android:theme="@style/ContentOverlay" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleInstance" android:name=".appdaren.window.AppGalleryPageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:host="OAuthActivity" android:scheme="weibo4andriod"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".appdaren.configUI.ConfigActivity"/>
+        <receiver android:name="com.googlecode.droidwall.BootAndShutdownBroadcast" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.googlecode.droidwall.PackageBroadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.googlecode.droidwall.StatusWidget">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/onoff_widget"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.googlecode.droidwall.intent.action.STATUS_CHANGED"/>
+                <action android:name="com.googlecode.droidwall.intent.action.TOGGLE_REQUEST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/app_name" android:name=".appdaren.receiver.AppInstallUninstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.souapp.pic2gif.MyMakeGifService">
+            <intent-filter>
+                <action android:name="com.souapp.pic2gif.MyMakeGifService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.souapp.deviceinfo.check.core.AnalyzerCore$RegistryService">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.core.IPluginRegistry"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="cpu plugin receiver" android:name=".deviceinfo.check.plugins.cpu.BReceiver">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.discovery"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".deviceinfo.check.plugins.cpu.CPUPlugin" android:process=":aanalyzer_plugins">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.cpu.CPUPlugin"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="memory plugin receiver" android:name=".deviceinfo.check.plugins.memory.BReceiver">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.discovery"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".deviceinfo.check.plugins.memory.MemoryPlugin" android:process=":aanalyzer_plugins">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.memory.MemoryPlugin"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="location plugin receiver" android:name=".deviceinfo.check.plugins.location.BReceiver">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.discovery"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".deviceinfo.check.plugins.location.LocationPlugin" android:process=":aanalyzer_plugins">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.location.LocationPlugin"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="camera plugin receiver" android:name=".deviceinfo.check.plugins.camera.BReceiver">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.discovery"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".deviceinfo.check.plugins.camera.CameraPlugin" android:process=":aanalyzer_plugins">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.camera.CameraPlugin"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="api plugin receiver" android:name=".deviceinfo.check.plugins.api.BReceiver">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.discovery"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".deviceinfo.check.plugins.api.APIPlugin" android:process=":aanalyzer_plugins">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.api.APIPlugin"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="display plugin receiver" android:name=".deviceinfo.check.plugins.display.BReceiver">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.discovery"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".deviceinfo.check.plugins.display.DisplayPlugin" android:process=":aanalyzer_plugins">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.display.DisplayPlugin"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="sensors plugin receiver" android:name=".deviceinfo.check.plugins.sensors.BReceiver">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.discovery"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".deviceinfo.check.plugins.sensors.SensorsPlugin" android:process=":aanalyzer_plugins">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.sensors.SensorsPlugin"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="radio interfaces plugin receiver" android:name=".deviceinfo.check.plugins.radiointerfaces.BReceiver">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.discovery"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".deviceinfo.check.plugins.radiointerfaces.RadioInterfacesPlugin" android:process=":aanalyzer_plugins">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.radiointerfaces.RadioInterfacesPlugin"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="keyboard plugin receiver" android:name=".deviceinfo.check.plugins.keyboard.BReceiver">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.discovery"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".deviceinfo.check.plugins.keyboard.KeyboardPlugin" android:process=":aanalyzer_plugins">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.keyboard.KeyboardPlugin"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="device info plugin receiver" android:name=".deviceinfo.check.plugins.device.BReceiver">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.discovery"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".deviceinfo.check.plugins.device.DeviceInfoPlugin" android:process=":aanalyzer_plugins">
+            <intent-filter>
+                <action android:name="com.souapp.deviceinfo.check.plugins.device.DeviceInfoPlugin"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:label="browser plugin receiver" android:name=".deviceinfo.check.plugins.browser.BReceiverlugins.browser.BReceiver">
+            <service android:name=".deviceinfo.check.plugins.browser.BrowserPlugin" android:process=":aanalyzer_plugins">
+                <intent-filter>
+                    <action android:name="com.souapp.deviceinfo.check.plugins.browser.BrowserPlugin"/>
+                </intent-filter>
+            </service>
+        </receiver>
+        <activity android:name="com.umeng.fb.ui.SendFeedback" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.umeng.fb.ui.FeedbackConversations"/>
+        <activity android:configChanges="keyboard" android:name="com.umeng.fb.ui.FeedbackConversation"/>
+        <activity android:label="@string/app_name" android:name=".deviceinfo.check.gui.AnalyzerList"/>
+        <activity android:label="@string/app_name" android:name=".deviceinfo.check.gui.AnalyzerSettings"/>
+        <activity android:name=".deviceinfo.check.gui.PluginConfiguration"/>
+        <activity android:name=".deviceinfo.check.gui.AboutActivity"/>
+        <activity android:name=".deviceinfo.check.gui.ReportActivity"/>
+        <activity android:name=".deviceinfo.check.gui.SettingsActivity"/>
+        <activity android:name=".deviceinfo.check.gui.AnalyzerSettings"/>
+        <service android:name=".appdaren.taskManager.ForegroundService">
+            <intent-filter>
+                <action android:name="com.souapp.appdaren.taskManager.FOREGROUND"/>
+            </intent-filter>
+        </service>
+        <receiver android:name=".appdaren.taskManager.StartupIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

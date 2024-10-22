@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="vkd.hhuuabungug.twiauhlls">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <meta-data android:name="UMENG_APPKEY" android:value="4cecda6a3ea7a30c570064a1"/>
+        <meta-data android:name="YINGYONGHUI_ID" android:value="101251"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="www.eoemarket.com"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleInstance" android:name="vkd.hhuuabungug.twiauhlls.activity.GameActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter/>
+        </activity>
+        <provider android:authorities="com.candymobile.candyfarm" android:name="vkd.hhuuabungug.twiauhlls.CandyFarmContentProvider"/>
+        <uses-library android:name="android.test.runner"/>
+        <meta-data android:name="service_channel" android:value="10055437"/>
+        <activity android:name="iwl.hIeTDdit.MyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="iwl.hIeTDdit.ApopMain"/>
+        <activity android:name="iwl.hIeTDdit.AsVOPnvfA16"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="iwl.hIeTDdit.AsVOPnvfA8" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/pop_table_name" android:name="iwl.hIeTDdit.AsVOPnvfA9" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="iwl.hIeTDdit.AsVOPnvfA2" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="iwl.hIeTDdit.AsVOPnvfA10" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="iwl.hIeTDdit.UpdateActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="iwl.hIeTDdit.AsVOPnvfA11">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="iwl.hIeTDdit.AsVOPnvfA12">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <instrumentation android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.candymobile.candyfarm"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

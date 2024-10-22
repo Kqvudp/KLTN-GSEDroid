@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.plugai.android.livewallpapers">
+    <uses-permission android:name="android.permission.BIND_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-feature android:name="android.software.live_wallpaper"/>
+    <application android:debuggable="false" android:icon="@drawable/iconf" android:label="@string/app_namef">
+        <service android:icon="@drawable/icon" android:label="@string/app_name" android:name="AquariumWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/aquarium"/>
+        </service>
+        <activity android:label="@string/app_namef" android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

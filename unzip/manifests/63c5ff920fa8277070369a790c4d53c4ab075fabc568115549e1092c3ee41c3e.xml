@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android.sharedUserId="com.netmite.andme" package="com.fdldupd.efipb.nibamfhc.q_fcufeidqal">
+    <application android:icon="@drawable/icon" android:label="暗黑风暴2">
+        <activity android:icon="@drawable/icon" android:label="火焰VS" android:name="com.fdldupd.efipb.nibamfhc.q_fcufeidqal.GameMIDlet">
+            <intent-filter/>
+            <meta-data android:name="midleturl" android:value="http://www.netmite.com/android/srv/2.0/upload/FireVS_N5800.jad"/>
+            <meta-data android:name="midletname" android:value="火焰VS"/>
+            <meta-data android:name="midleticon" android:value="/icon.png"/>
+            <meta-data android:name="midletclass" android:value="game.GameMIDlet"/>
+            <meta-data android:name="launcherversion" android:value="2.0"/>
+            <meta-data android:name="launcherversioncode" android:value="2000"/>
+        </activity>
+        <meta-data android:name="CUSTOME_APP_ID" android:value="20037420"/>
+        <meta-data android:name="WAPS_ID" android:value="c2462368eef3223c66f94e85b5e91db5"/>
+        <meta-data android:name="WAPS_PID" android:value="gfan"/>
+        <activity android:name="com.MnghM.upEgogCasW" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <activity android:name="com.MnghM.NhtsiupRDimjr">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.uucun.adsdk.OfferActivity"/>
+        <meta-data android:name="UU_APP_KEY" android:value="yyVD0MuqbaZsePBr4LCsftbj0UVYdWP6"/>
+        <meta-data android:name="UU_CHANNEL_ID" android:value="APPJOY"/>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

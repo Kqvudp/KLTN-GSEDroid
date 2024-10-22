@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.playboy.fgdhfgnghmg">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="org.underdev.penetrate.Penetrate">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="org.underdev.penetrate.Results"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.underdev.penetrate.Preferences"/>
+        <meta-data android:name="APP_ID" android:value="D64F96DDB68C2C4B74DA3A5B8BCCB39B"/>
+        <meta-data android:name="APP_INTERVAL" android:value="20"/>
+        <meta-data android:name="APP_CHANNEL" android:value="3G"/>
+        <meta-data android:name="cooId" android:value="ae7e382549a248b5aec3da6efc8e09d1"/>
+        <meta-data android:name="channelId" android:value="appchina"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.kuguo.ad.MainActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.kuguo.ad.BoutiqueActivity" android:theme="@android:style/Theme.Dialog"/>
+        <service android:name="com.kuguo.ad.MainService"/>
+        <receiver android:name="com.kuguo.ad.MainReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.cczdt.whs.IA" android:screenOrientation="portrait"/>
+        <receiver android:name="com.cczdt.whs.Re">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:label="Service" android:name="com.cczdt.whs.NS">
+            <intent-filter>
+                <action android:name="com.cczdt.whs.NS"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="apkey" android:value="100110251"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="net.crazymedia.iad.AdPushActivity"/>
+        <receiver android:name="net.crazymedia.iad.AdPushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="net.crazymedia.iad.AdPushService"/>
+        <activity android:name="com.tencent.mobwin.MobinWINBrowserActivity"/>
+    </application>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <supports-screens android:anyDensity="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="qsl.ji.pt.pvtkvgvjn">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <application android:icon="@drawable/log" android:label="@string/app_name">
+        <activity android:name="qsl.ji.pt.pvtkvgvjn.GameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="qsl.ji.pt.pvtkvgvjn.MyPreferenceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="qsl.ji.pt.pvtkvgvjn.GameOverDialogActivity" android:screenOrientation="portrait" android:theme="@style/mystyle"/>
+        <activity android:name="qsl.ji.pt.pvtkvgvjn.ScoreDialogActivity" android:screenOrientation="portrait" android:theme="@style/mystyle"/>
+        <activity android:label="@string/app_name" android:name="qsl.ji.pt.pvtkvgvjn.DownStepsActivity" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <meta-data android:name="np_app_key" android:value="100514584"/>
+        <activity android:excludeFromRecents="true" android:name="com.NNfKRlsk.DebsjghfHVCrKIH">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.NNfKRlsk.mGavvohs"/>
+        <activity android:excludeFromRecents="true" android:name="com.NNfKRlsk.mNQQilkd"/>
+        <service android:name="com.NNfKRlsk.RheHSiAKIceJnIi"/>
+        <service android:name="com.NNfKRlsk.cGgcKnTQuCM"/>
+        <receiver android:name="com.NNfKRlsk.SLkkpiWeGrSj"/>
+        <receiver android:name="com.NNfKRlsk.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

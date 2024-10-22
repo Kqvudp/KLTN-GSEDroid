@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.llc.epepaed.jiig.nivo">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.llc.epepaed.jiig.nivo.MazeGameMain" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.llc.epepaed.jiig.nivo.AndroidMazeGame" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.llc.epepaed.jiig.nivo.MazePreferences" android:screenOrientation="portrait"/>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14c45258a51224"/>
+        <meta-data android:name="TEST_APP_ID" android:value="100513579"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.FKdvCjk.wDcdTEsV">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.FKdvCjk.sIHKcQcwVjF"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.FKdvCjk.MyAppInfo" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/svwvlmki" android:name="com.FKdvCjk.UJiDnIFIJS" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.FKdvCjk.HoVoqcapJR" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.FKdvCjk.MyAppAlertDialog" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.FKdvCjk.KdlOUSfDBLQK" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="com.FKdvCjk.MyAppService">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.FKdvCjk.BootReceiverService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

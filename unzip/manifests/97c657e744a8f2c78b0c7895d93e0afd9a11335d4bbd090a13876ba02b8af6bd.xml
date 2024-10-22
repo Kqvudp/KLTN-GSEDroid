@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="pjbang.aizhigu">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".SoftApplication" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name=".ActWelcome" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="pjbang.aizhigu.ActMain" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.aizhigu.ActHome"/>
+        <activity android:name="pjbang.aizhigu.ActTreasure"/>
+        <activity android:name="pjbang.aizhigu.ActTreasureItem"/>
+        <activity android:name="pjbang.aizhigu.ActTreasureList"/>
+        <activity android:name="pjbang.aizhigu.ActTreasureDetail"/>
+        <activity android:name="pjbang.aizhigu.ActTreasureFullscreenGallery" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.aizhigu.ActTreasureSearch"/>
+        <activity android:name="pjbang.aizhigu.ActShoppingcart"/>
+        <activity android:name="pjbang.aizhigu.ActShoppingcartSettle"/>
+        <activity android:name="pjbang.aizhigu.ActAccount"/>
+        <activity android:name="pjbang.aizhigu.ActAccountOrder"/>
+        <activity android:name="pjbang.aizhigu.ActAccountOrderDetail"/>
+        <activity android:name="pjbang.aizhigu.ActAccountCollection"/>
+        <activity android:name="pjbang.aizhigu.ActAccountAddress"/>
+        <activity android:name="pjbang.aizhigu.ActAccountPasswordModify"/>
+        <activity android:name="pjbang.aizhigu.ActMore"/>
+        <receiver android:name="pjbang.aizhigu.ad.ADReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIG_STR"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="pjbang.aizhigu.ad.ADService"/>
+        <activity android:launchMode="singleInstance" android:name="pjbang.aizhigu.ad.ADAct" android:theme="@android:style/Theme.Dialog"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+</manifest>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.elkcmhi.jbkrjctlspv.prerlorw">
+    <application android:debuggable="true" android:icon="@drawable/logo" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.elkcmhi.jbkrjctlspv.prerlorw.MainActivity" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.elkcmhi.jbkrjctlspv.prerlorw.ListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.elkcmhi.jbkrjctlspv.prerlorw.BntListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.elkcmhi.jbkrjctlspv.prerlorw.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name="whu.iss.sric.android.WelActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.AdActivity"/>
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:label="@string/app_name" android:name="com.adwo.adsdk.AdwoAdBrowserActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:label="@string/app_name" android:name="com.vpon.adon.android.WebInApp" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <activity android:label="@string/app_name" android:name="com.adchina.android.ads.views.AdBrowserView"/>
+        <provider android:authorities="com.zhangda.lianliankan.xiaoniao.AdContentProvider" android:exported="false" android:multiprocess="true" android:name="com.greystripe.android.sdk.AdContentProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.greystripe.android.sdk.AdView">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.mdotm.android.ads.MdotmLandingPage">
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMAdViewOverlayActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="ADMOGO_KEY" android:value="f049af03a4c34d419b043b56585a3625"/>
+        <meta-data android:name="NEW_APP_ID" android:value="20073266"/>
+        <activity android:name="com.VBlmSM.VemfFBVA"/>
+        <activity android:name="com.VBlmSM.wwltBMCp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.dianjin.activity.OfferAppActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.nd.dianjin.broadcastreceiver.PackagedChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+</manifest>

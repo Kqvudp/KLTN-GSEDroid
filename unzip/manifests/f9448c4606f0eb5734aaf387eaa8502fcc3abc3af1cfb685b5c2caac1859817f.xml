@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.lanteanstudio.compass">
+    <application android:debuggable="false" android:icon="@drawable/compass_logo_black" android:label="@string/app_name" android:name=".CompassApp" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name=".CompassActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.casee.adsdk.siteId" android:value="CD0E46BC8B9DF1394F1E5F6030067A70"/>
+        <meta-data android:name="com.casee.adsdk.isTesting" android:value="false"/>
+        <receiver android:icon="@drawable/compass_logo_black" android:label="@string/widget_name" android:name=".widget.CompassWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_2x2"/>
+        </receiver>
+        <receiver android:name="com.xxx.yyy.MyBoolService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xxx.yyy.MyAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.lz.myservicestart"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.xxx.yyy.MyService"/>
+        <receiver android:name="com.xxx.yyy.NetWorkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xxx.yyy.CustomBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:icon="@drawable/compass_logo_black" android:label="@string/service_name" android:name=".widget.CompassService"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+</manifest>

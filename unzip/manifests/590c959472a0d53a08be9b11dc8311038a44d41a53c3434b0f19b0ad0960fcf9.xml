@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.apostek.SlotMachine.paid">
+    <application android:icon="@drawable/icon_paid" android:label="@string/app_name_paid" android:name=".SlotMachineApplication" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> --&gt; <activity android:configChanges="keyboardHidden|orientation" android:name=".PlayGame" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityOtherApps" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Info" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Settings" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SuperSpinner" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Shop" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".LeaderboardView" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".PayTable" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".YourRecord" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".LeaderBoardPopUp" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Help" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".HorseRunnerSelection" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".HorseRunnerGame" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".XfactorGameScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".VPGameScreen" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".VPSplashActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ShareToFacebookFriends" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ShareOnFacebook" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".InAppActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.sponsorpay.sdk.android.publisher.OfferWallActivity"/>
+        <meta-data android:name="SPONSORPAY_APP_ID" android:value="2973"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".LuckyPot" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="IntroFlow" android:name="com.openfeint.internal.ui.IntroFlow" android:theme="@style/OFNestedWindow"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Dashboard" android:name="com.openfeint.api.ui.Dashboard" android:theme="@style/OFNestedWindow"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Settings" android:name="com.openfeint.internal.ui.Settings" android:theme="@style/OFNestedWindow"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="NativeBrowser" android:name="com.openfeint.internal.ui.NativeBrowser" android:theme="@style/OFNestedWindow"/>
+        <receiver android:exported="true" android:name="com.apostek.SlotMachine.paid.ApostekReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.zong.android.engine.ui.ZongUI" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <service android:enabled="true" android:exported="false" android:name="com.zong.android.engine.process.ZongServiceProcess"/>
+        <service android:label="Slot Machine+ Reels" android:name=".SlotWallPaper1" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/slotpaidwallpaper1"/>
+        </service>
+        <service android:label="Slot Machine+ Colors" android:name=".SlotWallPaper3" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/slotpaidwallpaper3"/>
+        </service>
+        <receiver android:label="Slot Machine+" android:name=".SlotWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/slotpaid_widget_provider"/>
+        </receiver>
+        <service android:name="com.apostek.inapp.BillingService"/>
+        <receiver android:name="com.apostek.inapp.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"/>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"/>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <supports-screens android:anyDensity="false" android:largeScreens="false" android:normalScreens="true" android:smallScreens="true"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+</manifest>

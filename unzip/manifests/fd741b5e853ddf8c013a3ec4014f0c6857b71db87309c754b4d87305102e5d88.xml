@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.tonee.monster.widgets.free">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.dlauncher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.motorola.dlauncher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.lge.launcher.permission.INSTALL_SHORTCUT"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="AcHelp" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="AcMyApps" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="AcFullVersion" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="AcApplicationLunchers" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="AcExitMessage" android:screenOrientation="portrait" android:theme="@style/Theme.Translucent"/>
+        <activity android:label="@string/app_name" android:name="AcNoAdsMessage" android:screenOrientation="portrait" android:theme="@style/Theme.Translucent"/>
+        <activity android:label="@string/app_name" android:name="AcRateMeWith5Stars" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="AcNewspaper" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="AcEULA" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="AcAbout" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="AcConfigure2x2" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:label="@string/app_name_widget_2x2" android:name="Widget2x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_2x2_provider"/>
+        </receiver>
+        <service android:enabled="true" android:name="com.apperhand.device.android.AndroidSDKProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds"/>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"/>
+        <receiver android:name="com.airpush.android.MessageReceiver"/>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"/>
+        <receiver android:name="org.tonee.monster.widgets.free.airpush.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart16433"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

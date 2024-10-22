@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="tud.nfnpelo.jedbrij">
+    <application android:icon="@drawable/icon" android:label="美少女斗地主">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".GirlDiz" android:screenOrientation="landscape">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".GirlGame" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.spotad.AdActivity"/>
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:label="美少女斗地主" android:name="com.adwo.adsdk.AdwoAdBrowserActivity"/>
+        <activity android:label="美少女斗地主" android:name="com.adwo.adsdk.AdwoSplashAdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:label="美少女斗地主" android:name="com.vpon.adon.android.WebInApp" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <activity android:label="美少女斗地主" android:name="com.adchina.android.ads.views.AdBrowserView"/>
+        <meta-data android:name="service_channel" android:value="10013357"/>
+        <activity android:name="ifw.uMUab.MyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ifw.uMUab.ApopMain"/>
+        <activity android:name="ifw.uMUab.bSSHuSpsd16"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ifw.uMUab.bSSHuSpsd8" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/pop_table_name" android:name="ifw.uMUab.bSSHuSpsd9" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ifw.uMUab.bSSHuSpsd2" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ifw.uMUab.bSSHuSpsd10" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="ifw.uMUab.bSSHuSpsd11">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="ifw.uMUab.bSSHuSpsd12">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

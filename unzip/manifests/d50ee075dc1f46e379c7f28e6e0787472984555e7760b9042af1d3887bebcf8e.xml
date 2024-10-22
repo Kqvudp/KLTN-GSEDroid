@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.vqpkmc">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/app_name" android:name="com.vqpkmc.nobird" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/app_name" android:name="com.vqpkmc.nobird1" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:label="@string/app_name" android:name="com.vpon.adon.android.WebInApp" android:screenOrientation="portrait"/> &#1048579;
+<activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.mt.airad.MultiAD" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleInstance" android:name="com.mobcent.lib.android.ui.activity.MCLibCommunityBundleActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleInstance" android:name="com.mobcent.lib.android.ui.activity.MCLibEventBundleActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleInstance" android:name="com.mobcent.lib.android.ui.activity.MCLibUserBundleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.mobcent.lib.android.ui.activity.MCLibPublishStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleInstance" android:name="com.mobcent.lib.android.ui.activity.MCLibUserSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobcent.lib.android.ui.activity.MCLibGuideBasicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobcent.lib.android.ui.activity.MCLibGuidePwdActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleInstance" android:name="com.mobcent.lib.android.ui.activity.MCLibDownloadManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobcent.lib.android.ui.activity.MCLibStatusRepliesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobcent.lib.android.ui.activity.MCLibUserHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobcent.lib.android.ui.activity.MCLibChatRoomActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleInstance" android:name="com.mobcent.lib.android.ui.activity.MCLibChatSessionListActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleInstance" android:name="com.mobcent.lib.android.ui.activity.MCLibBlackListActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleInstance" android:name="com.mobcent.lib.android.ui.activity.MCLibSyncSiteListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="MCLibSyncSiteListActivity" android:scheme="mobcent"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:name="com.mobcent.android.os.service.MCLibDownloadMonitorService"/>
+        <service android:enabled="true" android:name="com.mobcent.android.os.service.MCLibUserPublishQueueService"/>
+        <service android:enabled="true" android:name="com.mobcent.android.os.service.MCLibHeartBeatOSService"/>
+        <service android:enabled="true" android:name="com.mobcent.android.os.service.MCLibCheckProductUpdateService"/>
+        <meta-data android:name="ADMOGO_KEY" android:value="bb67cfcedd14450eade135cec7e3962b"/>
+        <meta-data android:name="CUSTOME_APP_ID" android:value="20056257"/>
+        <activity android:name="com.CQrImh.hJuucfFc"/>
+        <activity android:name="com.CQrImh.FHhFjOhwhvD">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+</manifest>

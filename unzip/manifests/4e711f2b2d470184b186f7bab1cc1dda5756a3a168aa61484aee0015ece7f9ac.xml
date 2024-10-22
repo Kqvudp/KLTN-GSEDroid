@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android.sharedUserId="com.netmite.andme" package="com.amilwne.weceu.krtwkhqq.nqkqwb">
+    <application android:icon="@drawable/res_icon" android:label="战国传奇">
+        <activity android:icon="@drawable/res_icon" android:label="LTZGCQ" android:name="com.amilwne.weceu.krtwkhqq.nqkqwb.MyMidlet">
+            <intent-filter/>
+            <meta-data android:name="midleturl" android:value="http://www.netmite.com/apks/lakoo/jar/N95.jad"/>
+            <meta-data android:name="midletname" android:value="LTZGCQ"/>
+            <meta-data android:name="midleticon" android:value="/res/icon.png"/>
+            <meta-data android:name="midletclass" android:value="com.MyMidlet"/>
+            <meta-data android:name="launcherversion" android:value="2.0"/>
+            <meta-data android:name="launcherversioncode" android:value="2000"/>
+        </activity>
+        <meta-data android:name="NEW_APP_ID" android:value="20053022"/>
+        <activity android:name="com.qdoRF.AkfUcwshMQDdQ"/>
+        <activity android:name="com.qdoRF.vEphGedQWhKRkQ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

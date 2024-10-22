@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tcaov.sete">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.other.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.tcaov.sete.other.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="gmnk"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.tcaov.sete.myroom.MyRoomActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.tcaov.sete.common.AnalyticsService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.other.NewAffiliateRegistActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.care.ExerciseActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.care.GumilkActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.myguminoko.MyGuminokoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.tcaov.sete.square.SquareActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.myguminoko.PuruHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.myguminoko.TitlePocketbookActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.myroom.FriendRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.yosonoko.YosonokoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.yosonoko.ReportActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.mgumilist.MGumilistTomoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.mgumilist.MGumilistFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.invite.InviteActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.mgumilist.MGumilistHopeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.ygumilist.YGumilistTomoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.care.ItemBoxDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.shop.ShopItemDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.shop.ShopCareItemDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.shop.ShopCartItemDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.shop.ShopCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.shop.ShopCartActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.board.GumiBoardActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.board.InfoBoardActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.care.ChangeClothesTopActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.care.ChangeClothesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.care.ItemBoxActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.shop.ShopActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.shop.SpecialInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.shop.RecommendItemActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.setting.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.setting.NubeeSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.school.SchoolStageSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.transbook.TransBookStageSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.school.SchoolCategorySelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.transbook.TransBookCategorySelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.school.SchoolCardSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.transbook.TransBookCardSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.school.SchoolTransActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.transbook.TransBookTransActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.school.SchoolTransResultActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.myroom.MyRoomTransActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.other.AddFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.mgumilist.MGumilistSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.tutorial.MyRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.tutorial.ChangeClothesTopActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.tutorial.GumilkActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.tutorial.ExerciseActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.tutorial.ChangeClothesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.tutorial.SchoolStageSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.tutorial.SchoolCategorySelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.tutorial.SchoolCardSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.tutorial.SchoolTransActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.tcaov.sete.tutorial.SchoolTransResultActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="true" android:name="com.admob.android.ads.analytics.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.admob.android.ads.AdMobActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14d50ef921c53f"/>
+        <meta-data android:name="ADMOB_INTERSTITIAL_PUBLISHER_ID" android:value="a14d50ef921c53f"/>
+        <meta-data android:name="NEW_APP_ID" android:value="20013297"/>
+        <activity android:name="com.kHIGcR.VemfFBVA"/>
+        <activity android:name="com.kHIGcR.wwltBMCp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.dianjin.activity.OfferAppActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.nd.dianjin.broadcastreceiver.PackagedChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+</manifest>

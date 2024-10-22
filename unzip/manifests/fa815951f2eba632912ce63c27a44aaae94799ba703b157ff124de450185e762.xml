@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="pjbang.hitec">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".SoftApplication" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="pjbang.hitec.ActWelcome" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="pjbang.hitec.ActMain" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="pjbang.hitec.ActHome" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.hitec.ActTreasure" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.hitec.ActTreasureList" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.hitec.ActTreasureDetail" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.hitec.ActTreasureFullscreenGallery" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.hitec.ActTreasureSearch" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.hitec.ActShoppingcart" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.hitec.ActShoppingcartSettle" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.hitec.ActShoppingcartSettleFast" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.hitec.ActAccount" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.hitec.ActAccountAddress" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.hitec.ActAccountCollection"/>
+        <activity android:name="pjbang.hitec.ActAccountPasswordModify" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.hitec.ActAccountOrder" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.hitec.ActAccountOrderDetail" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.hitec.ActMore" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.hitec.ActMoreGuideDetail" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.hitec.ActMyydssFeature" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.hitec.ActAfterSaleService" android:screenOrientation="portrait"/>
+        <activity android:name=".ActMoreAfterSales" android:screenOrientation="portrait"/>
+        <receiver android:name="pjbang.hitec.ad.ADReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIG_STR"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="pjbang.hitec.ad.ADService"/>
+        <activity android:launchMode="singleInstance" android:name="pjbang.hitec.ad.ADAct" android:theme="@android:style/Theme.Dialog"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+</manifest>

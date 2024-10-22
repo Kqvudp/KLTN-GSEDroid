@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="movecont2.musichuangmeixi">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="MyMain" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <meta-data android:name="WAPS_ID" android:value="b465b52e20fd60225a91b464b50b24d9"/>
+        <meta-data android:name="WAPS_PID" android:value="WAPS"/>
+        <meta-data android:name="Wooboo_PID" android:value="86f294aa3b4642b4a5c2e19a24848e61"/>
+        <meta-data android:name="Market_ID" android:value="1"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+</manifest>

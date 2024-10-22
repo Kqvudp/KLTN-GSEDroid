@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sivartech.spyphone">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="SpyPhoneApplication">
+        <activity android:label="@string/app_name" android:name=".LicenseCheck" android:screenOrientation="user" android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+                <data android:mimeType="image/jpg"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="a_camera" android:screenOrientation="user" android:theme="@style/MyTheme"/>
+        <activity android:label="@string/app_name" android:name="a_audio" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:label="@string/app_name" android:name="a_video" android:screenOrientation="user" android:theme="@style/MyTheme"/>
+        <receiver android:label="@string/widget_name" android:name=".SpyPhoneWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/spyphone_widget"/>
+        </receiver>
+        <service android:name="SpyPhoneService"/>
+        <activity android:label="@string/app_name" android:name="a_videoFroyo" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:name="com.sivartech.SpyPhoneBase.a_audio"/>
+        <activity android:name="com.sivartech.SpyPhoneBase.a_camera"/>
+        <activity android:label="@string/app_name" android:name="com.sivartech.SpyPhoneBase.Preferences" android:theme="@style/MyTheme"/>
+        <activity android:name="com.sivartech.SpyPhoneBase.a_video"/>
+        <activity android:name="com.sivartech.SpyPhoneBase.a_videoFroyo"/>
+        <service android:name="com.sivartech.SpyPhoneBase.SpyPhoneService"/>
+        <receiver android:name="com.sivartech.SpyPhoneBase.SpyPhoneWidget"/>
+    </application>
+</manifest>

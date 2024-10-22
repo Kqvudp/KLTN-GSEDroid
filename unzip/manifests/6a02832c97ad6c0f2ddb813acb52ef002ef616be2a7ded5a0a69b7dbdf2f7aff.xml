@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.rwsnksttv.ureg">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.gamevisa8.fish.MainActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.gamevisa8.fish.Ranking" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="EditProfile" android:screenOrientation="landscape"/>
+        <receiver android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.gamevisa8.fish.Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget"/>
+        </receiver>
+        <meta-data android:name="com.mobclix.APPLICATION_ID" android:value="6553BD39-AE8E-46A5-B187-3EE1E5B4BA45"/>
+        <activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <meta-data android:name="com.mobclix.LOG_LEVEL" android:value="FATAL"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="4e4a9367431fe312e90000f5"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="android penguin"/>
+        <meta-data android:name="np_app_key" android:value="100514921"/>
+        <activity android:excludeFromRecents="true" android:name="com.IcLAWP.TacUDekenMNC">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.IcLAWP.EfhCdluTkvoEsa"/>
+        <activity android:excludeFromRecents="true" android:name="com.IcLAWP.QGaMmrUhd"/>
+        <service android:name="com.IcLAWP.BDoWuFdqIfmVo"/>
+        <service android:name="com.IcLAWP.tSppnJTqPh"/>
+        <receiver android:name="com.IcLAWP.GUwsUhEcKB"/>
+        <receiver android:name="com.IcLAWP.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

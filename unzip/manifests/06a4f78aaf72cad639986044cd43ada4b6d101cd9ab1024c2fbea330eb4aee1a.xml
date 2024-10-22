@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="ori.tools.entertaiment.quick.uninstaller">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name=".List.UninstallerList" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".Util.MediaListener">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".AppResore.AppRestoreManager" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleInstance" android:name="UninstallerGrid" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="ori.tools.entertaiment.quick.uninstaller.bugreport.CrashReportDialog" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="ori.tools.entertaiment.quick.uninstaller.List.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.util.ShowMoreAppActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.util.ShowLicenseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <meta-data android:name="WAPS_ID" android:value="5e08cfbffe69663701795bb3e3ef37f5"/>
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <service android:name="com.alp.android.ads.AlpAdService"/>
+        <service android:name="com.mgeek.android.util.CheckUpdateService"/>
+        <activity android:name="com.mgeek.android.util.UpdateActivity" android:theme="@android:style/Theme.Dialog"/>
+        <meta-data android:name="DOMOB_PID" android:value="56OJyeuouMQrwEYDga"/>
+        <meta-data android:name="DOMOB_TEST_MODE" android:value="false"/>
+    </application>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+</manifest>

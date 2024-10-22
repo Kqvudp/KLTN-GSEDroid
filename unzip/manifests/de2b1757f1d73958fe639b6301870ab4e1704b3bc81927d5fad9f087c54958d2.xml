@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.activator">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".ActivatorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

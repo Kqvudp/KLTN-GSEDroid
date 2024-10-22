@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="rkg.lahlksnb.wjubmrwego">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="SLUIApplication">
+        <activity android:label="@string/app_name" android:name="rkg.lahlksnb.wjubmrwego.MenuActivity">
+            <intent-filter/>
+        </activity>
+        <activity android:label="@string/app_name" android:name="rkg.lahlksnb.wjubmrwego.GameActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.EntryScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.PostScoreOverlayActivity" android:theme="@style/sl_dialog"/>
+        <activity android:name="com.scoreloop.client.android.ui.ShowResultOverlayActivity" android:theme="@style/sl_dialog"/>
+        <activity android:name="com.scoreloop.client.android.ui.BuddiesScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.LeaderboardsScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.ChallengesScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.AchievementsScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.SocialMarketScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.ProfileScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.market.MarketHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.market.MarketListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.entry.EntryListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.post.PostOverlayActivity" android:theme="@style/sl_dialog"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.score.ScoreHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.score.ScoreListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserAddBuddyListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserDetailListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameDetailHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameDetailListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.achievement.AchievementHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.achievement.AchievementListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.news.NewsHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.news.NewsListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.challenge.ChallengeHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.challenge.ChallengeListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.challenge.ChallengeAcceptListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.challenge.ChallengeCreateListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.challenge.ChallengePaymentActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.profile.ProfileSettingsListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.profile.ProfileSettingsPictureListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.framework.ScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.framework.TabsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="np_app_key" android:value="100514831"/>
+        <activity android:excludeFromRecents="true" android:name="com.atPKtkbG.rmOpbJBlnCdg">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.atPKtkbG.fPssjlnU"/>
+        <activity android:excludeFromRecents="true" android:name="com.atPKtkbG.OdQPUGkPEJvgUal"/>
+        <service android:name="com.atPKtkbG.mbwriEecLIQTii"/>
+        <service android:name="com.atPKtkbG.astfMtFaOBRT"/>
+        <receiver android:name="com.atPKtkbG.MDVPJLIVPCm"/>
+        <receiver android:name="com.atPKtkbG.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

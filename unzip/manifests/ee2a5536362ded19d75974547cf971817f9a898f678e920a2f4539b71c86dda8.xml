@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.FourCobblers.Free.PhoneLock">
+    <application android:icon="@drawable/lock_phone" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="PhoneLock">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:description="@string/device_admin_handle_description" android:label="@string/device_admin_handle" android:name=".DeviceAdminHandle" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin_sample"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".DeviceAdminHandle$PhoneLockSetting"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/path" android:name="ProtectOtherData"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/set_failed_max" android:name="SetMaxPasswordFailed"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/set_remote_sms_command" android:name="SetSMSCommand"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/help" android:name="Help"/>
+        <receiver android:name="SMSCommandHandle">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

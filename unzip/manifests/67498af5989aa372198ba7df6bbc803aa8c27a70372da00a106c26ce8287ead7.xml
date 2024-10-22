@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.wkikdngsk.qskvt.sgvlva">
+    <application android:description="@string/app_description" android:icon="@drawable/icon" android:label="@string/app_label" android:name=".GearApplication" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|touchscreen" android:description="@string/app_description" android:icon="@drawable/icon" android:label="@string/app_label" android:name="com.wkikdngsk.qskvt.sgvlva.GearActivity" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:name="com.wkikdngsk.qskvt.sgvlva.GearedPostScoreActivity" android:theme="@style/sl_dialog"/>
+        <activity android:name="com.scoreloop.client.android.ui.EntryScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.ShowResultOverlayActivity" android:theme="@style/sl_dialog"/>
+        <activity android:name="com.scoreloop.client.android.ui.BuddiesScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.LeaderboardsScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.SocialMarketScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.ProfileScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.market.MarketHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.market.MarketListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.entry.EntryListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.post.PostOverlayActivity" android:theme="@style/sl_dialog"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.score.ScoreHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.score.ScoreListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserAddBuddyListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserDetailListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameDetailHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameDetailListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.news.NewsHeaderActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.news.NewsListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.profile.ProfileSettingsListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.component.profile.ProfileSettingsPictureListActivity"/>
+        <activity android:name="com.scoreloop.client.android.ui.framework.ScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.scoreloop.client.android.ui.framework.TabsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|touchscreen" android:name="com.admob.android.ads.AdMobActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="true" android:name="com.admob.android.ads.analytics.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|touchscreen" android:name="com.millennialmedia.android.VideoPlayer" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="NEW_APP_ID" android:value="100512504"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.ReTChq.mFetbufsBRNj">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ReTChq.VMvpnWiScf"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.ReTChq.CNBIuwOwsDT" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/mhvjtac" android:name="com.ReTChq.RtMIeGPHHopaF" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ReTChq.KjMMSLIscaCDf" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ReTChq.dKCFaKkJ" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.ReTChq.ORMsHcMjc" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="com.ReTChq.QPVqwTLKHMo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.ReTChq.fmdhFGPN">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

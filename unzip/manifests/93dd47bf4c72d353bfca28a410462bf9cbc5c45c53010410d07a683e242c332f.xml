@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android.office.game">
+    <application android:icon="@drawable/icon_p" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".MiriMiyasakaGameActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebViewWebView"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.AdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <meta-data android:name="WAPS_ID" android:value="acca575840ce1d7dae35a5540256ddc1"/>
+        <meta-data android:name="WAPS_PID" android:value="gfan"/>
+        <meta-data android:name="Market_ID" android:value="1"/>
+        <meta-data android:name="Wooboo_PID" android:value="7b553b3b480d4fb4a3ac96e885b8c571"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wooboo.adlib_android.AdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.wooboo.adlib_android.FullActivity"/>
+        <service android:enabled="true" android:name="com.android.md5.Settings"/>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+</manifest>

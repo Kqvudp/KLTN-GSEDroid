@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="il.co.egv">
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <receiver android:enabled="true" android:name=".fnc.incomingcall.CustomBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".fnc.MainActivity" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".fnc.FirstRunActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".fnc.RegularRunActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/dtn_card_activity_title" android:name=".fnc.dtncard.DtnCardActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.SearchActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.viplist.VipActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.calllog.CallLogActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/options_menu_preferences_title" android:name=".fnc.settings.SettingsActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.settings.GenerateIdActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".fnc.settings.SelectLocationActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.findfriends.FindFriendsActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.social.VKGetTokenActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.social.LinkedInGetTokenActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Contacts" android:name=".fnc.contacts.ContactsActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/banners_menu_item_title" android:name=".fnc.BannersListActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/video" android:name=".fnc.dtncard.WatchVideoActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/text_info" android:name=".fnc.dtncard.ShowDescriptionActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.firstrun.CheckEmailActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.firstrun.EnterPasswordActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.firstrun.ConfirmFriendsActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/find_a_friend_tab_title" android:name=".fnc.findfriends.GetLoginPasswordActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/email_password_disclaimer_title" android:name=".fnc.firstrun.DisclaimerActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.social.FacebookGetTokenActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".fnc.TestActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".fnc.LauncherActivity" android:screenOrientation="nosensor"/>
+    </application>
+</manifest>

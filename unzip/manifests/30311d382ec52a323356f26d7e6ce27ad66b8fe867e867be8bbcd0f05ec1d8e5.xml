@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ctia.iconosys.motorola.eng">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name=".MeInJail" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="PhotoView" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="mmsto"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="OtherApps" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ShowTerms" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".RegistrationScreen" android:screenOrientation="portrait"/>
+        <service android:name="LocationSender"/>
+        <activity android:name="ShareImage" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ShowPopUp" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="AdView" android:screenOrientation="portrait"/>
+    </application>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+</manifest>

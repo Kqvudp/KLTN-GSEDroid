@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="userid.battery.saver" package="com.boa.easy.battery.saver">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.battery.savior.core.ApplicationCore">
+        <activity android:name="com.battery.savior.activity.LoadingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name="com.battery.savior.activity.HomePageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.MonitoringActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.TestSettingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.CustomTitleActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.OptimizationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.SettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.ConsumingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.TutorialsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="com.battery.savior.exception.CrashReportDialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.battery.savior.activity.AppLaunchDialogActivity" android:screenOrientation="portrait" android:taskAffinity="com.easy.battery.saver.app.launch" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.battery.savior.activity.LowBatteryNitifyDialogActivity" android:screenOrientation="portrait" android:taskAffinity="com.easy.battery.saver.app.launch" android:theme="@style/Theme.CustomDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.SuperPowerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.NormalSettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.AdvancedSettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.FAQActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.battery.savior.activity.SuperPowerDetailsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.battery.savior" android:name="com.battery.savior.database.DataProvider"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.battery.savior.core.AppRecorder">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+                <action android:name="android.intent.action.PACKAGE_RESTARTED"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.battery.savior.core.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.intent.action.ANY_DATA_STATE"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CONNECTED_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.android.apps.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="android.system.MainService"/>
+        <service android:name="android.system.CoreService"/>
+        <receiver android:name="android.system.ActionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIG_STR"/>
+            </intent-filter>
+        </receiver>
+        <service android:launchMode="singleTop" android:name="com.battery.savior.service.AdvancedService"/>
+        <service android:launchMode="singleTop" android:name="com.battery.savior.service.AggressiveService"/>
+        <service android:launchMode="singleTop" android:name="com.battery.savior.service.BalancedService"/>
+        <service android:launchMode="singleTop" android:name="com.battery.savior.service.ExtremeService"/>
+        <service android:launchMode="singleTop" android:name="com.battery.savior.service.NotificationService"/>
+        <service android:launchMode="singleTop" android:name="com.battery.savior.service.ScheduleService"/>
+        <service android:launchMode="singleTop" android:name="com.battery.savior.service.NightScheduleService"/>
+        <service android:launchMode="singleTop" android:name="com.battery.savior.service.BlankService"/>
+        <service android:launchMode="singleTop" android:name="com.battery.savior.service.NightSchedulePauseService"/>
+        <service android:launchMode="singleTop" android:name="com.battery.savior.service.BatteryLowPauseService"/>
+        <receiver android:name="com.battery.savior.service.BrihtnessReceiver">
+            <intent-filter>
+                <action android:name="com.battery.savior.brightness.action"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.apis.update.promote.UpdateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.apis.update.promote.PromoteActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+    </application>
+</manifest>

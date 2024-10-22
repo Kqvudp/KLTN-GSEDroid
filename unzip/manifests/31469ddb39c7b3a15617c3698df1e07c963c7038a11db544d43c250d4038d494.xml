@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.driftwood.wallpaper.easternglownight.free">
+    <uses-feature android:name="android.software.live_wallpaper"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <service android:enabled="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".Wallpaper" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter android:priority="1">
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"/>
+        </service>
+        <activity android:exported="true" android:name=".LeadBoltAd">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:name="com.apperhand.device.android.AndroidSDKProvider"/>
+        <activity android:exported="true" android:label="Home" android:name=".OpenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.senddroid.AdService">
+            <intent-filter>
+                <action android:name="com.senddroid.AdServicecom.driftwood.wallpaper.easternglownight.free"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.driftwood.wallpaper.easternglownight.free.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.appbrain.AppBrainActivity"/>
+        <service android:name="com.appbrain.AppBrainService"/>
+        <receiver android:exported="true" android:name="com.appbrain.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:label="Settings" android:name=".WallpaperSettings" android:theme="@android:style/Theme.WallpaperSettings"/>
+    </application>
+</manifest>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.davidliebman.android.awesomeguy">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:debuggable="false" android:icon="@drawable/guy_icon" android:label="@string/app_name">
+        <activity android:clearTaskOnLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name=".TermsOfService" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:name=".Menu">
+            <intent-filter>
+                <action android:name="org.davidliebman.android.awesomeguy.Menu"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Help">
+            <intent-filter/>
+        </activity>
+        <activity android:name=".Story">
+            <intent-filter/>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:name=".GameStart" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="org.davidliebman.android.awesomeguy.GameStart"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:name=".Options">
+            <intent-filter>
+                <action android:name="org.davidliebman.android.awesomeguy.Options"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Credits">
+            <intent-filter>
+                <action android:name="org.davidliebman.android.awesomeguy.Credits"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:name=".Players">
+            <intent-filter>
+                <action android:name="org.davidliebman.android.awesomeguy.Players"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:name=".Highscores">
+            <intent-filter>
+                <action android:name="org.davidliebman.android.awesomeguy.Highscores"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.eguan.state.Dialog" android:theme="@android:style/Theme.Dialog"/>
+        <service android:name="com.eguan.state.StateService"/>
+        <receiver android:name="com.eguan.state.Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED_ACTION"/>
+                <action android:name="android.intent.action.SIG_STR"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <meta-data android:name="ADMOGO_KEY" android:value="cedf24b89c5e422dac4a13ec25e1b94d"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

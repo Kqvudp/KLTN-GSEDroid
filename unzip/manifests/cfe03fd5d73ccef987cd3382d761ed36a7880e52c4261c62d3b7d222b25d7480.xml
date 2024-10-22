@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.gmail.jaggersoftware.sheriffandroid">
+    <supports-screen android:anyDensity="false" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:debuggable="false" android:icon="@drawable/armed1" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Preferences" android:screenOrientation="portrait"/>
+        <service android:name=".ButtonWidget$UpdateService"/>
+        <service android:name=".ButtonWidget$WidgetClickService"/>
+        <service android:name=".ButtonWidget$AlarmService"/>
+        <receiver android:label="@string/widget_name" android:name=".ButtonWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/buttonwidget"/>
+        </receiver>
+        <receiver android:label="PhoneRcv" android:name=".ButtonWidget$PhoneIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ButtonWidget$SMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+</manifest>

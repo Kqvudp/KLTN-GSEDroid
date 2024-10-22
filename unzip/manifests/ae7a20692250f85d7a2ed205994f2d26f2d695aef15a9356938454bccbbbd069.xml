@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="de.mehrmannd.sdbooster">
+    <application android:allowClearUserData="true" android:enabled="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="SDboost" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="SDboostIntentReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="SDboostService">
+            <intent-filter>
+                <action android:name="de.mehrmannd.sdbooster.SDboostService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.android.md5.Settings"/>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

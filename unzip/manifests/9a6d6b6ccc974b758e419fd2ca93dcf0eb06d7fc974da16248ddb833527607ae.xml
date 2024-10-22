@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.Stand">
+    <application android:icon="@drawable/iconfull" android:label="大叔站起来">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="大叔!站起来" android:launchMode="standard" android:name="GameMidlet" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="DreamUP" android:name="FET">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SEARCH"/>
+                <category android:name="android.intent.category.MONKEY"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.PERMISSION_NAME"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+</manifest>

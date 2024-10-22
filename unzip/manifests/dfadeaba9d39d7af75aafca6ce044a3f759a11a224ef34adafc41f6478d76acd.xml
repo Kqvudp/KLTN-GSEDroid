@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.accutracking">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="fontScale|keyboardHidden|mnc|orientation" android:excludeFromRecents="true" android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTask" android:name=".AccuTracking">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.accutracking.action.GPS.UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.accutracking.action.STATUS.UPDATE"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="Settings" android:name="SettingsActivity"/>
+        <service android:name="TrackingService">
+            <intent-filter>
+                <action android:name="com.accutracking.action.SETTINGS.UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.accutracking.action.GPS.UPDATE.REQUEST"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.accutracking.action.ALARM"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:name="AutoStartReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+</manifest>

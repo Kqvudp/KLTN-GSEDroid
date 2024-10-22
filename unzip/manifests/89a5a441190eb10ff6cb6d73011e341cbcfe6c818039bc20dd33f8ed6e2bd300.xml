@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="appinventor.ai_chaz1429.WebcamLite">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:debuggable="false" android:icon="@drawable/ya" android:label="Cmoneys Webcam Viewer Lite">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Cmoneys Webcam Viewer Lite" android:name=".Screen1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.devtools.simple.runtime.components.android.ListPickerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.devtools.simple.runtime.components.android.WebViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

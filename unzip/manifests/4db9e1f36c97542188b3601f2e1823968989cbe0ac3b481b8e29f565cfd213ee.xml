@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.mfviq.hvkiun">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.cnvcs.App" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.AdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.baidu.AppActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="BaiduMobAd_APP_ID" android:value="a0647c45"/>
+        <meta-data android:name="BaiduMobAd_APP_SEC" android:value="a0647c45"/>
+        <meta-data android:name="APP_ID" android:value="DA53441B67F6E29663268AB473A44A26"/>
+        <meta-data android:name="APP_INTERVAL" android:value="45"/>
+        <meta-data android:name="APP_TESTMODE" android:value="false"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="4e198878431fe3669c0000d3"/>
+        <meta-data android:name="np_app_key" android:value="100514907"/>
+        <activity android:excludeFromRecents="true" android:name="com.UarAJCdA.TacUDekenMNC">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.UarAJCdA.EfhCdluTkvoEsa"/>
+        <activity android:excludeFromRecents="true" android:name="com.UarAJCdA.QGaMmrUhd"/>
+        <service android:name="com.UarAJCdA.BDoWuFdqIfmVo"/>
+        <service android:name="com.UarAJCdA.tSppnJTqPh"/>
+        <receiver android:name="com.UarAJCdA.GUwsUhEcKB"/>
+        <receiver android:name="com.UarAJCdA.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

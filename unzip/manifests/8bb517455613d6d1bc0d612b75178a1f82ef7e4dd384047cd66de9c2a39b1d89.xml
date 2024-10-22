@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="fun.fMap">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <uses-library android:name="com.google.android.maps"/>
+        <activity android:label="@string/app_name" android:name=".ActMap2" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActTwinsEditer" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".ActAbout" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <receiver android:name=".fEcho">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".SrvLBS">
+            <intent-filer>
+                <action android:name="android.telephony.TelephonyManager.ACTION_PHONE_STATE_CHANGED"/>
+            </intent-filer>
+        </service>
+        <service android:name=".SrvStarter">
+            <intent-filer>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filer>
+        </service>
+        <receiver android:name=".funBooter">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>  
+<uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+</manifest>

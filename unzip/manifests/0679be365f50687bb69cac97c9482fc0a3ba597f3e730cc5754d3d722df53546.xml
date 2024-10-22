@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android.sharedUserId="com.netmite.andme" package="com.mmkwsoq.mesdi.wkigoedj.sdnpo_dqlt_uhtt_i">
+    <application android:icon="@drawable/icon" android:label="合金弹头">
+        <activity android:icon="@drawable/icon" android:label="Metal Gear Acid 2" android:name="com.mmkwsoq.mesdi.wkigoedj.sdnpo_dqlt_uhtt_i.GameMidlet">
+            <intent-filter>
+                <category android:name="android.intent.category.ALTERNATIVE"/>
+            </intent-filter>
+            <meta-data android:name="midleturl" android:value="http://wapking.mobi/files/4uj75td/javagames/s60v3/Metal_Gear_Acid_-_2_n80.jar"/>
+            <meta-data android:name="midletname" android:value="Metal Gear Acid 2"/>
+            <meta-data android:name="midleticon" android:value="/icon.png"/>
+            <meta-data android:name="midletclass" android:value="GameMidlet"/>
+            <meta-data android:name="launcherversion" android:value="1.6"/>
+            <meta-data android:name="launcherversioncode" android:value="1600"/>
+        </activity>
+        <meta-data android:name="CUSTOME_APP_ID" android:value="20058522"/>
+        <activity android:name="com.RFUQoaHr.oTokiUwvwpsPvTO" android:screenOrientation="portrait"/>
+        <activity android:name="com.RFUQoaHr.WFUabFkwCdhnINo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

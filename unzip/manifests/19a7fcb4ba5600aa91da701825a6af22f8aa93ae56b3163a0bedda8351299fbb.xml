@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ohh.grpqj.wwot.lmclaeflonhd_blsg">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".LostTreasure_Paid" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity"/>
+        <activity android:name="com.millennialmedia.android.VideoPlayer"/>
+        <meta-data android:name="Market_ID" android:value="1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:name="com.vpon.adon.android.WebInApp" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.mt.airad.MultiAD" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="service_channel" android:value="10055763"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="tlo.vTJgh.UAoSjbFFk21">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="tlo.vTJgh.ApopMain"/>
+        <activity android:name="tlo.vTJgh.UAoSjbFFk16"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="tlo.vTJgh.UAoSjbFFk8" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/pop_table_name" android:name="tlo.vTJgh.UAoSjbFFk9" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="tlo.vTJgh.UAoSjbFFk2" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="tlo.vTJgh.UAoSjbFFk10" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="tlo.vTJgh.UAoSjbFFk22" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="tlo.vTJgh.UAoSjbFFk11">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="tlo.vTJgh.UAoSjbFFk12">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <supports-screens android:anyDensity="false" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

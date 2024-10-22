@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.playink.mafiamob">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".ApplicationController">
+        <activity android:label="@string/app_name" android:name=".StartupActivity" android:screenOrientation="landscape">
+            <intent-filter android:icon="@drawable/icon" android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignIn" android:screenOrientation="landscape"/>
+        <activity android:name=".SignUp" android:screenOrientation="landscape"/>
+        <activity android:name=".MissionActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".EquipmentsActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".WeaponsActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".PokeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".WallActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".MessageActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".AttackActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".HitlistActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".DoctorActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".RealEstateActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".OffersActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".InappPurchaseActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".MatchListActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".InvitationActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".LeaderBoardActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".OptionsActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".NotificationActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".HomeActivity" android:screenOrientation="landscape">
+            <meta-data android:name="Mafia Mob - Android" android:value="24076669"/>
+        </activity>
+        <activity android:name=".TopSeedsActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".TopCashActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".TopChampActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".TopGangSizeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".ChallengedToActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".ChallengedByActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".InvitationsToActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".InvitationsByActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".StatsActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".GetBuddyActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".LevelUpgradeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".ProtectionActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".VehiclesActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".BankActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".ExperienceActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".UpgradeProfileActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".CreateMobsActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".HelpActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".MessupActivity" android:screenOrientation="landscape"/>
+        <service android:name="com.playink.mafiamob.billing.BillingService"/>
+        <receiver android:name="com.playink.mafiamob.billing.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"/>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"/>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds"/>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"/>
+        <receiver android:name="com.airpush.android.MessageReceiver"/>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"/>
+        <receiver android:name="com.playink.mafiamob.util.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart45243"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.flurry.android.CatalogActivity" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.playink.mafiamob.flurryCatalog"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMAdViewOverlayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TJCOffersWebView"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TapjoyFeaturedAppWebView"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TapjoyVideoView"/>
+        <meta-data android:name="SPONSORPAY_APP_ID" android:value="5080"/>`
+<receiver android:exported="true" android:name="com.sponsorpay.sdk.android.advertiser.InstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="NotificationService"/>
+        <meta-data android:name="Mafia Mob - Android" android:value="24076669"/>
+        <activity android:configChanges="orientation" android:name="com.placeplay.ads.implementation.browser.PAAdBrowser"/>
+        <service android:enabled="true" android:name="com.apperhand.device.android.AndroidSDKProvider"/>
+        <meta-data android:name="applovin.sdk.key" android:value="6ZO7iOZXffHOFuG-g7akfPu4zJga5uUFUdyHy4NQxPzu3qlrvBf-B0KUU-yWyxKAoSOey6t7weJiFEWyVWi6i8"/>
+        <service android:name="com.applovin.sdk.AppLovinService">
+            <intent-filter>
+                <action android:name="com.applovin.sdk.AppLovinService"/>
+            </intent-filter>
+        </service>
+        <permission android:name="com.playink.mafiamob.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+        <uses-permission android:name="com.playink.mafiamob.permission.C2D_MESSAGE"/>
+        <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+        <receiver android:name="com.applovin.sdk.AppLovinNotificationReceiver"/>
+        <receiver android:name="com.applovin.sdk.AppLovinPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.playink.mafiamob"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.playink.mafiamob"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

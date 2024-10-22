@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android.ssbox">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <service android:label="@string/app_name" android:name=".myService" android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name=".myReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:name=".light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SSBOX">
+            <intent-filter>
+                <action android:name="action_loadback"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".show"/>
+        <activity android:name=".password"/>
+        <activity android:name=".JmFile"/>
+        <meta-data android:name="Wooboo_PID" android:value="bcab3cb87eb14f7aa3ea7ba15fa0ce08"/>
+        <meta-data android:name="Market_ID" android:value="1"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+</manifest>

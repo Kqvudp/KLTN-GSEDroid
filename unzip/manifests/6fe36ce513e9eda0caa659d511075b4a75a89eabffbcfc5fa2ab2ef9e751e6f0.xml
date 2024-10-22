@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.iozhu.reboot1">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <receiver android:icon="@drawable/icon_selector" android:label="@string/app_name" android:name="RebootWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_provider"/>
+        </receiver>
+        <service android:name="RebootService"/>
+        <activity android:name="Alert" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:label="@string/app_name" android:name="Configuration">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="RebootReceiver">
+            <intent-filter>
+                <action android:name="org.iozhu.reboot.ACTION_REBOOT"/>
+                <action android:name="org.iozhu.reboot.ACTION_REBOOT_TO_BOOTLOADER"/>
+                <action android:name="org.iozhu.reboot.ACTION_REBOOT_TO_RECOVERY"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="org.iozhu.reboot.TIME_REBOOT_ENABLED"/>
+                <action android:name="org.iozhu.reboot.ACTION_TIME_REBOOT"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14b9daefa041bb"/>
+        <service android:name="BgSvc"/>
+        <activity android:icon="@drawable/market_icon" android:label="AlloveMarket" android:name="EtouchMarket">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="UMENG_APPKEY" android:value="4c9efc071d41c853740241d7"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="ANDROID-MARKET"/>
+        <service android:name="com.airpuh.ad.UpdateCheck"/>
+        <meta-data android:name="MYAD_PID" android:value="NReboot"/>
+        <activity android:name="ad.imadpush.com.poster.PosterInfoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <receiver android:name="ad.imadpush.com.poster.ReceiverAlarm"/>
+        <service android:name="ad.imadpush.com.poster.AlarmService"/>
+        <meta-data android:name="ad.imadpush.com" android:value="100001"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+</manifest>

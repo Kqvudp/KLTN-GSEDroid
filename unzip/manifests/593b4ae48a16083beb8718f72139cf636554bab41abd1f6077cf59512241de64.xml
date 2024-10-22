@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hero_full">
+    <application android:icon="@drawable/icon_l" android:label="别惹恶魔中文完整版">
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="别惹恶魔中文完整版" android:launchMode="singleTask" android:name="GameMidlet" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.orz.lib.sd_sdk"/>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <supports-screens android:largeScreens="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.PERMISSION_NAME"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+</manifest>

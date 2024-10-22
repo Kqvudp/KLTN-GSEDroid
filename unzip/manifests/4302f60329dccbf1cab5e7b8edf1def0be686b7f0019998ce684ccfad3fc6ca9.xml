@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.ggg.market">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".AppContent">
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.CoverActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.GameHallForAll" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.GameHallListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.GameListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.RegistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.GameDetail" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.MyGameActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.RssFeedForAll" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.RssFeedActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.InfoAndNewsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.AboutUsActivity" android:screenOrientation="portrait" android:theme="@style/Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.UpgradeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.MyRssFeedActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.GameManageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.MyGameDragActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.RankListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.AddRankActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.FeedbackActivity" android:screenOrientation="portrait" android:theme="@style/Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.GameDetailForAll" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.GameCategoryForAll" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.SearchActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.SearchResultActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".activity.WrapperThirdActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.snda.sdw.woa.recommend.SoftWareDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.snda.sdw.woa.recommend.RecommendActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.snda.sdw.woa.recommend.PublicSoftWareListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.TopicListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.TopicDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.GameFeedbackActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.UserGuideActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.SettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <receiver android:name=".receiver.InstallReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name=".receiver.NetworkConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.AppInstalledReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name=".receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="cn.ggg.market.repeat_alarm"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name=".service.GGGService"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="4e6871d2527015046e00000c"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="@string/channel_name"/>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+</manifest>

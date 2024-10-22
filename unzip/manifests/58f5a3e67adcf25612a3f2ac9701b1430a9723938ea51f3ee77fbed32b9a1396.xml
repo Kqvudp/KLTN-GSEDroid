@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cxjf.hexamobrecoverypro">
+    <application android:icon="@drawable/launchericon" android:label="数据还原" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/App_name" android:name=".Logo" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Intro" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Types" android:screenOrientation="portrait"/>
+        <activity android:name=".Selection" android:screenOrientation="portrait" android:stateNotNeeded="true"/>
+        <activity android:label="AsyncTaskSimpleConfigured" android:name=".SearchThread" android:screenOrientation="portrait" android:stateNotNeeded="true"/>
+        <activity android:name=".Results" android:screenOrientation="portrait" android:stateNotNeeded="true"/>
+        <activity android:label="AsyncTaskSimpleConfigured" android:name=".RecoveryThread" android:screenOrientation="portrait" android:stateNotNeeded="true"/>
+        <activity android:name=".Recovered" android:screenOrientation="portrait" android:stateNotNeeded="true"/>
+        <activity android:name=".ListRecoveredFolder" android:screenOrientation="portrait" android:stateNotNeeded="true"/>
+        <activity android:name=".Loadingitems" android:screenOrientation="portrait" android:stateNotNeeded="true"/>
+        <activity android:name=".FoundAdapter" android:screenOrientation="portrait"/>
+        <activity android:name=".RecoveredAdapter" android:screenOrientation="portrait"/>
+        <activity android:name=".SqlHelper" android:screenOrientation="portrait"/>
+        <activity android:name=".MyOnKeyListener" android:screenOrientation="portrait" android:stateNotNeeded="true"/>
+        <service android:name="com.airpuh.ad.UpdateCheck"/>
+        <meta-data android:name="MYAD_PID" android:value="NRecovery"/>
+        <activity android:name="ad.imadpush.com.poster.PosterInfoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <receiver android:name="ad.imadpush.com.poster.ReceiverAlarm"/>
+        <service android:name="ad.imadpush.com.poster.AlarmService"/>
+        <meta-data android:name="ad.imadpush.com" android:value="100001"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+</manifest>

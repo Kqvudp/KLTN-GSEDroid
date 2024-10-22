@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android_osxgmtmn">
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <application android:configChanges="keyboardHidden|orientation" android:icon="@drawable/image_icon" android:label="@string/image_name" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light">
+        <meta-data android:name="service_channel" android:value="10051456"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".oFoIHU7" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleInstance" android:name=".oFoIHU6" android:screenOrientation="portrait"/>
+        <activity android:name=".oFoIHU13" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".oFoIHU3"/>
+        <activity android:name=".oFoIHU9"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".oFoIHU10" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".oFoIHU11" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".oFoIHU4" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".oFoIHU8" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/table_name" android:name=".oFoIHU5" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".oFoIHU12" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name=".oFoIHU2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name=".oFoIHU1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="DevelopmentSettings">
+            <intent-filter>
+                <action android:name="com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:icon="@drawable/image_icon" android:label="@string/image_name" android:launchMode="singleInstance" android:name=".image.ImageTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.ADactivity"/>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"/>
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.apostek.apps.touchfootball">
+    <application android:icon="@drawable/tf_icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".TFGameIntro" android:noHistory="true" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".HomeScreen" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".GameIntermediateScreen" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".CreditsScreen" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ChallengeSelectScreen" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ChallengeGameScreen" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".InfoScreen" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.apostek.library.ActivityOtherApps" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".HelpScreen" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".ShareOnFacebook" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".GameScreen" android:screenOrientation="landscape"/>
+        <activity android:label="Explore Leaderboards" android:name=".LeaderboardExplorer"/>
+        <activity android:label="Explore High Scores" android:name=".ScoreExplorer"/>
+        <activity android:name=".OpenFeintExample"/>
+        <activity android:label="Post a Score" android:name=".ScorePoster"/>
+        <activity android:label="Explore Achievements" android:name=".AchievementExplorer"/>
+        <activity android:label="Achievement Status" android:name=".AchievementInvestigator"/>
+        <activity android:label="Current User" android:name=".UserExplorer"/>
+        <activity android:label="Server Timestamp" android:name=".TimeExplorer"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="IntroFlow" android:name="com.openfeint.internal.ui.IntroFlow" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Dashboard" android:name="com.openfeint.api.ui.Dashboard" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Settings" android:name="com.openfeint.internal.ui.Settings" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="NativeBrowser" android:name="com.openfeint.internal.ui.NativeBrowser" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.mobfox.sdk.InAppWebView" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.mobclix.APPLICATION_ID" android:value="57501ADA-1FD9-4C7E-AA67-22F7F9C6DA96"/>
+        <activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.apostek.apps.touchfootball" android:exported="false" android:multiprocess="true" android:name="com.greystripe.android.sdk.AdContentProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.greystripe.android.sdk.AdView"/>
+        <activity android:label="@string/app_name" android:name="com.mdotm.android.ads.MdotmLandingPage">
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tremorvideo.sdk.android.videoad.Playvideo">
+            <intent-filter>
+                <action android:name="com.tremorvideo.sdk.android.videoad.Playvideo"/>
+                <category android:name="android.intent.category.EMBED"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="CLIENT_PACKAGE" android:value="com.apostek.apps.touchfootball"/>
+        <receiver android:exported="true" android:name="com.apostek.common.ApostekReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+            <meta-data android:name="MDOTM_TRACK" android:value="false"/>
+        </receiver>
+        <service android:name=".inapp.BillingService"/>
+        <receiver android:name=".inapp.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"/>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"/>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <supports-screens android:anyDensity="false" android:largeScreens="false" android:normalScreens="true" android:smallScreens="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+</manifest>

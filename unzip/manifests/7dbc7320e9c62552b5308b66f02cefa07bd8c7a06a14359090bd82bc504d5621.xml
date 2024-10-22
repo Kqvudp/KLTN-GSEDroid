@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.banana.spycameralite">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <permission android:name="com.banana.spycameralite.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.banana.spycameralite.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <application android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/ss_i_9696" android:installLocation="auto" android:label="@string/app_name_demo" android:largeHeap="true">
+        <meta-data android:name="applovin.sdk.key" android:value="gTJg8NPVL4o0qG7NKbVO84qHD5zZB8XmTQyJ9DsV59ZEeN81-puP_-XqbXV4XDutkSzR5wvE0LbHbuy5RAgbmO"/>
+        <meta-data android:name="applovin.sdk.verbose_logging" android:value="true"/>
+        <service android:name="com.applovin.sdk.AppLovinService">
+            <intent-filter>
+                <action android:name="com.applovin.sdk.AppLovinService"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:name="com.applovin.sdk.AppLovinBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.apperhand.device.android.AndroidSDKProvider"/>
+        <receiver android:name="IconAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_provider"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.banana.spycameralite.ReferralReceiver">	      <intent-filter>	        <action android:name="com.android.vending.INSTALL_REFERRER"/>	      </intent-filter>
+        </receiver>
+        <activity android:name="com.socialize.ui.comment.CommentActivity"/>
+        <activity android:name="com.socialize.ui.action.ActionDetailActivity"/>
+        <activity android:name="com.socialize.ui.profile.ProfileActivity"/>
+        <activity android:name="com.socialize.auth.facebook.FacebookActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.socialize.ui.SocializeLaunchActivity"/>
+        <service android:name="com.socialize.notifications.SocializeC2DMReceiver"/>
+        <receiver android:name="com.socialize.notifications.SocializeBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.banana.spycameralite"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.banana.spycameralite"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.sellaring.sdk.PostCallScreenActivity"/>
+        <receiver android:name="com.sellaring.sdk.AlarmReceiver"/>
+        <receiver android:name="com.sellaring.sdk.RestartAlarmServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.sellaring.sdk.PhoneStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.apperhand.device.android.AndroidSDKProvider"/>
+        <service android:label="@string/app_name_demo" android:name=".service.CameraLiveService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/camera_live_service"/>
+        </service>
+        <service android:enabled="true" android:name="service.CameraService"/>
+        <service android:name="com.banana.spycameralite.inapp.BillingService"/>
+        <receiver android:name="com.banana.spycameralite.inapp.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"/>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"/>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds" android:theme="@android:style/Theme.NoTitleBar"/>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"/>
+        <receiver android:name="com.airpush.android.MessageReceiver"/>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"/>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart16437"/>
+            </intent-filter>
+        </service>
+        <activity android:icon="@drawable/top_apps_icon" android:label="@string/topApps" android:name=".activity.LeadBoltWeb"/>
+        <activity android:name=".activity.PrefTabActivity"/>
+        <activity android:name=".activity.GalleryActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".activity.AdDialogActivity" android:theme="@style/Theme.NoBackground"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true" android:name=".activity.CameraActivity" android:theme="@style/Theme.NoBackground">
+            <intent-filter android:priority="99999999">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.CAMERA_BUTTON"/>
+                <action android:name="android.intent.action.SEARCH_LONG_PRESS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".activity.FullCameraActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:exported="true" android:label="@string/text_setting" android:name=".activity.PrefActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMAdViewOverlayActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer"/>
+        <activity android:name="com.mobfox.sdk.InAppWebView"/>
+        <activity android:hardwareAccelerated="true" android:name="com.mobclix.android.sdk.MobclixBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.Leadbolt.AdNotification"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TJCOffersWebView"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TapjoyFeaturedAppWebView"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TapjoyVideoView"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TJCVirtualGoods" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.tapjoy.DownloadVirtualGood" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="de.madvertise.android.sdk.MadvertiseActivity"/>
+        <meta-data android:name="com.mobclix.APPLICATION_ID" android:value="DA7356F9-7406-44B8-A8A9-0DE8C845A388"/>
+        <meta-data android:name="madvertise_site_token" android:value="aMNRFiza"/>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14d94bb3886f29"/>
+        <meta-data android:name="ADAM_BANNER_KEY" android:value="2c2Z02T12d99992edd"/>
+        <meta-data android:name="TAPIT_ID" android:value="3476.0"/>
+        <meta-data android:name="TAPIT_ZONE_ID" android:value="3745"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.appbrain.AppBrainActivity"/>
+        <service android:name="com.appbrain.AppBrainService"/>
+        <receiver android:exported="true" android:name="com.appbrain.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="org.OpenUDID.OpenUDID_service">
+            <intent-filter>
+                <action android:name="org.OpenUDID.GETUDID"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.rim.nana.laipe">
+    <application android:debuggable="false" android:icon="@drawable/icon4" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="i.l.l.ooooooooo" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14d1d6fc9591ab"/>
+        <meta-data android:name="ADMOB_INTERSTITIAL_PUBLISHER_ID" android:value="a14d1d6fc9591ab"/>
+        <meta-data android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" android:value="false"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.admob.android.ads.AdMobActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="NEW_APP_ID" android:value="20053051"/>
+        <activity android:name="com.OQEGkbJcK.AkfUcwshMQDdQ"/>
+        <activity android:name="com.OQEGkbJcK.vEphGedQWhKRkQ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

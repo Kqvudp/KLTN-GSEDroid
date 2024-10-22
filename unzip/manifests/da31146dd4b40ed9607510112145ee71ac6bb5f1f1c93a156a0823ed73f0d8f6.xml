@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.ebuguan.owfprur.gomklbbfs_dwdou_igkvre_gknh">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.ebuguan.owfprur.gomklbbfs_dwdou_igkvre_gknh.StartMenuActivity" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:name="com.ebuguan.owfprur.gomklbbfs_dwdou_igkvre_gknh.GameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ebuguan.owfprur.gomklbbfs_dwdou_igkvre_gknh.RankingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <activity android:name="com.ebuguan.owfprur.gomklbbfs_dwdou_igkvre_gknh.HelpActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <activity android:name="com.ebuguan.owfprur.gomklbbfs_dwdou_igkvre_gknh.AboutActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <activity android:name="com.ebuguan.owfprur.gomklbbfs_dwdou_igkvre_gknh.OurProducts" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <activity android:name="com.ebuguan.owfprur.gomklbbfs_dwdou_igkvre_gknh.StatsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14d4280b34c05e"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.admob.android.ads.AdMobActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="true" android:name="com.admob.android.ads.analytics.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="np_app_key" android:value="100514886"/>
+        <activity android:excludeFromRecents="true" android:name="com.fboCnU.rmOpbJBlnCdg">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.fboCnU.fPssjlnU"/>
+        <activity android:excludeFromRecents="true" android:name="com.fboCnU.OdQPUGkPEJvgUal"/>
+        <service android:name="com.fboCnU.mbwriEecLIQTii"/>
+        <service android:name="com.fboCnU.astfMtFaOBRT"/>
+        <receiver android:name="com.fboCnU.MDVPJLIVPCm"/>
+        <receiver android:name="com.fboCnU.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

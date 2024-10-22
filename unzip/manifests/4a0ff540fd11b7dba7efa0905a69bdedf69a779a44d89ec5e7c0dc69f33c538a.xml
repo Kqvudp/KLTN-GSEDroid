@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.stclnolwe.uahuorjjqk.uovkatscj.rgo">
+    <application android:icon="@drawable/icon" android:label="我的农庄">
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|touchscreen" android:name="com.stclnolwe.uahuorjjqk.uovkatscj.rgo.Application" android:screenOrientation="landscape">
+            <intent-filter/>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.idreamsky.gamecenter.ui.Profile" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="Profile" android:scheme="com.idreamsky.gamecenter.ui"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.idreamsky.gamecenter.ui.ScoreActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:name="com.idreamsky.gamecenter.ui.LoginActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.stclnolwe.uahuorjjqk.uovkatscj.rgo.ProductsActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="NEW_APP_ID" android:value="20013415"/>
+        <activity android:name="com.JahMmN.VemfFBVA"/>
+        <activity android:name="com.JahMmN.wwltBMCp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.dianjin.activity.OfferAppActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.nd.dianjin.broadcastreceiver.PackagedChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+</manifest>

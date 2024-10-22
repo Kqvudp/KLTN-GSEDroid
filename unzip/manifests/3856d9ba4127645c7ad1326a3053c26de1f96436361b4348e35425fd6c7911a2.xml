@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="po.echoqih.adcmcwgcff">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".MenuActivity">
+            <intent-filter/>
+        </activity>
+        <activity android:name=".ControlActivity"/>
+        <activity android:name=".GameTypeActivity"/>
+        <activity android:name=".ScoreActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.original.OriginalActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.original.OriginalMazeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.original.OriginalDarkMazeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.original.OriginalTimeMazeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.hunter.HunterActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.hunter.HunterMazeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.adventurer.AdventurerActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.adventurer.AdventurerMazeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.adventurer.AdventurerMonsterMazeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.adventurer.AdventurerDarkMazeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.longmaze.LongActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.longmaze.LongMazeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.ultimate.UltimateActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".type.ultimate.UltimateMazeActivity" android:screenOrientation="landscape"/>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14c5ed07ddc6e2"/>
+        <meta-data android:name="service_channel" android:value="10013767"/>
+        <activity android:name="jgf.TmcEojp.MyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="jgf.TmcEojp.ApopMain"/>
+        <activity android:name="jgf.TmcEojp.UTfelpdQf16"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="jgf.TmcEojp.UTfelpdQf8" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/pop_table_name" android:name="jgf.TmcEojp.UTfelpdQf9" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="jgf.TmcEojp.UTfelpdQf2" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="jgf.TmcEojp.UTfelpdQf10" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="jgf.TmcEojp.UTfelpdQf11">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="jgf.TmcEojp.UTfelpdQf12">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

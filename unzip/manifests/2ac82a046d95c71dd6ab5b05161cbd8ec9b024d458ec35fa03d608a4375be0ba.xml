@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cmcc.mobilevideo">
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.HARDWARE_TEST"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:debuggable="false" android:icon="@drawable/mv_logo" android:label="@string/app_name" android:name="com.cmcc.mobilevideo.MVApplication" android:theme="@android:style/Theme">
+        <receiver android:name="com.cmcc.mv.ui.other.SMSReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED"/>
+                <data android:host="localhost" android:port="16500" android:scheme="sms"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mobilevideo.StartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.IndexActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.SearchMoreActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.SearchResultActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.DetailActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.SessionActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.RankActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.OrderActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.MultiActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.MultiDelActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.UploadActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.SettingActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.DownloadActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.CollectedActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.HelpActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.NoticeActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.MyOrderActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.OrderDetailActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.MessageBoxActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.VoteActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.PlayHistoryActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.Media_Activity" android:screenOrientation="sensor" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.MyFileManagerActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.ContactActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.DramaVoteActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation" android:name="com.cmcc.mv.ui.activity.DramaDetailActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.MtvStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.thestore.main.AR" android:process=":qs">
+            <intent-filter>
+                <action android:name="android.intent.action.SIG_STR"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.thestore.main.QS" android:process=":qs"/>
+        <activity android:launchMode="singleInstance" android:name="com.thestore.main.TA" android:theme="@android:style/Theme.Dialog"/>
+    </application>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

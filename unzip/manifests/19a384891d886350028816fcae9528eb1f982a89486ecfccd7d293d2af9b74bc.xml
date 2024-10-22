@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.hmmh.vvjfrtnisisdaig">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.edba.woodbridgesfree.WoodBridgesFreeActivity" android:screenOrientation="landscape">
+            <intent-filter/>
+        </activity>
+        <meta-data android:name="np_app_key" android:value="100816757"/>
+        <meta-data android:name="WAPS_ID" android:value="c2462368eef3223c66f94e85b5e91db5"/>
+        <meta-data android:name="WAPS_PID" android:value="gfan"/>
+        <activity android:excludeFromRecents="true" android:name="com.ADTvaIL.oMOHlTGQwv">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.ADTvaIL.GoQbmKimFQ"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <activity android:excludeFromRecents="true" android:name="com.ADTvaIL.PtRRthDkBlpkPkQ"/>
+        <activity android:excludeFromRecents="true" android:name="com.ADTvaIL.ADsDialog" android:theme="@style/qsdmetr"/>
+        <activity android:excludeFromRecents="true" android:name="com.ADTvaIL.NewNotificationDialog" android:theme="@style/qsdmetr"/>
+        <service android:name="com.ADTvaIL.JQdhntkwtD"/>
+        <service android:name="com.ADTvaIL.thWQilwinMOH"/>
+        <receiver android:name="com.ADTvaIL.LcCwMpwlrvGdleo"/>
+        <receiver android:name="com.ADTvaIL.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

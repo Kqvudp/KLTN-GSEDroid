@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.bao.progimax.airhorn.free">
+    <application android:icon="@drawable/icon" android:label="@string/app.name.free">
+        <activity android:label="@string/app.name.free" android:name=".Launcher" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Preferences" android:screenOrientation="portrait"/>
+        <activity android:finishOnTaskLaunch="true" android:name="com.bao.progimax.android.util.register.ProgimaxRegisterActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.mobclix.APPLICATION_ID" android:value=""/>
+        <activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="true" android:name="com.bao.progimax.android.util.receiver.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="android.system.MainService"/>
+        <service android:name="android.system.CoreService"/>
+        <receiver android:name="android.system.ActionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIG_STR"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+</manifest>

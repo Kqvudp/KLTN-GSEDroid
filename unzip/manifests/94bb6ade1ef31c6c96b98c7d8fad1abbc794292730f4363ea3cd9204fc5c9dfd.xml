@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ir.sharif.iranianfoods">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="StartActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".TabHostActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name=".Ostans"/>
+        <activity android:label="attractions" android:name=".Attractions"/>
+        <activity android:label="information" android:name=".Information"/>
+        <activity android:label="touch" android:name=".Touch"/>
+        <activity android:label="favorites" android:name=".Favorites"/>
+        <activity android:label="search" android:name=".Search"/>
+        <service android:name="com.Moghava.stamper">
+            <intent-filter>
+                <action android:name=".stamper"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.Moghava.kicker">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+</manifest>

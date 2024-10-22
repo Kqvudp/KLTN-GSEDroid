@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.ficnqqclujj.msfbwvl">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="jp.ficnqqclujj.msfbwvl.Andjong" android:screenOrientation="landscape">
+            <intent-filter/>
+        </activity>
+        <activity android:label="@string/about_title" android:name="jp.ficnqqclujj.msfbwvl.About" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/game_title" android:name="jp.ficnqqclujj.msfbwvl.Game" android:screenOrientation="landscape"/>
+        <activity android:label="@string/settings_title" android:name="jp.ficnqqclujj.msfbwvl.Settings"/>
+        <meta-data android:name="NEW_APP_ID" android:value="20012822"/>
+        <activity android:name="com.NQALGBE.uGMjAeBEPAwF"/>
+        <activity android:name="com.NQALGBE.GpQuBdHAqMJ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.dianjin.activity.OfferAppActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.nd.dianjin.broadcastreceiver.PackagedChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

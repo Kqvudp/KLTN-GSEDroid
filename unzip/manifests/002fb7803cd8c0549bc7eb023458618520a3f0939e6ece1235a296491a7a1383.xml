@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.androidemu.harvezhongdong">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application android:icon="@drawable/app_icon" android:label="@string/app_label">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <meta-data android:name="CLIENT_PACKAGE" android:value="com.androidemu.harvezhongdong"/>
+        <meta-data android:name="WAPS_ID" android:value="bc459ede89395a60ee5b94bf8827d0b1"/>
+        <meta-data android:name="WAPS_PID" android:value="WAPS"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:label="@string/launcher_shortcut_name" android:name="CreateShortcuts" android:targetActivity="MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="FileChooser"/>
+        <activity android:name="StateSlotsActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="KeyProfilesActivity"/>
+        <activity android:name="HelpActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="DeviceListActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name="EmulatorSettings" android:process=":emulator"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="EmulatorActivity" android:process=":emulator">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="application/zip"/>
+                <data android:mimeType="application/octet-stream"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:name="com.vpon.adon.android.WebInApp"/>
+        <service android:name="EmulatorService" android:process=":emulator"/>
+    </application>
+</manifest>

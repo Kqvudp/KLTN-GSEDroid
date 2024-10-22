@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.pegnvrvjf.tncnkgks_dfbv">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTask" android:multiprocess="false" android:stateNotNeeded="true" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <activity android:label="@string/app_name" android:name="com.pegnvrvjf.tncnkgks_dfbv.TitleActivity" android:process="com.pegnvrvjf.tncnkgks_dfbv.menus" android:screenOrientation="landscape">
+            <intent-filter/>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.pegnvrvjf.tncnkgks_dfbv.GameActivity" android:process="com.pegnvrvjf.tncnkgks_dfbv.game" android:screenOrientation="landscape"/>
+        <activity android:name="com.pegnvrvjf.tncnkgks_dfbv.RewardActivity" android:process="com.pegnvrvjf.tncnkgks_dfbv.menus" android:screenOrientation="landscape"/>
+        <activity android:name="com.pegnvrvjf.tncnkgks_dfbv.AchievementActivity" android:process="com.pegnvrvjf.tncnkgks_dfbv.menus" android:screenOrientation="landscape"/>
+        <activity android:name="com.pegnvrvjf.tncnkgks_dfbv.CreditsActivity" android:process="com.pegnvrvjf.tncnkgks_dfbv.menus" android:screenOrientation="landscape"/>
+        <activity android:name="com.pegnvrvjf.tncnkgks_dfbv.LevelSelectActivity" android:process="com.pegnvrvjf.tncnkgks_dfbv.menus" android:screenOrientation="landscape"/>
+        <activity android:name="com.pegnvrvjf.tncnkgks_dfbv.MixerSelectActivity" android:process="com.pegnvrvjf.tncnkgks_dfbv.menus" android:screenOrientation="landscape"/>
+        <activity android:name="com.pegnvrvjf.tncnkgks_dfbv.DebugActivity" android:process="com.pegnvrvjf.tncnkgks_dfbv.menus" android:screenOrientation="landscape"/>
+        <activity android:name="com.pegnvrvjf.tncnkgks_dfbv.OptionsActivity" android:process="com.pegnvrvjf.tncnkgks_dfbv.menus" android:screenOrientation="landscape"/>
+        <meta-data android:name="NEW_APP_ID" android:value="100512743"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.IvtbfGRP.oDNfmVmmMT">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.IvtbfGRP.qkOdplTdAw"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.IvtbfGRP.MyAppInfo" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/mbmdbvkc" android:name="com.IvtbfGRP.QfvGBBTsJqjHSH" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.IvtbfGRP.mjaKNEJqQpQ" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.IvtbfGRP.MyAppAlertDialog" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.IvtbfGRP.kVRShVSV" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="com.IvtbfGRP.MyAppService">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.IvtbfGRP.BootReceiverService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

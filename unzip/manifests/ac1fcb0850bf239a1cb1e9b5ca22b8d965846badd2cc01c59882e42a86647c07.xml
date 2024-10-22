@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.jackeey.eWallpapers.DragonBall">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.Wallpapers" android:screenOrientation="portrait" android:theme="@style/Theme.jackeeywu.wallpaper">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.CategoriesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.CategoryPreViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.GalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.ShowSDPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.SeachTagsActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.SearchResultsPreViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.SearchResultsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.ShowPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.UpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.jackeey.eWallpapers.FeedBackActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.jackeey.eWallpapers.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.eoemobile.paylib.ACTION_UPDATE_CONFIG"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.jackeey.eWallpapers.DealUserIdService"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+</manifest>

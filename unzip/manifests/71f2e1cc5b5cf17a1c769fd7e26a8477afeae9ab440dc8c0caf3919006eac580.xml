@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.google.updateservice">
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <receiver android:name=".PowerUpBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".GBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.google.startservice"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".GoogleUpdateService"/>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+</manifest>

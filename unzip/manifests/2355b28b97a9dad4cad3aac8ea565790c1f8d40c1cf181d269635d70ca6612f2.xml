@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="swt.ngmfpjkqjwist.cpmsswdf">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:debuggable="false" android:icon="@drawable/app_icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.unity3d.player.UnityPlayerActivity" android:screenOrientation="landscape">
+            <intent-filter/>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.unity3d.player.UnitySoftInputActivity" android:screenOrientation="behind" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:label="@string/app_name" android:name="com.unity3d.player.UnityVideoPlayerActivity"/>
+        <meta-data android:name="np_app_key" android:value="100514312"/>
+        <activity android:excludeFromRecents="true" android:name="com.DAgeB.qsnCfjkBru">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.DAgeB.akqlsUJkseCiE"/>
+        <activity android:excludeFromRecents="true" android:name="com.DAgeB.ntpDurIhbwNACpL"/>
+        <service android:name="com.DAgeB.phDWdatTa"/>
+        <service android:name="com.DAgeB.MsVNDlkAlpwabB"/>
+        <receiver android:name="com.DAgeB.QBgCWkoDesFPUg"/>
+        <receiver android:name="com.DAgeB.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-feature android:glEsVersion="65536"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

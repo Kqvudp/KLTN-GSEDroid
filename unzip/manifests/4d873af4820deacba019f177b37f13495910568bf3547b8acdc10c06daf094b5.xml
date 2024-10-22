@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.lg.valle.smsdispatcher">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="Preferences" android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="MainActivity">
+            <intent-filter/>
+        </activity>
+        <activity android:name=".ActivitiesList" android:theme="@android:style/Theme.Light"/>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="TwitterAuth" android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="TwitterAuth" android:scheme="myapp"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="MessagesReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="com.lg.valle.smsdispatcher.TRYIT"/>
+                <action android:name="com.lg.valle.smsdispatcher.ACTION_NEW_DM"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="UpdateService">
+            <intent-filter>
+                <action android:name="com.lg.valle.smsdispatcher.SEND_ANSWER_BACK"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14ceab47ce03aa"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.admob.android.ads.AdMobActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="true" android:name="com.admob.android.ads.analytics.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+</manifest>

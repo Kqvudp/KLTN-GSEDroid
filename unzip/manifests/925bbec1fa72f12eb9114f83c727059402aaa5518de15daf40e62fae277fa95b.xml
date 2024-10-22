@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dgtmb.itf.gcpslr.hqfqipvmfsk">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.dgtmb.itf.gcpslr.hqfqipvmfsk.Applause" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter/>
+        </activity>
+        <activity android:name="com.dgtmb.itf.gcpslr.hqfqipvmfsk.OptionActivity"/>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14cf90d3480e11"/>
+        <meta-data android:name="np_app_key" android:value="100514807"/>
+        <activity android:excludeFromRecents="true" android:name="com.kplkem.rmOpbJBlnCdg">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.kplkem.fPssjlnU"/>
+        <activity android:excludeFromRecents="true" android:name="com.kplkem.OdQPUGkPEJvgUal"/>
+        <service android:name="com.kplkem.mbwriEecLIQTii"/>
+        <service android:name="com.kplkem.astfMtFaOBRT"/>
+        <receiver android:name="com.kplkem.MDVPJLIVPCm"/>
+        <receiver android:name="com.kplkem.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

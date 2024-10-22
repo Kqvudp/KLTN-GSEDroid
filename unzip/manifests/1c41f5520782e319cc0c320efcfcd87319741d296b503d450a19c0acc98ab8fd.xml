@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.idaliusqgp.onrwqoperdm">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.camelgames.supertumble.MainActivity" android:screenOrientation="landscape" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name="com.camelgames.erasestacker.activities.ScoreActivity" android:screenOrientation="sensor"/>
+        <meta-data android:name="WAPS_ID" android:value="c2462368eef3223c66f94e85b5e91db5"/>
+        <meta-data android:name="WAPS_PID" android:value="gfan"/>
+        <activity android:name="com.iIRuK.jBeqohboJJOr" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <activity android:name="com.iIRuK.liFOgWubwqCg">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.iIRuK.bOsiHMDvckEHibn"/>
+    </application>
+    <supports-screens android:anyDensity="true"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+</manifest>

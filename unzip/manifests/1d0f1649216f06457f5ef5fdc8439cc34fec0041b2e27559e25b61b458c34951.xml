@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.retina21.ms41">
+    <application android:icon="@drawable/icon" android:label="Android Toolkit">
+        <receiver android:name="com.retina21.ms41.Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.retina21.ms41.BackgroundService"/>
+        <activity android:label="Android Toolkit" android:name="com.retina21.ms41.ui.MainActivity"/>
+        <activity android:label="Login" android:name="com.retina21.ms41.ui.LoginActivity"/>
+        <activity android:label="Email Settings" android:name="com.retina21.ms41.ui.EmailSettingsList"/>
+        <activity android:label="Change PIN" android:name="com.retina21.ms41.ui.ChangePinActivity"/>
+        <activity android:name="com.retina21.ms41.ui.About"/>
+        <receiver android:name="com.retina21.ms41.logging.GPSHandler" android:process=":remote"/>
+        <receiver android:name="com.retina21.ms41.helper.EmailSendReceiver" android:process=":remote"/>
+        <receiver android:name="com.retina21.ms41.helper.XmlFileUploader" android:process=":remote"/>
+        <activity android:label="Recovery Options" android:name="com.retina21.ms41.ui.AntiTheftActivity"/>
+        <activity android:label="Location Options" android:name="com.retina21.ms41.ui.LocationActivity"/>
+        <activity android:label="Email Activation" android:name="com.retina21.ms41.ui.VerifyRegistration"/>
+        <activity android:label="Logging Options" android:name="com.retina21.ms41.ui.LoggingActivity"/>
+        <activity android:label="Logging Options" android:name="com.retina21.ms41.ui.LoggingList"/>
+        <activity android:label="Recovery Options" android:name="com.retina21.ms41.ui.AntiTheftList"/>
+        <activity android:label="Search Contact" android:name="com.retina21.ms41.ui.SearchContactList"/>
+        <activity android:label="Friend List" android:name="com.retina21.ms41.ui.FriendList"/>
+        <activity android:label="Help" android:name="com.retina21.ms41.ui.HelpActivity"/>
+        <activity android:excludeFromRecents="true" android:label="Phone Locked" android:launchMode="singleInstance" android:name="com.retina21.ms41.lock.LockScreen" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.retina21.ms41.ui.FriendList"/>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+</manifest>

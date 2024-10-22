@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.shootinggames.swattraining">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".MainActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="Ranking" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="EditProfile" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="AppsList"/>
+        <receiver android:icon="@drawable/icon" android:label="@string/app_name" android:name=".Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget"/>
+        </receiver>
+        <service android:enabled="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="LiveWallpaper" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter android:priority="1">
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/livewallpaper"/>
+        </service>
+        <meta-data android:name="com.mobclix.APPLICATION_ID" android:value="84fb671c-8266-442e-8584-cdb424b91989"/>
+        <activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.mobclix.LOG_LEVEL" android:value="FATAL"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="4f96622f527015621900000b"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="android"/>
+        <service android:enabled="true" android:name="com.apperhand.device.android.AndroidSDKProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds"/>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"/>
+        <receiver android:name="com.airpush.android.MessageReceiver"/>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"/>
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart48075"/>
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.dlauncher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.motorola.dlauncher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.lge.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+</manifest>

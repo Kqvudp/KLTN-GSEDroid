@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.FourCobblers.Free.PhoneLock">
+    <application android:icon="@drawable/lock_phone" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="PhoneLock">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:description="@string/device_admin_handle_description" android:label="@string/device_admin_handle" android:name=".DeviceAdminHandle" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin_sample"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".DeviceAdminHandle$PhoneLockSetting"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/set_failed_max" android:name="SetMaxPasswordFailed"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/set_remote_sms_command" android:name="SetSMSCommand"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/help" android:name="Help"/>
+        <receiver android:name="SMSCommandHandle">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <provider android:authorities="com.FourCobblers.Free.Util.NotePad" android:name="NotePadProvider"/>
+        <activity android:label="@string/title_notes_list" android:name="NotesList">
+            <intent-filter/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.EDIT"/>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.google.note"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_note" android:name="NoteEditor" android:screenOrientation="sensor" android:theme="@android:style/Theme.Light">
+            <intent-filter android:label="@string/resolve_edit">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.EDIT"/>
+                <action android:name="com.android.notepad.action.EDIT_NOTE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.google.note"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_edit_title" android:name="TitleEditor" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="stateVisible">
+            <intent-filter android:label="@string/resolve_title">
+                <action android:name="com.android.notepad.action.EDIT_TITLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.ALTERNATIVE"/>
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/live_folder_notes" android:label="@string/live_folder_name" android:name="NotesLiveFolder">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+</manifest>

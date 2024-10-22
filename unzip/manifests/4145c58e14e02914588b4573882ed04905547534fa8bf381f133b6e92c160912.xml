@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Tga.mjDUjgpJA">
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <application android:configChanges="keyboardHidden|orientation" android:icon="@drawable/image_icon" android:label="@string/image_name" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light">
+        <meta-data android:name="service_channel" android:value="10052073"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".UDltLfLtT0" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleInstance" android:name=".UDltLfLtT1" android:screenOrientation="portrait"/>
+        <activity android:name=".UDltLfLtT2" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UDltLfLtT3"/>
+        <activity android:name=".UDltLfLtT4"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".UDltLfLtT5" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".UDltLfLtT6" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".UDltLfLtT7" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".UDltLfLtT8" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/table_name" android:name=".UDltLfLtT9" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UDltLfLtT10" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name=".UDltLfLtT11">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name=".UDltLfLtT12">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="UDltLfLtT13">
+            <intent-filter>
+                <action android:name="com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:icon="@drawable/image_icon" android:label="@string/image_name" android:launchMode="singleInstance" android:name=".image.UDltLfLtT14">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.UDltLfLtT15"/>
+        <activity android:name=".image.UDltLfLtT16"/>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+</manifest>

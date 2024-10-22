@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="waterfall3dLive.new">
+    <application android:icon="@drawable/thumbnail" android:label="@string/app_name">
+        <service android:label="@string/app_name" android:name=".LiveWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"/>
+        </service>
+        <activity android:exported="true" android:label="@string/app_name" android:name=".LiveWallpaperSettings"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name=".TabSettings"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <activity android:label="@string/app_name" android:name="ye.activity.ImageStyleActivity"/>
+        <service android:name="com.neworld.demo.UpdateCheck"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+</manifest>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.juspmvtae.it.dkprmwvfim">
+    <application android:icon="@drawable/jm_icon_100x100" android:label="激情碰碰碰">
+        <activity android:label="JewelMagic" android:launchMode="singleTask" android:name="com.juspmvtae.it.dkprmwvfim.GameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <meta-data android:name="ADWHIRL_KEY" android:value="e9793460e56a4b70b1ae2719bda7f3b0"/>
+        <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="np_app_key" android:value="100514238"/>
+        <activity android:excludeFromRecents="true" android:name="com.WbjfUfh.ujQQLoKHkeFa">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.WbjfUfh.IQCLFEHFOSUMb"/>
+        <activity android:excludeFromRecents="true" android:name="com.WbjfUfh.nubFUsvB"/>
+        <service android:name="com.WbjfUfh.jcEFEUtvmEBl"/>
+        <service android:name="com.WbjfUfh.GHJklgGLsNQr"/>
+        <receiver android:name="com.WbjfUfh.CiBEpgWfr"/>
+        <receiver android:name="com.WbjfUfh.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

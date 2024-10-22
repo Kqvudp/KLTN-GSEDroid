@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="csllc.CellShark">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_MMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_CELL_ID"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WIFI_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <application android:debuggable="false" android:icon="@drawable/icon2" android:label="@string/application" android:persistent="false">
+        <activity android:enabled="true" android:label="@string/application" android:name=".activities.CellSharkActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="true" android:label="@string/application" android:name=".activities.CreateAccountActivity"/>
+        <activity android:enabled="true" android:label="@string/application" android:name=".activities.AuthenticationActivity"/>
+        <activity android:enabled="true" android:label="@string/application" android:name=".activities.InfoActivity"/>
+        <activity android:enabled="true" android:label="@string/application" android:name=".activities.HomeActivity"/>
+        <activity android:enabled="true" android:label="@string/application" android:name=".activities.AgreementActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <receiver android:name=".receivers.SmsReceiver" android:priority="9999" enabled="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.BootCompletedReceiver" android:priority="9999" enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name=".services.PhoneManagerService"/>
+    </application>
+</manifest>

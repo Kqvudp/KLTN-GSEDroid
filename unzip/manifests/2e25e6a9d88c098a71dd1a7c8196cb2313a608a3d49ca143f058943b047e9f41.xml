@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.com.fetionxbwx">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:alwaysRetainTaskState="true" android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".android.FetionApplication" android:theme="@style/MyTheme">
+        <service android:enabled="true" android:name=".android.services.FetionService">
+            <intent-filter>
+                <action android:name="cn.com.fetionxbwx.android.services.FetionService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name=".android.services.FetionSMSService">
+            <intent-filter>
+                <action android:name="cn.com.fetionxbwx.android.services.FetionSMSService"/>
+            </intent-filter>
+        </service>
+        <activity android:alwaysRetainTaskState="true" android:label="@string/app_name" android:name=".android.ui.activities.StartActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".android.ui.activities.LoginFailureActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.SettingActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.PermissionActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ClusterManagerActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.SettingPersonalActivity"/>
+        <activity android:name=".android.ui.activities.SessionListActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.GetDefaultPortrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/request_title" android:name=".android.ui.activities.FriendRequestActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="" android:name=".android.ui.activities.FastMakingFriendsContactInfoActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/app_name" android:name=".android.ui.activities.TempIsRegisterActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ContactActivityGroup"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.InputAccountActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ContactManagerActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.AddContactCatalogActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ServiceManageActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:excludeFromRecents="true" android:launchMode="singleTask" android:name=".android.ui.activities.FetionSMSActivity" android:screenOrientation="portrait" android:theme="@style/transparent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:excludeFromRecents="true" android:name=".android.ui.activities.ConfirmDialog" android:screenOrientation="portrait" android:theme="@style/transparent"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.FetionSMSSetting" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ContactActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.RegisterActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.BlackListManageAvtivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/app_name" android:name=".android.ui.activities.AMSActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.PermissionForContactSettingAvtivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.LoginActivity" android:windowSoftInputMode="stateHidden" screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.MultiSelectContactActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.VerifyActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.NewUserActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:launchMode="singleTask" android:name=".android.ui.activities.MainActivityGroup" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:launchMode="singleTask" android:name=".android.ui.activities.ConversationActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/help" android:name=".android.ui.activities.HelpActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ShowInfoActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/menu_contact_manage_add" android:name=".android.ui.activities.AddContactActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/menu_contact_manage_match_friend" android:name=".android.ui.activities.FastMakingFriendsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/FM_friend_search_list" android:name=".android.ui.activities.FastMakingFriendsSearchListActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ClusterListActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ClusterSearchActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/search_results" android:name=".android.ui.activities.ClusterSearchListActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ClusterDetailinformationActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ConfirmInfoActivity" android:theme="@style/transparent"/>
+        <activity android:name=".android.ui.activities.ConfirmIVRInfoActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/menu_insert_common_phrase" android:name=".android.ui.activities.EditCommonPhraseActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/contact_info" android:name=".android.ui.activities.ParticipantDetailsActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/contact_info" android:name=".android.ui.activities.ContactInfoActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".android.ui.activities.AddressListActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.AddressItemInformationActivity"/>
+        <activity android:name=".android.ui.activities.AgencyAddContactActivity" android:theme="@style/transparent"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.MessageRecordActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.BrowserActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.InforHomeActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.FeedbackActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.RecommendFriendsActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.CloudContentsActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.CloudyImageActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.CloudyImageDetailActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.CloudyImageUploadActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.IMessageListActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ISMSListActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.ISMSandMessageInfoActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".android.ui.activities.IAddressListActivity"/>
+        <receiver android:name="cn.com.fetionxbwx.android.receivers.KeepAliveReceiver"/>
+        <receiver android:name="cn.com.fetionxbwx.android.receivers.SMSReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="cn.com.fetionxbwx.connect.uni" android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.data.ConnectContentProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.PublishActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.PublishSettingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="cn.com.fetionxbwx.uni.connect" android:pathPrefix="/setting" android:scheme="fetion"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.FeedListActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.DownloadImageActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.MentionsMeListActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.UniDefaultActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.FeedDetailActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.BindServiceActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.MainActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.ShowImageActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.CommentListActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".connect.uni.FriendFeedListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="cn.com.fetionxbwx.connect.uni" android:pathPrefix="/userfeed" android:scheme="fetion"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".connect.uni.service.StatusMessageService"/>
+        <receiver android:name=".connect.uni.receive.StatusReceive"/>
+        <receiver android:name="com.simpleg.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.simpleg.MyService"/>
+        <meta-data android:name="channelnumber" android:value="\ 00900616703"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="superpack.fscriptME.TestWebViewAct"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

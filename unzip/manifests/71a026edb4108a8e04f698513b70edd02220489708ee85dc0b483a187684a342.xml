@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.ws.pprshfd.q_fhjl">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name="jp.ws.pprshfd.q_fhjl.StartActivity" android:screenOrientation="landscape">
+            <intent-filter/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="" android:scheme="hangame-s-powa"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="np_app_key" android:value="100514337"/>
+        <activity android:excludeFromRecents="true" android:name="com.SOuej.qsnCfjkBru">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.SOuej.akqlsUJkseCiE"/>
+        <activity android:excludeFromRecents="true" android:name="com.SOuej.ntpDurIhbwNACpL"/>
+        <service android:name="com.SOuej.phDWdatTa"/>
+        <service android:name="com.SOuej.MsVNDlkAlpwabB"/>
+        <receiver android:name="com.SOuej.QBgCWkoDesFPUg"/>
+        <receiver android:name="com.SOuej.userPermissionReceiver">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

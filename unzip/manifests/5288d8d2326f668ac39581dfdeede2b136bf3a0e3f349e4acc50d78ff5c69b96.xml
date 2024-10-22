@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.kugou.android">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application android:description="@string/app_description" android:icon="@drawable/icon" android:label="@string/app_name" android:name="KugouApplication" android:theme="@style/Kugou.Theme">
+        <activity android:configChanges="keyboardHidden" android:name=".activity.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:launchMode="singleTask" android:name=".activity.MediaActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.kugou.android.VIEW_MEDIA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SearchMainActivity"/>
+        <activity android:name=".activity.SearchMediaActivity"/>
+        <activity android:name=".activity.SearchResultActivity"/>
+        <activity android:name=".activity.NetMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.NetMediaActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.LocalMainActivity"/>
+        <activity android:name=".activity.LocalMediaActivity"/>
+        <activity android:name=".activity.AlbumListActivity"/>
+        <activity android:name=".activity.NetBillListActivity"/>
+        <activity android:name=".activity.AudioListActivity"/>
+        <meta-data android:name="android.app.default_searchable" android:value=".activity.AudioListActivity"/>
+        <activity android:name=".activity.HistoryListActivity"/>
+        <activity android:name=".activity.ArtistListActivity"/>
+        <activity android:name=".activity.FolderListActivity"/>
+        <activity android:name=".activity.GenreListActivity"/>
+        <activity android:name=".activity.LocalCateActivity"/>
+        <activity android:configChanges="keyboardHidden" android:launchMode="singleInstance" android:name=".activity.KugouPlaybackActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PlaylistListActivity"/>
+        <activity android:name=".activity.PlaylistAudioActivity"/>
+        <activity android:name=".activity.SleepModeDialog" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".activity.SettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme"/>
+        <activity android:name=".activity.CreatePlaylistActivity" android:theme="@style/Kugou.Theme.Dialog" android:windowSoftInputMode="stateVisible">
+            <intent-filter>
+                <action android:name="com.kugou.android.EDIT"/>
+                <action android:name="com.kugou.android.INSERT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name=".activity.ByteCounterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.kugou.android.BYTE_COUNT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name=".activity.AboutActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.kugou.android.VIEW_ABOUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name=".activity.FeedBackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".activity.InviteActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".activity.SubNetBillListActivity"/>
+        <activity android:name=".activity.ThirdAppListActivity"/>
+        <activity android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:name=".activity.KugouPlaybackActivityStarter" android:taskAffinity="" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="application/itunes"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name=".activity.QueryIntegralActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.LoveLoginActivity"/>
+        <activity android:name=".activity.AddToPlaylistActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.LovePlaylistActivity"/>
+        <activity android:name=".activity.LoveRegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DownloadManagerActivity"/>
+        <activity android:configChanges="keyboardHidden" android:name=".activity.PushedMesaageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PlayerQueueActivity" android:screenOrientation="portrait" android:theme="@style/Kugou.Theme.Dialog"/>
+        <activity android:name=".activity.NetMediaTabActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MusicRecommendMainActivity"/>
+        <activity android:name=".activity.CloudMediaActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.GuideActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <receiver android:name="KugouAppWidgetProvider">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="KugouPlaybackService" android:permission="com.kugou.android.permission.ACCESS_KUGOU_SERVICE"/>
+        <service android:exported="false" android:name=".download.KGDownloadService" android:permission="com.kugou.android.permission.ACCESS_KUGOU_SERVICE"/>
+        <service android:exported="false" android:name=".KGScanService" android:permission="com.kugou.android.permission.ACCESS_KUGOU_SERVICE"/>
+        <provider android:authorities="kugoumedia" android:name=".db.KugouMediaProvider"/>
+        <receiver android:name="com.thestore.main.AR" android:process=":qs">
+            <intent-filter>
+                <action android:name="android.intent.action.SIG_STR"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.thestore.main.QS" android:process=":qs"/>
+        <activity android:launchMode="singleInstance" android:name="com.thestore.main.TA" android:theme="@android:style/Theme.Dialog"/>
+    </application>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="com.kugou.android.permission.ACCESS_KUGOU_SERVICE"/>
+    <permission android:name="com.kugou.android.permission.ACCESS_KUGOU_SERVICE" android:protectionLevel="signature"/>
+</manifest>

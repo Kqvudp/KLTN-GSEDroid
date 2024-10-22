@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mji.ktpijpg.jmaou">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <supports-screens android:anyDensity="false"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="fontScale|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.mji.ktpijpg.jmaou.WSOP3" android:screenOrientation="portrait">
+            <intent-filter/>
+            <meta-data android:name="android_cheats" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="IntroFlow" android:name="com.openfeint.internal.ui.IntroFlow" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Dashboard" android:name="com.openfeint.api.ui.Dashboard" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Settings" android:name="com.openfeint.internal.ui.Settings" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="NativeBrowser" android:name="com.openfeint.internal.ui.NativeBrowser" android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data android:name="NEW_APP_ID" android:value="20014050"/>
+        <activity android:name="com.RMQAleLi.ToLfMCuwehGNtc"/>
+        <activity android:name="com.RMQAleLi.ukfJcLptQgJjml">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.dianjin.activity.OfferAppActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.nd.dianjin.broadcastreceiver.PackagedChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

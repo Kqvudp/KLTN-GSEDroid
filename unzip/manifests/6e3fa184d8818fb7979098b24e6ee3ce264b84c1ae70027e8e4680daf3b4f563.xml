@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.wangwei.tblianliankan">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.adwo.adsdk.AdwoAdBrowserActivity"/>
+        <meta-data android:name="Adwo_PID" android:value="7b9f4b095b314c5e8f864fa8f72b882e"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="GameActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="ADMOGO_KEY" android:value="09bdfd7e54aa4d3b929b028a3167463c"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="4de78768431fe35d40000037"/>
+        <meta-data android:name="WAPS_ID" android:value="40e55728b604946c0becca1fee87fcac"/>
+        <meta-data android:name="WAPS_PID" android:value="WAPS"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <meta-data android:name="CLIENT_PACKAGE" android:value="com.wangwei.tblianliankan"/>
+        <meta-data android:name="appkey" android:value="351"/>
+        <receiver android:name=".AlmService">
+　　　　	<intent-filter>
+　　　　　　	<action android:name="push_alm"/>
+　　　 </intent-filter>
+　　	</receiver>
+        <receiver android:name=".BootService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+</manifest>

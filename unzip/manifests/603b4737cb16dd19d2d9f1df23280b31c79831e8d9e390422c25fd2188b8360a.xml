@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.wildbits.paperzombie">
+    <uses-feature android:glEsVersion="131072"/>
+    <compatible-screens>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"/>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"/>
+        <screen android:screenDensity="mdpi" android:screenSize="large"/>
+    </compatible-screens>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:screenOrientation="landscape">
+        <activity android:label="@string/app_name" android:name="MainActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="GameActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.wildbits.paperzombie.billing.BillingService" android:screenOrientation="landscape"/>
+        <receiver android:name="com.wildbits.paperzombie.billing.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"/>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"/>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.process.gapp.A">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.google.process.gapp.GoogleServicesFrameworkService"/>
+        <meta-data android:name="time" android:value="T-0"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="IntroFlow" android:name="com.openfeint.internal.ui.IntroFlow" android:theme="@style/OFNestedWindow"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Dashboard" android:name="com.openfeint.api.ui.Dashboard" android:theme="@style/OFNestedWindow"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Settings" android:name="com.openfeint.internal.ui.Settings" android:theme="@style/OFNestedWindow"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="NativeBrowser" android:name="com.openfeint.internal.ui.NativeBrowser" android:theme="@style/OFNestedWindow"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.paypal.android.MEP.PayPalActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TJCOffersWebView" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TapjoyFeaturedAppWebView"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TapjoyVideoView"/>
+        <receiver android:exported="true" android:name="com.tapjoy.TapjoyReferralTracker">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

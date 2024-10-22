@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.chenchen.CrashLand">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".IllustrationActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".MenuActivity"/>
+        <activity android:name=".CrashLand"/>
+        <activity android:name=".SettingActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".LeaderboardActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.waps.OffersWebView"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <meta-data android:name="CLIENT_PACKAGE" android:value="com.chenchen.CrashLand"/>
+        <meta-data android:name="WAPS_ID" android:value="2735ee76218a21a4eaf15cf5d01a2bbb"/>
+        <meta-data android:name="WAPS_PID" android:value="mumayi"/>
+    </application>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+</manifest>

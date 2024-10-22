@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.custom.lwp.MagictouchIcecubesinwaterone">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.dlauncher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.motorola.dlauncher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.lge.launcher.permission.INSTALL_SHORTCUT"/>
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/application_label">
+        <activity android:exported="true" android:label="@string/options_label" android:name=".vickyWallpaperOptions"/>
+        <activity android:label="@string/service_label" android:name=".vickyLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="FilePicker" android:name="com.custom.uilib.FilePicker"/>
+        <service android:label="@string/service_label" android:name=".vickyWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/service"/>
+        </service>
+        <service android:enabled="true" android:name="com.apperhand.device.android.AndroidSDKProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds"/>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"/>
+        <receiver android:name="com.airpush.android.MessageReceiver"/>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"/>
+        <receiver android:name="com.Leadbolt.AdNotification"/>
+        <receiver android:name="com.custom.lwp.MagictouchIcecubesinwaterone.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart48438"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.senddroid.AdService">
+            <intent-filter>
+                <action android:name="com.senddroid.AdServicecom.custom.lwp.MagictouchIcecubesinwaterone"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

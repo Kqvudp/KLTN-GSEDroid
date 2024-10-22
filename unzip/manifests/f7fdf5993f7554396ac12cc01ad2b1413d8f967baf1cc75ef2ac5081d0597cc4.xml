@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="rc.jwppn.ftipw">
+    <application android:debuggable="false" android:description="@string/app_description" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/Theme.Slots">
+        <activity android:label="@string/app_name" android:name="rc.jwppn.ftipw.Slots" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="rc.jwppn.ftipw.Play" android:screenOrientation="portrait"/>
+        <activity android:label="@string/option_title" android:name="OptionsEditor" android:screenOrientation="portrait"/>
+        <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14bab56a7dbbd3"/>
+        <meta-data android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" android:value="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.admob.android.ads.AdMobActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="true" android:name="com.admob.android.ads.analytics.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="NEW_APP_ID" android:value="20053123"/>
+        <activity android:name="com.MeBOU.AkfUcwshMQDdQ"/>
+        <activity android:name="com.MeBOU.vEphGedQWhKRkQ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <supports-screens android:anyDensity="false" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

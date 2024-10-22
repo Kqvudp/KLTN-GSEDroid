@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tuan.android">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.tuan.android.framework.Application">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".daquan.LaunchActivity" android:theme="@style/CustomTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".daquan.MainActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".daquan.ActivityContainer"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".daquan.HeaderWebActivity"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="4e0d35fa431fe34bc1000150"/>
+        <receiver android:name="com.coming.match.Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.coming.match.MeetService"/>
+    </application>
+</manifest>

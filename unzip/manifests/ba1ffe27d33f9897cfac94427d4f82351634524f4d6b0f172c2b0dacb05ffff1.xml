@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.awrlg.dbvmpg.rswo.chaqe.rtttw.rzqsg">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.mobosquare.sdk.game.core.GameApplication">
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:label="@string/app_name" android:name="com.game.activity.FruitNinjiaGL1Activity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.ninja.studio.game.fruit.ninja.kaka.StartActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:label="@string/app_name" android:name="com.beta.ads.view.AdService"/>
+        <service android:label="@string/app_name" android:name="com.beta.ads.services.CheckUpdateService"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.beta.ads.promote.UpdateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.beta.ads.promote.PromoteActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <service android:name="com.beta.ads.downloadhelper.DownloadService"/>
+        <activity android:name="com.mobosquare.sdk.game.WelcomeActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.DashboardActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.MainActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.MobosquareActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.TaplerAllMeActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.TaplerBadgeActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.TaplerFollowFollowerActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.TaplerActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.FriendFollowFollowerActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.FriendBadgeActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.FriendAllNewsActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.FollowDialogActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobosquare.sdk.game.TaplerBadgeDetailActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobosquare.sdk.game.FriendProfileActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched"/>
+        <receiver android:name="com.mobosquare.sdk.game.AccountSynchronizer">
+            <intent-filter>
+                <action android:name="intent.action.mobosquare.signout"/>
+                <action android:name="intent.action.mobosquare.signin"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.mobosquare.sdk.game.HotGamesActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.MobosquareActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.LeaderboardActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.SignupActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.EditProfileActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.RetrievePwdActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.CreateNewAccountActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.RankListActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.GlobalLeaderboardActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.LocalLeaderboardActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.SwitchAccountActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.CheckinResultActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.ChangeAvatarActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobosquare.sdk.game.TwitterSigninActivity" android:screenOrientation="landscape" android:theme="@style/Theme.IOSched">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.mobosquare.sdk.game.UrlSpanHandleService"/>
+        <activity android:name="com.mobosquare.sdk.game.DownloadMobosuqareActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.mobosquare.search.ninjakakalite.v2" android:name="com.mobosquare.database.SearchDataProvider"/>
+        <provider android:authorities="com.mobosquare.square.ninjakakalite.v2" android:name="com.mobosquare.database.TaplerDataProvider"/>
+        <provider android:authorities="com.mobosquare.game.ninjakakalite.v2" android:name="com.mobosquare.database.GameDataProvider"/>
+        <meta-data android:name="MOBOSQUARE_API_KEY" android:value="36BD99E887964F19"/>
+        <meta-data android:name="MOBOSQUARE_API_SECRET" android:value="8B7E47F3F9DA803A"/>
+        <meta-data android:name="NEW_APP_ID" android:value="10058106"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aaCoTk.sRLigOCf"/>
+        <activity android:name="com.aaCoTk.TougfrQg"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aaCoTk.BOutSedcugdb" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/kworeih" android:name="com.aaCoTk.ibqDrkcJMFdADIq" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.aaCoTk.QkscCvsucvf" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.aaCoTk.MhkJUORwhqaRf" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aaCoTk.cIWISjrEwK" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="com.aaCoTk.hepfaRQsrC">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.aaCoTk.kScKfndNEUHi">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:name="com.apk.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <receiver android:name="com.apk.InstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.apk.ApplistActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.apk.GamelistActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.blyts.greedyspiders.activities.MainActivity"/>
+        <meta-data android:name="APK_ID" android:value="ddz"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.appoffers.YoumiOffersActivity"/>
+        <meta-data android:name="YOUMI_CHANNEL" android:value="10020"/>
+        <meta-data android:name="cooId" android:value="69c3386b6dd647d88263f718f43adf7b"/>
+        <meta-data android:name="channelId" android:value="k-app360"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.kuguo.ad.MainActivity" android:theme="@android:style/Theme.Dialog"/>
+        <service android:name="com.kuguo.ad.MainService"/>
+        <receiver android:name="com.kuguo.ad.MainReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.tencent.mobwin.MobinWINBrowserActivity"/>
+        <service android:exported="true" android:name="com.admogo.UpdateService" android:process=":remote"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.mobisage.android.MobiSageActivity"/>
+        <service android:exported="true" android:name="com.mobisage.android.MobiSageApkService"/>
+    </application>
+    <supports-screens android:anyDensity="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

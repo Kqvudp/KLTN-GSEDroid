@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="eh.dr.nufusp3fnbbr">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/Theme.NoTitle">
+        <activity android:label="@string/app_name" android:name="eh.dr.nufusp3fnbbr.GameSelection.ActivityMain" android:screenOrientation="portrait">
+            <intent-filter/>
+        </activity>
+        <activity android:name="eh.dr.nufusp3fnbbr.GameSelection.ActivitySubGame" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="eh.dr.nufusp3fnbbr.Carrom3DActivity" android:screenOrientation="portrait"/>
+        <activity android:name="eh.dr.nufusp3fnbbr.ScoresActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/opponents_act" android:name="eh.dr.nufusp3fnbbr.GameSelection.OpponentsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/network_act" android:name="eh.dr.nufusp3fnbbr.GameSelection.JoinNetwork" android:screenOrientation="portrait"/>
+        <activity android:name="eh.dr.nufusp3fnbbr.GameSelection.PlayersActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/poolShape" android:name="eh.dr.nufusp3fnbbr.GameSelection.TableShape" android:screenOrientation="portrait"/>
+        <activity android:label="@string/help_act" android:name="eh.dr.nufusp3fnbbr.Help.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/shortcuts_act" android:name="eh.dr.nufusp3fnbbr.Help.ShortcutsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitle"/>
+        <activity android:label="@string/settingshelp_act" android:name="eh.dr.nufusp3fnbbr.Help.SettingsHelp" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitle"/>
+        <activity android:label="@string/carromhowto_act" android:name="eh.dr.nufusp3fnbbr.Help.CarromHowTo" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitle"/>
+        <activity android:label="@string/about_title" android:name="eh.dr.nufusp3fnbbr.Help.About" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitle"/>
+        <activity android:label="@string/eula_title" android:name="eh.dr.nufusp3fnbbr.Help.Eula" android:screenOrientation="portrait"/>
+        <activity android:label="@string/chatterms" android:name="eh.dr.nufusp3fnbbr.Help.ChatTerms" android:screenOrientation="portrait"/>
+        <activity android:label="@string/settings_act" android:name="eh.dr.nufusp3fnbbr.Settings.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/physics_act" android:name="eh.dr.nufusp3fnbbr.Settings.PhysicsSettings" android:screenOrientation="portrait"/>
+        <activity android:label="@string/display_act" android:name="eh.dr.nufusp3fnbbr.Settings.DisplaySettings" android:screenOrientation="portrait"/>
+        <activity android:label="@string/general_act" android:name="eh.dr.nufusp3fnbbr.Settings.GeneralSettings" android:screenOrientation="portrait"/>
+        <activity android:label="@string/gameserver_act" android:name="eh.dr.nufusp3fnbbr.Settings.GameServerSettings" android:screenOrientation="portrait"/>
+        <activity android:label="Chat" android:name="eh.dr.nufusp3fnbbr.ChatActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <meta-data android:name="DOMOB_PID" android:value="56OJyc0IuMQ/EgiD0L"/>
+        <meta-data android:name="DOMOB_TEST_MODE" android:value="false"/>
+        <meta-data android:name="NEW_APP_ID" android:value="10077150"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.GdFFE.qonaDEWsJ21">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.GdFFE.ApopMain"/>
+        <activity android:name="com.GdFFE.qonaDEWsJ16"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.GdFFE.qonaDEWsJ8" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ddaiea" android:name="com.GdFFE.qonaDEWsJ9" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.GdFFE.qonaDEWsJ2" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.GdFFE.qonaDEWsJ10" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.GdFFE.qonaDEWsJ22" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="com.GdFFE.qonaDEWsJ11">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.GdFFE.qonaDEWsJ12">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.nd.dianjin.activity.OfferAppActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.nd.dianjin.broadcastreceiver.PackagedChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

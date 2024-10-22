@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ultimate.racing.gaming1">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTask">
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:label="@string/app_name" android:name="paulscode.android.mupen64plus.MainActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="paulscode.android.mupen64plus.MenuActivity"/>
+        <activity android:label="Settings" android:name="paulscode.android.mupen64plus.MenuSettingsActivity"/>
+        <activity android:label="Video Settings" android:name="paulscode.android.mupen64plus.MenuSettingsVideoActivity"/>
+        <activity android:label="Choose Video Plug-in" android:name="paulscode.android.mupen64plus.MenuSettingsVideoChangeActivity"/>
+        <activity android:label="Configure Video Plug-in" android:name="paulscode.android.mupen64plus.MenuSettingsVideoConfigureActivity"/>
+        <activity android:label="Audio Settings" android:name="paulscode.android.mupen64plus.MenuSettingsAudioActivity"/>
+        <activity android:label="Choose Audio Plug-in" android:name="paulscode.android.mupen64plus.MenuSettingsAudioChangeActivity"/>
+        <activity android:label="Input Settings" android:name="paulscode.android.mupen64plus.MenuSettingsInputActivity"/>
+        <activity android:label="Choose Input Plug-in" android:name="paulscode.android.mupen64plus.MenuSettingsInputChangeActivity"/>
+        <activity android:label="Configure Controllers" android:name="paulscode.android.mupen64plus.MenuSettingsInputConfigureActivity"/>
+        <activity android:label="Map Buttons" android:name="paulscode.android.mupen64plus.MenuSettingsInputConfigureButtonsActivity"/>
+        <activity android:label="RSP Settings" android:name="paulscode.android.mupen64plus.MenuSettingsRSPActivity"/>
+        <activity android:label="Choose RSP Plug-in" android:name="paulscode.android.mupen64plus.MenuSettingsRSPChangeActivity"/>
+        <activity android:label="Core Settings" android:name="paulscode.android.mupen64plus.MenuSettingsCoreActivity"/>
+        <activity android:label="Choose Core" android:name="paulscode.android.mupen64plus.MenuSettingsCoreChangeActivity"/>
+        <activity android:label="Configure Core" android:name="paulscode.android.mupen64plus.MenuSettingsCoreConfigureActivity"/>
+        <activity android:label="Skins (look and feel)" android:name="paulscode.android.mupen64plus.MenuSkinsActivity"/>
+        <activity android:label="Virtual Gamepad Settings" android:name="paulscode.android.mupen64plus.MenuSkinsGamepadActivity"/>
+        <activity android:label="Select a Layout" android:name="paulscode.android.mupen64plus.MenuSkinsGamepadChangeActivity"/>
+        <activity android:label="@string/app_name" android:name="paulscode.android.mupen64plus.FileChooserActivity"/>
+        <activity android:label="@string/app_name" android:name="paulscode.android.mupen64plus.MenuHelp"/>
+        <activity android:label="@string/app_name" android:name="paulscode.android.mupen64plus.MyActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode" android:label="@string/app_name" android:name="paulscode.android.mupen64plus.SDLActivity" android:screenOrientation="landscape"/>
+        <service android:name="paulscode.android.mupen64plus.MyService">
+            <intent-filter>
+                <action android:name="paulscode.android.mupen64plus.MyService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="paulscode.android.mupen64plus.Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="paulscode.android.mupen64plus.MyReceiver">
+            <intent-filter>
+                <action android:name="paulscode.android.mupen64plus.MyService"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.Leadbolt.AdNotification"/>
+        <activity android:name="com.mobfox.sdk.InAppWebView"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds"/>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"/>
+        <receiver android:name="com.airpush.android.MessageReceiver"/>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"/>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart43990"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MoPubActivity"/>
+        <activity android:name="com.sellaring.sdk.PostCallScreenActivity"/>
+        <receiver android:name="com.sellaring.sdk.AlarmReceiver"/>
+        <receiver android:name="com.sellaring.sdk.RestartAlarmServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.sellaring.sdk.PhoneStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+</manifest>

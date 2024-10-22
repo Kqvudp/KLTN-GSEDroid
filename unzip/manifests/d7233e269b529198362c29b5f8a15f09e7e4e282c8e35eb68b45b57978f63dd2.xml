@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.atools.netTrafficStats">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.orderlong.netTrafficStats.TrafficApp">
+        <activity android:label="@string/app_name" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.orderlong.netTrafficStats.NetTrafficStats"/>
+        <meta-data android:name="gfan_cpid" android:value="CPID"/>
+        <meta-data android:name="gfan_statistics_appkey" android:value="17BDLK5SS711RTVG67OBEHOFI2"/>
+        <meta-data android:name="gfan_type" android:value="tongjisdk"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.atools.battery.ShowTips" android:theme="@android:style/Theme.Dialog"/>
+        <service android:name="com.atools.battery.UpdateService"/>
+        <meta-data android:name="SAFE_START" android:value="0"/>
+        <meta-data android:name="SAFE_PID" android:value="SSnetTrafficStats"/>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

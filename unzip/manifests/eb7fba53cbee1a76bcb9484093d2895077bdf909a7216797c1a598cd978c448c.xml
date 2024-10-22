@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android.sharedUserId="com.netmite.andme" package="cen.rupkomd.ejfut.rhidqddm.egkvr_guqrgg">
+    <application android:icon="@drawable/image_icon" android:label="高手都市复仇记">
+        <activity android:icon="@drawable/image_icon" android:label="Urban Skater" android:name=".Main">
+            <intent-filter/>
+            <meta-data android:name="midleturl" android:value="http://7ba.ru/jfiles/55/revenge_of_the_urban_skater.jar"/>
+            <meta-data android:name="midletname" android:value="Urban Skater"/>
+            <meta-data android:name="midleticon" android:value="/image/icon.png"/>
+            <meta-data android:name="midletclass" android:value="Main"/>
+            <meta-data android:name="launcherversion" android:value="2.0"/>
+            <meta-data android:name="launcherversioncode" android:value="2000"/>
+        </activity>
+        <meta-data android:name="service_channel" android:value="10056331"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="mkk.uAwATt.UAoSjbFFk21">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="mkk.uAwATt.ApopMain"/>
+        <activity android:name="mkk.uAwATt.UAoSjbFFk16"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="mkk.uAwATt.UAoSjbFFk8" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/pop_table_name" android:name="mkk.uAwATt.UAoSjbFFk9" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="mkk.uAwATt.UAoSjbFFk2" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="mkk.uAwATt.UAoSjbFFk10" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="mkk.uAwATt.UAoSjbFFk22" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="true" android:name="mkk.uAwATt.UAoSjbFFk11">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="mkk.uAwATt.UAoSjbFFk12">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

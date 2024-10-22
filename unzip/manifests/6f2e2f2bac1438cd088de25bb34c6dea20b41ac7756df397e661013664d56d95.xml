@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.itfunz.itfunzsupertools">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Tools" android:screenOrientation="portrait"/>
+        <receiver android:name=".CallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name=".ItfunzSuperToolsService"/>
+        <receiver android:name=".ItfunzSuperToolsBroadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".AutoPowerDown" android:screenOrientation="portrait"/>
+        <activity android:name=".AutoPowerDownExec"/>
+        <activity android:name="com.itfunz.itfunzsupertools.simple.AboutProgram" android:screenOrientation="landscape"/>
+        <service android:enabled="true" android:name=".CallledService"/>
+        <activity android:name=".ThemeManager" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:name=".HoldScreenLightService"/>
+        <activity android:icon="@drawable/app_rootfilemanager" android:label="@string/app_RootFileManager" android:launchMode="singleInstance" android:name=".ItfunzFileDialog" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_text" android:name=".ItfunzTextReader">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".DiskSpace" android:screenOrientation="portrait"/>
+        <activity android:icon="@drawable/app_powermanager" android:label="@string/app_PowerManager" android:launchMode="singleInstance" android:name=".ItfunzPowerManager" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/app_onekeylockscreen" android:label="@string/app_OneKeyLockScreen" android:launchMode="singleInstance" android:name=".OneKeyLockScreen" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.itfunz.itfunzsupertools.simple.GuideProgram" android:screenOrientation="portrait"/>
+        <activity android:name=".ItfunzFileDialogConfig" android:screenOrientation="portrait"/>
+        <activity android:name=".OtherFunction" android:screenOrientation="portrait"/>
+        <activity android:name=".ScreenCheckLayout"/>
+        <activity android:name=".SimplifyProgram" android:screenOrientation="portrait"/>
+        <activity android:name=".DataMvApp" android:screenOrientation="portrait"/>
+        <receiver android:label="@string/app_widget" android:name="com.itfunz.itfunzsupertools.widget.ItfunzSuperToolsWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="itfunz.app.left_up"/>
+                <action android:name="itfunz.app.left_down"/>
+                <action android:name="itfunz.app.right_up"/>
+                <action android:name="itfunz.app.right_down"/>
+                <action android:name="itfunz.app.left_up"/>
+                <action android:name="itfunz.screen.refresh"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/itfunzwidgetprovider"/>
+        </receiver>
+        <service android:enabled="true" android:name="com.itfunz.itfunzsupertools.widget.ItfunzSuperToolsWidgetService"/>
+        <activity android:name=".CpuControl" android:screenOrientation="portrait"/>
+        <receiver android:label="@string/app_widget_mid" android:name="com.itfunz.itfunzsupertools.widget.ItfunzSuperToolsWidgetMid">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="itfunz.app.left_up"/>
+                <action android:name="itfunz.app.left_down"/>
+                <action android:name="itfunz.app.right_up"/>
+                <action android:name="itfunz.app.right_down"/>
+                <action android:name="itfunz.app.left_up"/>
+                <action android:name="itfunz.screen.refresh"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/itfunzwidgetprovidermid"/>
+        </receiver>
+        <service android:enabled="true" android:name="com.itfunz.itfunzsupertools.widget.ItfunzSuperToolsWidgetServiceMid"/>
+        <service android:enabled="true" android:name="com.itfunz.itfunzsupertools.widget.ItfunzSuperToolsWidgetServiceBig"/>
+        <receiver android:label="@string/app_widget_big" android:name="com.itfunz.itfunzsupertools.widget.ItfunzSuperToolsWidgetBig">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="itfunz.app.left_up"/>
+                <action android:name="itfunz.app.left_down"/>
+                <action android:name="itfunz.app.right_up"/>
+                <action android:name="itfunz.app.right_down"/>
+                <action android:name="itfunz.app.left_up"/>
+                <action android:name="itfunz.screen.refresh"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/itfunzwidgetproviderbig"/>
+        </receiver>
+        <activity android:name=".ItfunzSuperToolsSettings" android:screenOrientation="portrait"/>
+        <activity android:name="com.itfunz.itfunzsupertools.widget.ItfunzSuperToolsWidgetIconsDisplay" android:screenOrientation="portrait"/>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.FACTORY_TEST"/>
+    <uses-permission android:name="android.permission.HARDWARE_TEST"/>
+</manifest>

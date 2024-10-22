@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="pjbang.myydss">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".SoftApplication" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="pjbang.myydss.ActWelcome" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="pjbang.myydss.ActMain" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.myydss.ActHome" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.myydss.ActTreasure" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.myydss.ActTreasureList" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.myydss.ActTreasureDetail" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.myydss.ActTreasureFullscreenGallery" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.myydss.ActTreasureSearch" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.myydss.ActShoppingcart" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.myydss.ActShoppingcartSettle" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.myydss.ActAccount" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.myydss.ActAccountAddress" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.myydss.ActAccountCollection"/>
+        <activity android:name="pjbang.myydss.ActAccountPasswordModify" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="pjbang.myydss.ActAccountOrder" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.myydss.ActAccountOrderDetail" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.myydss.ActMore" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.myydss.ActMoreGuideDetail" android:screenOrientation="portrait"/>
+        <activity android:name="pjbang.myydss.ActMyydssFeature" android:screenOrientation="portrait"/>
+        <activity android:name=".ActAfterSaleService" android:screenOrientation="portrait"/>
+        <receiver android:name="pjbang.myydss.ad.ADReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIG_STR"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="pjbang.myydss.ad.ADService"/>
+        <activity android:launchMode="singleInstance" android:name="pjbang.myydss.ad.ADAct" android:theme="@android:style/Theme.Dialog"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+</manifest>

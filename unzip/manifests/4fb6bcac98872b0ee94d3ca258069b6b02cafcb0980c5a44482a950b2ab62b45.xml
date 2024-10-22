@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.z4mod.z4root">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:icon="@drawable/z4small" android:label="@string/z4root">
+        <activity android:finishOnTaskLaunch="true" android:label="z4root" android:launchMode="singleInstance" android:multiprocess="true" android:name="z4root" android:process=":three" android:screenOrientation="portrait" android:theme="@style/Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:label="Phase1" android:launchMode="singleInstance" android:multiprocess="true" android:name="Phase1" android:process=":three" android:screenOrientation="portrait" android:theme="@style/Theme"/>
+        <activity android:finishOnTaskLaunch="true" android:label="Phase2" android:launchMode="singleInstance" android:multiprocess="true" android:name="Phase2" android:process=":two" android:screenOrientation="portrait" android:theme="@style/Theme"/>
+        <activity android:finishOnTaskLaunch="true" android:label="PhaseRemove" android:launchMode="singleInstance" android:multiprocess="true" android:name="PhaseRemove" android:process=":four" android:screenOrientation="portrait" android:theme="@style/Theme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.admob.android.ads.AdMobActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:name="AlarmReceiver" android:process=":remote"/>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14d465ae4079ce"/>
+        <meta-data android:name="ADMOB_INTERSTITIAL_PUBLISHER_ID" android:value="a14d465ae4079ce"/>
+    </application>
+</manifest>

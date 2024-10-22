@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.com.picvision.dolphinradio">
+    <application android:description="@string/app_name" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".CoreLib">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name=".MovieActivity" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name=".StartAdActivity" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name=".Boot" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name=".Main" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Home" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Music" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="Player" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="Player1" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".SetMain" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Clocking" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ClockSet1" android:screenOrientation="portrait" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="TimeLine" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".SendMsg" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="WebViewActivity" android:theme="@style/Theme_NoTitle_FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="Login" android:scheme="dolphinradio"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".Broadcast.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.alarmclock.ALARM_ALERT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.alarmclock.ALARM_ALERT_STOP"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_TICK"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Broadcast.SMSReceiver">
+            <intent-filter>
+                <action android:name="SEND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="SEND_INFOR"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="DELIVER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:launchMode="singleTop" android:name=".service.WfiService"/>
+        <meta-data android:name="PVMobAd_App_Key" android:value="R0knw6pB9l8j1OgBiY3n"/>
+        <activity android:name=".About"/>
+        <activity android:name=".Help"/>
+        <activity android:name=".Skin"/>
+        <receiver android:label="@string/app_name" android:name=".widget.RadioWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="cn.com.picvision.dolphinradio.play_pause"/>
+                <action android:name="cn.com.picvision.dolphinradio.startmain"/>
+                <action android:name="cn.com.picvision.dolphinradio.nextchannel"/>
+                <action android:name="cn.com.picvision.dolphinradio.perchannel"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget"/>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+</manifest>
