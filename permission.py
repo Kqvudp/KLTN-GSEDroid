@@ -73,7 +73,6 @@ class FeatureExtractor:
                     if instruction.get_name().startswith('invoke-'):
                         called_method = instruction.get_output().split(',')[-1].strip()
                         graph.add_edge(method_name, called_method)
-                        
         return graph
         
     def extract_opcodes(self):
