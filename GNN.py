@@ -1,0 +1,235 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torch_geometric.nn import GCNConv, GATConv, SAGEConv, global_mean_pool
+from torch_geometric.data import Data, DataLoader
+import json
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+import pandas as pd
+from tqdm import tqdm
+
+class GNNBlock(nn.Module):
+    def __init__(self, in_channels, out_channels, conv_type='GCN'):
+        super(GNNBlock, self).__init__()
+        self.conv_type = conv_type
+        
+        if conv_type == 'GCN':
+            self.conv = GCNConv(in_channels, out_channels)
+        elif conv_type == 'GAT':
+            self.conv = GATConv(in_channels, out_channels)
+        elif conv_type == 'SAGE':
+            self.conv = SAGEConv(in_channels, out_channels)
+            
+        self.bn = nn.BatchNorm1d(out_channels)
+        self.relu = nn.ReLU()
+        self.dropout = nn.Dropout(0.2)
+        
+    def forward(self, x, edge_index):
+        x = self.conv(x, edge_index)
+        x = self.bn(x)
+        x = self.relu(x)
+        x = self.dropout(x)
+        return x
+
+class MalwareGNN(nn.Module):
+    def __init__(self, input_dim, hidden_dims=[256, 128, 64], conv_type='GCN'):
+        super(MalwareGNN, self).__init__()
+        
+        # GNN layers
+        self.gnn_layers = nn.ModuleList()
+        
+        # Input layer
+        self.gnn_layers.append(GNNBlock(input_dim, hidden_dims[0], conv_type))
+        
+        # Hidden layers
+        for i in range(len(hidden_dims)-1):
+            self.gnn_layers.append(
+                GNNBlock(hidden_dims[i], hidden_dims[i+1], conv_type)
+            )
+        
+        # MLP for graph-level prediction
+        self.mlp = nn.Sequential(
+            nn.Linear(hidden_dims[-1], hidden_dims[-1]//2),
+            nn.ReLU(),
+            nn.Dropout(0.2),
+            nn.Linear(hidden_dims[-1]//2, hidden_dims[-1]//4),
+            nn.ReLU(),
+            nn.Dropout(0.2),
+            nn.Linear(hidden_dims[-1]//4, 2)  # Binary classification
+        )
+        
+        # Layer normalization and attention
+        self.layer_norm = nn.LayerNorm(hidden_dims[-1])
+        self.attention = nn.Parameter(torch.randn(hidden_dims[-1], 1))
+        
+    def forward(self, data):
+        x, edge_index, batch = data.x, data.edge_index, data.batch
+        
+        # Apply GNN layers
+        for gnn_layer in self.gnn_layers:
+            x = gnn_layer(x, edge_index)
+        
+        # Apply layer normalization
+        x = self.layer_norm(x)
+        
+        # Apply attention mechanism
+        attention_weights = torch.tanh(torch.matmul(x, self.attention))
+        attention_weights = F.softmax(attention_weights, dim=0)
+        x = x * attention_weights
+        
+        # Graph pooling
+        x = global_mean_pool(x, batch)
+        
+        # MLP classification
+        out = self.mlp(x)
+        return out
+
+class APKDataset:
+    def __init__(self, json_path):
+        self.graphs = self.load_json(json_path)
+        
+    def load_json(self, json_path):
+        with open(json_path, 'r') as f:
+            data = json.load(f)
+        return data
+    
+    def convert_to_pytorch_geometric(self, labels_df):
+        data_list = []
+        
+        for apk_name, graph in self.graphs.items():
+            # Get node features and edges
+            node_features = torch.FloatTensor([node['features'] for node in graph['nodes']])
+            edge_index = torch.LongTensor([[e['source'], e['target']] for e in graph['edges']]).t()
+            
+            # Get label
+            label = labels_df.loc[apk_name, 'label']
+            y = torch.LongTensor([label])
+            
+            # Create PyG data object
+            data = Data(x=node_features, 
+                       edge_index=edge_index,
+                       y=y)
+            data_list.append(data)
+            
+        return data_list
+
+class MalwareDetector:
+    def __init__(self, model, device='cuda'):
+        self.model = model.to(device)
+        self.device = device
+        self.optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+        self.criterion = nn.CrossEntropyLoss()
+        
+    def train_epoch(self, train_loader):
+        self.model.train()
+        total_loss = 0
+        
+        for data in train_loader:
+            data = data.to(self.device)
+            self.optimizer.zero_grad()
+            
+            out = self.model(data)
+            loss = self.criterion(out, data.y)
+            
+            loss.backward()
+            self.optimizer.step()
+            total_loss += loss.item()
+            
+        return total_loss / len(train_loader)
+    
+    def evaluate(self, loader):
+        self.model.eval()
+        predictions = []
+        labels = []
+        
+        with torch.no_grad():
+            for data in loader:
+                data = data.to(self.device)
+                out = self.model(data)
+                pred = out.argmax(dim=1)
+                
+                predictions.extend(pred.cpu().numpy())
+                labels.extend(data.y.cpu().numpy())
+        
+        return {
+            'accuracy': accuracy_score(labels, predictions),
+            'precision': precision_score(labels, predictions),
+            'recall': recall_score(labels, predictions),
+            'f1': f1_score(labels, predictions)
+        }
+    
+    def train(self, train_loader, val_loader, epochs=100, patience=10):
+        best_val_f1 = 0
+        patience_counter = 0
+        training_history = []
+        
+        for epoch in tqdm(range(epochs)):
+            # Training
+            train_loss = self.train_epoch(train_loader)
+            
+            # Evaluation
+            train_metrics = self.evaluate(train_loader)
+            val_metrics = self.evaluate(val_loader)
+            
+            # Save history
+            history = {
+                'epoch': epoch,
+                'train_loss': train_loss,
+                **{f'train_{k}': v for k, v in train_metrics.items()},
+                **{f'val_{k}': v for k, v in val_metrics.items()}
+            }
+            training_history.append(history)
+            
+            # Early stopping
+            if val_metrics['f1'] > best_val_f1:
+                best_val_f1 = val_metrics['f1']
+                patience_counter = 0
+                torch.save(self.model.state_dict(), 'best_model.pt')
+            else:
+                patience_counter += 1
+                
+            if patience_counter >= patience:
+                print(f'Early stopping at epoch {epoch}')
+                break
+            
+            print(f'Epoch {epoch}:')
+            print(f'Train Loss: {train_loss:.4f}')
+            print(f'Train Metrics: {train_metrics}')
+            print(f'Val Metrics: {val_metrics}')
+            
+        return pd.DataFrame(training_history)
+
+def main():
+    # Load data
+    dataset = APKDataset('api_features.json')
+    labels_df = pd.read_csv('labels.csv', index_col='apk_name')
+    
+    # Convert to PyG format
+    data_list = dataset.convert_to_pytorch_geometric(labels_df)
+    
+    # Split dataset
+    train_data, test_data = train_test_split(data_list, test_size=0.2, random_state=42)
+    train_data, val_data = train_test_split(train_data, test_size=0.2, random_state=42)
+    
+    # Create data loaders
+    train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
+    val_loader = DataLoader(val_data, batch_size=32)
+    test_loader = DataLoader(test_data, batch_size=32)
+    
+    # Initialize model
+    input_dim = data_list[0].x.shape[1]  # Feature dimension
+    model = MalwareGNN(input_dim=input_dim, conv_type='GAT')
+    
+    # Train model
+    detector = MalwareDetector(model)
+    history = detector.train(train_loader, val_loader)
+    
+    # Evaluate on test set
+    model.load_state_dict(torch.load('best_model.pt'))
+    test_metrics = detector.evaluate(test_loader)
+    print("Test Metrics:", test_metrics)
+
+if __name__ == "__main__":
+    main()
