@@ -10,6 +10,111 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import pandas as pd
 from tqdm import tqdm
 
+class APKDataset:
+    def __init__(self, json_path):
+        self.graphs = self.load_json(json_path)
+        self.feature_dim = self.get_feature_dimension()
+        print(f"Feature dimension: {self.feature_dim}")
+        
+    def load_json(self, json_path):
+        with open(json_path, 'r') as f:
+            data = json.load(f)
+        return data
+    
+    def get_feature_dimension(self):
+        """Determine the feature dimension from the first valid node features"""
+        for graph in self.graphs.values():
+            for node in graph['nodes']:
+                if node['features'] and len(node['features']) > 0:
+                    return len(node['features'])
+        raise ValueError("No valid features found in any node")
+    
+    def pad_or_truncate_features(self, features):
+        """Pad with zeros or truncate features to match feature_dim"""
+        if not features:
+            return np.zeros(self.feature_dim)
+        features = np.array(features)
+        if len(features) > self.feature_dim:
+            return features[:self.feature_dim]
+        elif len(features) < self.feature_dim:
+            return np.pad(features, (0, self.feature_dim - len(features)))
+        return features
+
+    def preprocess_graph(self, graph):
+        """Preprocess a single graph to ensure valid features and edges"""
+        # Create node mapping
+        node_mapping = {node['id']: idx for idx, node in enumerate(graph['nodes'])}
+        
+        # Process nodes
+        processed_features = []
+        valid_nodes = []
+        new_mapping = {}
+        
+        for idx, node in enumerate(graph['nodes']):
+            features = self.pad_or_truncate_features(node['features'])
+            if np.any(np.isnan(features)) or np.any(np.isinf(features)):
+                continue
+            processed_features.append(features)
+            valid_nodes.append(node['id'])
+            new_mapping[node['id']] = len(new_mapping)
+        
+        if not processed_features:
+            # If no valid nodes, create a dummy node with zero features
+            processed_features = [np.zeros(self.feature_dim)]
+            new_mapping = {'dummy': 0}
+            valid_nodes = ['dummy']
+        
+        # Process edges
+        valid_edges = []
+        for edge in graph['edges']:
+            source = edge['source']
+            target = edge['target']
+            if source in new_mapping and target in new_mapping:
+                valid_edges.append([new_mapping[source], new_mapping[target]])
+        
+        if not valid_edges:
+            # If no valid edges, add self-loop to prevent errors
+            valid_edges = [[0, 0]]
+        
+        return np.array(processed_features), np.array(valid_edges)
+
+    def convert_to_pytorch_geometric(self, labels_df):
+        data_list = []
+        skipped_graphs = 0
+        
+        for apk_name, graph in self.graphs.items():
+            try:
+                # Skip if APK not in labels
+                if apk_name not in labels_df.index:
+                    print(f"Skipping {apk_name}: not found in labels")
+                    skipped_graphs += 1
+                    continue
+                
+                # Preprocess graph
+                node_features, edges = self.preprocess_graph(graph)
+                
+                # Convert to PyTorch tensors
+                x = torch.FloatTensor(node_features)
+                edge_index = torch.LongTensor(edges).t()
+                y = torch.LongTensor([labels_df.loc[apk_name, 'label']])
+                
+                # Create PyG data object
+                data = Data(x=x, edge_index=edge_index, y=y)
+                data_list.append(data)
+                
+            except Exception as e:
+                print(f"Error processing {apk_name}: {str(e)}")
+                skipped_graphs += 1
+                continue
+        
+        print(f"Successfully processed {len(data_list)} graphs")
+        print(f"Skipped {skipped_graphs} graphs due to errors")
+        
+        if not data_list:
+            raise ValueError("No valid graphs were processed")
+        
+        return data_list
+
 class GNNBlock(nn.Module):
     def __init__(self, in_channels, out_channels, conv_type='GCN'):
         super(GNNBlock, self).__init__()
@@ -86,39 +191,11 @@ class MalwareGNN(nn.Module):
         out = self.mlp(x)
         return out
 
-class APKDataset:
-    def __init__(self, json_path):
-        self.graphs = self.load_json(json_path)
-        
-    def load_json(self, json_path):
-        with open(json_path, 'r') as f:
-            data = json.load(f)
-        return data
-    
-    def convert_to_pytorch_geometric(self, labels_df):
-        data_list = []
-        
-        for apk_name, graph in self.graphs.items():
-            # Get node features and edges
-            node_features = torch.FloatTensor([node['features'] for node in graph['nodes']])
-            edge_index = torch.LongTensor([[e['source'], e['target']] for e in graph['edges']]).t()
-            
-            # Get label
-            label = labels_df.loc[apk_name, 'label']
-            y = torch.LongTensor([label])
-            
-            # Create PyG data object
-            data = Data(x=node_features, 
-                       edge_index=edge_index,
-                       y=y)
-            data_list.append(data)
-            
-        return data_list
-
 class MalwareDetector:
-    def __init__(self, model, device='cuda'):
+    def __init__(self, model, device='cuda' if torch.cuda.is_available() else 'cpu'):
         self.model = model.to(device)
         self.device = device
+        print(f"Using device: {device}")
         self.optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
         self.criterion = nn.CrossEntropyLoss()
         
@@ -204,10 +281,13 @@ class MalwareDetector:
 def main():
     # Load data
     dataset = APKDataset('api_features.json')
-    labels_df = pd.read_csv('labels.csv', index_col='apk_name')
+    labels_df = pd.read_csv('sha256_family.csv', index_col='sha256')
     
     # Convert to PyG format
     data_list = dataset.convert_to_pytorch_geometric(labels_df)
+    
+    if len(data_list) < 3:  # Minimum required for train/val/test split
+        raise ValueError("Not enough valid samples for training")
     
     # Split dataset
     train_data, test_data = train_test_split(data_list, test_size=0.2, random_state=42)
@@ -226,10 +306,17 @@ def main():
     detector = MalwareDetector(model)
     history = detector.train(train_loader, val_loader)
     
+    # Save training history
+    history.to_csv('training_history.csv', index=False)
+    
     # Evaluate on test set
     model.load_state_dict(torch.load('best_model.pt'))
     test_metrics = detector.evaluate(test_loader)
     print("Test Metrics:", test_metrics)
+    
+    # Save test metrics
+    with open('test_metrics.json', 'w') as f:
+        json.dump(test_metrics, f, indent=2)
 
 if __name__ == "__main__":
     main()
