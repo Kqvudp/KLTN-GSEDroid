@@ -2,6 +2,7 @@ import json
 import os
 import torch
 import torch.nn as nn
+import numpy as np
 import torch.nn.functional as F
 from transformers import RobertaTokenizer, RobertaModel
 from androguard.core.bytecodes.apk import APK
@@ -10,6 +11,7 @@ from androguard.core.bytecodes.dvm import DalvikVMFormat
 from androguard.misc import AnalyzeAPK
 from concurrent.futures import ThreadPoolExecutor
 import networkx as nx
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 class TextCNN(nn.Module):
     def __init__(self, embed_dim=768, kernel_sizes=[2,3,4,5,6,7,8,9], num_filters=128):
@@ -103,7 +105,7 @@ class APIFeatureExtractor:
         
         # Apply TextCNN
         cnn_output = self.textcnn(embeddings)
-        return cnn_output.squeeze(0).numpy()
+        return cnn_output.squeeze(0).detach().numpy()
     
     def extract_api_features(self, apk_path):
         """Extract API features from APK following the algorithm"""
@@ -166,7 +168,7 @@ def process_apk_batch(apk_paths, output_path):
             for apk_path in apk_paths
         }
         
-        for future in futures.as_completed(future_to_apk):
+        for future in as_completed(future_to_apk):
             apk_path = future_to_apk[future]
             try:
                 graph = future.result()
@@ -180,7 +182,7 @@ def process_apk_batch(apk_paths, output_path):
 
 # Example usage
 if __name__ == "__main__":
-    apk_directory = r"D:\FinalProject\drebin"
+    apk_directory = r"E:\drebin\drebin-cut"
     output_path = "api_features.json"
     
     # Get list of APK files
