@@ -222,6 +222,6 @@ train_loader = create_train_loader(
     batch_size=16,
 )
 
-model = GSEDroid(input_dim=128)
+model = GSEDroid(input_dim=64)
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 train_model(model, train_loader, optimizer)
