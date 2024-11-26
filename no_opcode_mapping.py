@@ -68,8 +68,6 @@ class GSEDroid(nn.Module):
         # Graph Sage layers
         self.conv1 = SAGEConv(input_dim, hidden_dim)
         self.conv2 = SAGEConv(hidden_dim, hidden_dim)
-        self.conv3 = SAGEConv(hidden_dim, hidden_dim)
-        self.conv4 = SAGEConv(hidden_dim, hidden_dim)
         
         # SAG Pooling layers
         self.pool1 = SAGPooling(hidden_dim, ratio=0.8)
@@ -189,7 +187,7 @@ def evaluate_model(model, test_loader):
     return correct / total
 
 
-def create_train_loader(apk_folder, batch_size=32, malware_folder="malware", benign_folder="benign"):
+def create_train_loader(apk_folder, batch_size=16, malware_folder="malware", benign_folder="benign"):
     dataset = []
     
     # Process malware samples
@@ -221,7 +219,7 @@ def create_train_loader(apk_folder, batch_size=32, malware_folder="malware", ben
 # Usage example:
 train_loader = create_train_loader(
     apk_folder="E:\drebin\sample",
-    batch_size=32
+    batch_size=16,
 )
 
 model = GSEDroid(input_dim=128)
