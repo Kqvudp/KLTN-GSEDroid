@@ -9,6 +9,7 @@ from transformers import RobertaTokenizer, RobertaModel
 import numpy as np
 from torch_geometric.data import DataLoader
 import os
+from androguard.core.analysis.analysis import Analysis
 
 class APIFeatureExtractor:
     def __init__(self):
@@ -115,44 +116,46 @@ def process_apk(apk_path):
     try:
         feature_extractor = APIFeatureExtractor()
         apk = APK(apk_path)
-        
-        # Get DEX analysis
-        from androguard.core.bytecodes.dvm import DalvikVMFormat
-        from androguard.core.analysis.analysis import Analysis
-        
-        dex = DalvikVMFormat(apk.get_dex())
+
+        # Get DEX and perform analysis
+        dex = dvm.DalvikVMFormat(apk.get_dex())
         dx = Analysis(dex)
-        dx.create_xref()  # Create cross references
-        
+
         # Extract API calls and build graph
         api_calls = []
         edge_list = []
         features = []
-        
+
         for method in dex.get_methods():
             # Get method features
             permission_vec = feature_extractor.get_permission_vector(apk)
             opcode_vec = feature_extractor.process_opcode_sequence(method)
             features.append(torch.cat([permission_vec, opcode_vec]))
-            
+
             # Add edges based on method calls
-            for _, call, _ in method.get_xref_to():  # Use correct method to get xrefs
-                edge_list.append([len(api_calls), len(api_calls) + 1])
+            method_analysis = dx.get_method(method)
+            for xref in method_analysis.get_xref_from():
+                xref_method = xref[1]
+                if xref_method:
+                    src_index = len(api_calls)
+                    dst_index = api_calls.index(xref_method) if xref_method in api_calls else len(api_calls) + 1
+                    edge_list.append([src_index, dst_index])
             api_calls.append(method)
-        
+
         if not features:
             raise ValueError(f"No features extracted from {apk_path}")
-            
+
         # Create PyTorch Geometric data object
         x = torch.stack(features)
         edge_index = torch.tensor(edge_list, dtype=torch.long).t() if edge_list else torch.zeros((2, 0), dtype=torch.long)
         data = Data(x=x, edge_index=edge_index)
-        
+
         return data
-        
+
     except Exception as e:
         print(f"Error processing {apk_path}: {str(e)}")
         return None
+
 
 def train_model(model, train_loader, optimizer, epochs=50):
     """Train the GSEDroid model"""
@@ -217,7 +220,7 @@ def create_train_loader(apk_folder, batch_size=32, malware_folder="malware", ben
 
 # Usage example:
 train_loader = create_train_loader(
-    apk_folder="D:\FinalProject\code\main",
+    apk_folder="E:\drebin\sample",
     batch_size=32
 )
 
