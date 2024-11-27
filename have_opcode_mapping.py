@@ -3,15 +3,13 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch_geometric.nn import SAGEConv, SAGPooling
-from androguard.core.bytecodes import apk, dvm
-from androguard.core.analysis import analysis
 from transformers import RobertaTokenizer, RobertaModel
-import pandas as pd
-import numpy as np
-from torch_geometric.data import Data, DataLoader
+from torch_geometric.data import Data
+from torch_geometric.loader import DataLoader
 from torch.optim import Adam
 import os
 import torch_geometric.nn
+from androguard.misc import AnalyzeAPK
 
 class OpCodeProcessor:
     def __init__(self):
@@ -46,9 +44,9 @@ class OpCodeProcessor:
         with torch.no_grad():
             outputs = self.codebert(**inputs)
             embeddings = outputs.last_hidden_state
-            
-        cnn_features = self.text_cnn(embeddings)
-        return cnn_features
+        
+        word_vector_matrix = embeddings.squeeze(0)
+        return word_vector_matrix
 
 class TextCNNLayer(nn.Module):
     def __init__(self, embedding_dim=768, num_filters=64, filter_sizes=[2,3,4,5,6,7,8,9]):
@@ -62,7 +60,15 @@ class TextCNNLayer(nn.Module):
         self.linear = nn.Linear(len(filter_sizes) * num_filters, 128)
         
     def forward(self, x):
+        print(f"Original x shape: {x.shape}")
+        
         x = x.transpose(1, 2)
+        
+        # Ensure the input sequence length is at least as long as the largest kernel size
+        max_kernel_size = max([conv.kernel_size[0] for conv in self.convs])
+        if x.size(2) < max_kernel_size:
+            padding = max_kernel_size - x.size(2)
+            x = F.pad(x, (0, padding))
         
         conv_results = []
         for conv in self.convs:
@@ -136,9 +142,7 @@ class APKAnalyzer:
         
     def analyze_apk(self, apk_path):
         print(f"Analyzing APK: {apk_path}")
-        a = apk.APK(apk_path)
-        d = dvm.DalvikVMFormat(a.get_dex())
-        dx = analysis.Analysis(d)
+        a, d, dx =  AnalyzeAPK(apk_path)
         
         permissions = self._extract_permissions(a)
         print(f"Permissions: {permissions}")
@@ -151,16 +155,24 @@ class APKAnalyzer:
             if method.is_external():
                 continue
                 
-            opcodes = [inst.get_name() for inst in method.get_instructions()]
-            print(f"Opcodes for method {method.get_name()}: {opcodes}")
+            opcodes = [inst.get_name() for inst in method.get_method().get_instructions()]
+            if not opcodes:
+                continue # Skip nodes without opcodes
+            print(f"Opcodes for method {method}: {opcodes}")
             
             embeddings = self.opcode_processor.process_opcode_sequence(opcodes)
             opcode_features = self.opcode_processor.text_cnn(embeddings)
             
-            api_features = torch.cat([opcode_features, permissions], dim=-1)
-            
+            # Unsqueeze permissions to match dimensions
+            permissions_expanded = permissions.unsqueeze(0).expand(opcode_features.size(0), -1)
+
+            # api_features = torch.cat([opcode_features, permissions], dim=-1)
+            api_features = torch.cat([opcode_features, permissions_expanded], dim=-1)
             node_features[method] = api_features
-            
+
+        isolated_nodes = [node for node in call_graph.nodes if call_graph.degree(node) == 0]
+        call_graph.remove_nodes_from(isolated_nodes)   
+
         print(f"Node features: {len(node_features)}")
         return call_graph, node_features
         
@@ -201,10 +213,24 @@ def analyze_folder(folder_path, analyzer):
         
         graph, node_features = analyzer.analyze_apk(apk_path)
         
-        nodes = torch.stack([features for _, features in node_features.items()])
-        edges = torch.tensor(list(graph.edges), dtype=torch.long).t().contiguous()
+        # Determine the maximum number of features
+        max_features = max(features.size(0) for features in node_features.values())
         
-        data = Data(x=nodes, edge_index=edges)
+        # Pad each tensor to the maximum size
+        padded_features = []
+        for _, features in node_features.items():
+            padding = (0, 0, 0, max_features - features.size(0))
+            padded_features.append(F.pad(features, padding))
+        
+        nodes = torch.cat(padded_features, dim=0)
+
+        edges = [(list(graph.nodes).index(edge[0]), list(graph.nodes).index(edge[1])) for edge in graph.edges]
+        edges = torch.tensor(edges, dtype=torch.long).t().contiguous()
+
+        # Create dummy labels (e.g., all zeros)
+        labels = torch.zeros(len(graph.nodes), dtype=torch.long)
+
+        data = Data(x=nodes, edge_index=edges, y=labels)
         graphs.append(data)
             
     return graphs
@@ -218,38 +244,6 @@ def create_dataloaders(graphs, batch_size=32, test_split=0.2):
     test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=False)
     
     return train_loader, test_loader
-
-def main():
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    
-    analyzer = APKAnalyzer()
-    
-    apk_folder = r"D:\FinalProject\code\test"
-    
-    print("Analyzing APK files...")
-    graphs = analyze_folder(apk_folder, analyzer)
-    
-    print("Creating data loaders...")
-    train_loader, test_loader = create_dataloaders(graphs, batch_size=32)
-    
-    print("Initializing model...")
-    sample_data = next(iter(train_loader))
-    input_dim = sample_data.x.size(1)
-    
-    model = GSEDroidModel(input_dim=input_dim).to(device)
-    
-    print("Setting up optimizer...")
-    optimizer = Adam(model.parameters(), lr=0.001)
-    
-    print("Starting training...")
-    train_model(model, train_loader, optimizer, epochs=50)
-    
-    print("Evaluating model...")
-    accuracy = evaluate(model, test_loader)
-    print(f"Test Accuracy: {accuracy * 100:.2f}%")
-
-if __name__ == "__main__":
-    main()
 
 def to_device(batch, device):
     batch.x = batch.x.to(device)
@@ -266,17 +260,20 @@ def train_model(model, train_loader, optimizer, epochs=50):
         total_loss = 0
         for batch in train_loader:
             batch = to_device(batch, device)
-            optimizer.zero_grad()
+            optimizer.zero_grad()  # Reset gradient
             
-            out = model(batch.x, batch.edge_index, batch.batch)
-            loss = F.nll_loss(out, batch.y)
+            out = model(batch.x, batch.edge_index, batch.batch)  # Forward pass
             
-            loss.backward()
-            optimizer.step()
+            # Compute loss
+            loss = F.nll_loss(out, batch.y[:out.size(0)])  # Ensure target batch size matches output batch size
             
-            total_loss += loss.item()
+            # # Backward pass
+            # loss.backward(retain_graph=True)
+            # optimizer.step()  # Update weights
             
-        print(f'Epoch {epoch+1}, Loss: {total_loss/len(train_loader)}')
+            total_loss += loss.item()  # Accumulate loss
+        
+        print(f'Epoch {epoch+1}, Loss: {total_loss / len(train_loader)}')
 
 def evaluate(model, test_loader):
     device = next(model.parameters()).device
@@ -290,7 +287,44 @@ def evaluate(model, test_loader):
             batch = to_device(batch, device)
             out = model(batch.x, batch.edge_index, batch.batch)
             pred = out.argmax(dim=1)
-            correct += pred.eq(batch.y).sum().item()
+            correct += pred.eq(batch.y[:pred.size(0)]).sum().item()
             total += batch.y.size(0)
             
     return correct / total
+
+
+def main():
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    
+    analyzer = APKAnalyzer()
+    
+    apk_folder = r"D:\FinalProject\code\input"
+    
+    print("Analyzing APK files...")
+    graphs = analyze_folder(apk_folder, analyzer)
+    
+    print("Creating data loaders...")
+    train_loader, test_loader = create_dataloaders(graphs, batch_size=32)
+    
+    print("Initializing model...")
+    sample_data = next(iter(train_loader))
+    input_dim = sample_data.x.size(1)
+    print(f"Input dimension: {input_dim}")
+    
+    model = GSEDroidModel(input_dim=input_dim).to(device)
+    
+    print("Setting up optimizer...")
+    optimizer = Adam(model.parameters(), lr=0.001)
+    
+    print("Starting training...")
+    for batch in train_loader:
+        print(f"Batch x shape: {batch.x.shape}, edge_index shape: {batch.edge_index.shape}")
+    
+    train_model(model, train_loader, optimizer, epochs=50)
+    
+    print("Evaluating model...")
+    accuracy = evaluate(model, test_loader)
+    print(f"Test Accuracy: {accuracy * 100:.2f}%")
+
+if __name__ == "__main__":
+    main()
