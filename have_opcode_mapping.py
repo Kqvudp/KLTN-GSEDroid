@@ -298,7 +298,7 @@ def main():
     
     analyzer = APKAnalyzer()
     
-    apk_folder = r"D:\FinalProject\code\input"
+    apk_folder = r"D:\FinalProject\code\test"
     
     print("Analyzing APK files...")
     graphs = analyze_folder(apk_folder, analyzer)
