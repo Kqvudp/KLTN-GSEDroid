@@ -49,38 +49,49 @@ class OpCodeProcessor:
         return word_vector_matrix
 
 class TextCNNLayer(nn.Module):
-    def __init__(self, embedding_dim=768, num_filters=64, filter_sizes=[2,3,4,5,6,7,8,9]):
+    def __init__(self, embedding_dim=768, num_filters=64, filter_sizes=[2, 3, 4, 5, 6, 7, 8, 9]):
         super().__init__()
-        
+
         self.convs = nn.ModuleList([
-            nn.Conv1d(embedding_dim, num_filters, fs) 
+            nn.Conv1d(embedding_dim, num_filters, fs)
             for fs in filter_sizes
         ])
-        
+
         self.linear = nn.Linear(len(filter_sizes) * num_filters, 128)
-        
+
     def forward(self, x):
         print(f"Original x shape: {x.shape}")
+
+        # Nếu thiếu chiều batch, thêm chiều batch
+        if x.dim() == 2:
+            x = x.unsqueeze(0)  # Thêm chiều batch
         
-        x = x.transpose(1, 2)
+        # Kiểm tra lại x sau khi thêm chiều batch
+        print(f"Shape after unsqueeze: {x.shape}")
+
+        x = x.transpose(1, 2)  # Chuyển đổi thành (batch_size, embedding_dim, sequence_length)
         
-        # Ensure the input sequence length is at least as long as the largest kernel size
+        # Đảm bảo chiều sequence_length >= kernel_size lớn nhất
         max_kernel_size = max([conv.kernel_size[0] for conv in self.convs])
         if x.size(2) < max_kernel_size:
             padding = max_kernel_size - x.size(2)
             x = F.pad(x, (0, padding))
-        
+            print(f"Shape after padding: {x.shape}")
+
+        # Áp dụng các convolutional layers và pooling
         conv_results = []
         for conv in self.convs:
             conv_out = F.relu(conv(x))
             pooled = F.max_pool1d(conv_out, conv_out.shape[2])
             conv_results.append(pooled)
-            
-        x = torch.cat(conv_results, dim=1)
-        x = x.squeeze(-1)
-        
-        x = self.linear(x)
+
+        x = torch.cat(conv_results, dim=1)  # Gộp các kết quả
+        x = x.squeeze(-1)  # Loại bỏ chiều không cần thiết
+        print(f"Shape after concatenation: {x.shape}")
+
+        x = self.linear(x)  # Fully connected layer
         return x
+
 
 class GSEDroidModel(nn.Module):
     def __init__(self, input_dim, hidden_dim=128):
@@ -125,11 +136,11 @@ class APKAnalyzer:
     def __init__(self):
         self.opcode_processor = OpCodeProcessor()
         self.permission_list = self._get_top_permissions()
-    
+
     def _get_top_permissions(self):
         return [
             'android.permission.INTERNET',
-            'android.permission.ACCESS_NETWORK_STATE', 
+            'android.permission.ACCESS_NETWORK_STATE',
             'android.permission.WRITE_EXTERNAL_STORAGE',
             'android.permission.ACCESS_WIFI_STATE',
             'android.permission.READ_PHONE_STATE',
@@ -139,67 +150,67 @@ class APKAnalyzer:
             'android.permission.ACCESS_FINE_LOCATION',
             'android.permission.ACCESS_COARSE_LOCATION'
         ]
-        
+
     def analyze_apk(self, apk_path):
         print(f"Analyzing APK: {apk_path}")
-        a, d, dx =  AnalyzeAPK(apk_path)
-        
+        a, d, dx = AnalyzeAPK(apk_path)
+
         permissions = self._extract_permissions(a)
         print(f"Permissions: {permissions}")
-        
+
         call_graph = self._build_call_graph(dx)
         print(f"Call graph nodes: {len(call_graph.nodes)}, edges: {len(call_graph.edges)}")
-        
+
         node_features = {}
         for method in dx.get_methods():
             if method.is_external():
                 continue
-                
+
             opcodes = [inst.get_name() for inst in method.get_method().get_instructions()]
             if not opcodes:
-                continue # Skip nodes without opcodes
+                continue  # Skip nodes without opcodes
             print(f"Opcodes for method {method}: {opcodes}")
-            
-            embeddings = self.opcode_processor.process_opcode_sequence(opcodes)
-            opcode_features = self.opcode_processor.text_cnn(embeddings)
-            
-            # Unsqueeze permissions to match dimensions
-            permissions_expanded = permissions.unsqueeze(0).expand(opcode_features.size(0), -1)
 
-            # api_features = torch.cat([opcode_features, permissions], dim=-1)
+            embeddings = self.opcode_processor.process_opcode_sequence(opcodes)
+            print(f"Embeddings shape: {embeddings.shape}")
+            opcode_features = self.opcode_processor.text_cnn(embeddings)
+            print(f"Opcode features shape: {opcode_features.shape}")
+
+            # Expand permissions to match feature dimensions
+            permissions_expanded = permissions.unsqueeze(0).expand(opcode_features.size(0), -1)
             api_features = torch.cat([opcode_features, permissions_expanded], dim=-1)
             node_features[method] = api_features
 
+        # Loại bỏ các nút bị cô lập
         isolated_nodes = [node for node in call_graph.nodes if call_graph.degree(node) == 0]
-        call_graph.remove_nodes_from(isolated_nodes)   
+        call_graph.remove_nodes_from(isolated_nodes)
 
         print(f"Node features: {len(node_features)}")
         return call_graph, node_features
-        
+
     def _extract_permissions(self, apk_obj):
         perm_vector = torch.zeros(len(self.permission_list))
-        
         apk_perms = apk_obj.get_permissions()
-        
+
         for i, perm in enumerate(self.permission_list):
             if perm in apk_perms:
                 perm_vector[i] = 1
-                
+
         return perm_vector
-        
+
     def _build_call_graph(self, analysis_obj):
         graph = nx.DiGraph()
-        
+
         for method in analysis_obj.get_methods():
             if method.is_external():
                 continue
-                
+
             graph.add_node(method)
-            
+
             for called in method.get_xref_to():
                 if not called[1].is_external():
                     graph.add_edge(method, called[1])
-                    
+
         return graph
 
 
@@ -298,7 +309,7 @@ def main():
     
     analyzer = APKAnalyzer()
     
-    apk_folder = r"D:\FinalProject\code\test"
+    apk_folder = r"E:\drebin-1\split"
     
     print("Analyzing APK files...")
     graphs = analyze_folder(apk_folder, analyzer)
