@@ -50,7 +50,20 @@ class OpCodeEmbedding:
             'if-eqz': ['if', 'equal', 'zero'],
             'iput-byte': ['instance', 'put', 'byte'],
             'return-void': ['return', 'void'],
-            'invoke-virtual': ['invoke', 'virtual']
+            'invoke-virtual': ['invoke', 'virtual'],
+            'new-instance': ['new', 'instance'],
+            'if-eq': ['if', 'equal'],
+            'if-ne': ['if', 'not', 'equal'],
+            'if-gt': ['if', 'greater'],
+            'if-ge': ['if', 'greater', 'equal'],
+            'if-lt': ['if', 'less'],
+            'if-le': ['if', 'less', 'equal'],
+            'if-eqz': ['if', 'equal', 'zero'],
+            'if-nez': ['if', 'not', 'equal', 'zero'],
+            'if-lez': ['if', 'less', 'equal', 'zero'], 
+            'if-ltz': ['if', 'less', 'zero'], 
+            'if-gez': ['if', 'greater', 'equal', 'zero'],
+            'if-gtz': ['if', 'greater', 'zero'],
         }
 
     def process_opcode_sequence(self, opcode_seq):
@@ -124,7 +137,7 @@ def process_feature_folder(input_folder, output_folder):
             print(f"Error processing {feature_file}: {str(e)}")
 
 if __name__ == "__main__":
-    feature_folder = "path/to/features"
-    processed_folder = "path/to/processed_features"
+    feature_folder = r"D:\FinalProject\code\main_v4\test"
+    processed_folder = r"D:\FinalProject\code\main_v4\processed_features"
     
     process_feature_folder(feature_folder, processed_folder)

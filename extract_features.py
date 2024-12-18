@@ -8,28 +8,6 @@ from pathlib import Path
 class FeatureExtractor:
     def __init__(self):
         self.permission_list = self._get_top_permissions()
-        self.opcode_mapping = {
-            'move': ['move'],
-            'add-double': ['add', 'double'],
-            'const': ['const'],
-            'float-to-int': ['float', 'to', 'int'],
-            'iput-byte': ['instance', 'put', 'byte'],
-            'return-void': ['return', 'void'],
-            'invoke-virtual': ['invoke', 'virtual'],
-            'new-instance': ['new', 'instance'],
-            'if-eq': ['if', 'equal'],
-            'if-ne': ['if', 'not', 'equal'],
-            'if-gt': ['if', 'greater'],
-            'if-ge': ['if', 'greater', 'equal'],
-            'if-lt': ['if', 'less'],
-            'if-le': ['if', 'less', 'equal'],
-            'if-eqz': ['if', 'equal', 'zero'],
-            'if-nez': ['if', 'not', 'equal', 'zero'],
-            'if-lez': ['if', 'less', 'equal', 'zero'], 
-            'if-ltz': ['if', 'less', 'zero'], 
-            'if-gez': ['if', 'greater', 'equal', 'zero'],
-            'if-gtz': ['if', 'greater', 'zero'],
-        }
 
     def _get_top_permissions(self):
         return [
@@ -134,14 +112,14 @@ def process_apk_folder(input_folder, output_folder, label=0):
             print(f"Error processing {apk_file}: {str(e)}")
 
 if __name__ == "__main__":
-    benign_folder = r"D:\FinalProject\input\bengin"
+    # benign_folder = r"D:\FinalProject\input\bengin"
     malware_folder = r"D:\FinalProject\input\malware"
     output_folder = r"D:\FinalProject\code\main_v4\output"
     
     os.makedirs(output_folder, exist_ok=True)
     
-    print("Processing benign APKs...")
-    process_apk_folder(benign_folder, output_folder, label=0)
+    # print("Processing benign APKs...")
+    # process_apk_folder(benign_folder, output_folder, label=0)
     
     print("Processing malware APKs...")
     process_apk_folder(malware_folder, output_folder, label=1)
