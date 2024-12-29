@@ -4,7 +4,7 @@ import torch.nn.functional as F
 from transformers import RobertaTokenizer, RobertaModel
 import json
 import os
-from pathlib import Path
+import pickle
 
 class TextCNNLayer(nn.Module):
     def __init__(self, embedding_dim=768, num_filters=64, filter_sizes=[2,3,4,5,6,7,8,9]):
@@ -78,7 +78,7 @@ class OpCodeEmbedding:
                 else:
                     split_parts = parts.split('-')
                     tokens.extend(split_parts)
-                
+        
         inputs = self.tokenizer(' '.join(tokens), 
                               return_tensors="pt",
                               padding=True,
@@ -97,26 +97,25 @@ def process_features(feature_file, output_folder):
     
     with open(feature_file, 'r') as f:
         features = json.load(f)
-    
-    # Process opcodes for each method
-    method_embeddings = {}
-    for method_id, opcodes in features['opcodes'].items():
-        method_embeddings[method_id] = embedder.process_opcode_sequence(opcodes).tolist()
+
+    # Process opcodes for each method in the call graph
+    for node in features['call_graph']['nodes']:
+        opcodes = node[1].get('opcodes', [])
+        if opcodes:  # Ensure there are opcodes to process
+            node[1]['opcodes'] = embedder.process_opcode_sequence(opcodes).tolist()
     
     # Combine all features
     processed_features = {
-        'method_embeddings': method_embeddings,
         'permissions': features['permissions'],
         'call_graph': features['call_graph'],
         'label': features['label']
     }
-    
-    # Save processed features
-    base_name = os.path.basename(feature_file)
+    # Save processed features as .pkl
+    base_name = os.path.basename(feature_file).replace('.json', '.pkl')
     output_path = os.path.join(output_folder, f"processed_{base_name}")
     
-    with open(output_path, 'w') as f:
-        json.dump(processed_features, f, indent=2)
+    with open(output_path, 'wb') as f:
+        pickle.dump(processed_features, f)
     
     print(f"Saved processed features to {output_path}")
 
@@ -137,7 +136,7 @@ def process_feature_folder(input_folder, output_folder):
             print(f"Error processing {feature_file}: {str(e)}")
 
 if __name__ == "__main__":
-    feature_folder = r"D:\FinalProject\code\main_v4\test"
-    processed_folder = r"D:\FinalProject\code\main_v4\processed_features"
+    feature_folder = r"D:\FinalProject\code\main_v5\test_extracted"
+    processed_folder = r"D:\FinalProject\code\main_v5\test_processed"
     
     process_feature_folder(feature_folder, processed_folder)

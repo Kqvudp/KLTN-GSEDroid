@@ -33,7 +33,6 @@ class FeatureExtractor:
         features = {
             'permissions': self.extract_permissions(a),
             'call_graph': self.extract_call_graph(dx),
-            'opcodes': self.extract_opcodes(dx)
         }
         
         return features
@@ -58,32 +57,19 @@ class FeatureExtractor:
                 continue
             
             has_edges = False
+            opcodes = [inst.get_name() for inst in method.get_method().get_instructions()]
             for called in method.get_xref_to():
                 if not called[1].is_external():
                     has_edges = True
                     graph.add_edge(str(method), str(called[1]))
             
             if has_edges:
-                graph.add_node(str(method))
+                graph.add_node(str(method), opcodes=opcodes)
 
         return {
-            'nodes': list(graph.nodes()),
+            'nodes': list(graph.nodes(data=True)),
             'edges': list(graph.edges())
         }
-
-    def extract_opcodes(self, analysis_obj):
-        """Extract opcode sequences for each method"""
-        method_opcodes = {}
-        
-        for method in analysis_obj.get_methods():
-            if method.is_external():
-                continue
-                
-            opcodes = [inst.get_name() for inst in method.get_method().get_instructions()]
-            if opcodes:  # Only include methods with opcodes
-                method_opcodes[str(method)] = opcodes
-                
-        return method_opcodes
 
 def save_features(features, output_path):
     """Save extracted features to a JSON file"""
@@ -113,8 +99,8 @@ def process_apk_folder(input_folder, output_folder, label=0):
 
 if __name__ == "__main__":
     # benign_folder = r"D:\FinalProject\input\bengin"
-    malware_folder = r"D:\FinalProject\input\malware"
-    output_folder = r"D:\FinalProject\code\main_v4\output"
+    malware_folder = r"D:\FinalProject\code\main_v6\malware"
+    output_folder = r"D:\FinalProject\code\main_v6\extract"
     
     os.makedirs(output_folder, exist_ok=True)
     
