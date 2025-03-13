@@ -85,11 +85,15 @@ class FeatureExtractor:
         
         # Build the initial graph
         for method in analysis_obj.get_methods():
-            if method.is_external():
-                continue
-            
             method_str = str(method)
-            opcodes = [inst.get_name() for inst in method.get_method().get_instructions()]
+            
+            # Thêm try-except để xử lý các phương thức external không có instructions
+            try:
+                opcodes = [inst.get_name() for inst in method.get_method().get_instructions()]
+            except AttributeError:
+                # External methods không có instructions
+                opcodes = []
+            
             graph.add_node(method_str, opcodes=opcodes, is_sensitive=False)
             
             for called in method.get_xref_to():
