@@ -11,6 +11,39 @@ from pathlib import Path
 import pickle
 from torch_geometric.loader import DataLoader  # Use the new loader
 
+
+class TextCNNLayer(nn.Module):
+    def __init__(self, embedding_dim=768, num_filters=64, filter_sizes=[2,3,4,5,6,7,8,9]):
+        super().__init__()
+        
+        self.convs = nn.ModuleList([
+            nn.Conv1d(embedding_dim, num_filters, fs) 
+            for fs in filter_sizes
+        ])
+        
+        self.linear = nn.Linear(len(filter_sizes) * num_filters, 128)
+        
+    def forward(self, x):
+        x = x.transpose(1, 2)
+        
+        max_kernel_size = max([conv.kernel_size[0] for conv in self.convs])
+        if x.size(2) < max_kernel_size:
+            padding = max_kernel_size - x.size(2)
+            x = F.pad(x, (0, padding))
+        
+        conv_results = []
+        for conv in self.convs:
+            conv_out = F.relu(conv(x))
+            pooled = F.max_pool1d(conv_out, conv_out.shape[2])
+            conv_results.append(pooled)
+            
+        x = torch.cat(conv_results, dim=1)
+        x = x.squeeze(-1)
+        
+        x = self.linear(x)
+        return x
+
+
 class GSEDroidModel(nn.Module):
     def __init__(self, input_dim, hidden_dim=128):
         super().__init__()

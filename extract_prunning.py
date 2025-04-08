@@ -3,7 +3,9 @@ import networkx as nx
 import torch
 import json
 import os
+import csv
 from pathlib import Path
+import matplotlib.pyplot as plt
 
 class FeatureExtractor:
     def __init__(self):
@@ -24,46 +26,58 @@ class FeatureExtractor:
             'android.permission.ACCESS_COARSE_LOCATION'
         ]
     
+    def save_graph_info_to_csv(self, file_name, original_graph, pruned_graph, csv_path):
+        """Save graph information to a single CSV file"""
+        original_nodes = len(original_graph.nodes)
+        original_edges = len(original_graph.edges)
+        pruned_nodes = len(pruned_graph.nodes)
+        pruned_edges = len(pruned_graph.edges)
+        reduction_nodes = original_nodes - pruned_nodes
+        reduction_edges = original_edges - pruned_edges
+        
+        file_exists = os.path.isfile(csv_path)
+        
+        with open(csv_path, 'a', newline='') as csvfile:
+            fieldnames = ['File name', 'Original_node', 'Original_edge', 'Pruning_node', 'Pruning_edge', 'Reduction_node', 'Reduction_edge']
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            
+            if not file_exists:
+                writer.writeheader()
+            
+            writer.writerow({
+                'File name': file_name,
+                'Original_node': original_nodes,
+                'Original_edge': original_edges,
+                'Pruning_node': pruned_nodes,
+                'Pruning_edge': pruned_edges,
+                'Reduction_node': reduction_nodes,
+                'Reduction_edge': reduction_edges
+            })
+    
     def _get_sensitive_apis(self):
         """Load sensitive API list from file"""
         sensitive_apis = set()
-        api_file_path = r"C:\hoangg\kltn\experiment\sensitive_apis.txt"
+        api_file_path = "sensitive_apis.txt"
         
         try:
             with open(api_file_path, 'r') as f:
                 for line in f:
                     line = line.strip()
-                    if line and not line.startswith('#') and not line.startswith('//'):  # Skip empty lines and comments
-                        sensitive_apis.add(line)
+                    sensitive_apis.add(line)
             print(f"Loaded {len(sensitive_apis)} sensitive APIs from file")
         except Exception as e:
             print(f"Error loading sensitive APIs file: {str(e)}")
-            # Fallback to default list if file can't be loaded
-            sensitive_apis = {
-                "Landroid/telephony/SmsManager;",
-                "Landroid/telephony/TelephonyManager;",
-                "Landroid/location/LocationManager;",
-                "Landroid/media/AudioRecord;",
-                "Landroid/media/MediaRecorder;",
-                "Landroid/hardware/Camera;",
-                "Landroid/content/ContentResolver;",
-                "Ljava/net/HttpURLConnection;",
-                "Ljava/net/URL;->openConnection",
-                "Ljavax/crypto/",
-                "Ldalvik/system/DexClassLoader;"
-            }
-            print(f"Using {len(sensitive_apis)} default sensitive APIs")
-        
+
         return sensitive_apis
 
-    def extract_apk_features(self, apk_path):
+    def extract_apk_features(self, apk_path, file_name, csv_path):
         """Extract all features from an APK file"""
         print(f"Extracting features from: {apk_path}")
         a, d, dx = AnalyzeAPK(apk_path)
         
         features = {
             'permissions': self.extract_permissions(a),
-            'call_graph': self.extract_call_graph(dx),
+            'call_graph': self.extract_call_graph(dx, file_name, csv_path),
         }
         
         return features
@@ -79,56 +93,45 @@ class FeatureExtractor:
                 
         return perm_vector.tolist()
 
-    def extract_call_graph(self, analysis_obj):
+    def extract_call_graph(self, analysis_obj, file_name, csv_path):
         """Extract call graph features"""
         graph = nx.DiGraph()
         
         # Build the initial graph
         for method in analysis_obj.get_methods():
+
+            if method.is_external():
+                continue
             method_str = str(method)
             
-            # Thêm try-except để xử lý các phương thức external không có instructions
             try:
                 opcodes = [inst.get_name() for inst in method.get_method().get_instructions()]
             except AttributeError:
-                # External methods không có instructions
                 opcodes = []
             
-            graph.add_node(method_str, opcodes=opcodes, is_sensitive=False)
+            graph.add_node(method_str, opcodes=opcodes)
             
             for called in method.get_xref_to():
                 called_method = str(called[1])
                 graph.add_edge(method_str, called_method)
-                
-                # Mark nodes that call sensitive APIs
-                # Check using exact matching for JNI format
-                if called_method in self.sensitive_apis:
-                    graph.nodes[method_str]['is_sensitive'] = True
-                # Also check partial matching for package-level APIs
-                elif any(api in called_method for api in self.sensitive_apis):
-                    graph.nodes[method_str]['is_sensitive'] = True
 
-        # Log original graph statistics
         original_nodes = len(graph.nodes)
         original_edges = len(graph.edges)
         print(f"Original FCG: {original_nodes} nodes, {original_edges} edges")
         
-        # Apply pruning if graph is large enough
-        threshold = 100  # Setting a lower threshold for demonstration
+        threshold = 100
         pruned_graph = self.prune_graph(graph, threshold)
         
-        # Log pruned graph statistics
         pruned_nodes = len(pruned_graph.nodes)
         pruned_edges = len(pruned_graph.edges)
         print(f"Pruned FCG: {pruned_nodes} nodes, {pruned_edges} edges")
         print(f"Reduction: {original_nodes - pruned_nodes} nodes ({(original_nodes - pruned_nodes)/original_nodes*100:.2f}%), "
               f"{original_edges - pruned_edges} edges ({(original_edges - pruned_edges)/original_edges*100:.2f}%)")
+        self.save_graph_info_to_csv(file_name, graph, pruned_graph, csv_path)
 
         return {
             'nodes': list(pruned_graph.nodes(data=True)),
             'edges': list(pruned_graph.edges()),
-            'original_size': {'nodes': original_nodes, 'edges': original_edges},
-            'pruned_size': {'nodes': pruned_nodes, 'edges': pruned_edges}
         }
         
     def prune_graph(self, fcg, threshold=100):
@@ -161,21 +164,7 @@ class FeatureExtractor:
             return fcg
         
         print(f"Found {len(sensitive_nodes)} sensitive nodes")
-        print("Sensitive API distribution:")
-        # Add more detailed logging about API categories
-        android_apis = sum(count for api, count in sensitive_api_counts.items() if api.startswith('Landroid/'))
-        java_apis = sum(count for api, count in sensitive_api_counts.items() if api.startswith('Ljava/'))
-        other_apis = sum(count for api, count in sensitive_api_counts.items() 
-                        if not (api.startswith('Landroid/') or api.startswith('Ljava/')))
-        print(f"  - Android APIs: {android_apis} calls")
-        print(f"  - Java APIs: {java_apis} calls")
-        print(f"  - Other APIs: {other_apis} calls")
 
-        # Show top 10 most used sensitive APIs
-        print("Top 10 most used sensitive APIs:")
-        for api, count in sorted(sensitive_api_counts.items(), key=lambda x: x[1], reverse=True)[:10]:
-            print(f"  - {api}: {count} calls")
-                
         # Find ancestor nodes (upward direction)
         ancestor_nodes = set()
         for sv in sensitive_nodes:
@@ -229,9 +218,10 @@ def process_apk_folder(input_folder, output_folder, label=0):
 
         apk_path = os.path.join(input_folder, apk_file)
         output_path = os.path.join(output_folder, f"{apk_file}.json")
+        csv_path = f"graph_info.csv"
         
         try:
-            features = extractor.extract_apk_features(apk_path)
+            features = extractor.extract_apk_features(apk_path, apk_file, csv_path)
             features['label'] = label
             save_features(features, output_path)
             
@@ -240,8 +230,8 @@ def process_apk_folder(input_folder, output_folder, label=0):
 
 if __name__ == "__main__":
     # benign_folder = r"D:\FinalProject\input\bengin"
-    malware_folder = r"C:\hoangg\kltn\experiment\test"
-    output_folder = r"C:\hoangg\kltn\experiment\output"
+    malware_folder = r"C:\Users\silas\Documents\GDroid\test"
+    output_folder = r"C:\Users\silas\Documents\GDroid\output"
     
     os.makedirs(output_folder, exist_ok=True)
     

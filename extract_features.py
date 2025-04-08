@@ -99,8 +99,8 @@ def process_apk_folder(input_folder, output_folder, label=0):
 
 if __name__ == "__main__":
     # benign_folder = r"D:\FinalProject\input\bengin"
-    malware_folder = r"D:\FinalProject\code\main_v6\malware"
-    output_folder = r"D:\FinalProject\code\main_v6\extract"
+    malware_folder = r"C:\Users\silas\Documents\GDroid\test_raw"
+    output_folder = r"C:\Users\silas\Documents\GDroid\test_extract"
     
     os.makedirs(output_folder, exist_ok=True)
     

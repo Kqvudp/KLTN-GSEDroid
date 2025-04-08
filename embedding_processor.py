@@ -6,42 +6,10 @@ import json
 import os
 import pickle
 
-class TextCNNLayer(nn.Module):
-    def __init__(self, embedding_dim=768, num_filters=64, filter_sizes=[2,3,4,5,6,7,8,9]):
-        super().__init__()
-        
-        self.convs = nn.ModuleList([
-            nn.Conv1d(embedding_dim, num_filters, fs) 
-            for fs in filter_sizes
-        ])
-        
-        self.linear = nn.Linear(len(filter_sizes) * num_filters, 128)
-        
-    def forward(self, x):
-        x = x.transpose(1, 2)
-        
-        max_kernel_size = max([conv.kernel_size[0] for conv in self.convs])
-        if x.size(2) < max_kernel_size:
-            padding = max_kernel_size - x.size(2)
-            x = F.pad(x, (0, padding))
-        
-        conv_results = []
-        for conv in self.convs:
-            conv_out = F.relu(conv(x))
-            pooled = F.max_pool1d(conv_out, conv_out.shape[2])
-            conv_results.append(pooled)
-            
-        x = torch.cat(conv_results, dim=1)
-        x = x.squeeze(-1)
-        
-        x = self.linear(x)
-        return x
-
 class OpCodeEmbedding:
     def __init__(self):
         self.tokenizer = RobertaTokenizer.from_pretrained('microsoft/codebert-base')
         self.codebert = RobertaModel.from_pretrained('microsoft/codebert-base')
-        self.text_cnn = TextCNNLayer()
         self.opcode_mapping = {
             'move': ['move'],
             'add-double': ['add', 'double'],
@@ -89,7 +57,7 @@ class OpCodeEmbedding:
             outputs = self.codebert(**inputs)
             embeddings = outputs.last_hidden_state
             
-        return self.text_cnn(embeddings)
+        return embeddings
 
 def process_features(feature_file, output_folder):
     """Process extracted features and create embeddings"""
@@ -136,7 +104,7 @@ def process_feature_folder(input_folder, output_folder):
             print(f"Error processing {feature_file}: {str(e)}")
 
 if __name__ == "__main__":
-    feature_folder = r"D:\FinalProject\code\main_v5\test_extracted"
-    processed_folder = r"D:\FinalProject\code\main_v5\test_processed"
+    feature_folder = r"C:\Users\silas\Documents\GDroid\test_extract"
+    processed_folder = r"C:\Users\silas\Documents\GDroid\test_embedded"
     
     process_feature_folder(feature_folder, processed_folder)
