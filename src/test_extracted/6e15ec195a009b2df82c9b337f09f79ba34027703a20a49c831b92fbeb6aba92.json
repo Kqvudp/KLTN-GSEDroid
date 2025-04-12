@@ -1,0 +1,4585 @@
+{
+  "permissions": [
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "call_graph": {
+    "nodes": [
+      [
+        "<analysis.MethodAnalysis Landroid/annotation/SuppressLint;->value()[Ljava/lang/String; [access_flags=public abstract] @ 0x0>",
+        {
+          "opcodes": []
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/annotation/TargetApi;->value()I [access_flags=public abstract] @ 0x0>",
+        {
+          "opcodes": []
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/A;-><clinit>()V [access_flags=static constructor] @ 0x1a90>",
+        {
+          "opcodes": [
+            "const/4",
+            "sput-boolean",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/A;-><init>()V [access_flags=public constructor] @ 0x1aa8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/A;->boot(Landroid/content/Context;)V [access_flags=public static] @ 0x1ac0>",
+        {
+          "opcodes": [
+            "sget-boolean",
+            "if-nez",
+            "const/4",
+            "sput-boolean",
+            "new-instance",
+            "const-class",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/B;-><init>()V [access_flags=public constructor] @ 0x1af4>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/B;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1b0c>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "invoke-static",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getAction()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/BuildConfig;-><init>()V [access_flags=public constructor] @ 0x1b54>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/C;-><init>()V [access_flags=public constructor] @ 0x1b6c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/C;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1b84>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "invoke-static",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/R$attr;-><init>()V [access_flags=public constructor] @ 0x1ba4>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/R$drawable;-><init>()V [access_flags=public constructor] @ 0x1bbc>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/R$string;-><init>()V [access_flags=public constructor] @ 0x1bd4>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/R;-><init>()V [access_flags=public constructor] @ 0x1bec>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/Updater;-><init>()V [access_flags=public constructor] @ 0x1c04>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Service;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/Updater;->onBind(Landroid/content/Intent;)Landroid/os/IBinder; [access_flags=public] @ 0x1c1c>",
+        {
+          "opcodes": [
+            "const/4",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/Updater;->onStart(Landroid/content/Intent; I)V [access_flags=public] @ 0x1c30>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Service;->onStart(Landroid/content/Intent; I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x2a10>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x284c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "const/4",
+            "iput-boolean",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x23a8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "const-string",
+            "iput-object",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "invoke-direct",
+            "move-result-object",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1ef0>",
+        {
+          "opcodes": [
+            "const/4",
+            "invoke-direct",
+            "iput-boolean",
+            "iput-boolean",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;-><init>(Lcom/android/update/thread/D;)V [access_flags=constructor] @ 0x1c80>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "if-nez",
+            "iget-object",
+            "invoke-static",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-nez",
+            "iget-object",
+            "invoke-static",
+            "return-void",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-nez",
+            "if-nez",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "goto",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "goto",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "if-eqz",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "const/high16",
+            "invoke-virtual",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "goto/16"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->j(Ljava/lang/String;)V [access_flags=public] @ 0x3648>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "const/4",
+            "new-array",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->access$0(Lcom/android/update/thread/D;)Z [access_flags=static synthetic] @ 0x1f5c>",
+        {
+          "opcodes": [
+            "iget-boolean",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->f()Ljava/util/List; [access_flags=public] @ 0x2074>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-nez",
+            "return-object",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "iget-object",
+            "invoke-interface",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->j()Ljava/lang/String; [access_flags=public] @ 0x3888>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->access$4(Lcom/android/update/thread/D;)Z [access_flags=static synthetic] @ 0x1fbc>",
+        {
+          "opcodes": [
+            "iget-boolean",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->hasNext()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->startActivity(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->next()Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->h()Ljava/lang/String; [access_flags=public] @ 0x3850>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->access$3(Lcom/android/update/thread/D; Z)V [access_flags=static synthetic] @ 0x1fa4>",
+        {
+          "opcodes": [
+            "iput-boolean",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->access$2(Lcom/android/update/thread/D;)Lcom/android/update/tool/M; [access_flags=static synthetic] @ 0x1f8c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/List;->iterator()Ljava/util/Iterator;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->access$1(Lcom/android/update/thread/D; Z)V [access_flags=static synthetic] @ 0x1f74>",
+        {
+          "opcodes": [
+            "iput-boolean",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "const/4",
+            "new-instance",
+            "invoke-direct",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "new-array",
+            "const-string",
+            "aput-object",
+            "const-string",
+            "aput-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-nez",
+            "invoke-interface",
+            "invoke-virtual",
+            "return-object",
+            "new-instance",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-direct/range",
+            "invoke-interface",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/pm/PackageManager;->getLaunchIntentForPackage(Ljava/lang/String;)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->n(Ljava/lang/String;)V [access_flags=public] @ 0x21b4>",
+        {
+          "opcodes": [
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "if-nez",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;-><init>(Lcom/android/update/thread/D; Ljava/lang/String;)V [access_flags=constructor] @ 0x1e3c>",
+        {
+          "opcodes": [
+            "iput-object",
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;->run()V [access_flags=public] @ 0x1e5c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/impl/client/DefaultHttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/client/ClientProtocolException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;-><clinit>()V [access_flags=static constructor] @ 0x1ebc>",
+        {
+          "opcodes": [
+            "const/4",
+            "new-array",
+            "fill-array-data",
+            "sput-object",
+            "return-void",
+            "nop",
+            "fill-array-data-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/IntentFilter;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x321c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "const/4",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter;)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j()Ljava/lang/String; [access_flags=private] @ 0x1fd4>",
+        {
+          "opcodes": [
+            "const-string",
+            "const/4",
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "new-array",
+            "new-array",
+            "invoke-virtual",
+            "const/4",
+            "if-lt",
+            "new-instance",
+            "invoke-direct",
+            "move-object",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object",
+            "aget-byte",
+            "sget-object",
+            "sget-object",
+            "array-length",
+            "rem-int",
+            "aget-byte",
+            "xor-int/2addr",
+            "int-to-byte",
+            "aput-byte",
+            "add-int/lit8",
+            "goto",
+            "move-exception",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->read([B)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->available()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "div-int/lit8",
+            "if-lt",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "array-length",
+            "if-lt",
+            "return-object",
+            "aget-byte",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "sub-int/2addr",
+            "aget-byte",
+            "aput-byte",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "sub-int/2addr",
+            "aput-byte",
+            "add-int/lit8",
+            "goto",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "aget-object",
+            "invoke-static",
+            "move-result",
+            "int-to-char",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/ActivityManager;->getRunningAppProcesses()Ljava/util/List;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/List;->add(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j(Ljava/lang/String;)V [access_flags=] @ 0x20d8>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;->start()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->getBytes()[B>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1$1;-><init>(Lcom/android/update/thread/E$1;)V [access_flags=constructor] @ 0x2254>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1$1;->run()V [access_flags=public] @ 0x2270>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1;->access$0(Lcom/android/update/thread/E$1;)Lcom/android/update/thread/E; [access_flags=static synthetic] @ 0x22b0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;->loop()V [access_flags=protected] @ 0x232c>",
+        {
+          "opcodes": [
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1;-><init>(Lcom/android/update/thread/E;)V [access_flags=constructor] @ 0x2294>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x22c8>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1$1;->start()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;-><init>()V [access_flags=public constructor] @ 0x22ec>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iget-object",
+            "new-instance",
+            "invoke-direct",
+            "const-wide/16",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Message;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message; J)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;->setSleepTime(J)V [access_flags=protected] @ 0x2340>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;->removeMessages(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;-><clinit>()V [access_flags=static constructor] @ 0x2374>",
+        {
+          "opcodes": [
+            "const/4",
+            "new-array",
+            "fill-array-data",
+            "sput-object",
+            "return-void",
+            "nop",
+            "fill-array-data-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->k()Ljava/lang/String; [access_flags=private] @ 0x23f4>",
+        {
+          "opcodes": [
+            "const-string",
+            "const/4",
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "new-array",
+            "new-array",
+            "invoke-virtual",
+            "const/4",
+            "if-lt",
+            "new-instance",
+            "invoke-direct",
+            "move-object",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object",
+            "aget-byte",
+            "sget-object",
+            "sget-object",
+            "array-length",
+            "rem-int",
+            "aget-byte",
+            "xor-int/2addr",
+            "int-to-byte",
+            "aput-byte",
+            "add-int/lit8",
+            "goto",
+            "move-exception",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x2e58>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "const/4",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "div-int/lit8",
+            "if-lt",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "array-length",
+            "if-lt",
+            "return-object",
+            "aget-byte",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "sub-int/2addr",
+            "aget-byte",
+            "aput-byte",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "sub-int/2addr",
+            "aput-byte",
+            "add-int/lit8",
+            "goto",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "aget-object",
+            "invoke-static",
+            "move-result",
+            "int-to-char",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-ge",
+            "const-string",
+            "return-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "if-lt",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "div-int/lit8",
+            "if-lt",
+            "new-instance",
+            "invoke-direct",
+            "goto",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "aget-byte",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-wide",
+            "const-wide",
+            "mul-double/2addr",
+            "double-to-int",
+            "add-int/lit8",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "add-int/lit8",
+            "goto",
+            "aget-byte",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "sub-int/2addr",
+            "aget-byte",
+            "aput-byte",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "sub-int/2addr",
+            "aput-byte",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Math;->random()D>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        {
+          "opcodes": [
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "if-eqz",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-nez",
+            "const-wide/32",
+            "invoke-virtual",
+            "return-void",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-nez",
+            "if-nez",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "goto",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-eq",
+            "const/4",
+            "goto",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual/range",
+            "goto/16",
+            "const-wide/32",
+            "invoke-virtual",
+            "goto/16"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x34fc>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "const/16",
+            "new-array",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "invoke-static",
+            "move-result-object",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "const/16",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->g()Ljava/lang/String; [access_flags=public] @ 0x3838>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/pm/PackageManager;->getInstalledPackages(I)Ljava/util/List;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x34a8>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "new-array",
+            "const/4",
+            "aput-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "invoke-interface",
+            "invoke-virtual",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->l()Ljava/lang/String; [access_flags=public] @ 0x38c8>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->k()Ljava/lang/String; [access_flags=public] @ 0x38a8>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->setSleepTime(J)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->g(Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x314c>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "const/4",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "if-nez",
+            "return-object",
+            "move-object",
+            "check-cast",
+            "move-object",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->l(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x36fc>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "const/4",
+            "new-array",
+            "const/4",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->i()Ljava/lang/String; [access_flags=public] @ 0x3868>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        {
+          "opcodes": [
+            "if-nez",
+            "const/4",
+            "return-object",
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "const/4",
+            "const/4",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "move-object/from16",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "const-string",
+            "move-object/from16",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface/range",
+            "move-result",
+            "if-lt",
+            "invoke-interface",
+            "move-result",
+            "if-gtz",
+            "const/4",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "const/4",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "const/4",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "const/4",
+            "goto",
+            "move-object/from16",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "const-string",
+            "move-object/from16",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static/range",
+            "move-result-object",
+            "const-string",
+            "const-string",
+            "invoke-direct/range",
+            "invoke-interface",
+            "add-int/lit8",
+            "goto/16"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G$1;-><init>(Lcom/android/update/thread/G;)V [access_flags=constructor] @ 0x27d0>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x27ec>",
+        {
+          "opcodes": [
+            "iget-object",
+            "const/4",
+            "invoke-static",
+            "iget-object",
+            "check-cast",
+            "iget",
+            "packed-switch",
+            "iget-object",
+            "const-wide/32",
+            "invoke-virtual",
+            "return-void",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "goto",
+            "packed-switch-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->access$1(Lcom/android/update/thread/G;)Lcom/android/update/tool/M; [access_flags=static synthetic] @ 0x28a4>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->access$0(Lcom/android/update/thread/G; Z)V [access_flags=static synthetic] @ 0x288c>",
+        {
+          "opcodes": [
+            "iput-boolean",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->setSleepTime(J)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->h(Ljava/lang/String;)V [access_flags=public] @ 0x3598>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "const/4",
+            "new-array",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        {
+          "opcodes": [
+            "const/4",
+            "const-wide/32",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iget-boolean",
+            "if-nez",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-nez",
+            "invoke-virtual",
+            "return-void",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-eqz",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-direct/range",
+            "invoke-virtual",
+            "iput-boolean",
+            "invoke-virtual",
+            "goto",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-eqz",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-direct/range",
+            "invoke-virtual",
+            "iput-boolean",
+            "const-wide/32",
+            "invoke-virtual",
+            "goto",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/os/Handler;)V [access_flags=public constructor] @ 0x3ccc>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "new-instance",
+            "invoke-direct",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "new-array",
+            "const-string",
+            "aput-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-nez",
+            "invoke-interface",
+            "invoke-virtual",
+            "return-object",
+            "new-instance",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-direct/range",
+            "invoke-interface",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;->start()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/List;->size()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/net/NetworkInfo;->getTypeName()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/net/NetworkInfo;->isAvailable()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->i(Ljava/lang/String;)V [access_flags=private] @ 0x2a3c>",
+        {
+          "opcodes": [
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/lang/String;)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-eqz",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-wide/32",
+            "invoke-virtual",
+            "return-void",
+            "const-wide/32",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "const/4",
+            "new-instance",
+            "invoke-direct",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "new-array",
+            "const-string",
+            "aput-object",
+            "const-string",
+            "aput-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-nez",
+            "invoke-interface",
+            "invoke-virtual",
+            "return-object",
+            "new-instance",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "const/4",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-direct/range",
+            "invoke-interface",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->setSleepTime(J)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->i(Ljava/lang/String;)V [access_flags=public] @ 0x35f0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "const/4",
+            "new-array",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/I;-><init>()V [access_flags=public constructor] @ 0x2b2c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/I;->b()Z [access_flags=public static] @ 0x2b44>",
+        {
+          "opcodes": [
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;-><init>()V [access_flags=public constructor] @ 0x2b6c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/w3c/dom/Element;->getElementsByTagName(Ljava/lang/String;)Lorg/w3c/dom/NodeList;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/w3c/dom/NodeList;->getLength()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-ge",
+            "const-string",
+            "return-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "if-lt",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "div-int/lit8",
+            "if-lt",
+            "new-instance",
+            "invoke-direct",
+            "goto",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "aget-byte",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-wide",
+            "const-wide",
+            "mul-double/2addr",
+            "double-to-int",
+            "add-int/lit8",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "add-int/lit8",
+            "goto",
+            "aget-byte",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "sub-int/2addr",
+            "aget-byte",
+            "aput-byte",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "sub-int/2addr",
+            "aput-byte",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljavax/xml/parsers/DocumentBuilder;->parse(Ljava/io/InputStream;)Lorg/w3c/dom/Document;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljavax/xml/parsers/DocumentBuilderFactory;->newDocumentBuilder()Ljavax/xml/parsers/DocumentBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/w3c/dom/Node;->getFirstChild()Lorg/w3c/dom/Node;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/w3c/dom/NodeList;->item(I)Lorg/w3c/dom/Node;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/w3c/dom/Node;->getNodeValue()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x3750>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/xml/sax/SAXException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljavax/xml/parsers/DocumentBuilderFactory;->newInstance()Ljavax/xml/parsers/DocumentBuilderFactory;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/w3c/dom/Document;->getDocumentElement()Lorg/w3c/dom/Element;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljavax/xml/parsers/ParserConfigurationException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->e(Ljava/lang/String;)I [access_flags=private] @ 0x2e84>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const-string",
+            "invoke-virtual",
+            "invoke-virtual",
+            "if-eqz",
+            "invoke-virtual",
+            "move-result",
+            "move-object",
+            "return",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "move-object",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "move-object",
+            "goto",
+            "move-object",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "move-object",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getContentLength()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/ProtocolException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->connect()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/MalformedURLException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->d(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I [access_flags=public] @ 0x2f28>",
+        {
+          "opcodes": [
+            "const/4",
+            "invoke-static",
+            "move-result",
+            "if-nez",
+            "move",
+            "return",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "iput",
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "iget",
+            "invoke-virtual",
+            "move-result-object",
+            "iget",
+            "iget-object",
+            "move-object",
+            "move-object",
+            "move-object",
+            "invoke-virtual/range",
+            "move-result-object",
+            "if-nez",
+            "if-eqz",
+            "invoke-virtual",
+            "const/4",
+            "move",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "if-eqz",
+            "invoke-virtual",
+            "const/4",
+            "move",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "if-eqz",
+            "invoke-virtual",
+            "const/4",
+            "throw",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "if-eqz",
+            "invoke-virtual",
+            "const/4",
+            "const/4",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;-><init>()V [access_flags=public constructor] @ 0x3970>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "const/16",
+            "iput",
+            "new-instance",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "const/4",
+            "if-nez",
+            "return-object",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "int-to-long",
+            "invoke-virtual",
+            "iget",
+            "new-array",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-ne",
+            "if-eqz",
+            "invoke-virtual",
+            "if-eqz",
+            "invoke-virtual",
+            "move-object",
+            "move-object",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "const/4",
+            "invoke-virtual",
+            "add-int/2addr",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "if-eqz",
+            "invoke-virtual",
+            "if-eqz",
+            "invoke-virtual",
+            "move-object",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "if-eqz",
+            "invoke-virtual",
+            "if-eqz",
+            "invoke-virtual",
+            "move-object",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "if-eqz",
+            "invoke-virtual",
+            "if-eqz",
+            "invoke-virtual",
+            "throw",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object",
+            "goto",
+            "move-exception",
+            "move-object",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "const/4",
+            "invoke-direct",
+            "move-result",
+            "if-gtz",
+            "move-object",
+            "return-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "check-cast",
+            "move-object",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "move-object",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "move-object",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "move-object",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "move-object",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->b(Ljava/lang/String;)I [access_flags=public] @ 0x3248>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "new-array",
+            "aput-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-eqz",
+            "invoke-interface",
+            "move-result",
+            "invoke-interface",
+            "invoke-virtual",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URL;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x31bc>",
+        {
+          "opcodes": [
+            "const-string",
+            "const/4",
+            "const/4",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context; Ljava/lang/String; Landroid/database/sqlite/SQLiteDatabase$CursorFactory; I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->onCreate(Landroid/database/sqlite/SQLiteDatabase;)V [access_flags=public] @ 0x31dc>",
+        {
+          "opcodes": [
+            "const-string",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->onUpgrade(Landroid/database/sqlite/SQLiteDatabase; I I)V [access_flags=public] @ 0x31f8>",
+        {
+          "opcodes": [
+            "const-string",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->moveToNext()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->getInt(I)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String; [Ljava/lang/String;)Landroid/database/Cursor;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->getString(I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String; [Ljava/lang/Object;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->k(Ljava/lang/String; I)V [access_flags=public] @ 0x36a0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "const/4",
+            "new-array",
+            "const/4",
+            "invoke-static",
+            "move-result-object",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "div-int/lit8",
+            "if-lt",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "array-length",
+            "if-lt",
+            "return-object",
+            "aget-byte",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "sub-int/2addr",
+            "aget-byte",
+            "aput-byte",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "sub-int/2addr",
+            "aput-byte",
+            "add-int/lit8",
+            "goto",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "aget-object",
+            "invoke-static",
+            "move-result",
+            "int-to-char",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->m(Ljava/lang/String;)V [access_flags=public] @ 0x38e0>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->n(Ljava/lang/String;)V [access_flags=public] @ 0x38f8>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->o(Ljava/lang/String;)V [access_flags=public] @ 0x3910>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->p(Ljava/lang/String;)V [access_flags=public] @ 0x3928>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->q(Ljava/lang/String;)V [access_flags=public] @ 0x3940>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->r(Ljava/lang/String;)V [access_flags=public] @ 0x3958>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->c(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x39c4>",
+        {
+          "opcodes": [
+            "new-instance",
+            "new-instance",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/File;->mkdir()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->d(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x3a0c>",
+        {
+          "opcodes": [
+            "new-instance",
+            "new-instance",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->e()Ljava/lang/String; [access_flags=public] @ 0x3a50>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x3a68>",
+        {
+          "opcodes": [
+            "new-instance",
+            "new-instance",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/File;->exists()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/RandomAccessFile;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/RandomAccessFile;->seek(J)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/RandomAccessFile;->write([B I I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/RandomAccessFile;-><init>(Ljava/io/File; Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/FileNotFoundException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;->run()V [access_flags=public] @ 0x3cfc>",
+        {
+          "opcodes": [
+            "new-instance",
+            "iget-object",
+            "invoke-direct",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "invoke-super",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Thread;->run()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;->obtainMessage(I Ljava/lang/Object;)Landroid/os/Message;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z>",
+        {}
+      ]
+    ],
+    "edges": [
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/A;-><init>()V [access_flags=public constructor] @ 0x1aa8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/A;->boot(Landroid/content/Context;)V [access_flags=public static] @ 0x1ac0>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/A;->boot(Landroid/content/Context;)V [access_flags=public static] @ 0x1ac0>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/B;-><init>()V [access_flags=public constructor] @ 0x1af4>",
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/B;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1b0c>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getAction()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/B;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1b0c>",
+        "<analysis.MethodAnalysis Lcom/android/update/A;->boot(Landroid/content/Context;)V [access_flags=public static] @ 0x1ac0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/B;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1b0c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/BuildConfig;-><init>()V [access_flags=public constructor] @ 0x1b54>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/C;-><init>()V [access_flags=public constructor] @ 0x1b6c>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/C;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1b84>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/C;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1b84>",
+        "<analysis.MethodAnalysis Lcom/android/update/A;->boot(Landroid/content/Context;)V [access_flags=public static] @ 0x1ac0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/R$attr;-><init>()V [access_flags=public constructor] @ 0x1ba4>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/R$drawable;-><init>()V [access_flags=public constructor] @ 0x1bbc>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/R$string;-><init>()V [access_flags=public constructor] @ 0x1bd4>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/R;-><init>()V [access_flags=public constructor] @ 0x1bec>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/Updater;-><init>()V [access_flags=public constructor] @ 0x1c04>",
+        "<analysis.MethodAnalysis Landroid/app/Service;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/Updater;->onStart(Landroid/content/Intent; I)V [access_flags=public] @ 0x1c30>",
+        "<analysis.MethodAnalysis Landroid/app/Service;->onStart(Landroid/content/Intent; I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/Updater;->onStart(Landroid/content/Intent; I)V [access_flags=public] @ 0x1c30>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x2a10>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/Updater;->onStart(Landroid/content/Intent; I)V [access_flags=public] @ 0x1c30>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x284c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/Updater;->onStart(Landroid/content/Intent; I)V [access_flags=public] @ 0x1c30>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x23a8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/Updater;->onStart(Landroid/content/Intent; I)V [access_flags=public] @ 0x1c30>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1ef0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x2a10>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x321c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x2a10>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;-><init>()V [access_flags=public constructor] @ 0x22ec>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x284c>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G$1;-><init>(Lcom/android/update/thread/G;)V [access_flags=constructor] @ 0x27d0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x284c>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;-><init>()V [access_flags=public constructor] @ 0x22ec>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x284c>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x321c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x23a8>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->k()Ljava/lang/String; [access_flags=private] @ 0x23f4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x23a8>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;-><init>()V [access_flags=public constructor] @ 0x22ec>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x23a8>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x2e58>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x23a8>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x321c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1ef0>",
+        "<analysis.MethodAnalysis Landroid/content/IntentFilter;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1ef0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1ef0>",
+        "<analysis.MethodAnalysis Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1ef0>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x321c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1ef0>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;-><init>(Lcom/android/update/thread/D;)V [access_flags=constructor] @ 0x1c80>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1ef0>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;-><init>(Lcom/android/update/thread/D;)V [access_flags=constructor] @ 0x1c80>",
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->j(Ljava/lang/String;)V [access_flags=public] @ 0x3648>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->access$0(Lcom/android/update/thread/D;)Z [access_flags=static synthetic] @ 0x1f5c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->f()Ljava/util/List; [access_flags=public] @ 0x2074>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->j()Ljava/lang/String; [access_flags=public] @ 0x3888>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->access$4(Lcom/android/update/thread/D;)Z [access_flags=static synthetic] @ 0x1fbc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->hasNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->next()Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->h()Ljava/lang/String; [access_flags=public] @ 0x3850>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->access$3(Lcom/android/update/thread/D; Z)V [access_flags=static synthetic] @ 0x1fa4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getAction()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->access$2(Lcom/android/update/thread/D;)Lcom/android/update/tool/M; [access_flags=static synthetic] @ 0x1f8c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Ljava/util/List;->iterator()Ljava/util/Iterator;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->access$1(Lcom/android/update/thread/D; Z)V [access_flags=static synthetic] @ 0x1f74>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Landroid/content/pm/PackageManager;->getLaunchIntentForPackage(Ljava/lang/String;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1c9c>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->n(Ljava/lang/String;)V [access_flags=public] @ 0x21b4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->j(Ljava/lang/String;)V [access_flags=public] @ 0x3648>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->j(Ljava/lang/String;)V [access_flags=public] @ 0x3648>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->j(Ljava/lang/String;)V [access_flags=public] @ 0x3648>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String; [Ljava/lang/Object;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->j(Ljava/lang/String;)V [access_flags=public] @ 0x3648>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->j(Ljava/lang/String;)V [access_flags=public] @ 0x3648>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->j(Ljava/lang/String;)V [access_flags=public] @ 0x3648>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->f()Ljava/util/List; [access_flags=public] @ 0x2074>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->f()Ljava/util/List; [access_flags=public] @ 0x2074>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->f()Ljava/util/List; [access_flags=public] @ 0x2074>",
+        "<analysis.MethodAnalysis Landroid/app/ActivityManager;->getRunningAppProcesses()Ljava/util/List;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->f()Ljava/util/List; [access_flags=public] @ 0x2074>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->hasNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->f()Ljava/util/List; [access_flags=public] @ 0x2074>",
+        "<analysis.MethodAnalysis Ljava/util/List;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->f()Ljava/util/List; [access_flags=public] @ 0x2074>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->next()Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->f()Ljava/util/List; [access_flags=public] @ 0x2074>",
+        "<analysis.MethodAnalysis Ljava/util/List;->iterator()Ljava/util/Iterator;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->j()Ljava/lang/String; [access_flags=public] @ 0x3888>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->getString(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->moveToNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x3750>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String; [Ljava/lang/String;)Landroid/database/Cursor;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>",
+        "<analysis.MethodAnalysis Ljava/util/List;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->d()Ljava/util/List; [access_flags=public] @ 0x3348>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->n(Ljava/lang/String;)V [access_flags=public] @ 0x21b4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->n(Ljava/lang/String;)V [access_flags=public] @ 0x21b4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->n(Ljava/lang/String;)V [access_flags=public] @ 0x21b4>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j()Ljava/lang/String; [access_flags=private] @ 0x1fd4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->n(Ljava/lang/String;)V [access_flags=public] @ 0x21b4>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j(Ljava/lang/String;)V [access_flags=] @ 0x20d8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->n(Ljava/lang/String;)V [access_flags=public] @ 0x21b4>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->n(Ljava/lang/String;)V [access_flags=public] @ 0x21b4>",
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->n(Ljava/lang/String;)V [access_flags=public] @ 0x21b4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->n(Ljava/lang/String;)V [access_flags=public] @ 0x21b4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;-><init>(Lcom/android/update/thread/D; Ljava/lang/String;)V [access_flags=constructor] @ 0x1e3c>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;->run()V [access_flags=public] @ 0x1e5c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;->run()V [access_flags=public] @ 0x1e5c>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;->run()V [access_flags=public] @ 0x1e5c>",
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;->run()V [access_flags=public] @ 0x1e5c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/impl/client/DefaultHttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;->run()V [access_flags=public] @ 0x1e5c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/ClientProtocolException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;->run()V [access_flags=public] @ 0x1e5c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x321c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x321c>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x31bc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j()Ljava/lang/String; [access_flags=private] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->read([B)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j()Ljava/lang/String; [access_flags=private] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->available()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j()Ljava/lang/String; [access_flags=private] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j()Ljava/lang/String; [access_flags=private] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j()Ljava/lang/String; [access_flags=private] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j()Ljava/lang/String; [access_flags=private] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->k(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x20fc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->getBytes()[B>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j(Ljava/lang/String;)V [access_flags=] @ 0x20d8>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;->start()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D;->j(Ljava/lang/String;)V [access_flags=] @ 0x20d8>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/D$2;-><init>(Lcom/android/update/thread/D; Ljava/lang/String;)V [access_flags=constructor] @ 0x1e3c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1$1;-><init>(Lcom/android/update/thread/E$1;)V [access_flags=constructor] @ 0x2254>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1$1;->run()V [access_flags=public] @ 0x2270>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1;->access$0(Lcom/android/update/thread/E$1;)Lcom/android/update/thread/E; [access_flags=static synthetic] @ 0x22b0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1$1;->run()V [access_flags=public] @ 0x2270>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;->loop()V [access_flags=protected] @ 0x232c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1;-><init>(Lcom/android/update/thread/E;)V [access_flags=constructor] @ 0x2294>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x22c8>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1$1;-><init>(Lcom/android/update/thread/E$1;)V [access_flags=constructor] @ 0x2254>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x22c8>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1$1;->start()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;-><init>()V [access_flags=public constructor] @ 0x22ec>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;-><init>()V [access_flags=public constructor] @ 0x22ec>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E$1;-><init>(Lcom/android/update/thread/E;)V [access_flags=constructor] @ 0x2294>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;-><init>()V [access_flags=public constructor] @ 0x22ec>",
+        "<analysis.MethodAnalysis Landroid/os/Message;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;-><init>()V [access_flags=public constructor] @ 0x22ec>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message; J)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;->setSleepTime(J)V [access_flags=protected] @ 0x2340>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message; J)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;->setSleepTime(J)V [access_flags=protected] @ 0x2340>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/E;->setSleepTime(J)V [access_flags=protected] @ 0x2340>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->removeMessages(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->k()Ljava/lang/String; [access_flags=private] @ 0x23f4>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->read([B)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->k()Ljava/lang/String; [access_flags=private] @ 0x23f4>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->available()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->k()Ljava/lang/String; [access_flags=private] @ 0x23f4>",
+        "<analysis.MethodAnalysis Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->k()Ljava/lang/String; [access_flags=private] @ 0x23f4>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->k()Ljava/lang/String; [access_flags=private] @ 0x23f4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->k()Ljava/lang/String; [access_flags=private] @ 0x23f4>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x2e58>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x2e58>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x321c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x2494>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->getBytes()[B>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        "<analysis.MethodAnalysis Ljava/lang/Math;->random()D>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->getBytes()[B>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->next()Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x254c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->j()Ljava/lang/String; [access_flags=public] @ 0x3888>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x34fc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->g()Ljava/lang/String; [access_flags=public] @ 0x3838>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Landroid/content/pm/PackageManager;->getInstalledPackages(I)Ljava/util/List;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x34a8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->hasNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->l()Ljava/lang/String; [access_flags=public] @ 0x38c8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->k()Ljava/lang/String; [access_flags=public] @ 0x38a8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->setSleepTime(J)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->h()Ljava/lang/String; [access_flags=public] @ 0x3850>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->g(Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x314c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->l(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x36fc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->i()Ljava/lang/String; [access_flags=public] @ 0x3868>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Ljava/util/List;->iterator()Ljava/util/Iterator;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/F;->loop()V [access_flags=protected] @ 0x2660>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x34fc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x34fc>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x34fc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x34fc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x34fc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String; [Ljava/lang/Object;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x34fc>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x34fc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x34a8>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x34a8>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->moveToNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x34a8>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String; [Ljava/lang/String;)Landroid/database/Cursor;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x34a8>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x34a8>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->k()Ljava/lang/String; [access_flags=public] @ 0x38a8>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->g(Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x314c>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->g(Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x314c>",
+        "<analysis.MethodAnalysis Ljava/net/MalformedURLException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->g(Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x314c>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->g(Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x314c>",
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->g(Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x314c>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->l(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x36fc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->l(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x36fc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->l(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x36fc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->l(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x36fc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->l(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x36fc>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->l(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x36fc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String; [Ljava/lang/Object;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->i()Ljava/lang/String; [access_flags=public] @ 0x3868>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Lorg/w3c/dom/Element;->getElementsByTagName(Ljava/lang/String;)Lorg/w3c/dom/NodeList;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Lorg/w3c/dom/NodeList;->getLength()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Ljavax/xml/parsers/DocumentBuilder;->parse(Ljava/io/InputStream;)Lorg/w3c/dom/Document;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Ljavax/xml/parsers/DocumentBuilderFactory;->newDocumentBuilder()Ljavax/xml/parsers/DocumentBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Lorg/w3c/dom/Node;->getFirstChild()Lorg/w3c/dom/Node;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Lorg/w3c/dom/NodeList;->item(I)Lorg/w3c/dom/Node;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Lorg/w3c/dom/Node;->getNodeValue()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x3750>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Ljava/util/List;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Ljava/util/List;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Lorg/xml/sax/SAXException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Ljavax/xml/parsers/DocumentBuilderFactory;->newInstance()Ljavax/xml/parsers/DocumentBuilderFactory;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Lorg/w3c/dom/Document;->getDocumentElement()Lorg/w3c/dom/Element;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->a(Ljava/io/InputStream;)Ljava/util/List; [access_flags=public static] @ 0x2b84>",
+        "<analysis.MethodAnalysis Ljavax/xml/parsers/ParserConfigurationException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G$1;-><init>(Lcom/android/update/thread/G;)V [access_flags=constructor] @ 0x27d0>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x27ec>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->access$1(Lcom/android/update/thread/G;)Lcom/android/update/tool/M; [access_flags=static synthetic] @ 0x28a4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x27ec>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->access$0(Lcom/android/update/thread/G; Z)V [access_flags=static synthetic] @ 0x288c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x27ec>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->setSleepTime(J)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x27ec>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->h(Ljava/lang/String;)V [access_flags=public] @ 0x3598>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->h(Ljava/lang/String;)V [access_flags=public] @ 0x3598>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->h(Ljava/lang/String;)V [access_flags=public] @ 0x3598>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->h(Ljava/lang/String;)V [access_flags=public] @ 0x3598>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String; [Ljava/lang/Object;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->h(Ljava/lang/String;)V [access_flags=public] @ 0x3598>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->h(Ljava/lang/String;)V [access_flags=public] @ 0x3598>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->h(Ljava/lang/String;)V [access_flags=public] @ 0x3598>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->i()Ljava/lang/String; [access_flags=public] @ 0x3868>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->setSleepTime(J)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->hasNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/os/Handler;)V [access_flags=public constructor] @ 0x3ccc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->k()Ljava/lang/String; [access_flags=public] @ 0x38a8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->next()Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;->start()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Ljava/util/List;->iterator()Ljava/util/Iterator;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->h()Ljava/lang/String; [access_flags=public] @ 0x3850>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Ljava/util/List;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Landroid/net/NetworkInfo;->getTypeName()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/G;->loop()V [access_flags=protected] @ 0x28bc>",
+        "<analysis.MethodAnalysis Landroid/net/NetworkInfo;->isAvailable()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/os/Handler;)V [access_flags=public constructor] @ 0x3ccc>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->getString(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>",
+        "<analysis.MethodAnalysis Ljava/util/List;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->moveToNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x3750>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String; [Ljava/lang/String;)Landroid/database/Cursor;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->c()Ljava/util/List; [access_flags=public] @ 0x32a0>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->i(Ljava/lang/String;)V [access_flags=private] @ 0x2a3c>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->i(Ljava/lang/String;)V [access_flags=private] @ 0x2a3c>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->i(Ljava/lang/String;)V [access_flags=private] @ 0x2a3c>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/lang/String;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->h()Ljava/lang/String; [access_flags=public] @ 0x3850>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->setSleepTime(J)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->i()Ljava/lang/String; [access_flags=public] @ 0x3868>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->i(Ljava/lang/String;)V [access_flags=public] @ 0x35f0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->next()Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->i(Ljava/lang/String;)V [access_flags=private] @ 0x2a3c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->hasNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/thread/H;->loop()V [access_flags=protected] @ 0x2a70>",
+        "<analysis.MethodAnalysis Ljava/util/List;->iterator()Ljava/util/Iterator;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->getString(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->moveToNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x3750>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String; [Ljava/lang/String;)Landroid/database/Cursor;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>",
+        "<analysis.MethodAnalysis Ljava/util/List;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->e()Ljava/util/List; [access_flags=public] @ 0x33f8>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->i(Ljava/lang/String;)V [access_flags=public] @ 0x35f0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->i(Ljava/lang/String;)V [access_flags=public] @ 0x35f0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->i(Ljava/lang/String;)V [access_flags=public] @ 0x35f0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String; [Ljava/lang/Object;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->i(Ljava/lang/String;)V [access_flags=public] @ 0x35f0>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->i(Ljava/lang/String;)V [access_flags=public] @ 0x35f0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->i(Ljava/lang/String;)V [access_flags=public] @ 0x35f0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/I;-><init>()V [access_flags=public constructor] @ 0x2b2c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/I;->b()Z [access_flags=public static] @ 0x2b44>",
+        "<analysis.MethodAnalysis Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/I;->b()Z [access_flags=public static] @ 0x2b44>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;-><init>()V [access_flags=public constructor] @ 0x2b6c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        "<analysis.MethodAnalysis Ljava/lang/Math;->random()D>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->getBytes()[B>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/J;->e(Ljava/lang/String;)Ljava/lang/String; [access_flags=public static] @ 0x2d44>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x3750>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->e(Ljava/lang/String;)I [access_flags=private] @ 0x2e84>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->e(Ljava/lang/String;)I [access_flags=private] @ 0x2e84>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getContentLength()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->e(Ljava/lang/String;)I [access_flags=private] @ 0x2e84>",
+        "<analysis.MethodAnalysis Ljava/net/ProtocolException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->e(Ljava/lang/String;)I [access_flags=private] @ 0x2e84>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->connect()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->e(Ljava/lang/String;)I [access_flags=private] @ 0x2e84>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->e(Ljava/lang/String;)I [access_flags=private] @ 0x2e84>",
+        "<analysis.MethodAnalysis Ljava/net/MalformedURLException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->e(Ljava/lang/String;)I [access_flags=private] @ 0x2e84>",
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->e(Ljava/lang/String;)I [access_flags=private] @ 0x2e84>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->d(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I [access_flags=public] @ 0x2f28>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;-><init>()V [access_flags=public constructor] @ 0x3970>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->d(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I [access_flags=public] @ 0x2f28>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->d(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I [access_flags=public] @ 0x2f28>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->d(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I [access_flags=public] @ 0x2f28>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->d(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I [access_flags=public] @ 0x2f28>",
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->d(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I [access_flags=public] @ 0x2f28>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->d(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I [access_flags=public] @ 0x2f28>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/I;->b()Z [access_flags=public static] @ 0x2b44>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->d(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I [access_flags=public] @ 0x2f28>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->b(Ljava/lang/String;)I [access_flags=public] @ 0x3248>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;-><init>()V [access_flags=public constructor] @ 0x3970>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;-><init>()V [access_flags=public constructor] @ 0x3970>",
+        "<analysis.MethodAnalysis Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;-><init>()V [access_flags=public constructor] @ 0x3970>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;-><init>()V [access_flags=public constructor] @ 0x3970>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;-><init>()V [access_flags=public constructor] @ 0x3970>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;-><init>()V [access_flags=public constructor] @ 0x3970>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->k(Ljava/lang/String; I)V [access_flags=public] @ 0x36a0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/io/RandomAccessFile;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->c(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x39c4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/io/RandomAccessFile;->seek(J)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->read([B)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/io/RandomAccessFile;->write([B I I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->d(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x3a0c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/io/RandomAccessFile;-><init>(Ljava/io/File; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/io/FileNotFoundException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->g(Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Ljava/io/InputStream; Lcom/android/update/tool/M;)Ljava/io/File; [access_flags=public] @ 0x3ab4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->e(Ljava/lang/String;)I [access_flags=private] @ 0x2e84>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/net/MalformedURLException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/net/ProtocolException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->f(I Ljava/lang/String;)Ljava/io/InputStream; [access_flags=public] @ 0x3040>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->b(Ljava/lang/String;)I [access_flags=public] @ 0x3248>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->b(Ljava/lang/String;)I [access_flags=public] @ 0x3248>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->moveToNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->b(Ljava/lang/String;)I [access_flags=public] @ 0x3248>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->getInt(I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->b(Ljava/lang/String;)I [access_flags=public] @ 0x3248>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->b(Ljava/lang/String;)I [access_flags=public] @ 0x3248>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String; [Ljava/lang/String;)Landroid/database/Cursor;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->b(Ljava/lang/String;)I [access_flags=public] @ 0x3248>",
+        "<analysis.MethodAnalysis Landroid/database/Cursor;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x31bc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context; Ljava/lang/String; Landroid/database/sqlite/SQLiteDatabase$CursorFactory; I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->onCreate(Landroid/database/sqlite/SQLiteDatabase;)V [access_flags=public] @ 0x31dc>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->onUpgrade(Landroid/database/sqlite/SQLiteDatabase; I I)V [access_flags=public] @ 0x31f8>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->onUpgrade(Landroid/database/sqlite/SQLiteDatabase; I I)V [access_flags=public] @ 0x31f8>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->onCreate(Landroid/database/sqlite/SQLiteDatabase;)V [access_flags=public] @ 0x31dc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->k(Ljava/lang/String; I)V [access_flags=public] @ 0x36a0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->k(Ljava/lang/String; I)V [access_flags=public] @ 0x36a0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->k(Ljava/lang/String; I)V [access_flags=public] @ 0x36a0>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->k(Ljava/lang/String; I)V [access_flags=public] @ 0x36a0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String; [Ljava/lang/Object;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->k(Ljava/lang/String; I)V [access_flags=public] @ 0x36a0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->k(Ljava/lang/String; I)V [access_flags=public] @ 0x36a0>",
+        "<analysis.MethodAnalysis Landroid/database/sqlite/SQLiteDatabase;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/M;->k(Ljava/lang/String; I)V [access_flags=public] @ 0x36a0>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/L;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/N;->d(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x3780>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->getBytes()[B>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->c(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x39c4>",
+        "<analysis.MethodAnalysis Ljava/io/File;->mkdir()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->c(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x39c4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->c(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x39c4>",
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->c(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x39c4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->c(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x39c4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->c(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x39c4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->d(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x3a0c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->d(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x3a0c>",
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->d(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x3a0c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->d(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x3a0c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->d(Ljava/lang/String;)Ljava/io/File; [access_flags=public] @ 0x3a0c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x3a68>",
+        "<analysis.MethodAnalysis Ljava/io/File;->exists()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x3a68>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x3a68>",
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x3a68>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x3a68>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/O;->f(Ljava/lang/String;)Z [access_flags=public] @ 0x3a68>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;->run()V [access_flags=public] @ 0x3cfc>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x2e58>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;->run()V [access_flags=public] @ 0x3cfc>",
+        "<analysis.MethodAnalysis Lcom/android/update/tool/K;->d(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I [access_flags=public] @ 0x2f28>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;->run()V [access_flags=public] @ 0x3cfc>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;->run()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;->run()V [access_flags=public] @ 0x3cfc>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->obtainMessage(I Ljava/lang/Object;)Landroid/os/Message;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/update/tool/P;->run()V [access_flags=public] @ 0x3cfc>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z>"
+      ]
+    ]
+  },
+  "label": 1
+}

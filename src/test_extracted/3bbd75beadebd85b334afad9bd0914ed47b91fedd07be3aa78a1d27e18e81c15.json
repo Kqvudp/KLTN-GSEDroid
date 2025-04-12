@@ -1,0 +1,2534 @@
+{
+  "permissions": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "call_graph": {
+    "nodes": [
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1130>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "add-int/lit8",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "if-ne",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "if-nez",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "aget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "const/4",
+            "if-gt",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "if-lez",
+            "iget-object",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "if-ne",
+            "iget-object",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "add-int/lit8",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "iget-object",
+            "iget-object",
+            "array-length",
+            "if-ge",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "add-int/lit8",
+            "invoke-static",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "invoke-static",
+            "return-void",
+            "iget-object",
+            "invoke-static",
+            "goto",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "if-lez",
+            "iget-object",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "iget-object",
+            "iget-object",
+            "array-length",
+            "if-ge",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "aget-object",
+            "iput-object",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "aget-object",
+            "iput-object",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "add-int/lit8",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "add-int/lit8",
+            "invoke-static",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "invoke-static",
+            "goto",
+            "iget-object",
+            "invoke-static",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->makeText(Landroid/content/Context; Ljava/lang/CharSequence; I)Landroid/widget/Toast;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$7(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1e64>",
+        {
+          "opcodes": [
+            "iget",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$13(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1d5c>",
+        {
+          "opcodes": [
+            "iget",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$10(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1d14>",
+        {
+          "opcodes": [
+            "iput",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$2(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1dec>",
+        {
+          "opcodes": [
+            "iget",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$5(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1e34>",
+        {
+          "opcodes": [
+            "iget",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$9(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1e94>",
+        {
+          "opcodes": [
+            "iget",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$11(Lcom/android/installer/full/AndroidInstaller2Activity; Ljava/lang/String; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x1d2c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$12(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=static synthetic] @ 0x1d44>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$0(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1ce4>",
+        {
+          "opcodes": [
+            "iget",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$4(Lcom/android/installer/full/AndroidInstaller2Activity;)[Ljava/lang/String; [access_flags=static synthetic] @ 0x1e1c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$8(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1e7c>",
+        {
+          "opcodes": [
+            "iput",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$3(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1e04>",
+        {
+          "opcodes": [
+            "iget",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->show()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$1(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1cfc>",
+        {
+          "opcodes": [
+            "iput",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$6(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1e4c>",
+        {
+          "opcodes": [
+            "iput",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getBaseContext()Landroid/content/Context;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$14(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1d74>",
+        {
+          "opcodes": [
+            "iput",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$2;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1348>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/TimerTask;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$2;->run()V [access_flags=public] @ 0x1364>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-static",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$15(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=static synthetic] @ 0x1d8c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1380>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x139c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "if-nez",
+            "iget-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "iget-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const-string",
+            "invoke-virtual",
+            "iget-object",
+            "const/4",
+            "invoke-static",
+            "iget-object",
+            "const/16",
+            "invoke-static",
+            "return-void",
+            "iget-object",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->findViewById(I)Landroid/view/View;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$18(Lcom/android/installer/full/AndroidInstaller2Activity;)Ljava/lang/String; [access_flags=static synthetic] @ 0x1dd4>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$17(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1dbc>",
+        {
+          "opcodes": [
+            "iput",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$16(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1da4>",
+        {
+          "opcodes": [
+            "iget",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/view/View;->setEnabled(Z)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->openWebURL(Ljava/lang/String;)V [access_flags=public] @ 0x2934>",
+        {
+          "opcodes": [
+            "new-instance",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x142c>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1448>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "packed-switch",
+            "return-void",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "goto",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "goto",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "goto",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "goto",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "goto",
+            "packed-switch-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;->getResultCode()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1554>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1570>",
+        {
+          "opcodes": [
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "packed-switch",
+            "return-void",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "const/4",
+            "invoke-static",
+            "goto",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "const/4",
+            "invoke-static",
+            "goto",
+            "nop",
+            "packed-switch-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;->getResultCode()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;-><init>()V [access_flags=public constructor] @ 0x15fc>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "const/4",
+            "const/4",
+            "const/4",
+            "invoke-direct",
+            "iput",
+            "iput",
+            "iput",
+            "iput-object",
+            "iput-object",
+            "iput",
+            "iput",
+            "iput",
+            "iput",
+            "const-string",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "const/16",
+            "new-array",
+            "const-string",
+            "aput-object",
+            "const-string",
+            "aput-object",
+            "const-string",
+            "aput-object",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "iput-object",
+            "const/16",
+            "new-array",
+            "const-string",
+            "aput-object",
+            "const-string",
+            "aput-object",
+            "const-string",
+            "aput-object",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/4",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "const/16",
+            "const-string",
+            "aput-object",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->ShowContent()V [access_flags=private] @ 0x1c34>",
+        {
+          "opcodes": [
+            "const",
+            "const/4",
+            "iput",
+            "iput",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const-string",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->TimerMethod()V [access_flags=private] @ 0x1cc8>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->runOnUiThread(Ljava/lang/Runnable;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1f30>",
+        {
+          "opcodes": [
+            "const/4",
+            "const-string",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-static",
+            "move-result-object",
+            "const/4",
+            "move-object",
+            "move-object",
+            "invoke-virtual/range",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->readRawTextFile(Landroid/content/Context; I)Ljava/lang/String; [access_flags=public static] @ 0x1eac>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "if-nez",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object",
+            "invoke-virtual",
+            "const/16",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object",
+            "const/4",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/gsm/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->registerReceiver(Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter;)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/gsm/SmsManager;->getDefault()Landroid/telephony/gsm/SmsManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->split(Ljava/lang/String; Ljava/lang/String;)[Ljava/lang/String; [access_flags=private] @ 0x1fb8>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result",
+            "if-gez",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result",
+            "new-array",
+            "invoke-virtual",
+            "move-result",
+            "if-lez",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "if-lt",
+            "return-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result",
+            "add-int/2addr",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "goto",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "aput-object",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Vector;->addElement(Ljava/lang/Object;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Vector;->size()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Vector;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->convertStreamToString(Ljava/io/InputStream;)Ljava/lang/String; [access_flags=] @ 0x2050>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-ne",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->read()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/ByteArrayOutputStream;->write(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/ByteArrayOutputStream;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/ByteArrayOutputStream;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getStext()Landroid/widget/TextView; [access_flags=public] @ 0x2094>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getStringFromRawFile(Landroid/app/Activity; I)Ljava/lang/String; [access_flags=] @ 0x20ac>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->getResources()Landroid/content/res/Resources;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getText123()Ljava/lang/String; [access_flags=public] @ 0x20dc>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        {
+          "opcodes": [
+            "invoke-super/range",
+            "const/high16",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "const/4",
+            "const/high16",
+            "move-object/from16",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "move-object",
+            "invoke-direct",
+            "move-result-object",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "new-instance",
+            "move-object",
+            "move-object/from16",
+            "invoke-direct",
+            "const-wide/16",
+            "const-wide/16",
+            "invoke-virtual/range",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual/range",
+            "move-result-object",
+            "const/16",
+            "const/16",
+            "const/4",
+            "if-eqz",
+            "const/4",
+            "const/4",
+            "move-object/from16",
+            "move",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result",
+            "const/4",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result",
+            "const/4",
+            "if-nez",
+            "invoke-virtual/range",
+            "move-result-object",
+            "invoke-virtual/range",
+            "move-result",
+            "const/4",
+            "if-le",
+            "const/4",
+            "const/4",
+            "move-object/from16",
+            "move",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const/4",
+            "move-object/from16",
+            "move",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "const/16",
+            "const-string",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const-string",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const-string",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const-string",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "if-ne",
+            "if-nez",
+            "const/16",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "if-nez",
+            "const/16",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "array-length",
+            "move/from16",
+            "move",
+            "if-lt",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "if-nez",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "const-string",
+            "if-ne",
+            "const/4",
+            "if-ne",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const/4",
+            "if-ne",
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "new-instance",
+            "move-object/from16",
+            "move-object/from16",
+            "invoke-direct",
+            "const",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const/16",
+            "const",
+            "move-object/from16",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "const/16",
+            "const",
+            "move-object/from16",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "move-object/from16",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const",
+            "move-object/from16",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const/4",
+            "const",
+            "move-object/from16",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "move-object",
+            "invoke-direct",
+            "move-result-object",
+            "const-string",
+            "const/16",
+            "check-cast",
+            "const/16",
+            "check-cast",
+            "const/16",
+            "move-object/from16",
+            "array-length",
+            "move",
+            "move/from16",
+            "move",
+            "if-lt",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "if-eq",
+            "move-object/from16",
+            "const/4",
+            "aget-object",
+            "const/4",
+            "const/4",
+            "aget-object",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "sub-int/2addr",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const/4",
+            "aget-object",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "move-object/from16",
+            "move-object/from16",
+            "invoke-virtual",
+            "const/4",
+            "aget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-lez",
+            "const/4",
+            "aget-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "move-object",
+            "invoke-direct",
+            "move-result-object",
+            "move-object/from16",
+            "array-length",
+            "move",
+            "new-array",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "array-length",
+            "move",
+            "new-array",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const/16",
+            "move-object/from16",
+            "array-length",
+            "move",
+            "move/from16",
+            "move",
+            "if-lt",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "move-object",
+            "move-object/from16",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "invoke-virtual/range",
+            "goto/16",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "aget-object",
+            "invoke-static",
+            "move-result",
+            "if-ne",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "add-int/lit8",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual/range",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual/range",
+            "goto/16",
+            "move-exception",
+            "move-object/from16",
+            "invoke-virtual/range",
+            "goto/16",
+            "move-exception",
+            "move-object/from16",
+            "invoke-virtual/range",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual/range",
+            "goto/16",
+            "const/16",
+            "check-cast",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "aget-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "move-object",
+            "invoke-direct",
+            "move-result-object",
+            "const/4",
+            "aget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "move-object/from16",
+            "const/4",
+            "aget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "aget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "move-object/from16",
+            "const-string",
+            "const/4",
+            "aget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "move-object/from16",
+            "const-string",
+            "add-int/lit8",
+            "goto/16",
+            "const/4",
+            "aget-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "move-object/from16",
+            "const-string",
+            "goto",
+            "move-object/from16",
+            "move-object/from16",
+            "invoke-virtual",
+            "goto/16",
+            "aget-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "move-object",
+            "invoke-direct",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "const/4",
+            "aget-object",
+            "aput-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "const/4",
+            "aget-object",
+            "aput-object",
+            "add-int/lit8",
+            "goto/16",
+            "const/4",
+            "new-array",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const/4",
+            "new-array",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "const/4",
+            "aget-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "move-object",
+            "invoke-direct",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "const/4",
+            "const/4",
+            "aget-object",
+            "aput-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "const/4",
+            "const/4",
+            "aget-object",
+            "aput-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "move-object",
+            "move-object/from16",
+            "iput-object",
+            "goto/16"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/TextView;-><init>(Landroid/content/Context;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Timer;->schedule(Ljava/util/TimerTask; J J)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->toLowerCase()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Timer;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->startActivity(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->setStext(Landroid/widget/TextView;)V [access_flags=public] @ 0x2964>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->setText123(Ljava/lang/String;)V [access_flags=public] @ 0x297c>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$attr;-><init>()V [access_flags=public constructor] @ 0x2994>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$drawable;-><init>()V [access_flags=public constructor] @ 0x29ac>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$id;-><init>()V [access_flags=public constructor] @ 0x29c4>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$layout;-><init>()V [access_flags=public constructor] @ 0x29dc>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$raw;-><init>()V [access_flags=public constructor] @ 0x29f4>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$string;-><init>()V [access_flags=public constructor] @ 0x2a0c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R;-><init>()V [access_flags=public constructor] @ 0x2a24>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1130>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->makeText(Landroid/content/Context; Ljava/lang/CharSequence; I)Landroid/widget/Toast;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$7(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1e64>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$13(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1d5c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$10(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1d14>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$2(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1dec>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$5(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1e34>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$9(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1e94>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$11(Lcom/android/installer/full/AndroidInstaller2Activity; Ljava/lang/String; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x1d2c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$12(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=static synthetic] @ 0x1d44>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$0(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1ce4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$4(Lcom/android/installer/full/AndroidInstaller2Activity;)[Ljava/lang/String; [access_flags=static synthetic] @ 0x1e1c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$8(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1e7c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$3(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1e04>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->show()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$1(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1cfc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$6(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1e4c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;->run()V [access_flags=public] @ 0x114c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$14(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1d74>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$11(Lcom/android/installer/full/AndroidInstaller2Activity; Ljava/lang/String; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x1d2c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1f30>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$12(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=static synthetic] @ 0x1d44>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->ShowContent()V [access_flags=private] @ 0x1c34>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$2;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1348>",
+        "<analysis.MethodAnalysis Ljava/util/TimerTask;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$2;->run()V [access_flags=public] @ 0x1364>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$15(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=static synthetic] @ 0x1d8c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$15(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=static synthetic] @ 0x1d8c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->TimerMethod()V [access_flags=private] @ 0x1cc8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1380>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x139c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$1(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1cfc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x139c>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x139c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x139c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$18(Lcom/android/installer/full/AndroidInstaller2Activity;)Ljava/lang/String; [access_flags=static synthetic] @ 0x1dd4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x139c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$17(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1dbc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x139c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$16(Lcom/android/installer/full/AndroidInstaller2Activity;)I [access_flags=static synthetic] @ 0x1da4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x139c>",
+        "<analysis.MethodAnalysis Landroid/view/View;->setEnabled(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x139c>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->openWebURL(Ljava/lang/String;)V [access_flags=public] @ 0x2934>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->openWebURL(Ljava/lang/String;)V [access_flags=public] @ 0x2934>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->openWebURL(Ljava/lang/String;)V [access_flags=public] @ 0x2934>",
+        "<analysis.MethodAnalysis Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->openWebURL(Ljava/lang/String;)V [access_flags=public] @ 0x2934>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x142c>",
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1448>",
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->makeText(Landroid/content/Context; Ljava/lang/CharSequence; I)Landroid/widget/Toast;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1448>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$6(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1e4c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1448>",
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->show()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1448>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1448>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;->getResultCode()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1554>",
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1570>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;->getResultCode()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1570>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1570>",
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->makeText(Landroid/content/Context; Ljava/lang/CharSequence; I)Landroid/widget/Toast;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1570>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->access$6(Lcom/android/installer/full/AndroidInstaller2Activity; I)V [access_flags=static synthetic] @ 0x1e4c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1570>",
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->show()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;-><init>()V [access_flags=public constructor] @ 0x15fc>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$1;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1130>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;-><init>()V [access_flags=public constructor] @ 0x15fc>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->ShowContent()V [access_flags=private] @ 0x1c34>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->ShowContent()V [access_flags=private] @ 0x1c34>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->ShowContent()V [access_flags=private] @ 0x1c34>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->ShowContent()V [access_flags=private] @ 0x1c34>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->ShowContent()V [access_flags=private] @ 0x1c34>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->ShowContent()V [access_flags=private] @ 0x1c34>",
+        "<analysis.MethodAnalysis Landroid/view/View;->setEnabled(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->ShowContent()V [access_flags=private] @ 0x1c34>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->ShowContent()V [access_flags=private] @ 0x1c34>",
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->TimerMethod()V [access_flags=private] @ 0x1cc8>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->runOnUiThread(Ljava/lang/Runnable;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1f30>",
+        "<analysis.MethodAnalysis Landroid/telephony/gsm/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1f30>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1f30>",
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1f30>",
+        "<analysis.MethodAnalysis Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1f30>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->registerReceiver(Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1f30>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$4;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x142c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1f30>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$5;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1554>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1f30>",
+        "<analysis.MethodAnalysis Landroid/telephony/gsm/SmsManager;->getDefault()Landroid/telephony/gsm/SmsManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->readRawTextFile(Landroid/content/Context; I)Ljava/lang/String; [access_flags=public static] @ 0x1eac>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->readRawTextFile(Landroid/content/Context; I)Ljava/lang/String; [access_flags=public static] @ 0x1eac>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->readRawTextFile(Landroid/content/Context; I)Ljava/lang/String; [access_flags=public static] @ 0x1eac>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->readRawTextFile(Landroid/content/Context; I)Ljava/lang/String; [access_flags=public static] @ 0x1eac>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->readRawTextFile(Landroid/content/Context; I)Ljava/lang/String; [access_flags=public static] @ 0x1eac>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->readRawTextFile(Landroid/content/Context; I)Ljava/lang/String; [access_flags=public static] @ 0x1eac>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->readRawTextFile(Landroid/content/Context; I)Ljava/lang/String; [access_flags=public static] @ 0x1eac>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->readRawTextFile(Landroid/content/Context; I)Ljava/lang/String; [access_flags=public static] @ 0x1eac>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->readRawTextFile(Landroid/content/Context; I)Ljava/lang/String; [access_flags=public static] @ 0x1eac>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->split(Ljava/lang/String; Ljava/lang/String;)[Ljava/lang/String; [access_flags=private] @ 0x1fb8>",
+        "<analysis.MethodAnalysis Ljava/util/Vector;->addElement(Ljava/lang/Object;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->split(Ljava/lang/String; Ljava/lang/String;)[Ljava/lang/String; [access_flags=private] @ 0x1fb8>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->split(Ljava/lang/String; Ljava/lang/String;)[Ljava/lang/String; [access_flags=private] @ 0x1fb8>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->split(Ljava/lang/String; Ljava/lang/String;)[Ljava/lang/String; [access_flags=private] @ 0x1fb8>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->split(Ljava/lang/String; Ljava/lang/String;)[Ljava/lang/String; [access_flags=private] @ 0x1fb8>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->split(Ljava/lang/String; Ljava/lang/String;)[Ljava/lang/String; [access_flags=private] @ 0x1fb8>",
+        "<analysis.MethodAnalysis Ljava/util/Vector;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->split(Ljava/lang/String; Ljava/lang/String;)[Ljava/lang/String; [access_flags=private] @ 0x1fb8>",
+        "<analysis.MethodAnalysis Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->split(Ljava/lang/String; Ljava/lang/String;)[Ljava/lang/String; [access_flags=private] @ 0x1fb8>",
+        "<analysis.MethodAnalysis Ljava/util/Vector;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->convertStreamToString(Ljava/io/InputStream;)Ljava/lang/String; [access_flags=] @ 0x2050>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->read()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->convertStreamToString(Ljava/io/InputStream;)Ljava/lang/String; [access_flags=] @ 0x2050>",
+        "<analysis.MethodAnalysis Ljava/io/ByteArrayOutputStream;->write(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->convertStreamToString(Ljava/io/InputStream;)Ljava/lang/String; [access_flags=] @ 0x2050>",
+        "<analysis.MethodAnalysis Ljava/io/ByteArrayOutputStream;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->convertStreamToString(Ljava/io/InputStream;)Ljava/lang/String; [access_flags=] @ 0x2050>",
+        "<analysis.MethodAnalysis Ljava/io/ByteArrayOutputStream;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getStringFromRawFile(Landroid/app/Activity; I)Ljava/lang/String; [access_flags=] @ 0x20ac>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->convertStreamToString(Ljava/io/InputStream;)Ljava/lang/String; [access_flags=] @ 0x2050>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getStringFromRawFile(Landroid/app/Activity; I)Ljava/lang/String; [access_flags=] @ 0x20ac>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getStringFromRawFile(Landroid/app/Activity; I)Ljava/lang/String; [access_flags=] @ 0x20ac>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getStringFromRawFile(Landroid/app/Activity; I)Ljava/lang/String; [access_flags=] @ 0x20ac>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;-><init>(Landroid/content/Context;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$2;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1348>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->split(Ljava/lang/String; Ljava/lang/String;)[Ljava/lang/String; [access_flags=private] @ 0x1fb8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity$3;-><init>(Lcom/android/installer/full/AndroidInstaller2Activity;)V [access_flags=constructor] @ 0x1380>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Ljava/util/Timer;->schedule(Ljava/util/TimerTask; J J)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getStringFromRawFile(Landroid/app/Activity; I)Ljava/lang/String; [access_flags=] @ 0x20ac>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->toLowerCase()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Ljava/util/Timer;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/AndroidInstaller2Activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x20f4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$attr;-><init>()V [access_flags=public constructor] @ 0x2994>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$drawable;-><init>()V [access_flags=public constructor] @ 0x29ac>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$id;-><init>()V [access_flags=public constructor] @ 0x29c4>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$layout;-><init>()V [access_flags=public constructor] @ 0x29dc>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$raw;-><init>()V [access_flags=public constructor] @ 0x29f4>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R$string;-><init>()V [access_flags=public constructor] @ 0x2a0c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/android/installer/full/R;-><init>()V [access_flags=public constructor] @ 0x2a24>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ]
+    ]
+  },
+  "label": 1
+}

@@ -1,0 +1,1827 @@
+{
+  "permissions": [
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "call_graph": {
+    "nodes": [
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$1;-><init>(Lcom/opera/install/AgreementActivity;)V [access_flags=constructor] @ 0x10c0>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$1;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x10dc>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->finish()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$2;-><init>(Lcom/opera/install/AgreementActivity;)V [access_flags=constructor] @ 0x10f8>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1114>",
+        {
+          "opcodes": [
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-class",
+            "invoke-direct",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->getBaseContext()Landroid/content/Context;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->startActivity(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;-><init>()V [access_flags=public constructor] @ 0x1154>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1170>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "const/high16",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->findViewById(I)Landroid/view/View;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;-><init>(Ljava/lang/String; Landroid/app/Activity;)V [access_flags=public constructor] @ 0x11d8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "const-string",
+            "iput-object",
+            "const-string",
+            "iput-object",
+            "const-string",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "invoke-direct",
+            "invoke-direct",
+            "iget",
+            "new-array",
+            "iput-object",
+            "iget",
+            "new-array",
+            "iput-object",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMS()V [access_flags=public] @ 0x14fc>",
+        {
+          "opcodes": [
+            "iget",
+            "add-int/lit8",
+            "const/4",
+            "const-string",
+            "iget",
+            "iget",
+            "add-int/2addr",
+            "add-int/lit8",
+            "if-ge",
+            "iget-object",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "const/4",
+            "aget-object",
+            "aput-object",
+            "iget-object",
+            "const/4",
+            "aget-object",
+            "aput-object",
+            "add-int/lit8",
+            "add-int/lit8",
+            "goto",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/high16",
+            "new-array",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "array-length",
+            "invoke-virtual",
+            "move-result",
+            "if-lez",
+            "invoke-virtual",
+            "if-gez",
+            "new-instance",
+            "invoke-direct",
+            "invoke-direct",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "array-length",
+            "iput",
+            "iget",
+            "add-int/lit8",
+            "new-array",
+            "iput-object",
+            "iput-object",
+            "iget-object",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const/4",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>",
+        {
+          "opcodes": [
+            "const/4",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "iget",
+            "if-ge",
+            "iget-object",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iput",
+            "iget",
+            "if-ne",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-ne",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "invoke-direct",
+            "return-void",
+            "add-int/lit8",
+            "goto",
+            "iget-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "goto",
+            "iget-object",
+            "aget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "add-int/lit8",
+            "goto",
+            "add-int/lit8",
+            "iget",
+            "sub-int/2addr",
+            "iput",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result",
+            "invoke-virtual",
+            "move-result",
+            "if-ge",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "invoke-virtual",
+            "const/4",
+            "const/16",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "goto",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "new-array",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "if-ge",
+            "invoke-virtual",
+            "move-result",
+            "invoke-virtual",
+            "move-result",
+            "xor-int/2addr",
+            "int-to-char",
+            "aput-char",
+            "add-int/lit8",
+            "goto",
+            "new-instance",
+            "invoke-direct",
+            "move-object",
+            "return-object",
+            "move-exception",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->length()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([C)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->charAt(I)C>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->charAt(I)C>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->substring(I I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append([C I I)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/Reader;->read([C I I)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>(Ljava/lang/StringBuilder;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->getAssets()Landroid/content/res/AssetManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;-><init>()V [access_flags=public constructor] @ 0x1570>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->Lock()V [access_flags=private] @ 0x1588>",
+        {
+          "opcodes": [
+            "const-string",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;->flush()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->openFileOutput(Ljava/lang/String; I)Ljava/io/FileOutputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;->write(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/FileNotFoundException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->getMCCMNC()Ljava/lang/String; [access_flags=private] @ 0x1600>",
+        {
+          "opcodes": [
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1638>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "new-instance",
+            "const-class",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "move-object",
+            "move-object",
+            "move-object",
+            "invoke-virtual/range",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "const",
+            "invoke-virtual",
+            "invoke-direct",
+            "move-result-object",
+            "const-string",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "iget",
+            "if-ge",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "add-int/lit8",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "add-int/lit8",
+            "goto",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const-string",
+            "invoke-virtual",
+            "iget",
+            "const/4",
+            "const/4",
+            "iget-object",
+            "array-length",
+            "if-ge",
+            "if-le",
+            "invoke-direct",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "const-class",
+            "invoke-direct",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void",
+            "iget-object",
+            "aget-object",
+            "iget-object",
+            "aget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-lez",
+            "invoke-virtual",
+            "move-result",
+            "if-lez",
+            "invoke-direct",
+            "add-int/lit8",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->findViewById(I)Landroid/view/View;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->getBaseContext()Landroid/content/Context;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/lang/String;)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->startActivity(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->finish()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$1;-><init>(Lcom/opera/install/DownloadActivity;)V [access_flags=constructor] @ 0x18bc>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/webkit/WebViewClient;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$1;->onLoadResource(Landroid/webkit/WebView; Ljava/lang/String;)V [access_flags=public] @ 0x18d8>",
+        {
+          "opcodes": [
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "new-instance",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void",
+            "invoke-super",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->startActivity(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/webkit/WebViewClient;->onLoadResource(Landroid/webkit/WebView; Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/webkit/WebView;->getContext()Landroid/content/Context;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->endsWith(Ljava/lang/String;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$DownloadClient;-><init>(Lcom/opera/install/DownloadActivity;)V [access_flags=private constructor] @ 0x1928>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$DownloadClient;-><init>(Lcom/opera/install/DownloadActivity; Lcom/opera/install/DownloadActivity$1;)V [access_flags=synthetic constructor] @ 0x1944>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$DownloadClient;->shouldOverrideUrlLoading(Landroid/webkit/WebView; Ljava/lang/String;)Z [access_flags=public] @ 0x195c>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "const/4",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;-><init>()V [access_flags=public constructor] @ 0x1978>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "const",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "const/4",
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->findViewById(I)Landroid/view/View;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->getIntent()Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getExtras()Landroid/os/Bundle;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$1;-><init>(Lcom/opera/install/InstallActivity;)V [access_flags=constructor] @ 0x1a1c>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$1;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1a38>",
+        {
+          "opcodes": [
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-class",
+            "invoke-direct",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->finish()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->getBaseContext()Landroid/content/Context;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->startActivity(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$2;-><init>(Lcom/opera/install/InstallActivity;)V [access_flags=constructor] @ 0x1a78>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1a94>",
+        {
+          "opcodes": [
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-class",
+            "invoke-direct",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;-><init>()V [access_flags=public constructor] @ 0x1ad4>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const-string",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result",
+            "new-array",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "move-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "return",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->openFileOutput(Ljava/lang/String; I)Ljava/io/FileOutputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;->read([C)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "const",
+            "invoke-virtual",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "const-class",
+            "invoke-direct",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->findViewById(I)Landroid/view/View;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->getString(I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$attr;-><init>()V [access_flags=public constructor] @ 0x1cd0>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$color;-><init>()V [access_flags=public constructor] @ 0x1ce8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$drawable;-><init>()V [access_flags=public constructor] @ 0x1d00>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$id;-><init>()V [access_flags=public constructor] @ 0x1d18>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$layout;-><init>()V [access_flags=public constructor] @ 0x1d30>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$string;-><init>()V [access_flags=public constructor] @ 0x1d48>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R;-><init>()V [access_flags=public constructor] @ 0x1d60>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$1;-><init>(Lcom/opera/install/AgreementActivity;)V [access_flags=constructor] @ 0x10c0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$1;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x10dc>",
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->finish()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$2;-><init>(Lcom/opera/install/AgreementActivity;)V [access_flags=constructor] @ 0x10f8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1114>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1114>",
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1114>",
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1114>",
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->finish()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;-><init>()V [access_flags=public constructor] @ 0x1154>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1170>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1170>",
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1170>",
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1170>",
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$1;-><init>(Lcom/opera/install/AgreementActivity;)V [access_flags=constructor] @ 0x10c0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1170>",
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1170>",
+        "<analysis.MethodAnalysis Lcom/opera/install/AgreementActivity$2;-><init>(Lcom/opera/install/AgreementActivity;)V [access_flags=constructor] @ 0x10f8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;-><init>(Ljava/lang/String; Landroid/app/Activity;)V [access_flags=public constructor] @ 0x11d8>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMS()V [access_flags=public] @ 0x14fc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;-><init>(Ljava/lang/String; Landroid/app/Activity;)V [access_flags=public constructor] @ 0x11d8>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;-><init>(Ljava/lang/String; Landroid/app/Activity;)V [access_flags=public constructor] @ 0x11d8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;-><init>(Ljava/lang/String; Landroid/app/Activity;)V [access_flags=public constructor] @ 0x11d8>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;-><init>(Ljava/lang/String; Landroid/app/Activity;)V [access_flags=public constructor] @ 0x11d8>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMS()V [access_flags=public] @ 0x14fc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMS()V [access_flags=public] @ 0x14fc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append([C I I)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        "<analysis.MethodAnalysis Ljava/io/Reader;->read([C I I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        "<analysis.MethodAnalysis Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>(Ljava/lang/StringBuilder;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->read()V [access_flags=private] @ 0x1428>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->getAssets()Landroid/content/res/AssetManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->getSMSCol()V [access_flags=private] @ 0x1338>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([C)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->charAt(I)C>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->charAt(I)C>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;->decrypt(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x1250>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->substring(I I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;-><init>()V [access_flags=public constructor] @ 0x1570>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->Lock()V [access_flags=private] @ 0x1588>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->Lock()V [access_flags=private] @ 0x1588>",
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;->flush()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->Lock()V [access_flags=private] @ 0x1588>",
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->Lock()V [access_flags=private] @ 0x1588>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->openFileOutput(Ljava/lang/String; I)Ljava/io/FileOutputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->Lock()V [access_flags=private] @ 0x1588>",
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;->write(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->Lock()V [access_flags=private] @ 0x1588>",
+        "<analysis.MethodAnalysis Ljava/io/FileNotFoundException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->Lock()V [access_flags=private] @ 0x1588>",
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->getMCCMNC()Ljava/lang/String; [access_flags=private] @ 0x1600>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->getMCCMNC()Ljava/lang/String; [access_flags=private] @ 0x1600>",
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->getMCCMNC()Ljava/lang/String; [access_flags=private] @ 0x1600>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1638>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1638>",
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1638>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1638>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->sendSMS(Ljava/lang/String; Ljava/lang/String;)V [access_flags=private] @ 0x1638>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->getMCCMNC()Ljava/lang/String; [access_flags=private] @ 0x1600>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;-><init>(Ljava/lang/String; Landroid/app/Activity;)V [access_flags=public constructor] @ 0x11d8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/lang/String;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->Lock()V [access_flags=private] @ 0x1588>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1678>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConsoleActivity;->finish()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$1;-><init>(Lcom/opera/install/DownloadActivity;)V [access_flags=constructor] @ 0x18bc>",
+        "<analysis.MethodAnalysis Landroid/webkit/WebViewClient;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$1;->onLoadResource(Landroid/webkit/WebView; Ljava/lang/String;)V [access_flags=public] @ 0x18d8>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$1;->onLoadResource(Landroid/webkit/WebView; Ljava/lang/String;)V [access_flags=public] @ 0x18d8>",
+        "<analysis.MethodAnalysis Landroid/webkit/WebViewClient;->onLoadResource(Landroid/webkit/WebView; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$1;->onLoadResource(Landroid/webkit/WebView; Ljava/lang/String;)V [access_flags=public] @ 0x18d8>",
+        "<analysis.MethodAnalysis Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$1;->onLoadResource(Landroid/webkit/WebView; Ljava/lang/String;)V [access_flags=public] @ 0x18d8>",
+        "<analysis.MethodAnalysis Landroid/webkit/WebView;->getContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$1;->onLoadResource(Landroid/webkit/WebView; Ljava/lang/String;)V [access_flags=public] @ 0x18d8>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->endsWith(Ljava/lang/String;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$1;->onLoadResource(Landroid/webkit/WebView; Ljava/lang/String;)V [access_flags=public] @ 0x18d8>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$DownloadClient;-><init>(Lcom/opera/install/DownloadActivity;)V [access_flags=private constructor] @ 0x1928>",
+        "<analysis.MethodAnalysis Landroid/webkit/WebViewClient;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$DownloadClient;-><init>(Lcom/opera/install/DownloadActivity; Lcom/opera/install/DownloadActivity$1;)V [access_flags=synthetic constructor] @ 0x1944>",
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$DownloadClient;-><init>(Lcom/opera/install/DownloadActivity;)V [access_flags=private constructor] @ 0x1928>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$DownloadClient;->shouldOverrideUrlLoading(Landroid/webkit/WebView; Ljava/lang/String;)Z [access_flags=public] @ 0x195c>",
+        "<analysis.MethodAnalysis Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;-><init>()V [access_flags=public constructor] @ 0x1978>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$1;-><init>(Lcom/opera/install/DownloadActivity;)V [access_flags=constructor] @ 0x18bc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->getIntent()Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity$DownloadClient;-><init>(Lcom/opera/install/DownloadActivity; Lcom/opera/install/DownloadActivity$1;)V [access_flags=synthetic constructor] @ 0x1944>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/DownloadActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1990>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getExtras()Landroid/os/Bundle;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$1;-><init>(Lcom/opera/install/InstallActivity;)V [access_flags=constructor] @ 0x1a1c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$1;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1a38>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->finish()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$1;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1a38>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$1;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1a38>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$1;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1a38>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$2;-><init>(Lcom/opera/install/InstallActivity;)V [access_flags=constructor] @ 0x1a78>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1a94>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->finish()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1a94>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1a94>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x1a94>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;-><init>()V [access_flags=public constructor] @ 0x1ad4>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;->write(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->openFileOutput(Ljava/lang/String; I)Ljava/io/FileOutputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;->flush()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/io/FileNotFoundException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;->read([C)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([C)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->Locker(Ljava/lang/String;)Z [access_flags=public] @ 0x1af0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Lcom/opera/install/ConfReader;-><init>(Ljava/lang/String; Landroid/app/Activity;)V [access_flags=public constructor] @ 0x11d8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/lang/String;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->finish()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$1;-><init>(Lcom/opera/install/InstallActivity;)V [access_flags=constructor] @ 0x1a1c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity$2;-><init>(Lcom/opera/install/InstallActivity;)V [access_flags=constructor] @ 0x1a78>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x1bec>",
+        "<analysis.MethodAnalysis Lcom/opera/install/InstallActivity;->getString(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$attr;-><init>()V [access_flags=public constructor] @ 0x1cd0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$color;-><init>()V [access_flags=public constructor] @ 0x1ce8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$drawable;-><init>()V [access_flags=public constructor] @ 0x1d00>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$id;-><init>()V [access_flags=public constructor] @ 0x1d18>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$layout;-><init>()V [access_flags=public constructor] @ 0x1d30>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R$string;-><init>()V [access_flags=public constructor] @ 0x1d48>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/opera/install/R;-><init>()V [access_flags=public constructor] @ 0x1d60>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ]
+    ]
+  },
+  "label": 1
+}

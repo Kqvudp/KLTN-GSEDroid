@@ -1,0 +1,2616 @@
+{
+  "permissions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "call_graph": {
+    "nodes": [
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=constructor] @ 0x10e4>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-virtual",
+            "const/4",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->setTitle(Ljava/lang/String;)V [access_flags=public] @ 0x11b4>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->setError(Z)V [access_flags=public] @ 0x1184>",
+        {
+          "opcodes": [
+            "iput-boolean",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->setText(Ljava/lang/String;)V [access_flags=public] @ 0x119c>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String; Z)V [access_flags=constructor] @ 0x1110>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->getText()Ljava/lang/String; [access_flags=public] @ 0x113c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->getTitle()Ljava/lang/String; [access_flags=public] @ 0x1154>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->isError()Z [access_flags=public] @ 0x116c>",
+        {
+          "opcodes": [
+            "iget-boolean",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;-><init>()V [access_flags=public constructor] @ 0x11cc>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "const/high16",
+            "invoke-virtual",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->setTitle(Ljava/lang/CharSequence;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/text/method/ScrollingMovementMethod;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->findViewById(I)Landroid/view/View;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>",
+        {
+          "opcodes": [
+            "sget-object",
+            "if-nez",
+            "new-instance",
+            "invoke-direct",
+            "sput-object",
+            "sget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>",
+        {
+          "opcodes": [
+            "iget-boolean",
+            "if-eqz",
+            "return-void",
+            "iput-object",
+            "const/4",
+            "iput-boolean",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const/high16",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "invoke-direct",
+            "goto",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getFinishTexts()Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x1868>",
+        {
+          "opcodes": [
+            "iget-object",
+            "if-nez",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onExitClicked(Landroid/view/View;)V [access_flags=public] @ 0x1268>",
+        {
+          "opcodes": [
+            "const-string",
+            "const-string",
+            "invoke-static",
+            "const/4",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->moveTaskToBack(Z)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onKeyDown(I Landroid/view/KeyEvent;)Z [access_flags=public] @ 0x1290>",
+        {
+          "opcodes": [
+            "const/4",
+            "if-ne",
+            "const/4",
+            "return",
+            "invoke-super",
+            "move-result",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onKeyDown(I Landroid/view/KeyEvent;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x12b4>",
+        {
+          "opcodes": [
+            "const-string",
+            "const-string",
+            "invoke-static",
+            "new-instance",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getValue(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x19bc>",
+        {
+          "opcodes": [
+            "iget-object",
+            "if-nez",
+            "const-string",
+            "return-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "if-nez",
+            "const-string",
+            "goto",
+            "move-object",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->startActivity(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;-><init>()V [access_flags=public constructor] @ 0x1304>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "const",
+            "invoke-virtual",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->setTitle(Ljava/lang/CharSequence;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->findViewById(I)Landroid/view/View;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getFirstActivityTexts()Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x1898>",
+        {
+          "opcodes": [
+            "iget-object",
+            "if-nez",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x13a0>",
+        {
+          "opcodes": [
+            "invoke-static",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "const-class",
+            "invoke-direct",
+            "const/4",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->startActivityForResult(Landroid/content/Intent; I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "invoke-virtual",
+            "move-result",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "const/4",
+            "if-ge",
+            "add-int/lit8",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "new-instance",
+            "const-class",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "invoke-virtual/range",
+            "add-int/lit8",
+            "goto/16",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/view/View;->getContext()Landroid/content/Context;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onRulesClicked(Landroid/view/View;)V [access_flags=public] @ 0x13d8>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "const-class",
+            "invoke-direct",
+            "const/4",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;-><init>()V [access_flags=private constructor] @ 0x1408>",
+        {
+          "opcodes": [
+            "const/4",
+            "invoke-direct",
+            "const/4",
+            "iput-boolean",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "const-string",
+            "const-string",
+            "invoke-static",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getReplaces()Ljava/util/ArrayList; [access_flags=private] @ 0x1470>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "new-instance",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "new-instance",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "new-instance",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x2210>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x150c>",
+        {
+          "opcodes": [
+            "const/16",
+            "invoke-virtual",
+            "move-result",
+            "if-gtz",
+            "return-void",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "add-int/lit8",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(I)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        {
+          "opcodes": [
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "move-object",
+            "move/from16",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "const/4",
+            "invoke-virtual/range",
+            "move-result",
+            "if-ge",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "add-int/lit8",
+            "goto",
+            "if-eqz",
+            "move-object",
+            "const/4",
+            "goto",
+            "invoke-virtual",
+            "const/16",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "new-instance",
+            "const-string",
+            "const-string",
+            "const/4",
+            "invoke-direct",
+            "return-object",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "goto",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "new-instance",
+            "const-string",
+            "const-string",
+            "const/4",
+            "invoke-direct",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;->getFrom()Ljava/lang/String; [access_flags=public] @ 0x2234>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;->getTo()Ljava/lang/String; [access_flags=public] @ 0x224c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/UnsupportedEncodingException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->replace(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=private static] @ 0x17f0>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-eq",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "add-int",
+            "invoke-virtual",
+            "move-result",
+            "goto",
+            "invoke-virtual",
+            "move-result",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        {
+          "opcodes": [
+            "const-string",
+            "move-object",
+            "move-object/from16",
+            "invoke-static",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "move-object",
+            "move-object/from16",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "const/4",
+            "invoke-virtual/range",
+            "move-result",
+            "if-ge",
+            "move-object/from16",
+            "move",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "add-int/lit8",
+            "goto",
+            "move-exception",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "new-instance",
+            "const-string",
+            "const-string",
+            "const/16",
+            "invoke-direct/range",
+            "return-object",
+            "if-eqz",
+            "move-object",
+            "const/4",
+            "goto",
+            "invoke-virtual",
+            "const/16",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "new-instance",
+            "const-string",
+            "const-string",
+            "const/16",
+            "invoke-direct/range",
+            "goto",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "goto",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "new-instance",
+            "const-string",
+            "const-string",
+            "const/16",
+            "invoke-direct/range",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getAssets()Landroid/content/res/AssetManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/IOException;->getMessage()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(Ljava/lang/String; I)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        {
+          "opcodes": [
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "const-string",
+            "const-string",
+            "const/4",
+            "invoke-direct",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "if-ge",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "move-result-object",
+            "invoke-direct",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "move-object",
+            "return-object",
+            "add-int/lit8",
+            "goto",
+            "move-object",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getRulesTexts()Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18c8>",
+        {
+          "opcodes": [
+            "iget-object",
+            "if-nez",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getLoc()Ljava/util/ArrayList; [access_flags=] @ 0x1d94>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        {
+          "opcodes": [
+            "iget-boolean",
+            "if-eqz",
+            "return-void",
+            "const/4",
+            "iput-boolean",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iput-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "invoke-direct",
+            "goto",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getInstance()Lcom/soft/android/appinstaller/OpInfo; [access_flags=static] @ 0x1d00>",
+        {
+          "opcodes": [
+            "sget-object",
+            "if-nez",
+            "new-instance",
+            "invoke-direct",
+            "sput-object",
+            "sget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/HashMap;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;-><init>()V [access_flags=public constructor] @ 0x1a9c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getActivity(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-ge",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "const-string",
+            "invoke-static",
+            "move-object",
+            "return-object",
+            "add-int/lit8",
+            "goto",
+            "const-string",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPhone()Ljava/lang/String; [access_flags=public] @ 0x1e5c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-ge",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "move-object",
+            "return-object",
+            "add-int/lit8",
+            "goto",
+            "const-string",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-ge",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "move-object",
+            "return-object",
+            "add-int/lit8",
+            "goto",
+            "const-string",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-ge",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "invoke-static",
+            "move-result",
+            "return",
+            "add-int/lit8",
+            "goto",
+            "const/4",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;-><clinit>()V [access_flags=static constructor] @ 0x1cc8>",
+        {
+          "opcodes": [
+            "const/4",
+            "sput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;-><init>()V [access_flags=public constructor] @ 0x1ce0>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "const/4",
+            "iput-boolean",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x1d2c>",
+        {
+          "opcodes": [
+            "const/16",
+            "invoke-virtual",
+            "move-result",
+            "if-gtz",
+            "return-void",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "add-int/lit8",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iget-object",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->startsWith(Ljava/lang/String;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->isEmpty()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$attr;-><init>()V [access_flags=public constructor] @ 0x2150>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$color;-><init>()V [access_flags=public constructor] @ 0x2168>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$drawable;-><init>()V [access_flags=public constructor] @ 0x2180>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$id;-><init>()V [access_flags=public constructor] @ 0x2198>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$layout;-><init>()V [access_flags=public constructor] @ 0x21b0>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$raw;-><init>()V [access_flags=public constructor] @ 0x21c8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$string;-><init>()V [access_flags=public constructor] @ 0x21e0>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R;-><init>()V [access_flags=public constructor] @ 0x21f8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;->setFrom(Ljava/lang/String;)V [access_flags=public] @ 0x2264>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;->setTo(Ljava/lang/String;)V [access_flags=public] @ 0x227c>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;-><init>()V [access_flags=public constructor] @ 0x2294>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        {
+          "opcodes": [
+            "const-string",
+            "const-string",
+            "invoke-static",
+            "invoke-super",
+            "const",
+            "invoke-virtual",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->findViewById(I)Landroid/view/View;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->setTitle(Ljava/lang/CharSequence;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onExitClicked(Landroid/view/View;)V [access_flags=public] @ 0x2340>",
+        {
+          "opcodes": [
+            "const-string",
+            "const-string",
+            "invoke-static",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->finish()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x2368>",
+        {
+          "opcodes": [
+            "const-string",
+            "const-string",
+            "invoke-static",
+            "invoke-static",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "const-class",
+            "invoke-direct",
+            "const/4",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->startActivityForResult(Landroid/content/Intent; I)V>",
+        {}
+      ]
+    ],
+    "edges": [
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=constructor] @ 0x10e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->setTitle(Ljava/lang/String;)V [access_flags=public] @ 0x11b4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=constructor] @ 0x10e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->setError(Z)V [access_flags=public] @ 0x1184>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=constructor] @ 0x10e4>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=constructor] @ 0x10e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->setText(Ljava/lang/String;)V [access_flags=public] @ 0x119c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String; Z)V [access_flags=constructor] @ 0x1110>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->setTitle(Ljava/lang/String;)V [access_flags=public] @ 0x11b4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String; Z)V [access_flags=constructor] @ 0x1110>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String; Z)V [access_flags=constructor] @ 0x1110>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->setError(Z)V [access_flags=public] @ 0x1184>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String; Z)V [access_flags=constructor] @ 0x1110>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->setText(Ljava/lang/String;)V [access_flags=public] @ 0x119c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;-><init>()V [access_flags=public constructor] @ 0x11cc>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->setTitle(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->getTitle()Ljava/lang/String; [access_flags=public] @ 0x1154>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Landroid/text/method/ScrollingMovementMethod;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->getText()Ljava/lang/String; [access_flags=public] @ 0x113c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x11e4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getFinishTexts()Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x1868>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;-><init>()V [access_flags=private constructor] @ 0x1408>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>",
+        "<analysis.MethodAnalysis Ljava/util/HashMap;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>",
+        "<analysis.MethodAnalysis Ljava/io/UnsupportedEncodingException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x150c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getFinishTexts()Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x1868>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onExitClicked(Landroid/view/View;)V [access_flags=public] @ 0x1268>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onExitClicked(Landroid/view/View;)V [access_flags=public] @ 0x1268>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->moveTaskToBack(Z)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onKeyDown(I Landroid/view/KeyEvent;)Z [access_flags=public] @ 0x1290>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onKeyDown(I Landroid/view/KeyEvent;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x12b4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x12b4>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x12b4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getValue(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x19bc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x12b4>",
+        "<analysis.MethodAnalysis Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x12b4>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x12b4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FinishActivity;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getValue(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x19bc>",
+        "<analysis.MethodAnalysis Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;-><init>()V [access_flags=public constructor] @ 0x1304>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->getText()Ljava/lang/String; [access_flags=public] @ 0x113c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->setTitle(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->getTitle()Ljava/lang/String; [access_flags=public] @ 0x1154>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Landroid/text/method/ScrollingMovementMethod;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getFirstActivityTexts()Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x1898>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x131c>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getFirstActivityTexts()Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x1898>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x13a0>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->startActivityForResult(Landroid/content/Intent; I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x13a0>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x13a0>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x13a0>",
+        "<analysis.MethodAnalysis Landroid/view/View;->getContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getActivity(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPhone()Ljava/lang/String; [access_flags=public] @ 0x1e5c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getInstance()Lcom/soft/android/appinstaller/OpInfo; [access_flags=static] @ 0x1d00>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getValue(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x19bc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onRulesClicked(Landroid/view/View;)V [access_flags=public] @ 0x13d8>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->startActivityForResult(Landroid/content/Intent; I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onRulesClicked(Landroid/view/View;)V [access_flags=public] @ 0x13d8>",
+        "<analysis.MethodAnalysis Landroid/view/View;->getContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/FirstActivity;->onRulesClicked(Landroid/view/View;)V [access_flags=public] @ 0x13d8>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;-><init>()V [access_flags=private constructor] @ 0x1408>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;-><init>()V [access_flags=private constructor] @ 0x1408>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getReplaces()Ljava/util/ArrayList; [access_flags=private] @ 0x1470>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getReplaces()Ljava/util/ArrayList; [access_flags=private] @ 0x1470>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getValue(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x19bc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getReplaces()Ljava/util/ArrayList; [access_flags=private] @ 0x1470>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getReplaces()Ljava/util/ArrayList; [access_flags=private] @ 0x1470>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x2210>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x2210>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;->setFrom(Ljava/lang/String;)V [access_flags=public] @ 0x2264>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x2210>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;->setTo(Ljava/lang/String;)V [access_flags=public] @ 0x227c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public constructor] @ 0x2210>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x150c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x150c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x150c>",
+        "<analysis.MethodAnalysis Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x150c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String; Z)V [access_flags=constructor] @ 0x1110>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=constructor] @ 0x10e4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;->getFrom()Ljava/lang/String; [access_flags=public] @ 0x2234>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;->getTo()Ljava/lang/String; [access_flags=public] @ 0x224c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/io/UnsupportedEncodingException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->replace(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=private static] @ 0x17f0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(I Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1550>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->replace(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=private static] @ 0x17f0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(Ljava/lang/String; I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->replace(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=private static] @ 0x17f0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->replace(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=private static] @ 0x17f0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->replace(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=private static] @ 0x17f0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->replace(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=private static] @ 0x17f0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->replace(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=private static] @ 0x17f0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->replace(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=private static] @ 0x17f0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String; Z)V [access_flags=constructor] @ 0x1110>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String;)V [access_flags=constructor] @ 0x10e4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getAssets()Landroid/content/res/AssetManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;->getFrom()Ljava/lang/String; [access_flags=public] @ 0x2234>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->getMessage()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->replace(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=private static] @ 0x17f0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ReplaceItem;->getTo()Ljava/lang/String; [access_flags=public] @ 0x224c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>",
+        "<analysis.MethodAnalysis Ljava/io/UnsupportedEncodingException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getLoc()Ljava/util/ArrayList; [access_flags=] @ 0x1d94>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getInstance()Lcom/soft/android/appinstaller/OpInfo; [access_flags=static] @ 0x1d00>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->isError()Z [access_flags=public] @ 0x116c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;-><init>(Ljava/lang/String; Ljava/lang/String; Z)V [access_flags=constructor] @ 0x1110>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->readFile(Ljava/lang/String; Ljava/util/ArrayList;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=private] @ 0x1670>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getReplaces()Ljava/util/ArrayList; [access_flags=private] @ 0x1470>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getRulesTexts()Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18c8>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getTextForLocation(Ljava/lang/String;)Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18f8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Ljava/io/UnsupportedEncodingException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->isEmpty()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x1d2c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->init(Landroid/content/Context;)V [access_flags=public] @ 0x2078>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getValue(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x19bc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getInstance()Lcom/soft/android/appinstaller/OpInfo; [access_flags=static] @ 0x1d00>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;-><init>()V [access_flags=public constructor] @ 0x1ce0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;-><init>()V [access_flags=public constructor] @ 0x1a9c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getValue(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x19bc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getNumber(I)Ljava/lang/String; [access_flags=] @ 0x1dac>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPhone()Ljava/lang/String; [access_flags=public] @ 0x1e5c>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPhone()Ljava/lang/String; [access_flags=public] @ 0x1e5c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPhone()Ljava/lang/String; [access_flags=public] @ 0x1e5c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->startsWith(Ljava/lang/String;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPhone()Ljava/lang/String; [access_flags=public] @ 0x1e5c>",
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getValue(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x19bc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPrefix(I)Ljava/lang/String; [access_flags=] @ 0x1ea4>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getValue(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x19bc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSuffix(I)Ljava/lang/String; [access_flags=] @ 0x1fd4>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getValue(Ljava/lang/String;)Ljava/lang/String; [access_flags=public] @ 0x19bc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getSMSCount()I [access_flags=] @ 0x1f48>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;-><init>()V [access_flags=public constructor] @ 0x1ce0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x1d2c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->indexOf(I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x1d2c>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->getPhone()Ljava/lang/String; [access_flags=public] @ 0x1e5c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x1d2c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->startsWith(Ljava/lang/String;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x1d2c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x1d2c>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x1d2c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/OpInfo;->parseConfigLine(Ljava/lang/String;)V [access_flags=private] @ 0x1d2c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$attr;-><init>()V [access_flags=public constructor] @ 0x2150>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$color;-><init>()V [access_flags=public constructor] @ 0x2168>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$drawable;-><init>()V [access_flags=public constructor] @ 0x2180>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$id;-><init>()V [access_flags=public constructor] @ 0x2198>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$layout;-><init>()V [access_flags=public constructor] @ 0x21b0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$raw;-><init>()V [access_flags=public constructor] @ 0x21c8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R$string;-><init>()V [access_flags=public constructor] @ 0x21e0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/R;-><init>()V [access_flags=public constructor] @ 0x21f8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;-><init>()V [access_flags=public constructor] @ 0x2294>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->init(Landroid/content/Context;)V [access_flags=public] @ 0x19f8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->getText()Ljava/lang/String; [access_flags=public] @ 0x113c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/ActivityTexts;->getTitle()Ljava/lang/String; [access_flags=public] @ 0x1154>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->setTitle(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getRulesTexts()Lcom/soft/android/appinstaller/ActivityTexts; [access_flags=public] @ 0x18c8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Landroid/text/method/ScrollingMovementMethod;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x22ac>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/GlobalConfig;->getInstance()Lcom/soft/android/appinstaller/GlobalConfig; [access_flags=public static] @ 0x1444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onExitClicked(Landroid/view/View;)V [access_flags=public] @ 0x2340>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onExitClicked(Landroid/view/View;)V [access_flags=public] @ 0x2340>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->finish()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x2368>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x2368>",
+        "<analysis.MethodAnalysis Landroid/view/View;->getContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x2368>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x2368>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->startActivityForResult(Landroid/content/Intent; I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/RulesActivity;->onNextClicked(Landroid/view/View;)V [access_flags=public] @ 0x2368>",
+        "<analysis.MethodAnalysis Lcom/soft/android/appinstaller/MessageSender;->sendMessages(Landroid/content/Context;)V [access_flags=public static] @ 0x1ab4>"
+      ]
+    ]
+  },
+  "label": 1
+}

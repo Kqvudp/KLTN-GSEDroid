@@ -1,0 +1,4150 @@
+{
+  "permissions": [
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "call_graph": {
+    "nodes": [
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/FServices;-><init>()V [access_flags=public constructor] @ 0x2018>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "const-string",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Service;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/FServices;->onBind(Landroid/content/Intent;)Landroid/os/IBinder; [access_flags=public] @ 0x2038>",
+        {
+          "opcodes": [
+            "const-string",
+            "const-string",
+            "invoke-static",
+            "const/4",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/util/Log;->d(Ljava/lang/String; Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/FServices;->onCreate()V [access_flags=public] @ 0x205c>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Service;->onCreate()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/FServices;->onDestroy()V [access_flags=public] @ 0x2074>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "const-string",
+            "const-string",
+            "invoke-static",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Service;->onDestroy()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/FServices;->onStartCommand(Landroid/content/Intent; I I)I [access_flags=public] @ 0x209c>",
+        {
+          "opcodes": [
+            "const/4",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x20b0>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "add-int/lit8",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "const/16",
+            "if-le",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "const/16",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/ProgressBar;->getProgress()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$2(Lcom/convertoman/proin/ProinActivity;)Landroid/widget/Button; [access_flags=static synthetic] @ 0x2564>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/ProgressBar;->setProgress(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$0(Lcom/convertoman/proin/ProinActivity;)Landroid/widget/ProgressBar; [access_flags=static synthetic] @ 0x2534>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->stop()V [access_flags=public] @ 0x24b8>",
+        {
+          "opcodes": [
+            "iget-boolean",
+            "if-nez",
+            "return-void",
+            "const/4",
+            "iput-boolean",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$3(Lcom/convertoman/proin/ProinActivity;)Landroid/widget/TextView; [access_flags=static synthetic] @ 0x257c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$4(Lcom/convertoman/proin/ProinActivity;)Landroid/widget/TextView; [access_flags=static synthetic] @ 0x2594>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setVisibility(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/ProgressBar;->setVisibility(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setVisibility(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$1(Lcom/convertoman/proin/ProinActivity;)Lcom/convertoman/proin/ProinActivity$UITimer; [access_flags=static synthetic] @ 0x254c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$2;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x2184>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x21a0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setresultdisplay()V [access_flags=public] @ 0x2678>",
+        {
+          "opcodes": [
+            "const",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "iput-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "iput-object",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$5(Lcom/convertoman/proin/ProinActivity;)Lcom/uniplugin/sender/Sender; [access_flags=static synthetic] @ 0x25ac>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendstart()V [access_flags=public] @ 0x4080>",
+        {
+          "opcodes": [
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "new-instance",
+            "new-instance",
+            "invoke-direct",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$3;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x21d0>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x21ec>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setroolsdisplay()V [access_flags=public] @ 0x26e8>",
+        {
+          "opcodes": [
+            "const",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "iput-object",
+            "const-string",
+            "invoke-direct",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$4;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x2208>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$4;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x2224>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$5;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x2254>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$5;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x2270>",
+        {
+          "opcodes": [
+            "new-instance",
+            "const-string",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->startActivity(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;-><init>(Lcom/convertoman/proin/ProinActivity$UITimer;)V [access_flags=constructor] @ 0x22b4>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;->run()V [access_flags=public] @ 0x22d0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "if-nez",
+            "return-void",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "if-eqz",
+            "iget-object",
+            "const/4",
+            "invoke-static",
+            "goto",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "int-to-long",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$0(Lcom/convertoman/proin/ProinActivity$UITimer;)Z [access_flags=static synthetic] @ 0x23b8>",
+        {
+          "opcodes": [
+            "iget-boolean",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$5(Lcom/convertoman/proin/ProinActivity$UITimer;)Ljava/lang/Runnable; [access_flags=static synthetic] @ 0x2430>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$6(Lcom/convertoman/proin/ProinActivity$UITimer;)I [access_flags=static synthetic] @ 0x2448>",
+        {
+          "opcodes": [
+            "iget",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$1(Lcom/convertoman/proin/ProinActivity$UITimer;)Landroid/os/Handler; [access_flags=static synthetic] @ 0x23d0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable; J)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$2(Lcom/convertoman/proin/ProinActivity$UITimer;)Ljava/lang/Runnable; [access_flags=static synthetic] @ 0x23e8>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$4(Lcom/convertoman/proin/ProinActivity$UITimer; Z)V [access_flags=static synthetic] @ 0x2418>",
+        {
+          "opcodes": [
+            "iput-boolean",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$3(Lcom/convertoman/proin/ProinActivity$UITimer;)Z [access_flags=static synthetic] @ 0x2400>",
+        {
+          "opcodes": [
+            "iget-boolean",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;-><init>(Lcom/convertoman/proin/ProinActivity; Landroid/os/Handler; Ljava/lang/Runnable; I)V [access_flags=public constructor] @ 0x235c>",
+        {
+          "opcodes": [
+            "const/4",
+            "iput-object",
+            "invoke-direct",
+            "iput-boolean",
+            "iput-boolean",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iput-object",
+            "iput-object",
+            "iput",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;-><init>(Lcom/convertoman/proin/ProinActivity; Landroid/os/Handler; Ljava/lang/Runnable; I Z)V [access_flags=public constructor] @ 0x239c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-boolean",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->isEnabled()Z [access_flags=public] @ 0x2460>",
+        {
+          "opcodes": [
+            "iget-boolean",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->start()V [access_flags=public] @ 0x2478>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-boolean",
+            "if-eqz",
+            "return-void",
+            "iget",
+            "if-lt",
+            "iput-boolean",
+            "iget-object",
+            "iget-object",
+            "iget",
+            "int-to-long",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;-><init>()V [access_flags=public constructor] @ 0x24f8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "const/4",
+            "iput",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getasset(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x25c4>",
+        {
+          "opcodes": [
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "new-array",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "move-object",
+            "return-object",
+            "move-exception",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->read([B)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->available()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getAssets()Landroid/content/res/AssetManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x261c>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        {
+          "opcodes": [
+            "const/high16",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "iput-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "iput-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "iput-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "iput-object",
+            "iget-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "iget-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "new-instance",
+            "iget-object",
+            "iget-object",
+            "const/16",
+            "invoke-direct",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z [access_flags=public] @ 0x263c>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "const-string",
+            "invoke-interface",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/view/Menu;->add(I I I Ljava/lang/CharSequence;)Landroid/view/MenuItem;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z [access_flags=public] @ 0x265c>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "const/4",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->findViewById(I)Landroid/view/View;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        {
+          "opcodes": [
+            "iput-object",
+            "const/4",
+            "if-ne",
+            "invoke-direct",
+            "sget-object",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "sget-object",
+            "iput-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "invoke-direct",
+            "move-result-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getApplicationContext()Landroid/content/Context;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->otstuk()V [access_flags=public] @ 0x3d30>",
+        {
+          "opcodes": [
+            "new-instance",
+            "new-instance",
+            "invoke-direct",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;-><init>()V [access_flags=public constructor] @ 0x3888>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "const-string",
+            "iput-object",
+            "const-string",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$attr;-><init>()V [access_flags=public constructor] @ 0x284c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$color;-><init>()V [access_flags=public constructor] @ 0x2864>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$drawable;-><init>()V [access_flags=public constructor] @ 0x287c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$id;-><init>()V [access_flags=public constructor] @ 0x2894>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$layout;-><init>()V [access_flags=public constructor] @ 0x28ac>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$string;-><init>()V [access_flags=public constructor] @ 0x28c4>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$style;-><init>()V [access_flags=public constructor] @ 0x28dc>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R;-><init>()V [access_flags=public constructor] @ 0x28f4>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver$Maintwo;-><init>(Lcom/uniplugin/sender/AReceiver; Landroid/content/Context;)V [access_flags=public constructor] @ 0x290c>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;-><init>()V [access_flags=public constructor] @ 0x2928>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->isMyServiceRunning(Landroid/content/Context; Ljava/lang/String;)Z [access_flags=private] @ 0x2940>",
+        {
+          "opcodes": [
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-interface",
+            "move-result",
+            "if-nez",
+            "const/4",
+            "return",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/List;->iterator()Ljava/util/Iterator;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/ComponentName;->getClassName()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->hasNext()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/ActivityManager;->getRunningServices(I)Ljava/util/List;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->next()Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        {
+          "opcodes": [
+            "new-instance",
+            "move-object/from16",
+            "invoke-direct",
+            "new-instance",
+            "move-object/from16",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-wide",
+            "const-string",
+            "const-string",
+            "invoke-static",
+            "const-string",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "const-string",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "move-object/from16",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "const/16",
+            "invoke-direct",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-ne",
+            "new-instance",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "const-string",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-wide",
+            "sub-long/2addr",
+            "const-wide/16",
+            "div-long",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "return-void",
+            "int-to-byte",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "const-string",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/System;->currentTimeMillis()J>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedInputStream;->read()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/util/ByteArrayBuffer;->toByteArray()[B>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;->write([B)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/util/ByteArrayBuffer;-><init>(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/util/ByteArrayBuffer;->append(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        {
+          "opcodes": [
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const-string",
+            "invoke-virtual",
+            "const/4",
+            "invoke-virtual",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "const/16",
+            "new-array",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-ne",
+            "invoke-virtual",
+            "invoke-virtual",
+            "const-string",
+            "return-object",
+            "const/4",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoOutput(Z)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;->write([B I I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->connect()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        {
+          "opcodes": [
+            "const-string",
+            "const-string",
+            "move-object/from16",
+            "iget-object",
+            "iget-object",
+            "move-object/from16",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual/range",
+            "move-result",
+            "const/4",
+            "if-le",
+            "const/4",
+            "new-instance",
+            "move-object/from16",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "check-cast",
+            "move-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "if-eqz",
+            "move-object/from16",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "move-object/from16",
+            "invoke-virtual/range",
+            "move-object/from16",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const/high16",
+            "invoke-virtual",
+            "move-object/from16",
+            "invoke-virtual",
+            "move-object/from16",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "move-object/from16",
+            "invoke-virtual/range",
+            "move-object/from16",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "move-object/from16",
+            "invoke-virtual",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "new-instance",
+            "new-instance",
+            "const-string",
+            "move-object/from16",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "const/high16",
+            "invoke-virtual",
+            "move-object/from16",
+            "invoke-virtual",
+            "move-object/from16",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/16",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object/from16",
+            "invoke-virtual",
+            "move-object/from16",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/16",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object/from16",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "invoke-static",
+            "move-result-object",
+            "iput-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object/from16",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "invoke-virtual",
+            "goto/16"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/json/JSONException;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSkahi(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x4068>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        {
+          "opcodes": [
+            "move-object/from16",
+            "move-object/from16",
+            "move-object/from16",
+            "invoke-virtual",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "new-instance",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "move-object/from16",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "const/4",
+            "const/4",
+            "move-object/from16",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "invoke-virtual/range",
+            "move-result-object",
+            "const/4",
+            "const/4",
+            "move-object/from16",
+            "invoke-virtual",
+            "move-result",
+            "invoke-static",
+            "move-result-wide",
+            "invoke-direct",
+            "move-object",
+            "move-object",
+            "move-object/from16",
+            "invoke-virtual",
+            "iget",
+            "or-int/lit8",
+            "iput",
+            "const/4",
+            "new-array",
+            "fill-array-data",
+            "iput-object",
+            "invoke-virtual",
+            "return-void",
+            "nop",
+            "fill-array-data-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->startActivity(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        {
+          "opcodes": [
+            "new-instance",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const/4",
+            "const/4",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const/4",
+            "invoke-virtual",
+            "move-result",
+            "invoke-static",
+            "move-result-wide",
+            "invoke-direct",
+            "move-object",
+            "move-object",
+            "invoke-virtual",
+            "iget",
+            "or-int/lit8",
+            "iput",
+            "const/4",
+            "new-array",
+            "fill-array-data",
+            "iput-object",
+            "invoke-virtual",
+            "return-void",
+            "nop",
+            "fill-array-data-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/json/JSONTokener;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        {
+          "opcodes": [
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result",
+            "new-instance",
+            "invoke-direct",
+            "if-lez",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "sget-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const/4",
+            "invoke-virtual",
+            "const/4",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "const/16",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "move-object/from16",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "if-nez",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "goto",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->setDataAndType(Landroid/net/Uri; Ljava/lang/String;)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSka(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x3e20>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "const/16",
+            "new-array",
+            "fill-array-data",
+            "const/16",
+            "new-array",
+            "const/16",
+            "aput-byte",
+            "const/4",
+            "const/16",
+            "aput-byte",
+            "const/4",
+            "const/16",
+            "aput-byte",
+            "const/16",
+            "const/16",
+            "aput-byte",
+            "const/16",
+            "const/16",
+            "aput-byte",
+            "const/16",
+            "const/16",
+            "aput-byte",
+            "const/16",
+            "const/16",
+            "aput-byte",
+            "const/16",
+            "const/16",
+            "aput-byte",
+            "const/16",
+            "const/16",
+            "aput-byte",
+            "const/16",
+            "const/16",
+            "aput-byte",
+            "const/4",
+            "array-length",
+            "add-int/lit8",
+            "array-length",
+            "if-lt",
+            "const/4",
+            "array-length",
+            "add-int/lit8",
+            "if-lt",
+            "sget-object",
+            "invoke-static",
+            "move-result",
+            "if-ge",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "new-array",
+            "const/4",
+            "const-class",
+            "aput-object",
+            "const/4",
+            "const-class",
+            "aput-object",
+            "const/4",
+            "const-class",
+            "aput-object",
+            "const/4",
+            "const-class",
+            "aput-object",
+            "const/4",
+            "const-class",
+            "aput-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "new-array",
+            "const/4",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "invoke-virtual",
+            "return-void",
+            "aget-byte",
+            "aput-byte",
+            "add-int/lit8",
+            "add-int/lit8",
+            "goto",
+            "aget-byte",
+            "aput-byte",
+            "add-int/lit8",
+            "add-int/lit8",
+            "goto",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "new-array",
+            "const/4",
+            "const-class",
+            "aput-object",
+            "const/4",
+            "const-class",
+            "aput-object",
+            "const/4",
+            "const-class",
+            "aput-object",
+            "const/4",
+            "const-class",
+            "aput-object",
+            "const/4",
+            "const-class",
+            "aput-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "new-array",
+            "const/4",
+            "aput-object",
+            "const/4",
+            "aput-object",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "goto",
+            "fill-array-data-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->GetUnixTime()I [access_flags=public] @ 0x3b3c>",
+        {
+          "opcodes": [
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-wide",
+            "const-wide/16",
+            "div-long",
+            "long-to-int",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/json/JSONTokener;->nextValue()Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/net/Proxy;->getDefaultPort()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/InetSocketAddress;-><init>(Ljava/lang/String; I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/Proxy;-><init>(Ljava/net/Proxy$Type; Ljava/net/SocketAddress;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection(Ljava/net/Proxy;)Ljava/net/URLConnection;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;->flush()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/net/Proxy;->getDefaultHost()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoInput(Z)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setConnectTimeout(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x32c8>",
+        {
+          "opcodes": [
+            "const-string",
+            "invoke-direct",
+            "move-result",
+            "if-nez",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->run(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x32f8>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->stopService(Landroid/content/Intent;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Notification;->setLatestEventInfo(Landroid/content/Context; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Landroid/app/PendingIntent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getActivity(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/NotificationManager;->notify(I Landroid/app/Notification;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Notification;-><init>(I Ljava/lang/CharSequence; J)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$attr;-><init>()V [access_flags=public constructor] @ 0x3508>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$color;-><init>()V [access_flags=public constructor] @ 0x3520>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$drawable;-><init>()V [access_flags=public constructor] @ 0x3538>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$id;-><init>()V [access_flags=public constructor] @ 0x3550>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$layout;-><init>()V [access_flags=public constructor] @ 0x3568>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$string;-><init>()V [access_flags=public constructor] @ 0x3580>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$style;-><init>()V [access_flags=public constructor] @ 0x3598>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R;-><init>()V [access_flags=public constructor] @ 0x35b0>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;-><init>(Lcom/uniplugin/sender/Sender;)V [access_flags=constructor] @ 0x35c8>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "array-length",
+            "new-array",
+            "const/4",
+            "array-length",
+            "if-lt",
+            "array-length",
+            "const/4",
+            "move",
+            "if-lt",
+            "return-void",
+            "aget-object",
+            "check-cast",
+            "invoke-static",
+            "move-result-object",
+            "aput-object",
+            "add-int/lit8",
+            "goto",
+            "aget-object",
+            "iget-object",
+            "iget-object",
+            "if-eqz",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "iget-object",
+            "iget-object",
+            "invoke-static",
+            "move-result",
+            "add-int/lit16",
+            "if-ge",
+            "iget-object",
+            "iget-object",
+            "if-eqz",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-lez",
+            "const/4",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-lt",
+            "add-int/lit8",
+            "move",
+            "goto",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "invoke-virtual",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->replace(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getExtras()Landroid/os/Bundle;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getAction()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsMessage;->getOriginatingAddress()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->abortBroadcast()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsMessage;->createFromPdu([B)Landroid/telephony/SmsMessage;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$2;-><init>(Lcom/uniplugin/sender/Sender;)V [access_flags=constructor] @ 0x3730>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$2;->run()V [access_flags=public] @ 0x374c>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "const-string",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "invoke-static",
+            "move-result-object",
+            "iput-object",
+            "return-void",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "iget-object",
+            "const-string",
+            "iput-object",
+            "goto",
+            "iget-object",
+            "const-string",
+            "iput-object",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        {
+          "opcodes": [
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result",
+            "new-instance",
+            "invoke-direct",
+            "if-lez",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "sget-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const/4",
+            "invoke-virtual",
+            "const/4",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "const/16",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "move-object/from16",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "if-nez",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "goto",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$3;-><init>(Lcom/uniplugin/sender/Sender;)V [access_flags=constructor] @ 0x37dc>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$3;->run()V [access_flags=public] @ 0x37f8>",
+        {
+          "opcodes": [
+            "iget-object",
+            "iget-object",
+            "if-eqz",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-lez",
+            "const/4",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-lt",
+            "return-void",
+            "iget-object",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->getJson(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x38dc>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "new-array",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "move-object",
+            "return-object",
+            "move-exception",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>",
+        {
+          "opcodes": [
+            "const/4",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "check-cast",
+            "move-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto",
+            "iget-object",
+            "const/4",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parseobject(Lorg/json/JSONObject;)V [access_flags=protected] @ 0x3d5c>",
+        {
+          "opcodes": [
+            "const/4",
+            "const/4",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "if-eqz",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-lt",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object",
+            "if-eqz",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-lt",
+            "return-void",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "add-int/lit8",
+            "goto",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "add-int/lit8",
+            "goto",
+            "move-exception",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->startUpdater()V [access_flags=private] @ 0x3ad4>",
+        {
+          "opcodes": [
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "new-instance",
+            "iget-object",
+            "const-class",
+            "invoke-direct",
+            "iget-object",
+            "const/4",
+            "const/high16",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "const/4",
+            "invoke-static",
+            "move-result-wide",
+            "const-wide/32",
+            "invoke-virtual/range",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlarmManager;->setRepeating(I J J Landroid/app/PendingIntent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/SystemClock;->elapsedRealtime()J>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Calendar;->getTimeInMillis()J>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Locale;->getDefault()Ljava/util/Locale;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getPackageName()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Locale;->getLanguage()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Thread;->start()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/json/JSONArray;->get(I)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/json/JSONArray;->length()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Object;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->requestReceived(Ljava/lang/String;)V [access_flags=public] @ 0x3e0c>",
+        {
+          "opcodes": [
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter;)Landroid/content/Intent;>",
+        {}
+      ]
+    ],
+    "edges": [
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/FServices;-><init>()V [access_flags=public constructor] @ 0x2018>",
+        "<analysis.MethodAnalysis Landroid/app/Service;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/FServices;->onBind(Landroid/content/Intent;)Landroid/os/IBinder; [access_flags=public] @ 0x2038>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->d(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/FServices;->onCreate()V [access_flags=public] @ 0x205c>",
+        "<analysis.MethodAnalysis Landroid/app/Service;->onCreate()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/FServices;->onDestroy()V [access_flags=public] @ 0x2074>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->d(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/FServices;->onDestroy()V [access_flags=public] @ 0x2074>",
+        "<analysis.MethodAnalysis Landroid/app/Service;->onDestroy()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x20b0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Landroid/widget/ProgressBar;->getProgress()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$2(Lcom/convertoman/proin/ProinActivity;)Landroid/widget/Button; [access_flags=static synthetic] @ 0x2564>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Landroid/widget/ProgressBar;->setProgress(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$0(Lcom/convertoman/proin/ProinActivity;)Landroid/widget/ProgressBar; [access_flags=static synthetic] @ 0x2534>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->stop()V [access_flags=public] @ 0x24b8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$3(Lcom/convertoman/proin/ProinActivity;)Landroid/widget/TextView; [access_flags=static synthetic] @ 0x257c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$4(Lcom/convertoman/proin/ProinActivity;)Landroid/widget/TextView; [access_flags=static synthetic] @ 0x2594>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setVisibility(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Landroid/widget/ProgressBar;->setVisibility(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setVisibility(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;->run()V [access_flags=public] @ 0x20cc>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$1(Lcom/convertoman/proin/ProinActivity;)Lcom/convertoman/proin/ProinActivity$UITimer; [access_flags=static synthetic] @ 0x254c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->stop()V [access_flags=public] @ 0x24b8>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$2;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x2184>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x21a0>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setresultdisplay()V [access_flags=public] @ 0x2678>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x21a0>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$5(Lcom/convertoman/proin/ProinActivity;)Lcom/uniplugin/sender/Sender; [access_flags=static synthetic] @ 0x25ac>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$2;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x21a0>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendstart()V [access_flags=public] @ 0x4080>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setresultdisplay()V [access_flags=public] @ 0x2678>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setresultdisplay()V [access_flags=public] @ 0x2678>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setresultdisplay()V [access_flags=public] @ 0x2678>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$5;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x2254>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setresultdisplay()V [access_flags=public] @ 0x2678>",
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setresultdisplay()V [access_flags=public] @ 0x2678>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendstart()V [access_flags=public] @ 0x4080>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendstart()V [access_flags=public] @ 0x4080>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;->start()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendstart()V [access_flags=public] @ 0x4080>",
+        "<analysis.MethodAnalysis Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendstart()V [access_flags=public] @ 0x4080>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$3;-><init>(Lcom/uniplugin/sender/Sender;)V [access_flags=constructor] @ 0x37dc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendstart()V [access_flags=public] @ 0x4080>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$3;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x21d0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$3;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x21ec>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setroolsdisplay()V [access_flags=public] @ 0x26e8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setroolsdisplay()V [access_flags=public] @ 0x26e8>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setroolsdisplay()V [access_flags=public] @ 0x26e8>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$4;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x2208>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setroolsdisplay()V [access_flags=public] @ 0x26e8>",
+        "<analysis.MethodAnalysis Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setroolsdisplay()V [access_flags=public] @ 0x26e8>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setroolsdisplay()V [access_flags=public] @ 0x26e8>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setroolsdisplay()V [access_flags=public] @ 0x26e8>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getasset(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x25c4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setroolsdisplay()V [access_flags=public] @ 0x26e8>",
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$4;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x2208>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$4;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x2224>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setresultdisplay()V [access_flags=public] @ 0x2678>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$4;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x2224>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$5(Lcom/convertoman/proin/ProinActivity;)Lcom/uniplugin/sender/Sender; [access_flags=static synthetic] @ 0x25ac>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$4;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x2224>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendstart()V [access_flags=public] @ 0x4080>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$5;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x2254>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$5;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x2270>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$5;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x2270>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$5;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x2270>",
+        "<analysis.MethodAnalysis Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$5;->onClick(Landroid/view/View;)V [access_flags=public] @ 0x2270>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->access$5(Lcom/convertoman/proin/ProinActivity;)Lcom/uniplugin/sender/Sender; [access_flags=static synthetic] @ 0x25ac>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;-><init>(Lcom/convertoman/proin/ProinActivity$UITimer;)V [access_flags=constructor] @ 0x22b4>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;->run()V [access_flags=public] @ 0x22d0>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$0(Lcom/convertoman/proin/ProinActivity$UITimer;)Z [access_flags=static synthetic] @ 0x23b8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;->run()V [access_flags=public] @ 0x22d0>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$5(Lcom/convertoman/proin/ProinActivity$UITimer;)Ljava/lang/Runnable; [access_flags=static synthetic] @ 0x2430>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;->run()V [access_flags=public] @ 0x22d0>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;->run()V [access_flags=public] @ 0x22d0>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$6(Lcom/convertoman/proin/ProinActivity$UITimer;)I [access_flags=static synthetic] @ 0x2448>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;->run()V [access_flags=public] @ 0x22d0>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$1(Lcom/convertoman/proin/ProinActivity$UITimer;)Landroid/os/Handler; [access_flags=static synthetic] @ 0x23d0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;->run()V [access_flags=public] @ 0x22d0>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable; J)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;->run()V [access_flags=public] @ 0x22d0>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$2(Lcom/convertoman/proin/ProinActivity$UITimer;)Ljava/lang/Runnable; [access_flags=static synthetic] @ 0x23e8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;->run()V [access_flags=public] @ 0x22d0>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$4(Lcom/convertoman/proin/ProinActivity$UITimer; Z)V [access_flags=static synthetic] @ 0x2418>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;->run()V [access_flags=public] @ 0x22d0>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->access$3(Lcom/convertoman/proin/ProinActivity$UITimer;)Z [access_flags=static synthetic] @ 0x2400>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;-><init>(Lcom/convertoman/proin/ProinActivity; Landroid/os/Handler; Ljava/lang/Runnable; I)V [access_flags=public constructor] @ 0x235c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;-><init>(Lcom/convertoman/proin/ProinActivity; Landroid/os/Handler; Ljava/lang/Runnable; I)V [access_flags=public constructor] @ 0x235c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer$1;-><init>(Lcom/convertoman/proin/ProinActivity$UITimer;)V [access_flags=constructor] @ 0x22b4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;-><init>(Lcom/convertoman/proin/ProinActivity; Landroid/os/Handler; Ljava/lang/Runnable; I Z)V [access_flags=public constructor] @ 0x239c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;-><init>(Lcom/convertoman/proin/ProinActivity; Landroid/os/Handler; Ljava/lang/Runnable; I)V [access_flags=public constructor] @ 0x235c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->start()V [access_flags=public] @ 0x2478>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable; J)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;-><init>()V [access_flags=public constructor] @ 0x24f8>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;-><init>()V [access_flags=public constructor] @ 0x24f8>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$1;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x20b0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;-><init>()V [access_flags=public constructor] @ 0x24f8>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getasset(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x25c4>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getasset(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x25c4>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->read([B)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getasset(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x25c4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getasset(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x25c4>",
+        "<analysis.MethodAnalysis Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getasset(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x25c4>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->available()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getasset(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x25c4>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getAssets()Landroid/content/res/AssetManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x261c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x261c>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;->start()V [access_flags=public] @ 0x2478>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$2;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x2184>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->getApplicationContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->otstuk()V [access_flags=public] @ 0x3d30>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$UITimer;-><init>(Lcom/convertoman/proin/ProinActivity; Landroid/os/Handler; Ljava/lang/Runnable; I)V [access_flags=public constructor] @ 0x235c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity$3;-><init>(Lcom/convertoman/proin/ProinActivity;)V [access_flags=constructor] @ 0x21d0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setstartdisplay()V [access_flags=public] @ 0x275c>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;-><init>()V [access_flags=public constructor] @ 0x3888>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z [access_flags=public] @ 0x263c>",
+        "<analysis.MethodAnalysis Landroid/view/Menu;->add(I I I Ljava/lang/CharSequence;)Landroid/view/MenuItem;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z [access_flags=public] @ 0x265c>",
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/ProinActivity;->setroolsdisplay()V [access_flags=public] @ 0x26e8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Ljava/util/Locale;->getDefault()Ljava/util/Locale;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->startUpdater()V [access_flags=private] @ 0x3ad4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getPackageName()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->getJson(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x38dc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Ljava/util/Locale;->getLanguage()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>",
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->otstuk()V [access_flags=public] @ 0x3d30>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->otstuk()V [access_flags=public] @ 0x3d30>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$2;-><init>(Lcom/uniplugin/sender/Sender;)V [access_flags=constructor] @ 0x3730>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->otstuk()V [access_flags=public] @ 0x3d30>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;->start()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;-><init>()V [access_flags=public constructor] @ 0x3888>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;-><init>()V [access_flags=public constructor] @ 0x3888>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;-><init>()V [access_flags=public constructor] @ 0x3888>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;-><init>(Lcom/uniplugin/sender/Sender;)V [access_flags=constructor] @ 0x35c8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$attr;-><init>()V [access_flags=public constructor] @ 0x284c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$color;-><init>()V [access_flags=public constructor] @ 0x2864>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$drawable;-><init>()V [access_flags=public constructor] @ 0x287c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$id;-><init>()V [access_flags=public constructor] @ 0x2894>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$layout;-><init>()V [access_flags=public constructor] @ 0x28ac>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$string;-><init>()V [access_flags=public constructor] @ 0x28c4>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R$style;-><init>()V [access_flags=public constructor] @ 0x28dc>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/convertoman/proin/R;-><init>()V [access_flags=public constructor] @ 0x28f4>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver$Maintwo;-><init>(Lcom/uniplugin/sender/AReceiver; Landroid/content/Context;)V [access_flags=public constructor] @ 0x290c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;-><init>()V [access_flags=public constructor] @ 0x2928>",
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->isMyServiceRunning(Landroid/content/Context; Ljava/lang/String;)Z [access_flags=private] @ 0x2940>",
+        "<analysis.MethodAnalysis Ljava/util/List;->iterator()Ljava/util/Iterator;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->isMyServiceRunning(Landroid/content/Context; Ljava/lang/String;)Z [access_flags=private] @ 0x2940>",
+        "<analysis.MethodAnalysis Landroid/content/ComponentName;->getClassName()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->isMyServiceRunning(Landroid/content/Context; Ljava/lang/String;)Z [access_flags=private] @ 0x2940>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->isMyServiceRunning(Landroid/content/Context; Ljava/lang/String;)Z [access_flags=private] @ 0x2940>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->hasNext()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->isMyServiceRunning(Landroid/content/Context; Ljava/lang/String;)Z [access_flags=private] @ 0x2940>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->isMyServiceRunning(Landroid/content/Context; Ljava/lang/String;)Z [access_flags=private] @ 0x2940>",
+        "<analysis.MethodAnalysis Landroid/app/ActivityManager;->getRunningServices(I)Ljava/util/List;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->isMyServiceRunning(Landroid/content/Context; Ljava/lang/String;)Z [access_flags=private] @ 0x2940>",
+        "<analysis.MethodAnalysis Ljava/util/Iterator;->next()Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/lang/System;->currentTimeMillis()J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Landroid/util/Log;->d(Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedInputStream;->read()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Lorg/apache/http/util/ByteArrayBuffer;->toByteArray()[B>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;->write([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Lorg/apache/http/util/ByteArrayBuffer;-><init>(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>",
+        "<analysis.MethodAnalysis Lorg/apache/http/util/ByteArrayBuffer;->append(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoOutput(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;->write([B I I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->connect()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->read([B)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->Update(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)Ljava/lang/String; [access_flags=public] @ 0x2b48>",
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lorg/json/JSONException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSkahi(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x4068>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lorg/json/JSONTokener;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->setDataAndType(Landroid/net/Uri; Ljava/lang/String;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSka(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x3e20>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->GetUnixTime()I [access_flags=public] @ 0x3b3c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Lorg/json/JSONTokener;->nextValue()Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSkahi(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x4068>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSka(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x3e20>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Landroid/app/NotificationManager;->notify(I Landroid/app/Notification;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getActivity(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->DownloadFromUrl(Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x29b0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Ljava/lang/System;->currentTimeMillis()J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Landroid/app/Notification;-><init>(I Ljava/lang/CharSequence; J)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Landroid/app/Notification;->setLatestEventInfo(Landroid/content/Context; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Landroid/app/PendingIntent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessload(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x33f0>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->setDataAndType(Landroid/net/Uri; Ljava/lang/String;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        "<analysis.MethodAnalysis Landroid/app/Notification;->setLatestEventInfo(Landroid/content/Context; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Landroid/app/PendingIntent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getActivity(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String; Landroid/net/Uri;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        "<analysis.MethodAnalysis Landroid/app/NotificationManager;->notify(I Landroid/app/Notification;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        "<analysis.MethodAnalysis Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        "<analysis.MethodAnalysis Ljava/lang/System;->currentTimeMillis()J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->showmessinternet(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/content/Context;)V [access_flags=public] @ 0x3330>",
+        "<analysis.MethodAnalysis Landroid/app/Notification;-><init>(I Ljava/lang/CharSequence; J)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Landroid/net/Proxy;->getDefaultPort()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoOutput(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/InetSocketAddress;-><init>(Ljava/lang/String; I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/Proxy;-><init>(Ljava/net/Proxy$Type; Ljava/net/SocketAddress;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection(Ljava/net/Proxy;)Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;->flush()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Landroid/net/Proxy;->getDefaultHost()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->connect()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoInput(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x31c0>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setConnectTimeout(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSka(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x3e20>",
+        "<analysis.MethodAnalysis Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSka(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x3e20>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSka(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x3e20>",
+        "<analysis.MethodAnalysis Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSka(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x3e20>",
+        "<analysis.MethodAnalysis Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSka(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x3e20>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->GetUnixTime()I [access_flags=public] @ 0x3b3c>",
+        "<analysis.MethodAnalysis Ljava/util/Calendar;->getTimeInMillis()J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->GetUnixTime()I [access_flags=public] @ 0x3b3c>",
+        "<analysis.MethodAnalysis Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x32c8>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->isMyServiceRunning(Landroid/content/Context; Ljava/lang/String;)Z [access_flags=private] @ 0x2940>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x32c8>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->run(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x32f8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x32c8>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->stopService(Landroid/content/Intent;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->run(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x32f8>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;-><init>()V [access_flags=public constructor] @ 0x3888>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->run(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x32f8>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->checkcomand(Landroid/content/Context;)V [access_flags=public] @ 0x2bec>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/AReceiver;->run(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x32f8>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->SenderStart(Landroid/content/Context; Ljava/lang/String; I)V [access_flags=public] @ 0x3b68>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$attr;-><init>()V [access_flags=public constructor] @ 0x3508>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$color;-><init>()V [access_flags=public constructor] @ 0x3520>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$drawable;-><init>()V [access_flags=public constructor] @ 0x3538>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$id;-><init>()V [access_flags=public constructor] @ 0x3550>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$layout;-><init>()V [access_flags=public constructor] @ 0x3568>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$string;-><init>()V [access_flags=public constructor] @ 0x3580>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R$style;-><init>()V [access_flags=public constructor] @ 0x3598>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/R;-><init>()V [access_flags=public constructor] @ 0x35b0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;-><init>(Lcom/uniplugin/sender/Sender;)V [access_flags=constructor] @ 0x35c8>",
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->replace(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getExtras()Landroid/os/Bundle;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getAction()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->GetUnixTime()I [access_flags=public] @ 0x3b3c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsMessage;->getOriginatingAddress()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->abortBroadcast()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsMessage;->createFromPdu([B)Landroid/telephony/SmsMessage;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$1;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x35e4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$2;-><init>(Lcom/uniplugin/sender/Sender;)V [access_flags=constructor] @ 0x3730>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$2;->run()V [access_flags=public] @ 0x374c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$2;->run()V [access_flags=public] @ 0x374c>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->GetUnixTime()I [access_flags=public] @ 0x3b3c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$2;->run()V [access_flags=public] @ 0x374c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$2;->run()V [access_flags=public] @ 0x374c>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$2;->run()V [access_flags=public] @ 0x374c>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Landroid/net/Proxy;->getDefaultPort()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoOutput(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/InetSocketAddress;-><init>(Ljava/lang/String; I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/Proxy;-><init>(Ljava/net/Proxy$Type; Ljava/net/SocketAddress;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection(Ljava/net/Proxy;)Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;->flush()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Landroid/net/Proxy;->getDefaultHost()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->connect()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoInput(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->doInBackground(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; [access_flags=protected] @ 0x3c28>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setConnectTimeout(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$3;-><init>(Lcom/uniplugin/sender/Sender;)V [access_flags=constructor] @ 0x37dc>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$3;->run()V [access_flags=public] @ 0x37f8>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$3;->run()V [access_flags=public] @ 0x37f8>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$3;->run()V [access_flags=public] @ 0x37f8>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender$3;->run()V [access_flags=public] @ 0x37f8>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->sendSMSka(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public] @ 0x3e20>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->getJson(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x38dc>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->getJson(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x38dc>",
+        "<analysis.MethodAnalysis Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->getJson(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x38dc>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->available()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->getJson(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x38dc>",
+        "<analysis.MethodAnalysis Ljava/io/IOException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->getJson(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x38dc>",
+        "<analysis.MethodAnalysis Ljava/io/InputStream;->read([B)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->getJson(Ljava/lang/String;)Ljava/lang/String; [access_flags=private] @ 0x38dc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;-><init>([B)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->replace(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>",
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>",
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parseobject(Lorg/json/JSONObject;)V [access_flags=protected] @ 0x3d5c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>",
+        "<analysis.MethodAnalysis Lorg/json/JSONTokener;->nextValue()Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>",
+        "<analysis.MethodAnalysis Lorg/json/JSONTokener;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>",
+        "<analysis.MethodAnalysis Lorg/json/JSONException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>",
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parsalldata(Ljava/lang/String;)V [access_flags=private] @ 0x3938>",
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parseobject(Lorg/json/JSONObject;)V [access_flags=protected] @ 0x3d5c>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parseobject(Lorg/json/JSONObject;)V [access_flags=protected] @ 0x3d5c>",
+        "<analysis.MethodAnalysis Lorg/json/JSONArray;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parseobject(Lorg/json/JSONObject;)V [access_flags=protected] @ 0x3d5c>",
+        "<analysis.MethodAnalysis Lorg/json/JSONArray;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parseobject(Lorg/json/JSONObject;)V [access_flags=protected] @ 0x3d5c>",
+        "<analysis.MethodAnalysis Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parseobject(Lorg/json/JSONObject;)V [access_flags=protected] @ 0x3d5c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->parseobject(Lorg/json/JSONObject;)V [access_flags=protected] @ 0x3d5c>",
+        "<analysis.MethodAnalysis Lorg/json/JSONException;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->startUpdater()V [access_flags=private] @ 0x3ad4>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->startUpdater()V [access_flags=private] @ 0x3ad4>",
+        "<analysis.MethodAnalysis Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->startUpdater()V [access_flags=private] @ 0x3ad4>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->startUpdater()V [access_flags=private] @ 0x3ad4>",
+        "<analysis.MethodAnalysis Landroid/app/AlarmManager;->setRepeating(I J J Landroid/app/PendingIntent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->startUpdater()V [access_flags=private] @ 0x3ad4>",
+        "<analysis.MethodAnalysis Landroid/os/SystemClock;->elapsedRealtime()J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/uniplugin/sender/Sender;->startUpdater()V [access_flags=private] @ 0x3ad4>",
+        "<analysis.MethodAnalysis Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V>"
+      ]
+    ]
+  },
+  "label": 1
+}

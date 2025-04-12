@@ -1,0 +1,1791 @@
+{
+  "permissions": [
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "call_graph": {
+    "nodes": [
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ZWJKjd1r;-><init>()V [access_flags=public constructor] @ 0xba0>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ZWJKjd1r;->AY6qu8Sp()Ljava/util/List; [access_flags=public abstract] @ 0x0>",
+        {
+          "opcodes": []
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;-><init>()V [access_flags=public constructor] @ 0xbc8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        {
+          "opcodes": [
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "iget-object",
+            "invoke-interface",
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/PVTX;-><init>(Laahbca/oohein/iiwea/ipulzEe;)V [access_flags=public constructor] @ 0x12b0>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;-><init>()V [access_flags=public constructor] @ 0x1544>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;->AY6qu8Sp(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public final] @ 0x1590>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>",
+        {
+          "opcodes": [
+            "const",
+            "const",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "const-string",
+            "if-ne",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object",
+            "if-ne",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "goto",
+            "if-ne",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "goto/16"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/List;->add(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->vuxDLW1()Landroid/content/Context; [access_flags=public final] @ 0x127c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getInteger(I)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp()Laahbca/oohein/iiwea/ITEdjbIS; [access_flags=public static] @ 0xcb4>",
+        {
+          "opcodes": [
+            "sget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getString(I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;-><clinit>()V [access_flags=static constructor] @ 0xc64>",
+        {
+          "opcodes": [
+            "const/4",
+            "sput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;-><init>(Landroid/content/Context;)V [access_flags=private constructor] @ 0xc7c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "const/4",
+            "iput-boolean",
+            "const-string",
+            "iput-object",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(Landroid/content/Context;)V [access_flags=public static] @ 0xccc>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "sput-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "sget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "sget-object",
+            "new-instance",
+            "sget-object",
+            "iget-object",
+            "invoke-direct",
+            "iput-object",
+            "sget-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "sget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;-><init>(Ljava/lang/String;)V [access_flags=public constructor] @ 0x15ac>",
+        {
+          "opcodes": [
+            "const/16",
+            "invoke-direct",
+            "iput",
+            "const-string",
+            "iput-object",
+            "const-string",
+            "iput-object",
+            "const-string",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/16",
+            "iput",
+            "return-void",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const",
+            "iput",
+            "goto",
+            "iput",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;->oERKCx()Laahbca/oohein/iiwea/ZWJKjd1r; [access_flags=public final] @ 0x1638>",
+        {
+          "opcodes": [
+            "iget",
+            "const/16",
+            "if-ne",
+            "new-instance",
+            "invoke-direct",
+            "return-object",
+            "new-instance",
+            "invoke-direct",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(I)Ljava/lang/String; [access_flags=public final] @ 0xd48>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "if-ne",
+            "iget-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object",
+            "if-ne",
+            "iget-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "goto",
+            "if-ne",
+            "iget-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "goto",
+            "const-string",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "const/16",
+            "if-ne",
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "iget-object",
+            "move",
+            "invoke-interface",
+            "move-result",
+            "if-ge",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "add-int/lit8",
+            "move",
+            "goto",
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "invoke-virtual",
+            "invoke-virtual",
+            "return-void",
+            "iget-object",
+            "move",
+            "invoke-interface",
+            "move-result",
+            "if-ge",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "add-int/lit8",
+            "move",
+            "goto",
+            "move-exception",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/R6yUxrz;->AY6qu8Sp()V [access_flags=public abstract] @ 0x0>",
+        {
+          "opcodes": []
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/List;->get(I)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/io/File; Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;->AY6qu8Sp()I [access_flags=public final] @ 0x1620>",
+        {
+          "opcodes": [
+            "iget",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/List;->size()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getFilesDir()Ljava/io/File;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/File;->exists()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/OutputStream;->write(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/OutputStream;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx()I [access_flags=public final] @ 0xedc>",
+        {
+          "opcodes": [
+            "const",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "const/16",
+            "if-ne",
+            "return",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "const",
+            "if-eq",
+            "const/high16",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;->AY6qu8Sp()Ljava/lang/String; [access_flags=public final] @ 0x19f4>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-static",
+            "move-result-wide",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->toString(I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/R6yUxrz;-><init>(Laahbca/oohein/iiwea/ipulzEe;)V [access_flags=public constructor] @ 0x1294>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;->AY6qu8Sp(Ljava/lang/String;)Ljava/lang/String; [access_flags=public final] @ 0x156c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/PVTX;->AY6qu8Sp()V [access_flags=public final] @ 0x12e8>",
+        {
+          "opcodes": [
+            "const/4",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "iget-object",
+            "move-object",
+            "move-object",
+            "invoke-virtual/range",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/RN1YeDMeH;-><init>(Laahbca/oohein/iiwea/zQI;)V [access_flags=constructor] @ 0x1318>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;-><init>()V [access_flags=public constructor] @ 0x1334>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->AY6qu8Sp(Laahbca/oohein/iiwea/UaNgies;)Landroid/content/Context; [access_flags=static synthetic] @ 0x1350>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->oERKCx(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=static synthetic] @ 0x1368>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->runOnUiThread(Ljava/lang/Runnable;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x18e0>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x138c>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "invoke-virtual",
+            "move-result-object",
+            "const/high16",
+            "invoke-virtual",
+            "move-result",
+            "iput",
+            "invoke-static",
+            "invoke-static",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->getResources()Landroid/content/res/Resources;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreateDialog(I)Landroid/app/Dialog; [access_flags=protected] @ 0x13e0>",
+        {
+          "opcodes": [
+            "iget",
+            "if-ne",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iget-object",
+            "const/4",
+            "invoke-virtual",
+            "iget-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "return-object",
+            "const/4",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;->setProgressStyle(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->getString(I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onDestroy()V [access_flags=protected] @ 0x1434>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-virtual",
+            "invoke-super",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onDestroy()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onPrepareDialog(I Landroid/app/Dialog;)V [access_flags=protected] @ 0x1458>",
+        {
+          "opcodes": [
+            "iget",
+            "if-ne",
+            "iget-object",
+            "const/4",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;->start()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x17e8>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "iput",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;->setProgress(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onStart()V [access_flags=protected] @ 0x1498>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onStart()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->selfDestruct(Landroid/view/View;)V [access_flags=public] @ 0x14b0>",
+        {
+          "opcodes": [
+            "iget",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->showDialog(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->selfInfo(Landroid/view/View;)V [access_flags=public] @ 0x14cc>",
+        {
+          "opcodes": [
+            "new-instance",
+            "iget-object",
+            "invoke-direct",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/mSQ;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x17b4>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog;->show()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setNeutralButton(I Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/f4l;-><init>(Laahbca/oohein/iiwea/zQI;)V [access_flags=constructor] @ 0x1528>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/HashMap;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;-><init>()V [access_flags=public constructor] @ 0x166c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        {
+          "opcodes": [
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "iget-object",
+            "invoke-interface",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "iget-object",
+            "invoke-interface",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "iget-object",
+            "invoke-interface",
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/mSQ;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public final] @ 0x17d0>",
+        {
+          "opcodes": [
+            "invoke-interface",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/DialogInterface;->dismiss()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;->run()V [access_flags=public final] @ 0x182c>",
+        {
+          "opcodes": [
+            "const/4",
+            "iput",
+            "iget",
+            "iget",
+            "if-gt",
+            "const-wide/16",
+            "invoke-static",
+            "iget-object",
+            "iget-object",
+            "iget",
+            "invoke-virtual",
+            "iget",
+            "add-int/lit8",
+            "iput",
+            "goto",
+            "iget-object",
+            "invoke-static",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;->dismiss()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Thread;->sleep(J)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xIE0rx;-><init>(Laahbca/oohein/iiwea/xqTAHLZ;)V [access_flags=constructor] @ 0x18a4>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xIE0rx;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public final] @ 0x18c0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->finish()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;->run()V [access_flags=public final] @ 0x18fc>",
+        {
+          "opcodes": [
+            "new-instance",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(I)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(J)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Random;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/System;->currentTimeMillis()J>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Random;->nextInt(I)I>",
+        {}
+      ]
+    ],
+    "edges": [
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ZWJKjd1r;-><init>()V [access_flags=public constructor] @ 0xba0>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ZWJKjd1r;-><init>()V [access_flags=public constructor] @ 0xba0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;-><init>()V [access_flags=public constructor] @ 0xbc8>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ZWJKjd1r;-><init>()V [access_flags=public constructor] @ 0xba0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/PVTX;-><init>(Laahbca/oohein/iiwea/ipulzEe;)V [access_flags=public constructor] @ 0x12b0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;-><init>()V [access_flags=public constructor] @ 0x1544>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;->AY6qu8Sp(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public final] @ 0x1590>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        "<analysis.MethodAnalysis Ljava/util/List;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->vuxDLW1()Landroid/content/Context; [access_flags=public final] @ 0x127c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getInteger(I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp()Laahbca/oohein/iiwea/ITEdjbIS; [access_flags=public static] @ 0xcb4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0xbe0>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getString(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/PVTX;-><init>(Laahbca/oohein/iiwea/ipulzEe;)V [access_flags=public constructor] @ 0x12b0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;->AY6qu8Sp(Ljava/lang/String;)Ljava/lang/String; [access_flags=public final] @ 0x156c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/PVTX;-><init>(Laahbca/oohein/iiwea/ipulzEe;)V [access_flags=public constructor] @ 0x12b0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/R6yUxrz;-><init>(Laahbca/oohein/iiwea/ipulzEe;)V [access_flags=public constructor] @ 0x1294>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;-><init>()V [access_flags=public constructor] @ 0x1544>",
+        "<analysis.MethodAnalysis Ljava/util/HashMap;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;-><init>()V [access_flags=public constructor] @ 0x1544>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;->AY6qu8Sp(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public final] @ 0x1590>",
+        "<analysis.MethodAnalysis Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;->AY6qu8Sp()Ljava/lang/String; [access_flags=public final] @ 0x19f4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getInteger(I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getString(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->toString(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;-><init>(Landroid/content/Context;)V [access_flags=private constructor] @ 0xc7c>",
+        "<analysis.MethodAnalysis Ljava/util/ArrayList;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;-><init>(Landroid/content/Context;)V [access_flags=private constructor] @ 0xc7c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(Landroid/content/Context;)V [access_flags=public static] @ 0xccc>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(Landroid/content/Context;)V [access_flags=public static] @ 0xccc>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;-><init>(Ljava/lang/String;)V [access_flags=public constructor] @ 0x15ac>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(Landroid/content/Context;)V [access_flags=public static] @ 0xccc>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ZWJKjd1r;->AY6qu8Sp()Ljava/util/List; [access_flags=public abstract] @ 0x0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(Landroid/content/Context;)V [access_flags=public static] @ 0xccc>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;->oERKCx()Laahbca/oohein/iiwea/ZWJKjd1r; [access_flags=public final] @ 0x1638>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(Landroid/content/Context;)V [access_flags=public static] @ 0xccc>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;-><init>(Landroid/content/Context;)V [access_flags=private constructor] @ 0xc7c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(Landroid/content/Context;)V [access_flags=public static] @ 0xccc>",
+        "<analysis.MethodAnalysis Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;-><init>(Ljava/lang/String;)V [access_flags=public constructor] @ 0x15ac>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;-><init>(Ljava/lang/String;)V [access_flags=public constructor] @ 0x15ac>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;->oERKCx()Laahbca/oohein/iiwea/ZWJKjd1r; [access_flags=public final] @ 0x1638>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;-><init>()V [access_flags=public constructor] @ 0x166c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;->oERKCx()Laahbca/oohein/iiwea/ZWJKjd1r; [access_flags=public final] @ 0x1638>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/Eh;-><init>()V [access_flags=public constructor] @ 0xbc8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(I)Ljava/lang/String; [access_flags=public final] @ 0xd48>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getString(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(I)Ljava/lang/String; [access_flags=public final] @ 0xd48>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(I)Ljava/lang/String; [access_flags=public final] @ 0xd48>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getInteger(I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/R6yUxrz;->AY6qu8Sp()V [access_flags=public abstract] @ 0x0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        "<analysis.MethodAnalysis Ljava/util/List;->get(I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        "<analysis.MethodAnalysis Ljava/io/File;-><init>(Ljava/io/File; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;->AY6qu8Sp()I [access_flags=public final] @ 0x1620>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        "<analysis.MethodAnalysis Ljava/util/List;->size()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getFilesDir()Ljava/io/File;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        "<analysis.MethodAnalysis Ljava/io/File;->exists()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        "<analysis.MethodAnalysis Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        "<analysis.MethodAnalysis Ljava/io/OutputStream;->write(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>",
+        "<analysis.MethodAnalysis Ljava/io/OutputStream;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx()I [access_flags=public final] @ 0xedc>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/kjGG6E9x0c;->AY6qu8Sp()I [access_flags=public final] @ 0x1620>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/f4l;-><init>(Laahbca/oohein/iiwea/zQI;)V [access_flags=constructor] @ 0x1528>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(J)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Ljava/util/Random;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Ljava/lang/System;->currentTimeMillis()J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/RN1YeDMeH;-><init>(Laahbca/oohein/iiwea/zQI;)V [access_flags=constructor] @ 0x1318>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/zQI;-><init>()V [access_flags=public constructor] @ 0x1970>",
+        "<analysis.MethodAnalysis Ljava/util/Random;->nextInt(I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/R6yUxrz;-><init>(Laahbca/oohein/iiwea/ipulzEe;)V [access_flags=public constructor] @ 0x1294>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;->AY6qu8Sp(Ljava/lang/String;)Ljava/lang/String; [access_flags=public final] @ 0x156c>",
+        "<analysis.MethodAnalysis Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/PVTX;->AY6qu8Sp()V [access_flags=public final] @ 0x12e8>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/PVTX;->AY6qu8Sp()V [access_flags=public final] @ 0x12e8>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/RN1YeDMeH;-><init>(Laahbca/oohein/iiwea/zQI;)V [access_flags=constructor] @ 0x1318>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;-><init>()V [access_flags=public constructor] @ 0x1334>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->oERKCx(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=static synthetic] @ 0x1368>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->runOnUiThread(Ljava/lang/Runnable;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->oERKCx(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=static synthetic] @ 0x1368>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x18e0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x18e0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x138c>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getInteger(I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x138c>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp()Laahbca/oohein/iiwea/ITEdjbIS; [access_flags=public static] @ 0xcb4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x138c>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x138c>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(Landroid/content/Context;)V [access_flags=public static] @ 0xccc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x138c>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x138c>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx()I [access_flags=public final] @ 0xedc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x138c>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreateDialog(I)Landroid/app/Dialog; [access_flags=protected] @ 0x13e0>",
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreateDialog(I)Landroid/app/Dialog; [access_flags=protected] @ 0x13e0>",
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;->setProgressStyle(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreateDialog(I)Landroid/app/Dialog; [access_flags=protected] @ 0x13e0>",
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onCreateDialog(I)Landroid/app/Dialog; [access_flags=protected] @ 0x13e0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->getString(I)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onDestroy()V [access_flags=protected] @ 0x1434>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->OyHxH()V [access_flags=public final] @ 0xdf4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onDestroy()V [access_flags=protected] @ 0x1434>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onDestroy()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onPrepareDialog(I Landroid/app/Dialog;)V [access_flags=protected] @ 0x1458>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;->start()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onPrepareDialog(I Landroid/app/Dialog;)V [access_flags=protected] @ 0x1458>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x17e8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onPrepareDialog(I Landroid/app/Dialog;)V [access_flags=protected] @ 0x1458>",
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;->setProgress(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x17e8>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getInteger(I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x17e8>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->AY6qu8Sp(Laahbca/oohein/iiwea/UaNgies;)Landroid/content/Context; [access_flags=static synthetic] @ 0x1350>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x17e8>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x17e8>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->onStart()V [access_flags=protected] @ 0x1498>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onStart()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->selfDestruct(Landroid/view/View;)V [access_flags=public] @ 0x14b0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->showDialog(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->selfInfo(Landroid/view/View;)V [access_flags=public] @ 0x14cc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->selfInfo(Landroid/view/View;)V [access_flags=public] @ 0x14cc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->selfInfo(Landroid/view/View;)V [access_flags=public] @ 0x14cc>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/mSQ;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x17b4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->selfInfo(Landroid/view/View;)V [access_flags=public] @ 0x14cc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog;->show()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->selfInfo(Landroid/view/View;)V [access_flags=public] @ 0x14cc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setNeutralButton(I Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->selfInfo(Landroid/view/View;)V [access_flags=public] @ 0x14cc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->selfInfo(Landroid/view/View;)V [access_flags=public] @ 0x14cc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/mSQ;-><init>(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=constructor] @ 0x17b4>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/f4l;-><init>(Laahbca/oohein/iiwea/zQI;)V [access_flags=constructor] @ 0x1528>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;-><init>()V [access_flags=public constructor] @ 0x166c>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ZWJKjd1r;-><init>()V [access_flags=public constructor] @ 0xba0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->getInteger(I)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        "<analysis.MethodAnalysis Ljava/util/List;->add(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;->AY6qu8Sp(Ljava/lang/String; Ljava/lang/String;)V [access_flags=public final] @ 0x1590>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp(I)Ljava/lang/String; [access_flags=public final] @ 0xd48>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->oERKCx(I)Ljava/lang/String; [access_flags=public final] @ 0xf24>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->AY6qu8Sp()Laahbca/oohein/iiwea/ITEdjbIS; [access_flags=public static] @ 0xcb4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ipulzEe;-><init>()V [access_flags=public constructor] @ 0x1544>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/PVTX;-><init>(Laahbca/oohein/iiwea/ipulzEe;)V [access_flags=public constructor] @ 0x12b0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/lgCe;->AY6qu8Sp()Ljava/util/List; [access_flags=public final] @ 0x1684>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/ITEdjbIS;->vuxDLW1()Landroid/content/Context; [access_flags=public final] @ 0x127c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/mSQ;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public final] @ 0x17d0>",
+        "<analysis.MethodAnalysis Landroid/content/DialogInterface;->dismiss()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;->run()V [access_flags=public final] @ 0x182c>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->oERKCx(Laahbca/oohein/iiwea/UaNgies;)V [access_flags=static synthetic] @ 0x1368>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;->run()V [access_flags=public final] @ 0x182c>",
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;->dismiss()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;->run()V [access_flags=public final] @ 0x182c>",
+        "<analysis.MethodAnalysis Landroid/app/ProgressDialog;->setProgress(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/o94rTB;->run()V [access_flags=public final] @ 0x182c>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;->sleep(J)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xIE0rx;-><init>(Laahbca/oohein/iiwea/xqTAHLZ;)V [access_flags=constructor] @ 0x18a4>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xIE0rx;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public final] @ 0x18c0>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->finish()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;->run()V [access_flags=public final] @ 0x18fc>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/UaNgies;->AY6qu8Sp(Laahbca/oohein/iiwea/UaNgies;)Landroid/content/Context; [access_flags=static synthetic] @ 0x1350>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;->run()V [access_flags=public final] @ 0x18fc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;->run()V [access_flags=public final] @ 0x18fc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;->run()V [access_flags=public final] @ 0x18fc>",
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xIE0rx;-><init>(Laahbca/oohein/iiwea/xqTAHLZ;)V [access_flags=constructor] @ 0x18a4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;->run()V [access_flags=public final] @ 0x18fc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;->run()V [access_flags=public final] @ 0x18fc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog;->show()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;->run()V [access_flags=public final] @ 0x18fc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Laahbca/oohein/iiwea/xqTAHLZ;->run()V [access_flags=public final] @ 0x18fc>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setNeutralButton(I Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;>"
+      ]
+    ]
+  },
+  "label": 1
+}

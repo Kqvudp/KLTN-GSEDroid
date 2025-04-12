@@ -1,0 +1,2550 @@
+{
+  "permissions": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0
+  ],
+  "call_graph": {
+    "nodes": [
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/BootDetector;-><init>()V [access_flags=public constructor] @ 0x10cc>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/BootDetector;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x10e4>",
+        {
+          "opcodes": [
+            "new-instance",
+            "const-class",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/LocationListener;-><init>(Landroid/os/Handler;)V [access_flags=public constructor] @ 0x110c>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/LocationListener;->onLocationChanged(Landroid/location/Location;)V [access_flags=public] @ 0x1128>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iget-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Message;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/LocationListener;->onProviderDisabled(Ljava/lang/String;)V [access_flags=public] @ 0x1154>",
+        {
+          "opcodes": [
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/LocationListener;->onProviderEnabled(Ljava/lang/String;)V [access_flags=public] @ 0x1168>",
+        {
+          "opcodes": [
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/LocationListener;->onStatusChanged(Ljava/lang/String; I Landroid/os/Bundle;)V [access_flags=public] @ 0x117c>",
+        {
+          "opcodes": [
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/R$attr;-><init>()V [access_flags=public constructor] @ 0x1190>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/R$drawable;-><init>()V [access_flags=public constructor] @ 0x11a8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/R$layout;-><init>()V [access_flags=public constructor] @ 0x11c0>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/R;-><init>()V [access_flags=public constructor] @ 0x11d8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;-><init>(Lnet/maxicom/android/tracker/SnakeService$1;)V [access_flags=constructor] @ 0x11f0>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Handler;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-wide",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-wide",
+            "cmp-long",
+            "if-gez",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object/from16",
+            "check-cast",
+            "move-object",
+            "move-object/from16",
+            "invoke-static",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "if-eqz",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-wide",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-wide",
+            "sub-long/2addr",
+            "long-to-float",
+            "div-float",
+            "const/high16",
+            "cmpl-float",
+            "if-lez",
+            "return-void",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-wide",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-wide",
+            "sub-long/2addr",
+            "const-wide/32",
+            "cmp-long",
+            "if-gez",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "div-float/2addr",
+            "const/high16",
+            "cmpg-float",
+            "if-ltz",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-wide",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-wide",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-wide",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "new-instance",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "invoke-interface",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "goto/16",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "goto",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-wide",
+            "sub-long",
+            "const-wide/32",
+            "div-long",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-wide",
+            "cmp-long",
+            "if-eqz",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "check-cast",
+            "move-object",
+            "move-object/from16",
+            "invoke-static",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "move-object/from16",
+            "iget-object",
+            "move-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/16",
+            "invoke-virtual/range",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->access$0(Lnet/maxicom/android/tracker/SnakeService$1;)Lnet/maxicom/android/tracker/SnakeService; [access_flags=static synthetic] @ 0x19a0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$4(Lnet/maxicom/android/tracker/SnakeService;)Landroid/location/Location; [access_flags=static synthetic] @ 0x1b80>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Date;->getTime()J>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/location/Location;->getLatitude()D>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Long;->parseLong(Ljava/lang/String;)J>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/location/Location;->getAccuracy()F>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/location/Location;->getLongitude()D>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URLEncoder;->encode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$3(Lnet/maxicom/android/tracker/SnakeService;)Landroid/location/Location; [access_flags=static synthetic] @ 0x1b68>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$10(Lnet/maxicom/android/tracker/SnakeService;)Ljava/util/Properties; [access_flags=static synthetic] @ 0x1ad8>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/location/Location;->getTime()J>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/client/entity/UrlEncodedFormEntity;-><init>(Ljava/util/List;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$7(Lnet/maxicom/android/tracker/SnakeService; Landroid/location/Location;)V [access_flags=static synthetic] @ 0x1bc8>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$9(Lnet/maxicom/android/tracker/SnakeService; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x1bf8>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$11(Lnet/maxicom/android/tracker/SnakeService; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x1af0>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$1(Lnet/maxicom/android/tracker/SnakeService;)Ljava/lang/String; [access_flags=static synthetic] @ 0x1ac0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$2(Lnet/maxicom/android/tracker/SnakeService; Landroid/location/Location;)V [access_flags=static synthetic] @ 0x1b50>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Double;->toString(D)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$5(Lnet/maxicom/android/tracker/SnakeService;)Ljava/lang/String; [access_flags=static synthetic] @ 0x1b98>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/location/Location;->hasAccuracy()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Properties;->setProperty(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$6(Lnet/maxicom/android/tracker/SnakeService;)Ljava/lang/String; [access_flags=static synthetic] @ 0x1bb0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/impl/client/BasicResponseHandler;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->getBaseContext()Landroid/content/Context;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Float;->toString(F)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->openFileOutput(Ljava/lang/String; I)Ljava/io/FileOutputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Long;->toString(J)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/location/Location;->distanceTo(Landroid/location/Location;)F>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Properties;->store(Ljava/io/OutputStream; Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Date;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/client/utils/URLEncodedUtils;->parse(Ljava/net/URI; Ljava/lang/String;)Ljava/util/List;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest; Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/location/Location;->getProvider()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$8(Lnet/maxicom/android/tracker/SnakeService;)Ljava/lang/String; [access_flags=static synthetic] @ 0x1be0>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URI;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;-><init>(Lnet/maxicom/android/tracker/SnakeService;)V [access_flags=constructor] @ 0x1984>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        {
+          "opcodes": [
+            "const-wide/32",
+            "const/4",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "invoke-static",
+            "new-instance",
+            "invoke-direct",
+            "iget-object",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-static",
+            "new-instance",
+            "invoke-direct",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual/range",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual/range",
+            "invoke-static",
+            "const/4",
+            "invoke-static",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$0(Lnet/maxicom/android/tracker/SnakeService;)Landroid/os/PowerManager$WakeLock; [access_flags=static synthetic] @ 0x1aa8>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/PowerManager$WakeLock;->acquire()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/location/LocationManager;->requestLocationUpdates(Ljava/lang/String; J F Landroid/location/LocationListener;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$14(Z)V [access_flags=static synthetic] @ 0x1b38>",
+        {
+          "opcodes": [
+            "sput-boolean",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$13(Lnet/maxicom/android/tracker/SnakeService;)Landroid/location/LocationManager; [access_flags=static synthetic] @ 0x1b20>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Looper;->prepare()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Looper;->loop()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$12(Lnet/maxicom/android/tracker/SnakeService; Landroid/location/LocationManager;)V [access_flags=static synthetic] @ 0x1b08>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;-><clinit>()V [access_flags=static constructor] @ 0x1a58>",
+        {
+          "opcodes": [
+            "const/4",
+            "sput-boolean",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;-><init>()V [access_flags=public constructor] @ 0x1a70>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Service;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/location/Location;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Properties;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onBind(Landroid/content/Intent;)Landroid/os/IBinder; [access_flags=public] @ 0x1c10>",
+        {
+          "opcodes": [
+            "const/4",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        {
+          "opcodes": [
+            "const-string",
+            "const-string",
+            "invoke-super",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "if-nez",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-wide",
+            "const-wide",
+            "add-long/2addr",
+            "invoke-static",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "sget-boolean",
+            "if-nez",
+            "iget-object",
+            "if-eqz",
+            "iget-object",
+            "if-eqz",
+            "iget-object",
+            "const",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "goto",
+            "move-exception",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/PowerManager;->newWakeLock(I Ljava/lang/String;)Landroid/os/PowerManager$WakeLock;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->start()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Properties;->getProperty(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/location/Location;->setAccuracy(F)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/Properties;->load(Ljava/io/InputStream;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Service;->onCreate()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onDestroy()V [access_flags=public] @ 0x1d9c>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Service;->onDestroy()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;-><init>(Lnet/maxicom/android/tracker/Tracker$1;)V [access_flags=constructor] @ 0x1db4>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        {
+          "opcodes": [
+            "const-string",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "new-instance",
+            "new-instance",
+            "invoke-direct",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "invoke-interface",
+            "return-void",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$9(Lnet/maxicom/android/tracker/Tracker;)Ljava/lang/String; [access_flags=static synthetic] @ 0x2444>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->access$0(Lnet/maxicom/android/tracker/Tracker$1;)Lnet/maxicom/android/tracker/Tracker; [access_flags=static synthetic] @ 0x1f98>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$4(Lnet/maxicom/android/tracker/Tracker;)Ljava/lang/String; [access_flags=static synthetic] @ 0x23cc>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;-><init>(Lnet/maxicom/android/tracker/Tracker;)V [access_flags=constructor] @ 0x1f7c>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        {
+          "opcodes": [
+            "const/4",
+            "const-string",
+            "const-string",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iget-object",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "iget-object",
+            "const-string",
+            "invoke-static",
+            "iget-object",
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "goto",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "const/4",
+            "if-le",
+            "iget-object",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "const-string",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-class",
+            "invoke-direct",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "goto/16",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "new-instance",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-static",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "goto/16",
+            "move-exception",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$0(Lnet/maxicom/android/tracker/Tracker;)Ljava/lang/String; [access_flags=static synthetic] @ 0x236c>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->makeText(Landroid/content/Context; Ljava/lang/CharSequence; I)Landroid/widget/Toast;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$5(Lnet/maxicom/android/tracker/Tracker; Landroid/widget/EditText;)V [access_flags=static synthetic] @ 0x23e4>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$1(Lnet/maxicom/android/tracker/Tracker;)Landroid/widget/EditText; [access_flags=static synthetic] @ 0x2384>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$8(Lnet/maxicom/android/tracker/Tracker; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x242c>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->trim()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$6(Lnet/maxicom/android/tracker/Tracker;)Landroid/app/AlertDialog$Builder; [access_flags=static synthetic] @ 0x23fc>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/EditText;-><init>(Landroid/content/Context;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$3(Lnet/maxicom/android/tracker/Tracker;)Ljava/util/Properties; [access_flags=static synthetic] @ 0x23b4>",
+        {
+          "opcodes": [
+            "iget-object",
+            "return-object"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/EditText;->getText()Landroid/text/Editable;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->show()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->getBaseContext()Landroid/content/Context;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$2(Lnet/maxicom/android/tracker/Tracker; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x239c>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/text/Editable;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->stopService(Landroid/content/Intent;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->start()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$7(Lnet/maxicom/android/tracker/Tracker; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x2414>",
+        {
+          "opcodes": [
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->isEmailValid(Ljava/lang/String;)Z [access_flags=public] @ 0x245c>",
+        {
+          "opcodes": [
+            "const/4",
+            "const-string",
+            "move-object",
+            "const/4",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$2;-><init>(Lnet/maxicom/android/tracker/Tracker;)V [access_flags=constructor] @ 0x22b8>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$2;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x22d4>",
+        {
+          "opcodes": [
+            "iget-object",
+            "invoke-static",
+            "move-result-object",
+            "iget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;-><init>()V [access_flags=public constructor] @ 0x2328>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/regex/Pattern;->compile(Ljava/lang/String; I)Ljava/util/regex/Pattern;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/regex/Matcher;->matches()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        {
+          "opcodes": [
+            "const-string",
+            "invoke-super",
+            "const/high16",
+            "invoke-virtual",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "iget-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "iput-object",
+            "iget-object",
+            "if-eqz",
+            "iget-object",
+            "if-nez",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "new-instance",
+            "invoke-direct",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "iget-object",
+            "invoke-virtual",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "iput-object",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "iget-object",
+            "invoke-virtual",
+            "return-void",
+            "move-exception",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence; Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onPause()V [access_flags=protected] @ 0x25a0>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onPause()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onResume()V [access_flags=protected] @ 0x25b8>",
+        {
+          "opcodes": [
+            "const/4",
+            "invoke-super",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "const-class",
+            "invoke-direct",
+            "invoke-virtual",
+            "iget-object",
+            "if-eqz",
+            "iget-object",
+            "if-eqz",
+            "iget-object",
+            "if-eqz",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-wide",
+            "iget-object",
+            "invoke-static",
+            "move-result-wide",
+            "cmp-long",
+            "if-lez",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onResume()V>",
+        {}
+      ]
+    ],
+    "edges": [
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/BootDetector;-><init>()V [access_flags=public constructor] @ 0x10cc>",
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/BootDetector;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x10e4>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/BootDetector;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x10e4>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/LocationListener;-><init>(Landroid/os/Handler;)V [access_flags=public constructor] @ 0x110c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/LocationListener;->onLocationChanged(Landroid/location/Location;)V [access_flags=public] @ 0x1128>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/LocationListener;->onLocationChanged(Landroid/location/Location;)V [access_flags=public] @ 0x1128>",
+        "<analysis.MethodAnalysis Landroid/os/Message;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/R$attr;-><init>()V [access_flags=public constructor] @ 0x1190>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/R$drawable;-><init>()V [access_flags=public constructor] @ 0x11a8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/R$layout;-><init>()V [access_flags=public constructor] @ 0x11c0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/R;-><init>()V [access_flags=public constructor] @ 0x11d8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;-><init>(Lnet/maxicom/android/tracker/SnakeService$1;)V [access_flags=constructor] @ 0x11f0>",
+        "<analysis.MethodAnalysis Landroid/os/Handler;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->access$0(Lnet/maxicom/android/tracker/SnakeService$1;)Lnet/maxicom/android/tracker/SnakeService; [access_flags=static synthetic] @ 0x19a0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$4(Lnet/maxicom/android/tracker/SnakeService;)Landroid/location/Location; [access_flags=static synthetic] @ 0x1b80>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/util/Date;->getTime()J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Landroid/location/Location;->getLatitude()D>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/lang/Long;->parseLong(Ljava/lang/String;)J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Landroid/location/Location;->getAccuracy()F>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Landroid/location/Location;->getLongitude()D>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/net/URLEncoder;->encode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$3(Lnet/maxicom/android/tracker/SnakeService;)Landroid/location/Location; [access_flags=static synthetic] @ 0x1b68>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$10(Lnet/maxicom/android/tracker/SnakeService;)Ljava/util/Properties; [access_flags=static synthetic] @ 0x1ad8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Landroid/location/Location;->getTime()J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/entity/UrlEncodedFormEntity;-><init>(Ljava/util/List;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$7(Lnet/maxicom/android/tracker/SnakeService; Landroid/location/Location;)V [access_flags=static synthetic] @ 0x1bc8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$9(Lnet/maxicom/android/tracker/SnakeService; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x1bf8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$11(Lnet/maxicom/android/tracker/SnakeService; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x1af0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$1(Lnet/maxicom/android/tracker/SnakeService;)Ljava/lang/String; [access_flags=static synthetic] @ 0x1ac0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$2(Lnet/maxicom/android/tracker/SnakeService; Landroid/location/Location;)V [access_flags=static synthetic] @ 0x1b50>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/lang/Double;->toString(D)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$5(Lnet/maxicom/android/tracker/SnakeService;)Ljava/lang/String; [access_flags=static synthetic] @ 0x1b98>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Landroid/location/Location;->hasAccuracy()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->setProperty(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$6(Lnet/maxicom/android/tracker/SnakeService;)Ljava/lang/String; [access_flags=static synthetic] @ 0x1bb0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/impl/client/BasicResponseHandler;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/lang/Float;->toString(F)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->openFileOutput(Ljava/lang/String; I)Ljava/io/FileOutputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/lang/Long;->toString(J)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Landroid/location/Location;->distanceTo(Landroid/location/Location;)F>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->store(Ljava/io/OutputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/util/Date;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/utils/URLEncodedUtils;->parse(Ljava/net/URI; Ljava/lang/String;)Ljava/util/List;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest; Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Landroid/location/Location;->getProvider()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$8(Lnet/maxicom/android/tracker/SnakeService;)Ljava/lang/String; [access_flags=static synthetic] @ 0x1be0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;->handleMessage(Landroid/os/Message;)V [access_flags=public] @ 0x120c>",
+        "<analysis.MethodAnalysis Ljava/net/URI;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;-><init>(Lnet/maxicom/android/tracker/SnakeService;)V [access_flags=constructor] @ 0x1984>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/LocationListener;-><init>(Landroid/os/Handler;)V [access_flags=public constructor] @ 0x110c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$0(Lnet/maxicom/android/tracker/SnakeService;)Landroid/os/PowerManager$WakeLock; [access_flags=static synthetic] @ 0x1aa8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Landroid/os/PowerManager$WakeLock;->acquire()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Landroid/location/LocationManager;->requestLocationUpdates(Ljava/lang/String; J F Landroid/location/LocationListener;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$14(Z)V [access_flags=static synthetic] @ 0x1b38>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$13(Lnet/maxicom/android/tracker/SnakeService;)Landroid/location/LocationManager; [access_flags=static synthetic] @ 0x1b20>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Landroid/os/Looper;->prepare()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Landroid/os/Looper;->loop()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->access$12(Lnet/maxicom/android/tracker/SnakeService; Landroid/location/LocationManager;)V [access_flags=static synthetic] @ 0x1b08>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->run()V [access_flags=public] @ 0x19b8>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1$1;-><init>(Lnet/maxicom/android/tracker/SnakeService$1;)V [access_flags=constructor] @ 0x11f0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;-><init>()V [access_flags=public constructor] @ 0x1a70>",
+        "<analysis.MethodAnalysis Landroid/app/Service;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;-><init>()V [access_flags=public constructor] @ 0x1a70>",
+        "<analysis.MethodAnalysis Landroid/location/Location;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;-><init>()V [access_flags=public constructor] @ 0x1a70>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Ljava/util/Date;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Landroid/os/PowerManager;->newWakeLock(I Ljava/lang/String;)Landroid/os/PowerManager$WakeLock;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;->start()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Ljava/util/Date;->getTime()J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->setProperty(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Ljava/lang/Long;->toString(J)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->getProperty(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->store(Ljava/io/OutputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->openFileOutput(Ljava/lang/String; I)Ljava/io/FileOutputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Landroid/location/Location;->setAccuracy(F)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService$1;-><init>(Lnet/maxicom/android/tracker/SnakeService;)V [access_flags=constructor] @ 0x1984>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->load(Ljava/io/InputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Landroid/app/Service;->onCreate()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onCreate()V [access_flags=public] @ 0x1c24>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/SnakeService;->onDestroy()V [access_flags=public] @ 0x1d9c>",
+        "<analysis.MethodAnalysis Landroid/app/Service;->onDestroy()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;-><init>(Lnet/maxicom/android/tracker/Tracker$1;)V [access_flags=constructor] @ 0x1db4>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Ljava/net/URLEncoder;->encode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$9(Lnet/maxicom/android/tracker/Tracker;)Ljava/lang/String; [access_flags=static synthetic] @ 0x2444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->access$0(Lnet/maxicom/android/tracker/Tracker$1;)Lnet/maxicom/android/tracker/Tracker; [access_flags=static synthetic] @ 0x1f98>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/utils/URLEncodedUtils;->parse(Ljava/net/URI; Ljava/lang/String;)Ljava/util/List;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Ljava/net/URI;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Lorg/apache/http/client/entity/UrlEncodedFormEntity;-><init>(Ljava/util/List;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$4(Lnet/maxicom/android/tracker/Tracker;)Ljava/lang/String; [access_flags=static synthetic] @ 0x23cc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->run()V [access_flags=public] @ 0x1dd0>",
+        "<analysis.MethodAnalysis Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;-><init>(Lnet/maxicom/android/tracker/Tracker;)V [access_flags=constructor] @ 0x1f7c>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$0(Lnet/maxicom/android/tracker/Tracker;)Ljava/lang/String; [access_flags=static synthetic] @ 0x236c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->makeText(Landroid/content/Context; Ljava/lang/CharSequence; I)Landroid/widget/Toast;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$5(Lnet/maxicom/android/tracker/Tracker; Landroid/widget/EditText;)V [access_flags=static synthetic] @ 0x23e4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$1(Lnet/maxicom/android/tracker/Tracker;)Landroid/widget/EditText; [access_flags=static synthetic] @ 0x2384>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$8(Lnet/maxicom/android/tracker/Tracker; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x242c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->trim()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$6(Lnet/maxicom/android/tracker/Tracker;)Landroid/app/AlertDialog$Builder; [access_flags=static synthetic] @ 0x23fc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->setProperty(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Landroid/widget/EditText;-><init>(Landroid/content/Context;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$3(Lnet/maxicom/android/tracker/Tracker;)Ljava/util/Properties; [access_flags=static synthetic] @ 0x23b4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Landroid/widget/EditText;->getText()Landroid/text/Editable;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->show()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->length()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;-><init>(Lnet/maxicom/android/tracker/Tracker$1;)V [access_flags=constructor] @ 0x1db4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->store(Ljava/io/OutputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$9(Lnet/maxicom/android/tracker/Tracker;)Ljava/lang/String; [access_flags=static synthetic] @ 0x2444>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$2(Lnet/maxicom/android/tracker/Tracker; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x239c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Landroid/text/Editable;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->stopService(Landroid/content/Intent;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1$1;->start()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$7(Lnet/maxicom/android/tracker/Tracker; Ljava/lang/String;)V [access_flags=static synthetic] @ 0x2414>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->openFileOutput(Ljava/lang/String; I)Ljava/io/FileOutputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->isEmailValid(Ljava/lang/String;)Z [access_flags=public] @ 0x245c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x1fb0>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$4(Lnet/maxicom/android/tracker/Tracker;)Ljava/lang/String; [access_flags=static synthetic] @ 0x23cc>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->isEmailValid(Ljava/lang/String;)Z [access_flags=public] @ 0x245c>",
+        "<analysis.MethodAnalysis Ljava/util/regex/Pattern;->compile(Ljava/lang/String; I)Ljava/util/regex/Pattern;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->isEmailValid(Ljava/lang/String;)Z [access_flags=public] @ 0x245c>",
+        "<analysis.MethodAnalysis Ljava/util/regex/Matcher;->matches()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->isEmailValid(Ljava/lang/String;)Z [access_flags=public] @ 0x245c>",
+        "<analysis.MethodAnalysis Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$2;-><init>(Lnet/maxicom/android/tracker/Tracker;)V [access_flags=constructor] @ 0x22b8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$2;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x22d4>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->store(Ljava/io/OutputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$2;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x22d4>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->access$3(Lnet/maxicom/android/tracker/Tracker;)Ljava/util/Properties; [access_flags=static synthetic] @ 0x23b4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$2;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x22d4>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$2;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0x22d4>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->openFileOutput(Ljava/lang/String; I)Ljava/io/FileOutputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;-><init>()V [access_flags=public constructor] @ 0x2328>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;-><init>()V [access_flags=public constructor] @ 0x2328>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$1;-><init>(Lnet/maxicom/android/tracker/Tracker;)V [access_flags=constructor] @ 0x1f7c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;-><init>()V [access_flags=public constructor] @ 0x2328>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker$2;-><init>(Lnet/maxicom/android/tracker/Tracker;)V [access_flags=constructor] @ 0x22b8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;-><init>()V [access_flags=public constructor] @ 0x2328>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->getProperty(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Landroid/widget/EditText;-><init>(Landroid/content/Context;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence; Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0x2498>",
+        "<analysis.MethodAnalysis Ljava/util/Properties;->load(Ljava/io/InputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onPause()V [access_flags=protected] @ 0x25a0>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onPause()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onResume()V [access_flags=protected] @ 0x25b8>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onResume()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onResume()V [access_flags=protected] @ 0x25b8>",
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->show()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onResume()V [access_flags=protected] @ 0x25b8>",
+        "<analysis.MethodAnalysis Landroid/widget/Toast;->makeText(Landroid/content/Context; Ljava/lang/CharSequence; I)Landroid/widget/Toast;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onResume()V [access_flags=protected] @ 0x25b8>",
+        "<analysis.MethodAnalysis Ljava/lang/Long;->parseLong(Ljava/lang/String;)J>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onResume()V [access_flags=protected] @ 0x25b8>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->getBaseContext()Landroid/content/Context;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onResume()V [access_flags=protected] @ 0x25b8>",
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onResume()V [access_flags=protected] @ 0x25b8>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onResume()V [access_flags=protected] @ 0x25b8>",
+        "<analysis.MethodAnalysis Ljava/util/Date;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lnet/maxicom/android/tracker/Tracker;->onResume()V [access_flags=protected] @ 0x25b8>",
+        "<analysis.MethodAnalysis Ljava/util/Date;->getTime()J>"
+      ]
+    ]
+  },
+  "label": 1
+}

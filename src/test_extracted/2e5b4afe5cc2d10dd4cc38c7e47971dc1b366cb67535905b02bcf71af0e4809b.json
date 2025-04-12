@@ -1,0 +1,1567 @@
+{
+  "permissions": [
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "call_graph": {
+    "nodes": [
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$attr;-><init>()V [access_flags=public constructor] @ 0xd98>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$drawable;-><init>()V [access_flags=public constructor] @ 0xdb0>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$id;-><init>()V [access_flags=public constructor] @ 0xdc8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$layout;-><init>()V [access_flags=public constructor] @ 0xde0>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$menu;-><init>()V [access_flags=public constructor] @ 0xdf8>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$string;-><init>()V [access_flags=public constructor] @ 0xe10>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R;-><init>()V [access_flags=public constructor] @ 0xe28>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity$1;-><init>(Lcom/network_l4/network_test_activity;)V [access_flags=constructor] @ 0xe40>",
+        {
+          "opcodes": [
+            "iput-object",
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity$1;->onClick(Landroid/content/DialogInterface; I)V [access_flags=public] @ 0xe5c>",
+        {
+          "opcodes": [
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;-><init>()V [access_flags=public constructor] @ 0xe70>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doAbout()V [access_flags=private] @ 0xe88>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setPositiveButton(I Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Dialog;->show()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doExit()V [access_flags=private] @ 0xee8>",
+        {
+          "opcodes": [
+            "new-instance",
+            "const-string",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "const/high16",
+            "invoke-virtual",
+            "invoke-virtual",
+            "const/4",
+            "invoke-static",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->startActivity(Landroid/content/Intent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/System;->exit(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        {
+          "opcodes": [
+            "const/high16",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "invoke-virtual",
+            "move-result-object",
+            "const",
+            "invoke-virtual",
+            "move-result-object",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result",
+            "if-nez",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "return-void",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-static",
+            "move-result-object",
+            "invoke-direct",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object",
+            "invoke-virtual",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->close()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->ready()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->findViewById(I)Landroid/view/View;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getResources()Landroid/content/res/Resources;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->toString()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0xff0>",
+        {
+          "opcodes": [
+            "invoke-super",
+            "const/high16",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1544>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->start()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->setContentView(I)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z [access_flags=public] @ 0x102c>",
+        {
+          "opcodes": [
+            "invoke-virtual",
+            "move-result-object",
+            "const/high16",
+            "invoke-virtual",
+            "const/4",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/view/MenuInflater;->inflate(I Landroid/view/Menu;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getMenuInflater()Landroid/view/MenuInflater;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z [access_flags=public] @ 0x1054>",
+        {
+          "opcodes": [
+            "invoke-interface",
+            "move-result",
+            "packed-switch",
+            "invoke-super",
+            "move-result",
+            "return",
+            "invoke-direct",
+            "goto",
+            "invoke-direct",
+            "goto",
+            "packed-switch-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/view/MenuItem;->getItemId()I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;-><clinit>()V [access_flags=static constructor] @ 0x109c>",
+        {
+          "opcodes": [
+            "const/16",
+            "new-array",
+            "fill-array-data",
+            "sput-object",
+            "return-void",
+            "fill-array-data-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1188>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "iput-object",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x11a4>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "array-length",
+            "if-lt",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object",
+            "aget",
+            "xor-int/lit8",
+            "int-to-char",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(C)Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->check_Alive()Z [access_flags=public] @ 0x11f0>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-interface",
+            "move-result",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String; Z)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        {
+          "opcodes": [
+            "invoke-virtual/range",
+            "move-result",
+            "if-eqz",
+            "return-void",
+            "const/16",
+            "const/4",
+            "sget-object",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "move-object/from16",
+            "move-object",
+            "invoke-direct",
+            "invoke-virtual/range",
+            "move-result-object",
+            "move-object",
+            "check-cast",
+            "move-object",
+            "const/4",
+            "invoke-virtual",
+            "const/4",
+            "invoke-virtual",
+            "const/4",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "new-instance",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-direct",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "if-nez",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "aget-object",
+            "invoke-static",
+            "move-result",
+            "const/4",
+            "aget-object",
+            "const/4",
+            "aget-object",
+            "if-nez",
+            "invoke-virtual",
+            "goto/16",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object",
+            "move-object/from16",
+            "invoke-virtual",
+            "invoke-virtual",
+            "goto/16",
+            "invoke-static",
+            "move-result-object",
+            "const/4",
+            "if-lt",
+            "invoke-virtual/range",
+            "invoke-virtual",
+            "move-object/from16",
+            "goto/16",
+            "const/4",
+            "const/4",
+            "const/4",
+            "invoke-virtual/range",
+            "add-int/lit8",
+            "goto",
+            "const/4",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object/from16",
+            "invoke-virtual",
+            "throw",
+            "move-exception",
+            "goto",
+            "move-exception",
+            "move-object",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoOutput(Z)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->disconnect()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setUseCaches(Z)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->save_Alive()V [access_flags=public] @ 0x1418>",
+        {
+          "opcodes": [
+            "iget-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "invoke-interface",
+            "invoke-interface",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->toUpperCase()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoInput(Z)V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String; Z)Landroid/content/SharedPreferences$Editor;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences$Editor;->commit()Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;-><clinit>()V [access_flags=static constructor] @ 0x1458>",
+        {
+          "opcodes": [
+            "const/16",
+            "new-array",
+            "fill-array-data",
+            "sput-object",
+            "return-void",
+            "fill-array-data-payload"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x1560>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "const/4",
+            "array-length",
+            "if-lt",
+            "invoke-virtual",
+            "move-result-object",
+            "return-object",
+            "aget",
+            "xor-int/lit8",
+            "int-to-char",
+            "invoke-static",
+            "move-result-object",
+            "invoke-virtual",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->check_Alive()Z [access_flags=public] @ 0x15ac>",
+        {
+          "opcodes": [
+            "const/4",
+            "iget-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-interface",
+            "move-result",
+            "return"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        {
+          "opcodes": [
+            "invoke-virtual/range",
+            "move-result",
+            "if-eqz",
+            "return-void",
+            "const/16",
+            "const/4",
+            "sget-object",
+            "invoke-static",
+            "move-result-object",
+            "new-instance",
+            "move-object/from16",
+            "move-object/from16",
+            "invoke-direct",
+            "invoke-virtual/range",
+            "move-result-object",
+            "move-object",
+            "check-cast",
+            "move-object",
+            "const/4",
+            "invoke-virtual",
+            "const/4",
+            "invoke-virtual",
+            "const/4",
+            "invoke-virtual",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "const-string",
+            "const-string",
+            "invoke-virtual",
+            "new-instance",
+            "new-instance",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-direct",
+            "invoke-direct",
+            "const-string",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "if-nez",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "move-object/from16",
+            "move-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "aget-object",
+            "invoke-static",
+            "move-result",
+            "const/4",
+            "filled-new-array",
+            "move-result-object",
+            "const-class",
+            "invoke-static",
+            "move-result-object",
+            "check-cast",
+            "const/4",
+            "if-lt",
+            "if-nez",
+            "invoke-virtual",
+            "goto/16",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object",
+            "move-object/from16",
+            "invoke-virtual",
+            "invoke-virtual",
+            "goto/16",
+            "aget-object",
+            "const/4",
+            "mul-int/lit8",
+            "add-int/lit8",
+            "aget-object",
+            "aput-object",
+            "aget-object",
+            "const/4",
+            "mul-int/lit8",
+            "add-int/lit8",
+            "aget-object",
+            "aput-object",
+            "add-int/lit8",
+            "goto",
+            "invoke-static",
+            "move-result-object",
+            "const/4",
+            "if-lt",
+            "invoke-virtual/range",
+            "invoke-virtual",
+            "move-object/from16",
+            "goto/16",
+            "aget-object",
+            "const/4",
+            "aget-object",
+            "const/4",
+            "aget-object",
+            "const/4",
+            "aget-object",
+            "const/4",
+            "const/4",
+            "invoke-virtual/range",
+            "add-int/lit8",
+            "goto",
+            "const/4",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "goto",
+            "move-exception",
+            "move-object/from16",
+            "invoke-virtual",
+            "throw",
+            "move-exception",
+            "goto",
+            "move-exception",
+            "move-object",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->save_Alive()V [access_flags=public] @ 0x1830>",
+        {
+          "opcodes": [
+            "iget-object",
+            "const-string",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-interface",
+            "move-result-object",
+            "const-string",
+            "const/4",
+            "invoke-interface",
+            "invoke-interface",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class; [I)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;-><init>()V [access_flags=public constructor] @ 0x1870>",
+        {
+          "opcodes": [
+            "invoke-direct",
+            "return-void"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        {
+          "opcodes": [
+            "new-instance",
+            "invoke-direct",
+            "new-instance",
+            "invoke-direct",
+            "invoke-virtual",
+            "move-result-object",
+            "if-eqz",
+            "const-string",
+            "invoke-virtual",
+            "move-result-object",
+            "check-cast",
+            "array-length",
+            "new-array",
+            "const/4",
+            "array-length",
+            "if-lt",
+            "array-length",
+            "const/4",
+            "if-lt",
+            "invoke-virtual",
+            "move-result-object",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "invoke-virtual",
+            "move-result-object",
+            "const/4",
+            "const-string",
+            "invoke-virtual",
+            "move-result",
+            "if-eqz",
+            "const/4",
+            "if-eqz",
+            "invoke-virtual",
+            "return-void",
+            "aget-object",
+            "check-cast",
+            "invoke-static",
+            "move-result-object",
+            "aput-object",
+            "add-int/lit8",
+            "goto",
+            "aget-object",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "invoke-virtual",
+            "move-result-object",
+            "invoke-virtual",
+            "add-int/lit8",
+            "goto"
+          ]
+        }
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->startsWith(Ljava/lang/String;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsMessage;->getDisplayOriginatingAddress()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getExtras()Landroid/os/Bundle;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsMessage;->createFromPdu([B)Landroid/telephony/SmsMessage;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/telephony/SmsMessage;->getDisplayMessageBody()Ljava/lang/String;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->abortBroadcast()V>",
+        {}
+      ],
+      [
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I)Ljava/lang/String;>",
+        {}
+      ]
+    ],
+    "edges": [
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$attr;-><init>()V [access_flags=public constructor] @ 0xd98>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$drawable;-><init>()V [access_flags=public constructor] @ 0xdb0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$id;-><init>()V [access_flags=public constructor] @ 0xdc8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$layout;-><init>()V [access_flags=public constructor] @ 0xde0>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$menu;-><init>()V [access_flags=public constructor] @ 0xdf8>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R$string;-><init>()V [access_flags=public constructor] @ 0xe10>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/R;-><init>()V [access_flags=public constructor] @ 0xe28>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity$1;-><init>(Lcom/network_l4/network_test_activity;)V [access_flags=constructor] @ 0xe40>",
+        "<analysis.MethodAnalysis Ljava/lang/Object;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;-><init>()V [access_flags=public constructor] @ 0xe70>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doAbout()V [access_flags=private] @ 0xe88>",
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity$1;-><init>(Lcom/network_l4/network_test_activity;)V [access_flags=constructor] @ 0xe40>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doAbout()V [access_flags=private] @ 0xe88>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doAbout()V [access_flags=private] @ 0xe88>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doAbout()V [access_flags=private] @ 0xe88>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doAbout()V [access_flags=private] @ 0xe88>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doAbout()V [access_flags=private] @ 0xe88>",
+        "<analysis.MethodAnalysis Landroid/app/AlertDialog$Builder;->setPositiveButton(I Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doAbout()V [access_flags=private] @ 0xe88>",
+        "<analysis.MethodAnalysis Landroid/app/Dialog;->show()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doExit()V [access_flags=private] @ 0xee8>",
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->startActivity(Landroid/content/Intent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doExit()V [access_flags=private] @ 0xee8>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doExit()V [access_flags=private] @ 0xee8>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doExit()V [access_flags=private] @ 0xee8>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doExit()V [access_flags=private] @ 0xee8>",
+        "<analysis.MethodAnalysis Ljava/lang/System;->exit(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->close()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->ready()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->findViewById(I)Landroid/view/View;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getResources()Landroid/content/res/Resources;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0xff0>",
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1544>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0xff0>",
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->start()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0xff0>",
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->setContentView(I)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0xff0>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onCreate(Landroid/os/Bundle;)V [access_flags=public] @ 0xff0>",
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getStringFromFile(Ljava/lang/String;)V [access_flags=public] @ 0xf2c>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1544>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z [access_flags=public] @ 0x102c>",
+        "<analysis.MethodAnalysis Landroid/view/MenuInflater;->inflate(I Landroid/view/Menu;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z [access_flags=public] @ 0x102c>",
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->getMenuInflater()Landroid/view/MenuInflater;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z [access_flags=public] @ 0x1054>",
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doExit()V [access_flags=private] @ 0xee8>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z [access_flags=public] @ 0x1054>",
+        "<analysis.MethodAnalysis Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z [access_flags=public] @ 0x1054>",
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->doAbout()V [access_flags=private] @ 0xe88>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lcom/network_l4/network_test_activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z [access_flags=public] @ 0x1054>",
+        "<analysis.MethodAnalysis Landroid/view/MenuItem;->getItemId()I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;-><init>(Landroid/content/Context;)V [access_flags=public constructor] @ 0x1188>",
+        "<analysis.MethodAnalysis Ljava/lang/Thread;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x11a4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x11a4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x11a4>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(C)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x11a4>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->check_Alive()Z [access_flags=public] @ 0x11f0>",
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String; Z)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->check_Alive()Z [access_flags=public] @ 0x11f0>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoOutput(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->disconnect()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setUseCaches(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->save_Alive()V [access_flags=public] @ 0x1418>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->toUpperCase()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->check_Alive()Z [access_flags=public] @ 0x11f0>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x11a4>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoInput(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->run()V [access_flags=public] @ 0x1220>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->save_Alive()V [access_flags=public] @ 0x1418>",
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String; Z)Landroid/content/SharedPreferences$Editor;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->save_Alive()V [access_flags=public] @ 0x1418>",
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->save_Alive()V [access_flags=public] @ 0x1418>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version1;->save_Alive()V [access_flags=public] @ 0x1418>",
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences$Editor;->commit()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x1560>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x1560>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x1560>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->valueOf(C)Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x1560>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->check_Alive()Z [access_flags=public] @ 0x15ac>",
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String; Z)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->check_Alive()Z [access_flags=public] @ 0x15ac>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/lang/Exception;->printStackTrace()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoInput(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->save_Alive()V [access_flags=public] @ 0x1830>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuffer;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->disconnect()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/net/URL;->openConnection()Ljava/net/URLConnection;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->toUpperCase()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setDoOutput(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/net/URL;-><init>(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->equals(Ljava/lang/Object;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/io/BufferedReader;->readLine()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class; [I)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/net/HttpURLConnection;->setUseCaches(Z)V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->check_Alive()Z [access_flags=public] @ 0x15ac>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->run()V [access_flags=public] @ 0x15dc>",
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->decode([I)Ljava/lang/String; [access_flags=public static] @ 0x1560>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->save_Alive()V [access_flags=public] @ 0x1830>",
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String; Z)Landroid/content/SharedPreferences$Editor;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->save_Alive()V [access_flags=public] @ 0x1830>",
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->save_Alive()V [access_flags=public] @ 0x1830>",
+        "<analysis.MethodAnalysis Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/sms_thread_version2;->save_Alive()V [access_flags=public] @ 0x1830>",
+        "<analysis.MethodAnalysis Landroid/content/SharedPreferences$Editor;->commit()Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;-><init>()V [access_flags=public constructor] @ 0x1870>",
+        "<analysis.MethodAnalysis Landroid/content/BroadcastReceiver;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->startsWith(Ljava/lang/String;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsMessage;->getDisplayOriginatingAddress()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;-><init>()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Landroid/content/Intent;->getExtras()Landroid/os/Bundle;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Ljava/lang/StringBuilder;->toString()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsMessage;->createFromPdu([B)Landroid/telephony/SmsMessage;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Landroid/telephony/SmsMessage;->getDisplayMessageBody()Ljava/lang/String;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->abortBroadcast()V>"
+      ],
+      [
+        "<analysis.MethodAnalysis Lfish/smsreceiveandmask;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V [access_flags=public] @ 0x1888>",
+        "<analysis.MethodAnalysis Ljava/lang/String;->substring(I)Ljava/lang/String;>"
+      ]
+    ]
+  },
+  "label": 1
+}
