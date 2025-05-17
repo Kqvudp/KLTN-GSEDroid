@@ -233,17 +233,17 @@ if __name__ == "__main__":
     # output_malware_folder = r"E:\Extracted\CIC\Adware\After_Prunning"
     # os.makedirs(output_malware_folder, exist_ok=True)
 
-    malware_folder = r"E:\Raw\CIC\Adware"
-    output_malware_folder = r"E:\Extracted\CIC\Riskware\After_Prunning"
-    os.makedirs(output_malware_folder, exist_ok=True)
+    # malware_folder = r"E:\Raw\CIC\Riskware"
+    # output_malware_folder = r"E:\Extracted\CIC\Riskware\After_Prunning"
+    # os.makedirs(output_malware_folder, exist_ok=True)
 
-    malware_folder = r"E:\Raw\CIC\Adware"
+    malware_folder = r"E:\Raw\CIC\Banking"
     output_malware_folder = r"E:\Extracted\CIC\Banking\After_Prunning"
     os.makedirs(output_malware_folder, exist_ok=True)
 
-    malware_folder = r"E:\Raw\CIC\Adware"
-    output_malware_folder = r"E:\Extracted\CIC\SMS\After_Prunning"
-    os.makedirs(output_malware_folder, exist_ok=True)
+    # malware_folder = r"E:\Raw\CIC\SMS"
+    # output_malware_folder = r"E:\Extracted\CIC\SMS\After_Prunning"
+    # os.makedirs(output_malware_folder, exist_ok=True)
 
     # malware_folder = r"E:\Raw\Drebin"
     # output_malware_folder = r"E:\Extracted\Drebin\After_Prunning"
