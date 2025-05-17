@@ -229,8 +229,20 @@ def process_apk_folder(input_folder, output_folder, label=0):
             print(f"Error processing {apk_file}: {str(e)}")
 
 if __name__ == "__main__":
+    # malware_folder = r"E:\Raw\CIC\Adware"
+    # output_malware_folder = r"E:\Extracted\CIC\Adware\After_Prunning"
+    # os.makedirs(output_malware_folder, exist_ok=True)
+
     malware_folder = r"E:\Raw\CIC\Adware"
-    output_malware_folder = r"E:\Extracted\CIC\Adware\After_Prunning"
+    output_malware_folder = r"E:\Extracted\CIC\Riskware\After_Prunning"
+    os.makedirs(output_malware_folder, exist_ok=True)
+
+    malware_folder = r"E:\Raw\CIC\Adware"
+    output_malware_folder = r"E:\Extracted\CIC\Banking\After_Prunning"
+    os.makedirs(output_malware_folder, exist_ok=True)
+
+    malware_folder = r"E:\Raw\CIC\Adware"
+    output_malware_folder = r"E:\Extracted\CIC\SMS\After_Prunning"
     os.makedirs(output_malware_folder, exist_ok=True)
 
     # malware_folder = r"E:\Raw\Drebin"
