@@ -229,14 +229,13 @@ def process_apk_folder(input_folder, output_folder, label=0):
             print(f"Error processing {apk_file}: {str(e)}")
 
 if __name__ == "__main__":
-    # benign_folder = r"D:\FinalProject\input\bengin"
-    malware_folder = r"C:\Users\silas\Documents\GDroid\test"
-    output_folder = r"C:\Users\silas\Documents\GDroid\output"
-    
-    os.makedirs(output_folder, exist_ok=True)
-    
-    # print("Processing benign APKs...")
-    # process_apk_folder(benign_folder, output_folder, label=0)
+    malware_folder = r"E:\Raw\CIC\Adware"
+    output_malware_folder = r"E:\Extracted\CIC\Adware\After_Prunning"
+    os.makedirs(output_malware_folder, exist_ok=True)
+
+    # malware_folder = r"E:\Raw\Drebin"
+    # output_malware_folder = r"E:\Extracted\Drebin\After_Prunning"
+    # os.makedirs(output_malware_folder, exist_ok=True)
     
     print("Processing malware APKs...")
-    process_apk_folder(malware_folder, output_folder, label=1)
+    process_apk_folder(malware_folder, output_malware_folder, label=1)
