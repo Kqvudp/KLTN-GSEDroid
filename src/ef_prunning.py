@@ -256,6 +256,11 @@ def process_apk_folder(input_folder, output_folder, label=0):
         apk_path = os.path.join(input_folder, apk_file)
         output_path = os.path.join(output_folder, f"{apk_file}.json")
         csv_path = f"graph_info.csv"
+
+        # Skip if the extracted file already exists
+        if os.path.exists(output_path):
+            print(f"Skipping {apk_file} because extracted file already exists.")
+            continue
         
         try:
             features = extractor.extract_apk_features(apk_path, apk_file, csv_path)

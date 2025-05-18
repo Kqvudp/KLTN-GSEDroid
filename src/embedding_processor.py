@@ -130,7 +130,13 @@ def process_feature_folder(input_folder, output_folder, train_autoencoder_first=
     for feature_file in os.listdir(input_folder):
         if not feature_file.endswith('.json'):
             continue
-            
+
+        base_name = os.path.basename(feature_file).replace('.json', '.pkl')
+        output_path = os.path.join(output_folder, f"processed_{base_name}")
+        if os.path.exists(output_path):
+            print(f"File {output_path} already embedded. Skipping.")
+            continue
+
         input_path = os.path.join(input_folder, feature_file)
         print(f"Processing features from: {input_path}")
         
