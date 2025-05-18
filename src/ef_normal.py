@@ -104,13 +104,13 @@ if __name__ == "__main__":
     
     #print("Processing benign APKs...")
     # process_apk_folder(benign_folder, output_benign_folder, label=0)
+    
+    print("Processing malware APKs...")
+
     malware_folder = r"E:\Raw\CIC\Adware"
     output_malware_folder = r"E:\Extracted\CIC\Adware\Before_Prunning"
     os.makedirs(output_malware_folder, exist_ok=True)
-
-    # malware_folder = r"E:\Raw\CIC\Adware"
-    # output_malware_folder = r"E:\Extracted\CIC\Adware\Before_Prunning"
-    # os.makedirs(output_malware_folder, exist_ok=True)
+    process_apk_folder(malware_folder, output_malware_folder, label=1)
 
     # malware_folder = r"E:\Raw\CIC\Riskware"
     # output_malware_folder = r"E:\Extracted\CIC\Riskware\Before_Prunning"
@@ -119,14 +119,13 @@ if __name__ == "__main__":
     malware_folder = r"E:\Raw\CIC\Banking"
     output_malware_folder = r"E:\Extracted\CIC\Banking\Before_Prunning"
     os.makedirs(output_malware_folder, exist_ok=True)
+    process_apk_folder(malware_folder, output_malware_folder, label=1)
 
     # malware_folder = r"E:\Raw\CIC\SMS"
     # output_malware_folder = r"E:\Extracted\CIC\SMS\Before_Prunning"
     # os.makedirs(output_malware_folder, exist_ok=True)
 
-    # malware_folder = r"E:\Raw\Drebin"
-    # output_malware_folder = r"E:\Extracted\Drebin\Before_Prunning"
-    # os.makedirs(output_malware_folder, exist_ok=True)
-    
-    print("Processing malware APKs...")
+    malware_folder = r"E:\Raw\Drebin"
+    output_malware_folder = r"E:\Extracted\Drebin\Before_Prunning"
+    os.makedirs(output_malware_folder, exist_ok=True) 
     process_apk_folder(malware_folder, output_malware_folder, label=1)
