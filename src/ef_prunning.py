@@ -248,20 +248,15 @@ def save_features(features, output_path):
     print(f"Saved features to {output_path}")
 
 def process_apk_folder(input_folder, output_folder, label=0):
-    """Process all APKs in a folder and extract their features"""
+    """Process all APKs in a folder and extract their features using multiprocessing"""
     extractor = FeatureExtractor()
-    
     for apk_file in os.listdir(input_folder):
-
         apk_path = os.path.join(input_folder, apk_file)
         output_path = os.path.join(output_folder, f"{apk_file}.json")
-        csv_path = f"graph_info.csv"
-
-        # Skip if the extracted file already exists
+        csv_path = "graph_info.csv"
         if os.path.exists(output_path):
             print(f"Skipping {apk_file} because extracted file already exists.")
             continue
-        
         try:
             features = extractor.extract_apk_features(apk_path, apk_file, csv_path)
             features['label'] = label
@@ -271,32 +266,32 @@ def process_apk_folder(input_folder, output_folder, label=0):
             print(f"Error processing {apk_file}: {str(e)}")
 
 if __name__ == "__main__":
-    print("Processing malware APKs...")
 
-    # benign_folder = r"E:\Benign"
-    # output_benign_folder = r"E:\Benign_Before_Prunning"
-    # os.makedirs(output_benign_folder, exist_ok=True)
-    # process_apk_folder(benign_folder, output_benign_folder, label=0)
+    benign_folder = r"D:\GraduateDissertation\Benign"
+    output_benign_folder = r"D:\GraduateDissertation\Benign_After_Prunning"
+    os.makedirs(output_benign_folder, exist_ok=True)
+    print("Processing benign APKs...")
+    process_apk_folder(benign_folder, output_benign_folder, label=0)
 
-    malware_folder = r"E:\Raw\CIC\Adware"
-    output_malware_folder = r"E:\Extracted\CIC\Adware\After_Prunning"
-    os.makedirs(output_malware_folder, exist_ok=True)
-    process_apk_folder(malware_folder, output_malware_folder, label=1)
-
-    # malware_folder = r"E:\Raw\CIC\Riskware"
-    # output_malware_folder = r"E:\Extracted\CIC\Riskware\After_Prunning"
+    # malware_folder = r"E:\Raw\CIC\Adware"
+    # output_malware_folder = r"E:\Extracted\CIC\Adware\After_Prunning"
     # os.makedirs(output_malware_folder, exist_ok=True)
+    # process_apk_folder(malware_folder, output_malware_folder, label=1)
 
-    malware_folder = r"E:\Raw\CIC\Banking"
-    output_malware_folder = r"E:\Extracted\CIC\Banking\After_Prunning"
-    os.makedirs(output_malware_folder, exist_ok=True)
-    process_apk_folder(malware_folder, output_malware_folder, label=1)
+    # # malware_folder = r"E:\Raw\CIC\Riskware"
+    # # output_malware_folder = r"E:\Extracted\CIC\Riskware\After_Prunning"
+    # # os.makedirs(output_malware_folder, exist_ok=True)
 
-    # malware_folder = r"E:\Raw\CIC\SMS"
-    # output_malware_folder = r"E:\Extracted\CIC\SMS\After_Prunning"
+    # malware_folder = r"E:\Raw\CIC\Banking"
+    # output_malware_folder = r"E:\Extracted\CIC\Banking\After_Prunning"
     # os.makedirs(output_malware_folder, exist_ok=True)
+    # process_apk_folder(malware_folder, output_malware_folder, label=1)
 
-    malware_folder = r"E:\Raw\Drebin"
-    output_malware_folder = r"E:\Extracted\Drebin\After_Prunning"
-    os.makedirs(output_malware_folder, exist_ok=True)
-    process_apk_folder(malware_folder, output_malware_folder, label=1)
+    # # malware_folder = r"E:\Raw\CIC\SMS"
+    # # output_malware_folder = r"E:\Extracted\CIC\SMS\After_Prunning"
+    # # os.makedirs(output_malware_folder, exist_ok=True)
+
+    # malware_folder = r"E:\Raw\Drebin"
+    # output_malware_folder = r"E:\Extracted\Drebin\After_Prunning"
+    # os.makedirs(output_malware_folder, exist_ok=True)
+    # process_apk_folder(malware_folder, output_malware_folder, label=1)

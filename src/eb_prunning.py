@@ -145,32 +145,30 @@ def process_feature_folder(input_folder, output_folder, train_autoencoder_first=
         except Exception as e:
             print(f"Error processing {feature_file}: {str(e)}")
 
-    # Ghi tên các file đã embed xong vào file txt
     txt_path = os.path.join(output_folder, "embedded_files.txt")
     with open(txt_path, "w", encoding="utf-8") as f:
         for file in embedded_files:
             f.write(file + "\n")
     print(f"Saved embedded file list to {txt_path}")
 
-
 if __name__ == "__main__":
 
-    feature_folder = r"D:\GraduateDissertation\Benign_After_Prunning"
-    processed_folder = r"D:\GraduateDissertation\EB_Benign_After_Prunning"
+    feature_folder = r"E:\Extracted\CIC\Adware\After_Prunning"
+    processed_folder = r"E:\Embedded\CIC\Adware\After_Prunning"
     os.makedirs(processed_folder, exist_ok=True)
     process_feature_folder(feature_folder, processed_folder, train_autoencoder_first=True)
 
-    feature_folder = r"D:\GraduateDissertation\Benign_Before_Prunning"
-    processed_folder = r"D:\GraduateDissertation\EB_Benign_Before_Prunning"
+    feature_folder = r"E:\Extracted\CIC\Banking\After_Prunning"
+    processed_folder = r"E:\Embedded\CIC\Banking\After_Prunning"
     os.makedirs(processed_folder, exist_ok=True)
     process_feature_folder(feature_folder, processed_folder, train_autoencoder_first=True)
 
-    # feature_folder = r"E:\Extracted\CIC\Riskware\After_Prunning"
-    # processed_folder = r"E:\Embedded\CIC\Riskware\After_Prunning"
-    # os.makedirs(processed_folder, exist_ok=True)
-    # process_feature_folder(feature_folder, processed_folder, train_autoencoder_first=True)
+    feature_folder = r"E:\Extracted\CIC\Riskware\After_Prunning"
+    processed_folder = r"E:\Embedded\CIC\Riskware\After_Prunning"
+    os.makedirs(processed_folder, exist_ok=True)
+    process_feature_folder(feature_folder, processed_folder, train_autoencoder_first=True)
 
-    # feature_folder = r"E:\Extracted\CIC\Drebin\After_Prunning"
-    # processed_folder = r"E:\Embedded\CIC\Drebin\After_Prunning"
-    # os.makedirs(processed_folder, exist_ok=True)
-    # process_feature_folder(feature_folder, processed_folder, train_autoencoder_first=True)
+    feature_folder = r"E:\Extracted\CIC\Drebin\After_Prunning"
+    processed_folder = r"E:\Embedded\CIC\Drebin\After_Prunning"
+    os.makedirs(processed_folder, exist_ok=True)
+    process_feature_folder(feature_folder, processed_folder, train_autoencoder_first=True)
