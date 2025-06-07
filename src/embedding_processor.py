@@ -126,7 +126,7 @@ def process_features(feature_file, output_folder, compress=True):
 def process_feature_folder(input_folder, output_folder, train_autoencoder_first=True):
     """Process all feature files in a folder"""
     os.makedirs(output_folder, exist_ok=True)
-    embedded_files = []
+
     for feature_file in os.listdir(input_folder):
         if not feature_file.endswith('.json'):
             continue
@@ -144,14 +144,6 @@ def process_feature_folder(input_folder, output_folder, train_autoencoder_first=
             process_features(input_path, output_folder, compress=True)
         except Exception as e:
             print(f"Error processing {feature_file}: {str(e)}")
-
-    # Ghi tên các file đã embed xong vào file txt
-    txt_path = os.path.join(output_folder, "embedded_files.txt")
-    with open(txt_path, "w", encoding="utf-8") as f:
-        for file in embedded_files:
-            f.write(file + "\n")
-    print(f"Saved embedded file list to {txt_path}")
-
 
 if __name__ == "__main__":
 

@@ -10,6 +10,8 @@ import os
 from pathlib import Path
 import pickle
 from torch_geometric.loader import DataLoader  # Use the new loader
+import csv
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 class Autoencoder(nn.Module):
     def __init__(self, input_dim, encoding_dim):
@@ -209,6 +211,9 @@ def create_dataloaders(feature_folder, batch_size=32, test_split=0.2, autoencode
         autoencoder.load_state_dict(torch.load(autoencoder_path))
         autoencoder.eval()
     
+    # Track the expected feature dimension
+    expected_dim = None
+    
     for feature_file in os.listdir(feature_folder):
         if not feature_file.endswith('.pkl'):
             continue
@@ -216,7 +221,18 @@ def create_dataloaders(feature_folder, batch_size=32, test_split=0.2, autoencode
         file_path = os.path.join(feature_folder, feature_file)
         try:
             data = load_processed_features(file_path, autoencoder=autoencoder)
+            
+            # Validate feature dimensions
             if data is not None and data.x.size(0) > 0 and data.edge_index.size(1) > 0:
+                # Check if dimensions are consistent
+                if expected_dim is None:
+                    expected_dim = data.x.size(1)
+                
+                # Skip graphs with inconsistent dimensions
+                if data.x.size(1) != expected_dim:
+                    print(f"Skipping {feature_file}: Feature dimension mismatch. Expected {expected_dim}, got {data.x.size(1)}")
+                    continue
+                    
                 # Verify edge indices
                 if data.edge_index.max() < data.x.size(0):
                     graphs.append(data)
@@ -301,14 +317,78 @@ def save_model(model, path):
     torch.save(model.state_dict(), path)
     print(f"Model saved to {path}")
 
+
+def save_training_stats_csv(training_stats, filename="training_stats.csv"):
+    with open(filename, mode='w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['epoch', 'loss', 'accuracy'])
+        for stat in training_stats:
+            writer.writerow([stat['epoch'], stat['loss'], stat['accuracy']])
+
+def evaluate_model(model, test_loader, device):
+    model.eval()
+    all_preds = []
+    all_labels = []
+    
+    with torch.no_grad():
+        for data in test_loader.dataset:  # Process one sample at a time instead of batches
+            # Move single sample to device
+            data = data.to(device)
+            
+            # Add batch dimension for single sample processing
+            if not hasattr(data, 'batch') or data.batch is None:
+                data.batch = torch.zeros(data.x.size(0), dtype=torch.long, device=device)
+            
+            # Forward pass
+            try:
+                out = model(data.x, data.edge_index, data.batch)
+                pred = out.argmax(dim=1).item()  # Get predicted class
+                label = data.y.item()  # Get true label
+                
+                all_preds.append(pred)
+                all_labels.append(label)
+            except Exception as e:
+                print(f"Error evaluating sample: {str(e)}")
+                continue
+    
+    # Calculate metrics if we have predictions
+    if len(all_preds) > 0:
+        accuracy = accuracy_score(all_labels, all_preds)
+        precision = precision_score(all_labels, all_preds, average='binary', zero_division=0)
+        recall = recall_score(all_labels, all_preds, average='binary', zero_division=0)
+        f1 = f1_score(all_labels, all_preds, average='binary', zero_division=0)
+        
+        return {
+            'accuracy': accuracy,
+            'precision': precision,
+            'recall': recall,
+            'f1_score': f1
+        }
+    else:
+        print("Warning: No valid predictions were made during evaluation.")
+        return {
+            'accuracy': 0,
+            'precision': 0,
+            'recall': 0,
+            'f1_score': 0
+        }
+
+def save_evaluation_metrics_csv(metrics, filename="evaluation_metrics.csv"):
+    with open(filename, mode='w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['Metric', 'Value'])
+        for k, v in metrics.items():
+            writer.writerow([k, v])
+
+
 if __name__ == "__main__":
     # Configuration
-    FEATURE_FOLDER = "./test_embedded"
+    FEATURE_FOLDER = r"D:\GraduateDissertation\Embedded\CIC\Benign\After_Prunning"
     MODEL_SAVE_PATH = "./trained_model.pth"
     AUTOENCODER_PATH = ""  # Path to pretrained autoencoder
-    EPOCHS = 50
+    EPOCHS = 100
     BATCH_SIZE = 16
-    HIDDEN_DIM = 64
+    HIDDEN_DIM = 128
     MAX_NODES = 1000
     LEARNING_RATE = 0.001
     
@@ -334,6 +414,11 @@ if __name__ == "__main__":
     # Train model
     print("Starting training...")
     training_stats = train_model(model, train_loader, optimizer, device, EPOCHS)
-    
+    save_training_stats_csv(training_stats, "training_stats.csv")
+
     # Save model
     save_model(model, MODEL_SAVE_PATH)
+
+    # Evaluate and save metrics
+    metrics = evaluate_model(model, test_loader, device)
+    save_evaluation_metrics_csv(metrics, "evaluation_metrics.csv")
