@@ -119,7 +119,7 @@ class GSEDroidModel(nn.Module):
         
         return F.log_softmax(x, dim=1)
 
-def load_processed_features(feature_file, max_nodes=1000, autoencoder=None):
+def load_processed_features(feature_file, max_nodes=float('inf'), autoencoder=None):
     """Load processed features from .pkl file and convert to PyTorch Geometric Data object"""
     with open(feature_file, 'rb') as f:
         features = pickle.load(f)
@@ -177,6 +177,8 @@ def load_processed_features(feature_file, max_nodes=1000, autoencoder=None):
     
     # Add self-loops if no edges exist
     if not edges:
+        # print(f"Warning: No nodes found in {feature_file}, skipping.")
+        # return None
         print(f"Warning: No valid edges found in {feature_file}, adding self-loops.")
         edges = [(i, i) for i in range(num_nodes)]
     
@@ -199,8 +201,8 @@ def load_processed_features(feature_file, max_nodes=1000, autoencoder=None):
     
     return data
 
-def create_dataloaders(feature_folder, batch_size=32, test_split=0.2, autoencoder_path=None):
-    """Create train and test dataloaders from processed features in .pkl files"""
+def create_dataloaders(feature_folders, batch_size=64, test_split=0.2, autoencoder_path=None):
+    """Create train and test dataloaders from processed features in .pkl files from multiple folders"""
     graphs = []
     
     # Load autoencoder if path is provided
@@ -213,33 +215,38 @@ def create_dataloaders(feature_folder, batch_size=32, test_split=0.2, autoencode
     
     # Track the expected feature dimension
     expected_dim = None
+
+    # Support both string (single folder) and list of folders
+    if isinstance(feature_folders, str):
+        feature_folders = [feature_folders]
     
-    for feature_file in os.listdir(feature_folder):
-        if not feature_file.endswith('.pkl'):
-            continue
-            
-        file_path = os.path.join(feature_folder, feature_file)
-        try:
-            data = load_processed_features(file_path, autoencoder=autoencoder)
-            
-            # Validate feature dimensions
-            if data is not None and data.x.size(0) > 0 and data.edge_index.size(1) > 0:
-                # Check if dimensions are consistent
-                if expected_dim is None:
-                    expected_dim = data.x.size(1)
+    for feature_folder in feature_folders:
+        for feature_file in os.listdir(feature_folder):
+            if not feature_file.endswith('.pkl'):
+                continue
                 
-                # Skip graphs with inconsistent dimensions
-                if data.x.size(1) != expected_dim:
-                    print(f"Skipping {feature_file}: Feature dimension mismatch. Expected {expected_dim}, got {data.x.size(1)}")
-                    continue
+            file_path = os.path.join(feature_folder, feature_file)
+            try:
+                data = load_processed_features(file_path, autoencoder=autoencoder)
+                
+                # Validate feature dimensions
+                if data is not None and data.x.size(0) > 0 and data.edge_index.size(1) > 0:
+                    # Check if dimensions are consistent
+                    if expected_dim is None:
+                        expected_dim = data.x.size(1)
                     
-                # Verify edge indices
-                if data.edge_index.max() < data.x.size(0):
-                    graphs.append(data)
-                else:
-                    print(f"Skipping {feature_file}: Invalid edge indices")
-        except Exception as e:
-            print(f"Error loading {feature_file}: {str(e)}")
+                    # Skip graphs with inconsistent dimensions
+                    if data.x.size(1) != expected_dim:
+                        print(f"Skipping {feature_file}: Feature dimension mismatch. Expected {expected_dim}, got {data.x.size(1)}")
+                        continue
+                        
+                    # Verify edge indices
+                    if data.edge_index.max() < data.x.size(0):
+                        graphs.append(data)
+                    else:
+                        print(f"Skipping {feature_file}: Invalid edge indices")
+            except Exception as e:
+                print(f"Error loading {feature_file}: {str(e)}")
     
     if not graphs:
         raise ValueError("No valid graphs were loaded!")
@@ -267,7 +274,7 @@ def create_dataloaders(feature_folder, batch_size=32, test_split=0.2, autoencode
     
     return train_loader, test_loader
 
-def train_model(model, train_loader, optimizer, device, epochs=50):
+def train_model(model, train_loader, optimizer, device, epochs=30):
     model.train()
     training_stats = []
     
@@ -383,13 +390,13 @@ def save_evaluation_metrics_csv(metrics, filename="evaluation_metrics.csv"):
 
 if __name__ == "__main__":
     # Configuration
-    FEATURE_FOLDER = r"D:\GraduateDissertation\Embedded\CIC\Benign\After_Prunning"
-    MODEL_SAVE_PATH = "./trained_model.pth"
+    FEATURE_FOLDERS = "/kaggle/input/embedded-adware-after/Adware"
+    MODEL_SAVE_PATH = "/kaggle/working/trained_model.pth"
     AUTOENCODER_PATH = ""  # Path to pretrained autoencoder
-    EPOCHS = 100
-    BATCH_SIZE = 16
+    EPOCHS = 30
+    BATCH_SIZE = 64
     HIDDEN_DIM = 128
-    MAX_NODES = 1000
+    MAX_NODES = float('inf')
     LEARNING_RATE = 0.001
     
     # Set device
@@ -397,11 +404,17 @@ if __name__ == "__main__":
     print(f"Using device: {device}")
     
     # Create dataloaders with autoencoder for decoding if available
+    print(f"Loading data from {len(FEATURE_FOLDERS)} folders...")
+    for folder in FEATURE_FOLDERS:
+        print(f"- {folder}")
+        
     train_loader, test_loader = create_dataloaders(
-        FEATURE_FOLDER, 
+        FEATURE_FOLDERS, 
         BATCH_SIZE,
         autoencoder_path=AUTOENCODER_PATH
     )
+    
+    print("Data loading complete. Starting model initialization...")
     
     # Initialize model
     sample_data = next(iter(train_loader))
@@ -414,11 +427,11 @@ if __name__ == "__main__":
     # Train model
     print("Starting training...")
     training_stats = train_model(model, train_loader, optimizer, device, EPOCHS)
-    save_training_stats_csv(training_stats, "training_stats.csv")
+    save_training_stats_csv(training_stats, "/kaggle/working/training_stats.csv")
 
     # Save model
     save_model(model, MODEL_SAVE_PATH)
 
     # Evaluate and save metrics
     metrics = evaluate_model(model, test_loader, device)
-    save_evaluation_metrics_csv(metrics, "evaluation_metrics.csv")
+    save_evaluation_metrics_csv(metrics, "/kaggle/working/evaluation_metrics.csv")

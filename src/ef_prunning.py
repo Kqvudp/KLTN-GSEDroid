@@ -267,8 +267,8 @@ def process_apk_folder(input_folder, output_folder, label=0):
 
 if __name__ == "__main__":
 
-    benign_folder = r"D:\GraduateDissertation\Benign"
-    output_benign_folder = r"D:\GraduateDissertation\Benign_After_Prunning"
+    benign_folder = r"D:\GraduateDissertation\Raw\Adware"
+    output_benign_folder = r"D:\GraduateDissertation\Extracted\CIC\Adware\After_Prunning"
     os.makedirs(output_benign_folder, exist_ok=True)
     print("Processing benign APKs...")
     process_apk_folder(benign_folder, output_benign_folder, label=0)
