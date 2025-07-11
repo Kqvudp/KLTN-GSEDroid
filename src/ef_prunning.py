@@ -5,6 +5,33 @@ import json
 import os
 from pathlib import Path
 import csv 
+import matplotlib.pyplot as plt
+
+def visualize_graphs(original_graph, pruned_graph, file_name=None):
+    """Vẽ đồ thị trước và sau khi cắt tỉa, hiển thị chỉ số node"""
+    plt.figure(figsize=(14, 6))
+
+    # Đánh số node theo index để rút gọn hiển thị
+    original_mapping = {n: i for i, n in enumerate(original_graph.nodes())}
+    pruned_mapping = {n: i for i, n in enumerate(pruned_graph.nodes())}
+
+    original_graph_renamed = nx.relabel_nodes(original_graph, original_mapping)
+    pruned_graph_renamed = nx.relabel_nodes(pruned_graph, pruned_mapping)
+
+    pos = nx.spring_layout(original_graph_renamed, seed=42)
+
+    plt.subplot(1, 2, 1)
+    nx.draw(original_graph_renamed, pos, with_labels=True, node_color='lightblue', edge_color='gray', node_size=500, font_size=8)
+    plt.title("Trước khi cắt tỉa")
+
+    plt.subplot(1, 2, 2)
+    nx.draw(pruned_graph_renamed, pos, with_labels=True, node_color='lightgreen', edge_color='gray', node_size=500, font_size=8)
+    plt.title("Sau khi cắt tỉa")
+
+    plt.tight_layout()
+    if file_name:
+        plt.suptitle(file_name, fontsize=14)
+    plt.show()
 
 class FeatureExtractor:
     def __init__(self):
@@ -89,7 +116,7 @@ class FeatureExtractor:
         """Extract all features from an APK file"""
         print(f"Extracting features from: {apk_path}")
         a, d, dx = AnalyzeAPK(apk_path)
-        
+
         features = {
             'permissions': self.extract_permissions(a),
             'call_graph': self.extract_call_graph(dx, file_name, csv_path),
@@ -155,6 +182,9 @@ class FeatureExtractor:
         
         # Save graph info to CSV
         self.save_graph_info_to_csv(file_name, graph, pruned_graph, csv_path)
+
+
+        visualize_graphs(graph, pruned_graph, file_name)
 
         return {
             'nodes': list(pruned_graph.nodes(data=True)),
@@ -267,11 +297,11 @@ def process_apk_folder(input_folder, output_folder, label=0):
 
 if __name__ == "__main__":
 
-    benign_folder = r"D:\GraduateDissertation\Raw\Adware"
+    benign_folder = r"D:\GraduateDissertation\Raw\test"
     output_benign_folder = r"D:\GraduateDissertation\Extracted\CIC\Adware\After_Prunning"
     os.makedirs(output_benign_folder, exist_ok=True)
     print("Processing benign APKs...")
-    process_apk_folder(benign_folder, output_benign_folder, label=0)
+    process_apk_folder(benign_folder, output_benign_folder, label=1)
 
     # malware_folder = r"E:\Raw\CIC\Adware"
     # output_malware_folder = r"E:\Extracted\CIC\Adware\After_Prunning"
